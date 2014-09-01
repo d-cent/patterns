@@ -31,15 +31,10 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 \*------------------------------------*/
 /**
  * VARIABLES..............................Declarations of Sass variables 
- * .....Colors
- * .....Typography
- * .....Layout
- * .....Defaults
- * .....Breakpoints
  * MIXINS.................................Sass mixins 
  * RESET..................................Set reset defaults
- * GLOBAL CLASSES.........................Set reset defaults
  * GLOBAL ELEMENTS........................Establish global styles
+ * GLOBAL CLASSES.........................Set reset defaults
  * .....Main
  * .....Headings
  * .....Text-related elements (p, blockquote, lists)
@@ -153,45 +148,54 @@ header, footer, nav, section, article, hgroup, figure {
   color: #089e00; }
 
 .error {
-  color: red; }
+  color: #9E0084; }
 
 .warning {
-  color: #fff664; }
+  color: #FF61E5; }
 
 .information {
-  color: #000db5; }
+  color: #007E84; }
+  
+.font-headings {
+  font-family: "Comfortaa", cursive; }
+  
+.font-body {
+  font-family: "Raleway", sans-serif; }
 
-.font-secondary {
-  font-family: Georgia, Times, "Times New Roman", serif; }
+.font-profile {
+  font-family: "Fredoka One", cursive; }
 
 body {
   background: white;
-  font: 100%/1.5 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font: 100%/1.5 "Raleway", "Helvetica", sans-serif;
   -webkit-text-size-adjust: 100%;
-  color: #333333; }
+  color: #00444A }
 
 /* Links */
 a {
-  color: #333333;
+  color: #007E84;
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
-    color: gray; }
+    color: #FF61E5; }
 
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .alpha {
+  font-family: "Comfortaa", cursive;
   line-height: 1.2; }
 
 h2, .beta {
+  font-family: "Comfortaa", cursive;
   line-height: 1.2; }
 
 h3, .gamma {
+  font-family: "Comfortaa", cursive;
   line-height: 1.2; }
 
 /* Subheadings */
 .subheading {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: "Comfortaa", cursive;
   font-weight: normal; }
 
 /* Text-Related Elements */
