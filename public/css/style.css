@@ -197,7 +197,8 @@ h3, .gamma {
 /* Subheadings */
 .subheading {
   font-family: "Comfortaa", cursive;
-  font-weight: normal; }
+  font-weight: normal;
+  color: #007E84;}
 
 /* Text-Related Elements */
 p {
