@@ -144,18 +144,15 @@ header, footer, nav, section, article, hgroup, figure {
   .hide-large {
     display: none; } }
 
-.valid {
-  color: #007E84; }
-
-.error {
-  color: #9E0084; }
-
 .warning {
-  color: #FF61E5; }
+  color: #9E0084; }
 
 .information {
   color: #007E84; }
-  
+
+.suggestedaction {
+  color: #48BEC4; }
+
 .font-headings {
   font-family: "Comfortaa", cursive; }
   
@@ -204,7 +201,8 @@ h3, .gamma {
 
 /* Text-Related Elements */
 p {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  }
 
 /* Blockquote */
 blockquote {
@@ -316,7 +314,7 @@ input[type="search"]::-webkit-search-decoration {
 .inline-form input[type=submit], .inline-form button, .inline-form .btn {
   font-size: 0.875em;
   padding: 0.65rem 1.3rem;
-  background: #333333;
+  background: #48BEC4;
   position: absolute;
   top: 0;
   right: 0;
