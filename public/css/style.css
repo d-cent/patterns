@@ -145,7 +145,7 @@ header, footer, nav, section, article, hgroup, figure {
     display: none; } }
 
 .valid {
-  color: #089e00; }
+  color: #007E84; }
 
 .error {
   color: #9E0084; }
@@ -178,6 +178,7 @@ a {
   outline: 0; }
   a:hover, a:focus {
     color: #FF61E5; }
+    
 a:visited {
     color: #9E0084;
 } 
@@ -207,9 +208,9 @@ p {
 
 /* Blockquote */
 blockquote {
-  font-style: italic;
-  border-left: 1px solid gray;
-  color: gray;
+  font-size: larger;
+  border-left: 1px dotted #007E84;
+  color: #007E84;
   padding-left: 1em;
   margin-bottom: 1em; }
 

@@ -208,9 +208,9 @@ p {
 
 /* Blockquote */
 blockquote {
-  font-style: italic;
-  border-left: 1px solid gray;
-  color: gray;
+  font-size: larger;
+  border-left: 1px dotted #007E84;
+  color: #007E84;
   padding-left: 1em;
   margin-bottom: 1em; }
 
