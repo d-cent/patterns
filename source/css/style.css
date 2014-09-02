@@ -144,18 +144,15 @@ header, footer, nav, section, article, hgroup, figure {
   .hide-large {
     display: none; } }
 
-.valid {
-  color: #007E84; }
-
-.error {
-  color: #9E0084; }
-
 .warning {
-  color: #FF61E5; }
+  color: #9E0084; }
 
 .information {
   color: #007E84; }
-  
+
+.suggestedaction {
+  color: #48BEC4; }
+
 .font-headings {
   font-family: "Comfortaa", cursive; }
   
@@ -204,7 +201,8 @@ h3, .gamma {
 
 /* Text-Related Elements */
 p {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  }
 
 /* Blockquote */
 blockquote {
