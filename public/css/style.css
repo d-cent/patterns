@@ -314,7 +314,7 @@ input[type="search"]::-webkit-search-decoration {
 .inline-form input[type=submit], .inline-form button, .inline-form .btn {
   font-size: 0.875em;
   padding: 0.65rem 1.3rem;
-  background: #48BEC4;
+  background: #333333;
   position: absolute;
   top: 0;
   right: 0;
@@ -806,19 +806,43 @@ td {
 \*------------------------------------*/
 .btn {
   display: inline-block;
-  background: #333333;
-  color: white;
+  background: #B9F6F7;
+  color: #00444A;
   line-height: 1;
-  font-weight: bold;
-  padding: 1em;
+  font-weight: normal;
+  padding: 0.3em;
   border: 0;
-  text-align: center; }
-  .btn:hover, .btn:focus {
-    background: gray;
+  text-align: center;
+  border-radius:8px ;}
+  .btn:hover{
+    background: #48BEC4;
+    color: white; }
+  .btn:focus {
+    background: #007E84;
     color: white; }
   .btn.disabled {
     background: #eeeeee;
-    color: gray; }
+    color: white; }
+    
+.btn-alt {
+  display: inline-block;
+  background: #EEEEEE;
+  color: #222222;
+  line-height: 1;
+  font-weight: normal;
+  padding: 0.3em;
+  border: 0;
+  text-align: center;
+  border-radius:8px ;}
+  .btn-alt:hover{
+    background: #AAAAAA;
+    color: white; }
+  .btn-alt:focus {
+    background: #222222;
+    color: white; }
+  .btn-alt.disabled {
+    background: #eeeeee;
+    color: white; }
 
 .btn-small {
   padding: 0.5em; }
