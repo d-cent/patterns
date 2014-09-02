@@ -145,7 +145,7 @@ header, footer, nav, section, article, hgroup, figure {
     display: none; } }
 
 .valid {
-  color: #089e00; }
+  color: #007E84; }
 
 .error {
   color: #9E0084; }
@@ -167,8 +167,8 @@ header, footer, nav, section, article, hgroup, figure {
 
 body {
   background: white;
-  font: 100%/1.5 "Raleway", "Helvetica", sans-serif;
-  -webkit-text-size-adjust: 100%;
+  font: 120%/1.5 "Raleway", "Helvetica", sans-serif;
+  -webkit-text-size-adjust: 120%;
   color: #00444A }
 
 /* Links */
@@ -178,6 +178,10 @@ a {
   outline: 0; }
   a:hover, a:focus {
     color: #FF61E5; }
+    
+a:visited {
+    color: #9E0084;
+} 
 
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
