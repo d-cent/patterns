@@ -661,8 +661,9 @@ td {
     $TEXT Styles
 \*------------------------------------*/
 .intro {
-  font-size: 1.0625em;
-  font-weight: bold; }
+  font-size: 120%;
+  color: #007E84;
+  font-weight: normal; }
 
 .pullquote {
   font-family: Georgia, Times, "Times New Roman", serif;
