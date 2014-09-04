@@ -290,7 +290,7 @@ input[type=text], input[type=search], input[type=url], input[type=number], texta
   -webkit-appearance: none; }
 
 button, input[type="submit"] {
-  padding: 0.5em;
+  padding: 0.35em;
   background: #333333;
   border: 1px solid gray;
   cursor: pointer; }
