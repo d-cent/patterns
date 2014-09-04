@@ -184,15 +184,14 @@ a:visited {
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .alpha {
   font-family: "Comfortaa", cursive;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: #00444A;}
 
 h2, .beta {
   font-family: "Comfortaa", cursive;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: #007E84;}
 
-h3, .gamma {
-  font-family: "Comfortaa", cursive;
-  line-height: 1.2; }
 
 /* Subheadings */
 .subheading {
