@@ -355,16 +355,23 @@ input[type="search"]::-webkit-search-decoration {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid gray;
+  border: 1px;
+  border-style: solid;
+  border-color: #48BEC4;
   width: 100%; }
 
 th {
   text-align: left;
-  border: 1px solid gray;
-  padding: 0.2em; }
+  border: 1px;
+  border-style: solid;
+  border-color: #48BEC4;
+  padding: 0.2em;
+  color: #007E84;}
 
 td {
-  border: 1px solid gray;
+  border: 1px;
+  border-style: solid;
+  border-color: #48BEC4;
   padding: 0.2em; }
 
 .animate-fade {
