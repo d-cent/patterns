@@ -206,12 +206,16 @@ p {
 
 /* Blockquote */
 blockquote {
-  font-size: larger;
+  font-size: 1.3em;
   border-left: 1px dotted #00444A;
-  color: #00444A;
-  padding-left: 1em;
+  color: #007E84;
+  padding-left: 2em;
   margin-bottom: 1em; }
 
+.citation {
+  font-size: 0.75em;
+  color: #007E84;
+}
 /* Horizontal Rule */
 hr {
   border: 0;
