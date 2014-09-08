@@ -31,15 +31,10 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 \*------------------------------------*/
 /**
  * VARIABLES..............................Declarations of Sass variables 
- * .....Colors
- * .....Typography
- * .....Layout
- * .....Defaults
- * .....Breakpoints
  * MIXINS.................................Sass mixins 
  * RESET..................................Set reset defaults
- * GLOBAL CLASSES.........................Set reset defaults
  * GLOBAL ELEMENTS........................Establish global styles
+ * GLOBAL CLASSES.........................Set reset defaults
  * .....Main
  * .....Headings
  * .....Text-related elements (p, blockquote, lists)
@@ -149,63 +144,76 @@ header, footer, nav, section, article, hgroup, figure {
   .hide-large {
     display: none; } }
 
-.valid {
-  color: #089e00; }
-
-.error {
-  color: red; }
-
 .warning {
-  color: #fff664; }
+  color: #9E0084; }
 
 .information {
-  color: #000db5; }
+  color: #007E84; }
 
-.font-secondary {
-  font-family: Georgia, Times, "Times New Roman", serif; }
+.suggestedaction {
+  color: #48BEC4; }
+
+.font-headings {
+  font-family: "Comfortaa", cursive; }
+  
+.font-body {
+  font-family: "Raleway", sans-serif; }
+
+.font-profile {
+  font-family: "Fredoka One", cursive; }
 
 body {
   background: white;
-  font: 100%/1.5 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-  -webkit-text-size-adjust: 100%;
-  color: #333333; }
+  font: 120%/1.5 "Raleway", "Helvetica", sans-serif;
+  -webkit-text-size-adjust: 120%;
+  color: #00444A }
 
 /* Links */
 a {
-  color: #333333;
+  color: #007E84;
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
-    color: gray; }
+    color: #FF61E5; }
+    
+a:visited {
+    color: #9E0084;
+} 
 
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .alpha {
-  line-height: 1.2; }
+  font-family: "Comfortaa", cursive;
+  line-height: 1.2;}
 
 h2, .beta {
-  line-height: 1.2; }
+  font-family: "Comfortaa", cursive;
+  line-height: 1.2;}
 
-h3, .gamma {
-  line-height: 1.2; }
 
 /* Subheadings */
 .subheading {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: normal; }
+  font-family: "Comfortaa", cursive;
+  font-weight: normal;
+  color: #007E84;}
 
 /* Text-Related Elements */
 p {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  }
 
 /* Blockquote */
 blockquote {
-  font-style: italic;
-  border-left: 1px solid gray;
-  color: gray;
-  padding-left: 1em;
+  font-size: 1.3em;
+  border-left: 1px dotted #00444A;
+  color: #007E84;
+  padding-left: 2em;
   margin-bottom: 1em; }
 
+.citation {
+  font-size: 0.75em;
+  color: #007E84;
+}
 /* Horizontal Rule */
 hr {
   border: 0;
@@ -282,7 +290,7 @@ input[type=text], input[type=search], input[type=url], input[type=number], texta
   -webkit-appearance: none; }
 
 button, input[type="submit"] {
-  padding: 0.5em;
+  padding: 0.35em;
   background: #333333;
   border: 1px solid gray;
   cursor: pointer; }
@@ -345,16 +353,23 @@ input[type="search"]::-webkit-search-decoration {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid gray;
+  border: 1px;
+  border-style: solid;
+  border-color: #48BEC4;
   width: 100%; }
 
 th {
   text-align: left;
-  border: 1px solid gray;
-  padding: 0.2em; }
+  border: 1px;
+  border-style: solid;
+  border-color: #48BEC4;
+  padding: 0.2em;
+  color: #007E84;}
 
 td {
-  border: 1px solid gray;
+  border: 1px;
+  border-style: solid;
+  border-color: #48BEC4;
   padding: 0.2em; }
 
 .animate-fade {
@@ -655,8 +670,9 @@ td {
     $TEXT Styles
 \*------------------------------------*/
 .intro {
-  font-size: 1.0625em;
-  font-weight: bold; }
+  font-size: 120%;
+  color: #007E84;
+  font-weight: normal; }
 
 .pullquote {
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -800,19 +816,43 @@ td {
 \*------------------------------------*/
 .btn {
   display: inline-block;
-  background: #333333;
-  color: white;
+  background: #B9F6F7;
+  color: #00444A;
   line-height: 1;
-  font-weight: bold;
-  padding: 1em;
+  font-weight: normal;
+  padding: 0.3em;
   border: 0;
-  text-align: center; }
-  .btn:hover, .btn:focus {
-    background: gray;
+  text-align: center;
+  border-radius:8px ;}
+  .btn:hover{
+    background: #48BEC4;
+    color: white; }
+  .btn:focus {
+    background: #007E84;
     color: white; }
   .btn.disabled {
     background: #eeeeee;
-    color: gray; }
+    color: white; }
+    
+.btn-alt {
+  display: inline-block;
+  background: #EEEEEE;
+  color: #222222;
+  line-height: 1;
+  font-weight: normal;
+  padding: 0.3em;
+  border: 0;
+  text-align: center;
+  border-radius:8px ;}
+  .btn-alt:hover{
+    background: #AAAAAA;
+    color: white; }
+  .btn-alt:focus {
+    background: #222222;
+    color: white; }
+  .btn-alt.disabled {
+    background: #eeeeee;
+    color: white; }
 
 .btn-small {
   padding: 0.5em; }
@@ -1049,7 +1089,8 @@ td {
 .byline {
   font-size: 0.875em;
   font-style: italic;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+  color: #007E84;}
 
 .social-share {
   overflow: hidden;
