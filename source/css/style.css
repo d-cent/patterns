@@ -157,14 +157,11 @@ header, footer, nav, section, article, hgroup, figure {
   font-family: "Comfortaa", cursive; }
   
 .font-body {
-  font-family: "Raleway", sans-serif; }
-
-.font-profile {
-  font-family: "Fredoka One", cursive; }
+  font-family: "Muli", "Helvetica", sans-serif; }
 
 body {
   background: white;
-  font: 120%/1.5 "Raleway", "Helvetica", sans-serif;
+  font: 120%/1.5 "Muli", "Helvetica", sans-serif;
   -webkit-text-size-adjust: 120%;
   color: #00444A }
 
