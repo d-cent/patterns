@@ -820,10 +820,10 @@ td {
   color: #00444A;
   line-height: 1;
   font-weight: normal;
-  padding: 0.3em;
+  padding: 0.4em;
   border: 0;
   text-align: center;
-  border-radius:8px ;}
+  border-radius:4px ;}
   .btn:hover{
     background: #48BEC4;
     color: white; }
