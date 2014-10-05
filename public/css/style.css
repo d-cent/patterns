@@ -211,6 +211,22 @@ blockquote {
   font-size: 0.75em;
   color: #007E84;
 }
+
+/* Info message */
+.infomessage {
+  background-color: white;
+  padding: 0.6em;
+  border: 0;
+  text-align: center;
+  border-color: #48BEC4;
+  border-width:1px;
+  border-radius:8px;
+  border-style: solid; }
+
+
+/* Warning message */
+
+
 /* Horizontal Rule */
 hr {
   border: 0;
@@ -822,8 +838,14 @@ td {
   text-align: center;
   border-radius:6px ;}
   .btn:hover{
-    background: #48BEC4;
-    color: white; }
+  background-color: white;
+  padding: 0.6em;
+  border: 0;
+  text-align: center;
+  border-color: #48BEC4;
+  border-width:1px;
+  border-radius:8px;
+  border-style: solid; }
   .btn:focus {
     background: #007E84;
     color: white; }
