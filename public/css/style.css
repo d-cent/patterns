@@ -395,7 +395,8 @@ td {
 .lc, .header, [role=main] {
   max-width: 72em;
   margin: 0 auto;
-  padding: 0.5em; }
+  padding: 0.5em;
+  color: #222222;}
 
 /*------------------------------------*\
     $TEMPLATES
