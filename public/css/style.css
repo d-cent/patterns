@@ -395,8 +395,7 @@ td {
 .lc, .header, [role=main] {
   max-width: 72em;
   margin: 0 auto;
-  padding: 0.5em;
-  color: #222222;}
+  padding: 0.5em;}
 
 /*------------------------------------*\
     $TEMPLATES
@@ -560,7 +559,7 @@ td {
     $PAGE STRUCTURE
 \*------------------------------------*/
 .header {
-  background: white;
+  background: black;
   padding: 0;
   border-bottom: 1px solid #dbdbdb; }
 

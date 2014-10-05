@@ -559,7 +559,7 @@ td {
     $PAGE STRUCTURE
 \*------------------------------------*/
 .header {
-  background: black;
+  background-color: #222222;
   padding: 0;
   border-bottom: 1px solid #dbdbdb; }
 
