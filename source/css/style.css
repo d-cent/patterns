@@ -817,7 +817,7 @@ td {
   color: #00444A;
   line-height: 1;
   font-weight: normal;
-  padding: 2em;
+  padding: 0.5em;
   border: 0;
   text-align: center;
   border-radius:4px ;}
@@ -837,10 +837,10 @@ td {
   color: #222222;
   line-height: 1;
   font-weight: normal;
-  padding: 0.3em;
+  padding: 0.5em;
   border: 0;
   text-align: center;
-  border-radius:8px ;}
+  border-radius:4px ;}
   .btn-alt:hover{
     background: #AAAAAA;
     color: white; }
