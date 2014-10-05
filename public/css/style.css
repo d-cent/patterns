@@ -157,14 +157,11 @@ header, footer, nav, section, article, hgroup, figure {
   font-family: "Comfortaa", cursive; }
   
 .font-body {
-  font-family: "Raleway", sans-serif; }
-
-.font-profile {
-  font-family: "Fredoka One", cursive; }
+  font-family: "Muli", "Helvetica", sans-serif; }
 
 body {
   background: white;
-  font: 120%/1.5 "Raleway", "Helvetica", sans-serif;
+  font: 120%/1.5 "Muli", "Helvetica", sans-serif;
   -webkit-text-size-adjust: 120%;
   color: #00444A }
 
@@ -820,10 +817,10 @@ td {
   color: #00444A;
   line-height: 1;
   font-weight: normal;
-  padding: 0.3em;
+  padding: 2em;
   border: 0;
   text-align: center;
-  border-radius:8px ;}
+  border-radius:4px ;}
   .btn:hover{
     background: #48BEC4;
     color: white; }
