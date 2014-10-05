@@ -144,15 +144,6 @@ header, footer, nav, section, article, hgroup, figure {
   .hide-large {
     display: none; } }
 
-.warning {
-  color: #9E0084; }
-
-.information {
-  color: #007E84; }
-
-.suggestedaction {
-  color: #48BEC4; }
-
 .font-headings {
   font-family: "Comfortaa", cursive; }
   
@@ -214,9 +205,11 @@ blockquote {
 
 /* Info message */
 .infomessage {
-  background-color: white;
-  padding: 0.6em;
-  border: 0;
+  background: white;
+  padding: 0.80em;
+  font-family:"Comfortaa", sans-serif;
+  color:#48BEC4;
+  font-size: 0.80em;
   text-align: center;
   border-color: #48BEC4;
   border-width:1px;
@@ -225,7 +218,17 @@ blockquote {
 
 
 /* Warning message */
-
+ .warningmessage {
+  background: #FFE6FE;
+  padding: 0.80em;
+  font-family:"Comfortaa", sans-serif;
+  color:#FF61E5;
+  font-size: 0.80em;
+  text-align: center;
+  border-color: #FF61E5;
+  border-width:1px;
+  border-radius:8px;
+  border-style: solid; }
 
 /* Horizontal Rule */
 hr {
@@ -838,14 +841,8 @@ td {
   text-align: center;
   border-radius:6px ;}
   .btn:hover{
-  background-color: white;
-  padding: 0.6em;
-  border: 0;
-  text-align: center;
-  border-color: #48BEC4;
-  border-width:1px;
-  border-radius:8px;
-  border-style: solid; }
+    background: #48BEC4;
+    color: white; }
   .btn:focus {
     background: #007E84;
     color: white; }
