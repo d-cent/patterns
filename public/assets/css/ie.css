@@ -65,7 +65,7 @@ Configurable Media Queries. Also used to generate old-ie CSS without MQs.
 /**
  *  Clearfix
  */
-.clearfix:after, .media:after, .nav:after {
+.clearfix:after, .media:after, .nav:after, .l-constrained:after {
   content: "";
   display: table;
   clear: both; }
@@ -842,6 +842,26 @@ input, textarea {
  /*------------------------------------*\
     $MODULES
 \*------------------------------------*/
+/*------------------------------------*\
+		$HEADER
+\*------------------------------------*/
+.header--login {
+  padding: .5em; }
+
+.header--sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 999; }
+
+.btn--sign-in {
+  margin-right: 1em;
+  padding-top: .25em;
+  color: white;
+  cursor: pointer; }
+
+.site-logo--small {
+  max-width: 30px; }
+
 /*------------------------------------*\
 		$NOTIFICATIONS
 \*------------------------------------*/
