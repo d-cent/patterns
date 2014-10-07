@@ -171,7 +171,7 @@ template {
 
 html {
   background: white;
-  color: black;
+  color: #222222;
   font-family: "Muli", "Helvetica", sans-serif;
   font-size: 100%;
   font-weight: 400;
@@ -179,8 +179,7 @@ html {
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased; }
+  -ms-text-size-adjust: 100%; }
 
 body {
   margin: 0;
@@ -641,6 +640,27 @@ textarea {
 
 .text-btn {
   font-style: italic; }
+
+/*------------------------------------*\
+  $COLOR
+\*------------------------------------*/
+.c-base {
+  color: #007e84; }
+
+.c-comp {
+  color: #9e0084; }
+
+.c-grey {
+  color: #666666; }
+
+.bc-base {
+  background-color: #007e84; }
+
+.bc-comp {
+  background-color: #9e0084; }
+
+.bc-grey {
+  background-color: #666666; }
 
  /*------------------------------------*\
     $OBJECTS
