@@ -1,17 +1,21 @@
 
 var feature = {
-	addEventListener : !!window.addEventListener,
 	querySelectorAll : !!document.querySelectorAll,
 };
 
 
+// cut the mustard
 
-
-if (feature.addEventListener && feature.querySelectorAll) {
+if (feature.querySelectorAll) {
 
 	var App = window.App || {};
 
 	App.main = (function(window, document) {
+
+
+
+
+		
 
 	}(this, this.document));
 
