@@ -3,12 +3,18 @@
 \*------------------------------------*/
 
 a {
-  color: #007E84;
+  color: $base-color;
   text-decoration: none;
-  outline: 0; }
-  a:hover, a:focus {
-    color: #48BEC4; }
-    
-a:visited {
-    color: #9E0084;
+  outline: 0; 
+
+  &:visited {
+  	color: $comp-color;
+  }
+
+  &:focus, &:hover {
+  	color: $base-color-light;
+  }
+
 }
+
+

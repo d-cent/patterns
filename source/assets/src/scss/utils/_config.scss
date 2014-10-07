@@ -36,11 +36,12 @@ $code-font					: $base-font;
 	Colors. Use meaningful names
 \*------------------------------------*/
 
-$body-color					: $black;
+$body-color					: #222222;
 $body-background-color		: $white;
 
-$base-color					: $grey;
-$comp-color					: $lightgrey;
+$base-color					: #007E84;
+$base-color-light			: #48BEC4;
+$comp-color					: #9E0084;
 $border-color				: lighten($base-color, 60);
 
 $transparent                : rgba(0, 0, 0, 0);
