@@ -1,0 +1,56 @@
+/*------------------------------------*\
+    $IMAGES
+\*------------------------------------*/
+
+/**
+ * Fluid images.
+ */
+img {
+    max-width:100%;
+    height: auto;
+    border: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/**
+ * Rounded images.
+ */
+.img--round { border-radius: 50%; }
+
+
+/**
+ * Image placement variations.
+ */
+.img--right {
+    float:right;
+    margin-bottom: $base-line-height + em;
+    margin-left: $base-line-height + em;
+}
+.img--left {
+    float:left;
+    margin-right: $base-line-height + em;
+    margin-bottom: $base-line-height + em;
+}
+.img--center {
+    display:block;
+    margin-right:auto;
+    margin-bottom: $base-line-height + em;
+    margin-left:auto;
+}
+
+
+/**
+ * Figure
+ */
+ 
+figure {
+    margin: 0 0 $base-line-height + em;
+    & > img {
+        display:block;
+    }
+}

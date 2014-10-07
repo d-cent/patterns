@@ -1,0 +1,78 @@
+/*------------------------------------*\
+    $TABLES
+\*------------------------------------*/
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: $base-line-height + em;
+    background-color: $table-background-color;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    th,
+    td {
+        padding: em(8);
+        border-top: $table-border-width $table-border-style $table-border-color;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    thead th {
+        vertical-align: bottom;
+    }
+
+    colgroup {
+        + thead tr {
+            &:first-child {
+                tr,
+                td {
+                    border-top: 0;
+                }
+            }
+        }
+
+        thead {
+            &:first-child tr {
+                &:first-child {
+                    th,
+                    td {
+                        border-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    tbody + tbody {
+        border-top: $table-border-width * 2 $table-border-style $table-border-color;
+    }
+
+    tbody {
+        tr {
+            &:hover {
+                td,
+                th {
+                    background-color: $table-hover-color;
+                }
+            }
+        }
+    }
+
+    &.table--striped {
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    td,
+                    th {
+                        background-color: $table-stripe;
+                    }
+                }
+            }
+        }
+    }
+}
