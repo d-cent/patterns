@@ -4,8 +4,25 @@
 		<title>{{ title }}</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
+
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+
 		
 		<link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" />
+
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="../../assets/css/min/main.min.css?{{ cacheBuster }}" media="all" />
+		<!--<![endif]-->
+
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="../../assets/css/min/ie.min.css">
+		<![endif]-->
+
+
+		<!-- Scripts -->
+
+		<script src="/wp-content/themes/hyyravintolat/assets/js/vendor/modernizr.min.js"></script>
+	
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 		{% pattern-lab-head %}
