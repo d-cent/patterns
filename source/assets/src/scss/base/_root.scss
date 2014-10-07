@@ -58,7 +58,7 @@ template {
 
 
 html {
-  background: $base-color;                          
+  background: $white;                          
   color: $black;                            
   font: {
     family: $base-font;                       
@@ -79,5 +79,5 @@ html {
 
 body {
   margin: 0;
-  background-color: $base-color;
+  background-color: $white;
 }

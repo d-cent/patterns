@@ -3,20 +3,12 @@
 \*------------------------------------*/
 
 a {
-    background: transparent;
-    color: $link-color;
-
-    &:focus {
-      outline: thin dotted;
-      color: $link-color-focus;
-
-    }
-
-    &:hover, &:active {
-        outline: 0;
-        color: $link-color-hover;
-    }
+  color: #007E84;
+  text-decoration: none;
+  outline: 0; }
+  a:hover, a:focus {
+    color: #48BEC4; }
+    
+a:visited {
+    color: #9E0084;
 }
-
-
-
