@@ -170,24 +170,24 @@ template {
 
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
-  background: gray;
+  background: white;
   color: black;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Muli", "Helvetica", sans-serif;
   font-size: 100%;
   font-weight: 400;
   line-height: 1.5;
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; }
 
 body {
   margin: 0;
-  background-color: gray; }
+  background-color: white; }
 
 /*------------------------------------*\
 		$TYPOGRAPHY
@@ -199,15 +199,13 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility; }
 
 h1,
 .alpha {
   margin-bottom: 0.5em;
-  font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 2em;
   line-height: 1.2; }
@@ -266,6 +264,13 @@ li > ol {
 .italic {
   font-style: italic; }
 
+.font-headings {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: bold; }
+
+.font-body {
+  font-family: "Muli", "Helvetica", sans-serif; }
+
 abbr[title] {
   border-bottom: dotted 1px;
   cursor: help; }
@@ -278,7 +283,6 @@ dfn {
   font-style: italic; }
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -290,7 +294,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Muli", "Helvetica", sans-serif;
   font-size: 1em; }
 
 pre {
@@ -301,7 +305,7 @@ pre {
 q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
 
-small {
+small, .small {
   font-size: 80%; }
 
 sub,
@@ -321,14 +325,15 @@ sup {
     Links
 \*------------------------------------*/
 a {
-  background: transparent;
-  color: #bfbfbf; }
-  a:focus {
-    outline: thin dotted;
-    color: #8c8c8c; }
-  a:hover, a:active {
-    outline: 0;
-    color: #a6a6a6; }
+  color: #007E84;
+  text-decoration: none;
+  outline: 0; }
+
+a:hover, a:focus {
+  color: #48BEC4; }
+
+a:visited {
+  color: #9E0084; }
 
 /*------------------------------------*\
     $IMAGES
@@ -382,6 +387,28 @@ figure {
 /*------------------------------------*\
     $TABLES
 \*------------------------------------*/
+/*
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px;
+  border-style: solid;
+  border-color: #48BEC4;
+  width: 100%; }
+
+th {
+  text-align: left;
+  border: 1px;
+  border-style: solid;
+  border-color: #48BEC4;
+  padding: 0.2em;
+  color: #007E84;}
+
+td {
+  border: 1px;
+  border-style: solid;
+  border-color: #48BEC4;
+  padding: 0.2em; }*/
 table {
   width: 100%;
   max-width: 100%;
@@ -477,14 +504,12 @@ input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 
 input[type="search"] {
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -502,126 +527,81 @@ textarea {
   vertical-align: top; }
 
 /*------------------------------------*\
-    $PRINT
+    $ALERTS
 \*------------------------------------*/
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important; }
+.alert {
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border: 1px solid gray;
+  background: #f9f9f9; }
 
-  a,
-  a:visited {
-    text-decoration: underline; }
+.alert-error {
+  color: red;
+  border-color: red;
+  background: #ffbebe; }
 
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */ }
-
-  tr,
-  img {
-    page-break-inside: avoid; }
-
-  img {
-    max-width: 100% !important; }
-
-  @page {
-    margin: 0.5cm; }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-
-  h2,
-  h3 {
-    page-break-after: avoid; } }
 /*------------------------------------*\
-    $WORDPRESS
+		$BUTTONS
 \*------------------------------------*/
-.alignnone {
-  margin: 0 1.5em 1.5em 0; }
+.btn {
+  display: inline-block;
+  background: #B9F6F7;
+  color: #00444A;
+  line-height: 1;
+  font-weight: normal;
+  padding: 0.3em;
+  border: 0;
+  text-align: center;
+  border-radius: 6px; }
 
-.aligncenter,
-div.aligncenter {
-  display: block;
-  margin: 0 auto; }
+.btn:hover {
+  background: #48BEC4;
+  color: white; }
 
-.alignright {
-  float: right;
-  margin: 0 0 1.5em 1.5em; }
+.btn:focus {
+  background: #007E84;
+  color: white; }
 
-.alignleft {
-  float: left;
-  margin: 0 1.5em 1.5em 0; }
+.btn.disabled {
+  background: #eeeeee;
+  color: white; }
 
-.aligncenter {
-  display: block;
-  margin: 0 auto; }
+.btn-alt {
+  display: inline-block;
+  background: #EEEEEE;
+  color: #222222;
+  line-height: 1;
+  font-weight: normal;
+  padding: 0.3em;
+  border: 0;
+  text-align: center;
+  border-radius: 6px; }
 
-a img.alignright {
-  float: right;
-  margin: 0 0 1.5em 1.5em; }
+.btn-alt:hover {
+  background: #AAAAAA;
+  color: white; }
 
-a img.alignnone {
-  margin: 0 1.5em 1.5em 0; }
+.btn-alt:focus {
+  background: #222222;
+  color: white; }
 
-a img.alignleft {
-  float: left;
-  margin: 0 1.5em 1.5em 0; }
+.btn-alt.disabled {
+  background: #eeeeee;
+  color: white; }
 
-a img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+.btn-small {
+  padding: 0.5em; }
 
-.wp-caption {
-  background: #fff;
-  border: 1px solid #f0f0f0;
-  max-width: 96%;
-  /* Image does not overflow the content area */
-  padding: .15em .625em;
-  text-align: center; }
+.btn-large {
+  padding: 0.5em;
+  text-transform: uppercase;
+  background: gray;
+  font-size: 1.4rem;
+  font-weight: normal; }
 
-.wp-caption.alignnone {
-  margin: 0 1.5em 1.5em 0; }
-
-.wp-caption.alignleft {
-  margin: 0 1.5em 1.5em 0; }
-
-.wp-caption.alignright {
-  margin: 0 0 1.5em 1.5em; }
-
-.wp-caption img {
-  border: 0 none;
-  height: auto;
-  margin: 0;
-  max-width: 98.5%;
-  padding: 0;
-  width: auto; }
-
-.wp-caption p.wp-caption-text {
-  margin: 0;
-  padding: 0 .15em .15em; }
+.text-btn {
+  font-style: italic; }
 
  /*------------------------------------*\
     $OBJECTS
