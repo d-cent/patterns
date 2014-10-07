@@ -170,8 +170,6 @@ template {
 
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
@@ -202,7 +200,7 @@ h5,
 h6 {
   margin: 0;
   font-family: "Comfortaa", sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   text-rendering: optimizeLegibility; }
 
 h1,
@@ -268,7 +266,7 @@ li > ol {
 
 .font-headings {
   font-family: "Comfortaa", sans-serif;
-  font-weight: bold; }
+  font-weight: 400; }
 
 .font-body {
   font-family: "Muli", "Helvetica", sans-serif; }
@@ -285,7 +283,6 @@ dfn {
   font-style: italic; }
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -513,8 +510,6 @@ input[type="radio"] {
 input[type="search"] {
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,

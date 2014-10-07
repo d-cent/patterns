@@ -197,7 +197,7 @@ h5,
 h6 {
   margin: 0;
   font-family: "Comfortaa", sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   text-rendering: optimizeLegibility; }
 
 h1,
@@ -263,7 +263,7 @@ li > ol {
 
 .font-headings {
   font-family: "Comfortaa", sans-serif;
-  font-weight: bold; }
+  font-weight: 400; }
 
 .font-body {
   font-family: "Muli", "Helvetica", sans-serif; }
