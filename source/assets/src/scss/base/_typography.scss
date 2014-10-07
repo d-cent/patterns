@@ -10,7 +10,7 @@ h5,
 h6 {
 	margin: 0;
 	font: {
-		family: $base-font;
+		family: $base-heading-font;
 		weight: $base-heading-font-weight;
 	}
 	text-rendering: optimizeLegibility;
@@ -21,8 +21,6 @@ h1,
 	margin-bottom: $base-line-height / 3 + em;
 	font-weight:bold;
 	font: {
-		family: $base-heading-font;
-		weight: $base-heading-font-weight;
 		size: em(32);
 	}
 	line-height: 1.2;
@@ -105,6 +103,19 @@ li {
 
 .italic {
 	font-style: italic;
+}
+
+
+.font-headings {
+	font: {
+		family: $base-heading-font;
+		weight: $base-heading-font-weight;
+	}
+
+}
+
+.font-body {
+	font-family: "Muli", "Helvetica", sans-serif;
 }
 
 //  ---------------------------------------------------------------------------
