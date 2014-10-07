@@ -564,6 +564,9 @@ textarea {
   resize: vertical;
   vertical-align: top; }
 
+label {
+  display: block; }
+
 /*------------------------------------*\
     $ALERTS
 \*------------------------------------*/
