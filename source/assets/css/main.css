@@ -94,7 +94,7 @@ Configurable Media Queries. Also used to generate old-ie CSS without MQs.
 .chromeframe {
   padding: 0.2em 0;
   margin: 0.2em 0;
-  background: #bfbfbf;
+  background: #aaaaaa;
   color: black; }
 
 /**
@@ -508,7 +508,7 @@ legend {
   padding: 0;
   border: 0; }
   legend small {
-    color: #bfbfbf; }
+    color: #aaaaaa; }
 
 button,
 input,
