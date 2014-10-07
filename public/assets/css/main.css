@@ -567,6 +567,14 @@ textarea {
 label {
   display: block; }
 
+.field-container {
+  margin-bottom: 1em; }
+  .field-container label {
+    margin-bottom: .5em; }
+
+input {
+  padding: .5em; }
+
 /*------------------------------------*\
     $ALERTS
 \*------------------------------------*/
