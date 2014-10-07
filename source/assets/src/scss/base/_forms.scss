@@ -184,7 +184,9 @@ label {
     }
 }
 
-input {
+input, textarea {
     padding: .5em;
+    border-radius: 6px;
+    border: solid 1px $base-color;
 }
 
