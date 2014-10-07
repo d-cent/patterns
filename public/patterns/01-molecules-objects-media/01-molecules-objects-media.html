@@ -56,49 +56,30 @@
 	
 	</head>
 	<body class="body">	
-				
-		<!-- View All Patterns in a Pattern Sub-Type -->
-		<div class="sg-main" role="main">
-			
-			<!-- Patterns -->
-			<div id="sg-patterns">
-					<div id="atoms-buttons" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-06-buttons-00-buttons/00-atoms-06-buttons-00-buttons.html" class="patternLink" data-patternpartial="atoms-buttons">Buttons</a></h2>
-						<div class="sg-pattern-body">
-							<p><a href="#" class="btn">Button</a></p>
-<p><a href="#" class="btn-alt">Alternate Button</a></p>
-<p><a href="#" class="btn disabled">Disabled Button</a></p>
-<p><a href="#" class="text-btn">Text Button</a></p>
-							<div class="sg-code" style="display: none">
-								<h3 class="sg-code-head">HTML</h3>
-								<pre class="sg-code-html">
-									<code>
-										&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Button&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn-alt&quot;&gt;Alternate Button&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn disabled&quot;&gt;Disabled Button&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;text-btn&quot;&gt;Text Button&lt;/a&gt;&lt;/p&gt;
-									</code>
-								</pre>
-							</div>
-						</div>
-					</div>
-			</div> <!--end #sg-patterns-->
-	
-		</div><!--end .sg-main-->
-		
-		<!-- JS to hook everything together and do annotations -->
-		<script>
-			// handle injection of items from PHP
-			var patternPartial = "viewall-atoms-buttons";
-			var lineage = "";
-		</script>
-		
-
+		<div class="media">
+	<figure class="media__img">
+ 		<img class="img--round" src="http://placeimg.com/100/100/tech" alt="Square Thumbnail" />
+    </figure>
+    <div class="media__body">
+		<h2>Otsikko</h2>
+   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   </div>
+</div>
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 
 	<script src='../../assets/js/main.min.js'></script>
 
 	<!--DO NOT REMOVE-->
+		
+	<script>
+		// handle injection of items from PHP
+		var patternPartial = "molecules-media";
+		var lineage        = [];
+		var lineageR       = [];
+		var patternState   = "";
+		var cssEnabled     = false;
+	</script>
 		<script>
 		/*!
 		 * scriptLoader - v0.1
