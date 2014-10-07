@@ -56,7 +56,16 @@
 	
 	</head>
 	<body class="body">	
-		<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time>
+		<div class="media">
+	<figure class="media__img">
+ 		<img class="img--round" src="http://placeimg.com/100/100/tech" alt="Square Thumbnail" />
+    </figure>
+    <div class="media__body">
+		<h2>Otsikko</h2>
+   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   </div>
+</div>
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 
 	<script src='../../assets/js/main.min.js'></script>
@@ -65,7 +74,7 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "atoms-time";
+		var patternPartial = "molecules-media";
 		var lineage        = [];
 		var lineageR       = [];
 		var patternState   = "";

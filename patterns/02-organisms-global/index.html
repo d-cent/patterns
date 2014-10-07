@@ -56,21 +56,57 @@
 	
 	</head>
 	<body class="body">	
-		<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time>
+				
+		<!-- View All Patterns in a Pattern Sub-Type -->
+		<div class="sg-main" role="main">
+			
+			<!-- Patterns -->
+			<div id="sg-patterns">
+					<div id="organisms-header" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-global-00-header/02-organisms-global-00-header.html" class="patternLink" data-patternpartial="organisms-header">Header</a></h2>
+						<div class="sg-pattern-body">
+							
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-footer" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-global-01-footer/02-organisms-global-01-footer.html" class="patternLink" data-patternpartial="organisms-footer">Footer</a></h2>
+						<div class="sg-pattern-body">
+							
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+			</div> <!--end #sg-patterns-->
+	
+		</div><!--end .sg-main-->
+		
+		<!-- JS to hook everything together and do annotations -->
+		<script>
+			// handle injection of items from PHP
+			var patternPartial = "viewall-organisms-global";
+			var lineage = "";
+		</script>
+		
+
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 
 	<script src='../../assets/js/main.min.js'></script>
 
 	<!--DO NOT REMOVE-->
-		
-	<script>
-		// handle injection of items from PHP
-		var patternPartial = "atoms-time";
-		var lineage        = [];
-		var lineageR       = [];
-		var patternState   = "";
-		var cssEnabled     = false;
-	</script>
 		<script>
 		/*!
 		 * scriptLoader - v0.1
