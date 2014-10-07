@@ -97,7 +97,7 @@ Configurable Media Queries. Also used to generate old-ie CSS without MQs.
 .chromeframe {
   padding: 0.2em 0;
   margin: 0.2em 0;
-  background: #bfbfbf;
+  background: #aaaaaa;
   color: black; }
 
 /**
@@ -325,15 +325,13 @@ sup {
     Links
 \*------------------------------------*/
 a {
-  color: #007E84;
+  color: #007e84;
   text-decoration: none;
   outline: 0; }
-
-a:hover, a:focus {
-  color: #48BEC4; }
-
-a:visited {
-  color: #9E0084; }
+  a:visited {
+    color: #9e0084; }
+  a:focus, a:hover {
+    color: #48bec4; }
 
 /*------------------------------------*\
     $IMAGES
@@ -513,7 +511,7 @@ legend {
   padding: 0;
   border: 0; }
   legend small {
-    color: #bfbfbf; }
+    color: #aaaaaa; }
 
 button,
 input,
@@ -536,7 +534,7 @@ input[type="submit"] {
   padding: 8px 24px;
   width: 100%;
   font-weight: 300;
-  background-color: gray;
+  background-color: #007e84;
   color: white;
   font-size: 1.1em;
   letter-spacing: 2px;
