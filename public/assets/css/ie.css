@@ -387,7 +387,6 @@ figure {
 /*------------------------------------*\
     $TABLES
 \*------------------------------------*/
-/*
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -402,45 +401,90 @@ th {
   border-style: solid;
   border-color: #48BEC4;
   padding: 0.2em;
-  color: #007E84;}
+  color: #007E84; }
 
 td {
   border: 1px;
   border-style: solid;
   border-color: #48BEC4;
-  padding: 0.2em; }*/
-table {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 1.5em;
-  background-color: transparent;
-  border-collapse: collapse;
-  border-spacing: 0; }
-  table th,
-  table td {
-    padding: 0.5em;
-    border-top: 1px solid #bfbfbf;
-    text-align: left;
-    vertical-align: top; }
-  table th {
-    font-weight: bold; }
-  table thead th {
-    vertical-align: bottom; }
-  table colgroup + thead tr:first-child tr,
-  table colgroup + thead tr:first-child td {
-    border-top: 0; }
-  table colgroup thead:first-child tr:first-child th,
-  table colgroup thead:first-child tr:first-child td {
-    border-top: 0; }
-  table tbody + tbody {
-    border-top: 2px solid #bfbfbf; }
-  table tbody tr:hover td,
-  table tbody tr:hover th {
-    background-color: white; }
-  table.table--striped tbody tr:nth-child(odd) td,
-  table.table--striped tbody tr:nth-child(odd) th {
-    background-color: white; }
+  padding: 0.2em; }
 
+/*
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: $base-line-height + em;
+    background-color: $table-background-color;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    th,
+    td {
+        padding: em(8);
+        border-top: $table-border-width $table-border-style $table-border-color;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    thead th {
+        vertical-align: bottom;
+    }
+
+    colgroup {
+        + thead tr {
+            &:first-child {
+                tr,
+                td {
+                    border-top: 0;
+                }
+            }
+        }
+
+        thead {
+            &:first-child tr {
+                &:first-child {
+                    th,
+                    td {
+                        border-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    tbody + tbody {
+        border-top: $table-border-width * 2 $table-border-style $table-border-color;
+    }
+
+    tbody {
+        tr {
+            &:hover {
+                td,
+                th {
+                    background-color: $table-hover-color;
+                }
+            }
+        }
+    }
+
+    &.table--striped {
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    td,
+                    th {
+                        background-color: $table-stripe;
+                    }
+                }
+            }
+        }
+    }
+}
+*/
 /*------------------------------------*\
     $FORMS
 \*------------------------------------*/
