@@ -831,6 +831,34 @@ input, textarea {
   max-width: 90em;
   padding: 1em; }
 
+.l-constrained {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 94%; }
+
  /*------------------------------------*\
     $MODULES
 \*------------------------------------*/
+/*------------------------------------*\
+		$NOTIFICATIONS
+\*------------------------------------*/
+.notifications-list {
+  padding: 1.5em 0; }
+
+.notification {
+  position: relative;
+  margin-bottom: 1.5em; }
+  .notification:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    background-color: #007e84;
+    height: 1px; }
+
+.notification__title {
+  margin-bottom: .25em; }
+
+.notification__meta {
+  font-size: 80%; }
