@@ -1,0 +1,808 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    Compile mediaqueries for IE8
+\*------------------------------------*/
+/*------------------------------------*\
+    $FRANTIC TOOLBOX
+\*------------------------------------*/
+ /*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+	$CONFIG
+\*------------------------------------*/
+/*------------------------------------*\
+	Greyscale
+\*------------------------------------*/
+/*------------------------------------*\
+	Typography
+\*------------------------------------*/
+/*------------------------------------*\
+	Colors. Use meaningful names
+\*------------------------------------*/
+/*------------------------------------*\
+	Links
+\*------------------------------------*/
+/*------------------------------------*\
+	Buttons
+\*------------------------------------*/
+/*------------------------------------*\
+	Tables
+\*------------------------------------*/
+/*------------------------------------*\
+	Enable styles
+\*------------------------------------*/
+/*------------------------------------*\
+		$MIXINS
+\*------------------------------------*/
+/*------------------------------------*\
+	Pixels to ems
+	font-size: em(21px, 15px); 
+\*------------------------------------*/
+/*------------------------------------*\
+
+Configurable Media Queries. Also used to generate old-ie CSS without MQs.
+		 $value		- Breakpoint value
+		 $feature	- Media query operator
+		 $media		- Media type
+\*------------------------------------*/
+/*----------------------------------------------*\
+		RGBA fallbacks:
+		Use like this: @include tran(bg, #00ff00, .8);
+\*----------------------------------------------*/
+/*------------------------------------*\
+	$HELPER
+\*------------------------------------*/
+/**
+ * A series of helper classes to use arbitrarily. Only use a helper class if an
+ * element/component doesn’t already have a class to which you could apply this
+ * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
+ * that ruleset as opposed to adding the `.float--left` class to the markup.
+ *
+ * A lot of these classes carry `!important` as you will always want them to win
+ * out over other selectors.
+ */
+/**
+ *  Clearfix
+ */
+.clearfix:after, .media:after, .nav:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/**
+ * Add/remove floats
+ */
+.float--right {
+  float: right !important; }
+
+.float--left {
+  float: left !important; }
+
+.float--none {
+  float: none !important; }
+
+/**
+ * Text alignment
+ */
+.text--left {
+  text-align: left !important; }
+
+.text--center {
+  text-align: center !important; }
+
+.text--right {
+  text-align: right !important; }
+
+.chromeframe {
+  padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #bfbfbf;
+  color: black; }
+
+/**
+ * Apply capital case to an element (usually a `strong`).
+ */
+.caps {
+  text-transform: uppercase !important; }
+
+/**
+ * Hide content off-screen without resorting to `display:none;`, also provide
+ * breakpoint specific hidden elements.
+ */
+.accessibility,
+.visuallyhidden {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important; }
+
+ /*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/*------------------------------------*\
+    $ROOT
+\*------------------------------------*/
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html {
+  background: white;
+  color: black;
+  font-family: "Muli", "Helvetica", sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  margin: 0;
+  background-color: white; }
+
+/*------------------------------------*\
+		$TYPOGRAPHY
+\*------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility; }
+
+h1,
+.alpha {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1.2; }
+
+h2,
+.beta {
+  margin-bottom: 0.75em;
+  font-size: 1.75em;
+  line-height: 1.2; }
+
+h3,
+.gamma {
+  margin-bottom: 1em;
+  font-size: 1.3125em;
+  line-height: 1.3; }
+
+h4,
+.delta {
+  margin-bottom: 1.5em;
+  font-size: 1.125em;
+  line-height: 1.25; }
+
+h5,
+.epsilon {
+  margin-bottom: 1.5em;
+  font-size: 1em; }
+
+h6,
+.zeta {
+  margin-bottom: 1.5em;
+  font-size: 0.875em;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+p, blockquote {
+  margin: 0 0 1.5em 0; }
+
+.lead, .lede {
+  margin-bottom: 1em;
+  line-height: 1.3;
+  font-size: 120%; }
+
+ol,
+ul {
+  margin: 0 0 1.5em 0; }
+  ol.unstyled,
+  ul.unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+.italic {
+  font-style: italic; }
+
+.font-headings {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400; }
+
+.font-body {
+  font-family: "Muli", "Helvetica", sans-serif; }
+
+abbr[title] {
+  border-bottom: dotted 1px;
+  cursor: help; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: "Muli", "Helvetica", sans-serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+small, .small {
+  font-size: 80%; }
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/*------------------------------------*\
+    Links
+\*------------------------------------*/
+a {
+  color: #007E84;
+  text-decoration: none;
+  outline: 0; }
+
+a:hover, a:focus {
+  color: #48BEC4; }
+
+a:visited {
+  color: #9E0084; }
+
+/*------------------------------------*\
+    $IMAGES
+\*------------------------------------*/
+/**
+ * Fluid images.
+ */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+/**
+ * Rounded images.
+ */
+.img--round {
+  border-radius: 50%; }
+
+/**
+ * Image placement variations.
+ */
+.img--right {
+  float: right;
+  margin-bottom: 1.5em;
+  margin-left: 1.5em; }
+
+.img--left {
+  float: left;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em; }
+
+.img--center {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+  margin-left: auto; }
+
+/**
+ * Figure
+ */
+figure {
+  margin: 0 0 1.5em; }
+  figure > img {
+    display: block; }
+
+/*------------------------------------*\
+    $TABLES
+\*------------------------------------*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px;
+  border-style: solid;
+  border-color: #48BEC4;
+  width: 100%; }
+
+th {
+  text-align: left;
+  border: 1px;
+  border-style: solid;
+  border-color: #48BEC4;
+  padding: 0.2em;
+  color: #007E84; }
+
+td {
+  border: 1px;
+  border-style: solid;
+  border-color: #48BEC4;
+  padding: 0.2em; }
+
+/*
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: $base-line-height + em;
+    background-color: $table-background-color;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    th,
+    td {
+        padding: em(8);
+        border-top: $table-border-width $table-border-style $table-border-color;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    thead th {
+        vertical-align: bottom;
+    }
+
+    colgroup {
+        + thead tr {
+            &:first-child {
+                tr,
+                td {
+                    border-top: 0;
+                }
+            }
+        }
+
+        thead {
+            &:first-child tr {
+                &:first-child {
+                    th,
+                    td {
+                        border-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    tbody + tbody {
+        border-top: $table-border-width * 2 $table-border-style $table-border-color;
+    }
+
+    tbody {
+        tr {
+            &:hover {
+                td,
+                th {
+                    background-color: $table-hover-color;
+                }
+            }
+        }
+    }
+
+    &.table--striped {
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    td,
+                    th {
+                        background-color: $table-stripe;
+                    }
+                }
+            }
+        }
+    }
+}
+*/
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+form {
+  margin: 0 0 1.5em 0; }
+  form label {
+    display: block;
+    font-weight: bold; }
+  form p {
+    margin-bottom: 0.75em; }
+  form ul {
+    padding: 0;
+    margin: 0 0 1.5em 0;
+    list-style: none; }
+  form br {
+    display: none; }
+
+fieldset {
+  margin: 0 0.125em 1.5em;
+  padding: 0;
+  border: none; }
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0; }
+  legend small {
+    color: #bfbfbf; }
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%; }
+
+button,
+input {
+  line-height: normal; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  padding: 8px 24px;
+  width: 100%;
+  font-weight: 300;
+  background-color: gray;
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased; }
+
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="search"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top; }
+
+/*------------------------------------*\
+    $ALERTS
+\*------------------------------------*/
+.alert {
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border: 1px solid gray;
+  background: #f9f9f9; }
+
+.alert-error {
+  color: red;
+  border-color: red;
+  background: #ffbebe; }
+
+/*------------------------------------*\
+		$BUTTONS
+\*------------------------------------*/
+.btn {
+  display: inline-block;
+  background: #B9F6F7;
+  color: #00444A;
+  line-height: 1;
+  font-weight: normal;
+  padding: 0.3em;
+  border: 0;
+  text-align: center;
+  border-radius: 6px; }
+
+.btn:hover {
+  background: #48BEC4;
+  color: white; }
+
+.btn:focus {
+  background: #007E84;
+  color: white; }
+
+.btn.disabled {
+  background: #eeeeee;
+  color: white; }
+
+.btn-alt {
+  display: inline-block;
+  background: #EEEEEE;
+  color: #222222;
+  line-height: 1;
+  font-weight: normal;
+  padding: 0.3em;
+  border: 0;
+  text-align: center;
+  border-radius: 6px; }
+
+.btn-alt:hover {
+  background: #AAAAAA;
+  color: white; }
+
+.btn-alt:focus {
+  background: #222222;
+  color: white; }
+
+.btn-alt.disabled {
+  background: #eeeeee;
+  color: white; }
+
+.btn-small {
+  padding: 0.5em; }
+
+.btn-large {
+  padding: 0.5em;
+  text-transform: uppercase;
+  background: gray;
+  font-size: 1.4rem;
+  font-weight: normal; }
+
+.text-btn {
+  font-style: italic; }
+
+ /*------------------------------------*\
+    $OBJECTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $MEDIA
+\*------------------------------------*/
+/**
+ * Place any image- and text-like content side-by-side, as per:
+ * stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ * E.g.:
+ *
+   <div class=media>
+       <img src=http://placekitten.com/200/300 alt="" class=media__img>
+       <p class=media__body>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   </div>
+ *
+ *
+ */
+.media {
+  display: block; }
+
+.media__img {
+  float: left;
+  margin-right: 1.5em; }
+
+/**
+ * Reversed image location (right instead of left).
+ */
+.media__img--rev {
+  float: right;
+  margin-left: 1.5em; }
+
+.media__img img,
+.media__img--rev img {
+  display: block; }
+
+.media__body {
+  overflow: hidden; }
+
+.media__body,
+.media__body > :last-child {
+  margin-bottom: 0; }
+
+/*------------------------------------*\
+    $NAV
+\*------------------------------------*/
+/**
+ * When used on an `ol` or `ul`, this class throws the list into horizontal mode
+ * e.g.:
+ *
+   <ul class=nav>
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ *
+ */
+.nav {
+  list-style: none;
+  margin-left: 0; }
+  .nav > li,
+  .nav > li > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1; }
+
+/**
+ * `.nav--stacked` extends `.nav` and throws the list into vertical mode, e.g.:
+ *
+   <ul class="nav  nav--stacked">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ */
+.nav--stacked > li {
+  display: list-item; }
+  .nav--stacked > li > a {
+    display: block; }
+
+/**
+ * `.nav--banner` extends `.nav` and centres the list, e.g.:
+ *
+   <ul class="nav  nav--banner">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ */
+.nav--banner {
+  text-align: center; }
+
+/**
+ * Give nav links a big, blocky hit area. Extends `.nav`, e.g.:
+ *
+   <ul class="nav  nav--block">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ */
+.nav--block {
+  line-height: 1;
+  /**
+   * Remove whitespace caused by `inline-block`.
+   */
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em;
+  white-space: nowrap; }
+  .nav--block > li {
+    letter-spacing: normal;
+    word-spacing: normal; }
+    .nav--block > li > a {
+      padding: 0.5em; }
+
+/**
+ * Force a nav to occupy 100% of the available width of its parent. Extends
+ * `.nav`, e.g.:
+ *
+   <ul class="nav  nav--fit">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ * Thanks to @pimpl for this idea!
+ */
+.nav--fit {
+  display: table;
+  width: 100%; }
+  .nav--fit > li {
+    display: table-cell; }
+    .nav--fit > li > a {
+      display: block; }
+
+ /*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+.sg-main {
+  margin: 0 auto;
+  max-width: 90em;
+  padding: 1em; }
+
+ /*------------------------------------*\
+    $MODULES
+\*------------------------------------*/

@@ -144,6 +144,7 @@ header, footer, nav, section, article, hgroup, figure {
   .hide-large {
     display: none; } }
 
+<<<<<<< HEAD:css/style.css
 .warning {
   color: #9E0084; }
 
@@ -153,10 +154,13 @@ header, footer, nav, section, article, hgroup, figure {
 .suggestedaction {
   color: #48BEC4; }
 
+=======
+>>>>>>> master:source/css/style.css
 .font-headings {
   font-family: "Comfortaa", cursive; }
   
 .font-body {
+<<<<<<< HEAD:css/style.css
   font-family: "Raleway", sans-serif; }
 
 .font-profile {
@@ -165,6 +169,13 @@ header, footer, nav, section, article, hgroup, figure {
 body {
   background: white;
   font: 120%/1.5 "Raleway", "Helvetica", sans-serif;
+=======
+  font-family: "Muli", "Helvetica", sans-serif; }
+
+body {
+  background: white;
+  font: 120%/1.5 "Muli", "Helvetica", sans-serif;
+>>>>>>> master:source/css/style.css
   -webkit-text-size-adjust: 120%;
   color: #00444A }
 
@@ -174,7 +185,11 @@ a {
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
+<<<<<<< HEAD:css/style.css
     color: #FF61E5; }
+=======
+    color: #48BEC4; }
+>>>>>>> master:source/css/style.css
     
 a:visited {
     color: #9E0084;
@@ -214,6 +229,37 @@ blockquote {
   font-size: 0.75em;
   color: #007E84;
 }
+<<<<<<< HEAD:css/style.css
+=======
+
+/* Info message */
+.infomessage {
+  background: white;
+  padding: 0.80em;
+  font-family:"Comfortaa", sans-serif;
+  color:#48BEC4;
+  font-size: 0.80em;
+  text-align: center;
+  border-color: #48BEC4;
+  border-width:1px;
+  border-radius:8px;
+  border-style: solid; }
+
+
+/* Warning message */
+ .warningmessage {
+  background: #FFE6FE;
+  padding: 0.80em;
+  font-family:"Comfortaa", sans-serif;
+  color:#FF61E5;
+  font-size: 0.80em;
+  text-align: center;
+  border-color: #FF61E5;
+  border-width:1px;
+  border-radius:8px;
+  border-style: solid; }
+
+>>>>>>> master:source/css/style.css
 /* Horizontal Rule */
 hr {
   border: 0;
@@ -398,7 +444,7 @@ td {
 .lc, .header, [role=main] {
   max-width: 72em;
   margin: 0 auto;
-  padding: 0.5em; }
+  padding: 0.5em;}
 
 /*------------------------------------*\
     $TEMPLATES
@@ -562,7 +608,7 @@ td {
     $PAGE STRUCTURE
 \*------------------------------------*/
 .header {
-  background: white;
+  background-color: #222222;
   padding: 0;
   border-bottom: 1px solid #dbdbdb; }
 
@@ -823,7 +869,11 @@ td {
   padding: 0.3em;
   border: 0;
   text-align: center;
+<<<<<<< HEAD:css/style.css
   border-radius:8px ;}
+=======
+  border-radius:6px ;}
+>>>>>>> master:source/css/style.css
   .btn:hover{
     background: #48BEC4;
     color: white; }
@@ -843,7 +893,11 @@ td {
   padding: 0.3em;
   border: 0;
   text-align: center;
+<<<<<<< HEAD:css/style.css
   border-radius:8px ;}
+=======
+  border-radius:6px ;}
+>>>>>>> master:source/css/style.css
   .btn-alt:hover{
     background: #AAAAAA;
     color: white; }

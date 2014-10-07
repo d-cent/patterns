@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="{{ htmlClass }}">
+	<head>
+		<title>{{ title }}</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+
+		<!-- Loading scripts via ajax -->
+
+		<script type="text/javascript">
+		  WebFontConfig = {
+		     google: { families: [ 'Muli:400,400italic:latin', 'Comfortaa:400,700:latin,latin-ext' ] }
+		  };
+		  (function() {
+		    var wf = document.createElement('script');
+		    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+		      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		    wf.type = 'text/javascript';
+		    wf.async = 'true';
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(wf, s);
+		  })(); </script>
+
+		
+		<!--link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" /-->
+
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="../../assets/css/min/main.min.css?{{ cacheBuster }}" media="all" />
+		<!--<![endif]-->
+
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="../../assets/css/min/ie.min.css">
+		<![endif]-->
+
+
+		<!-- Scripts -->
+
+		<script src="/wp-content/themes/hyyravintolat/assets/js/vendor/modernizr.min.js"></script>
+	
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		{% pattern-lab-head %}
+		<!-- End Pattern Lab -->
+	
+	</head>
+	<body class="{{ bodyClass }}">	
+		
