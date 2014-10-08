@@ -15,7 +15,7 @@ Design principles are used as basis for making design choices when developing th
 ### API first
 We build application interfaces first, and user experience based on that. This enables multi-channel user experience and machine-to-machine use cases. In d-cent, this is especially important for decentralisation and distribution of data between nodes.
 ### Mobile first
-We use responsive user interfaces, and make sure users can use devices they prefer. This is because already world population primarily accesses the digital world through their mobile devices.
+We use responsive user interfaces, and make sure users can use devices they prefer. Start the layout design with the most essential design with small devices and minimal cognitive load to the user. This is because already world population primarily accesses the digital world through their mobile devices.
 ### Minimalistic technical user experience
 Only one user story for each user benefit. We want to avoid cognitive load and leave the space and user's time for user-created content.
 ### Positive
