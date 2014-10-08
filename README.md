@@ -3,7 +3,9 @@ These generated patterns can be viewed at http://d-cent.github.io/patterns/.
 ## Installation Instructions
 - Clone this repo locally. 
 - Install Grunt http://gruntjs.com/
-- Edit files in /source. Chrome Inspect-funcion is preferable for planning changes. 
+- Edit files in /source with text editor. 
+ - Chrome Inspect-funcion is preferable for planning changes. You can change parameters on the fly to see what works.
+ - For mac, Textwrangler has a disk browser that makes editing multiple files intuitive.
 - Generate with scripts in core/scripts/
 
 ## Design Principles
