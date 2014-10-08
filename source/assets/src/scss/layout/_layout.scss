@@ -2,10 +2,16 @@
     $LAYOUT
 \*------------------------------------*/
 
-
-
 .sg-main {
 	margin: 0 auto;
 	max-width: 90em;
 	padding: 1em;
+}
+
+.l-constrained {
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 94%;
+	@extend .clearfix;
+
 }

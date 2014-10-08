@@ -62,7 +62,7 @@ Configurable Media Queries. Also used to generate old-ie CSS without MQs.
 /**
  *  Clearfix
  */
-.clearfix:after, .media:after, .nav:after {
+.clearfix:after, .media:after, .nav:after, .l-constrained:after {
   content: "";
   display: table;
   clear: both; }
@@ -94,7 +94,7 @@ Configurable Media Queries. Also used to generate old-ie CSS without MQs.
 .chromeframe {
   padding: 0.2em 0;
   margin: 0.2em 0;
-  background: #bfbfbf;
+  background: #aaaaaa;
   color: black; }
 
 /**
@@ -171,7 +171,7 @@ template {
 
 html {
   background: white;
-  color: black;
+  color: #222222;
   font-family: "Muli", "Helvetica", sans-serif;
   font-size: 100%;
   font-weight: 400;
@@ -179,8 +179,7 @@ html {
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased; }
+  -ms-text-size-adjust: 100%; }
 
 body {
   margin: 0;
@@ -322,15 +321,13 @@ sup {
     Links
 \*------------------------------------*/
 a {
-  color: #007E84;
+  color: #007e84;
   text-decoration: none;
   outline: 0; }
-
-a:hover, a:focus {
-  color: #48BEC4; }
-
-a:visited {
-  color: #9E0084; }
+  a:visited {
+    color: #9e0084; }
+  a:focus, a:hover {
+    color: #48bec4; }
 
 /*------------------------------------*\
     $IMAGES
@@ -510,7 +507,7 @@ legend {
   padding: 0;
   border: 0; }
   legend small {
-    color: #bfbfbf; }
+    color: #aaaaaa; }
 
 button,
 input,
@@ -533,7 +530,7 @@ input[type="submit"] {
   padding: 8px 24px;
   width: 100%;
   font-weight: 300;
-  background-color: gray;
+  background-color: #007e84;
   color: white;
   font-size: 1.1em;
   letter-spacing: 2px;
@@ -566,6 +563,19 @@ textarea {
   overflow: auto;
   resize: vertical;
   vertical-align: top; }
+
+label {
+  display: block; }
+
+.field-container {
+  margin-bottom: 1em; }
+  .field-container label {
+    margin-bottom: .5em; }
+
+input, textarea {
+  padding: .5em;
+  border-radius: 6px;
+  border: solid 1px #007e84; }
 
 /*------------------------------------*\
     $ALERTS
@@ -643,6 +653,27 @@ textarea {
 
 .text-btn {
   font-style: italic; }
+
+/*------------------------------------*\
+  $COLOR
+\*------------------------------------*/
+.c-base {
+  color: #007e84; }
+
+.c-comp {
+  color: #9e0084; }
+
+.c-grey {
+  color: #666666; }
+
+.bc-base {
+  background-color: #007e84; }
+
+.bc-comp {
+  background-color: #9e0084; }
+
+.bc-grey {
+  background-color: #666666; }
 
  /*------------------------------------*\
     $OBJECTS
@@ -800,6 +831,54 @@ textarea {
   max-width: 90em;
   padding: 1em; }
 
+.l-constrained {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 94%; }
+
  /*------------------------------------*\
     $MODULES
 \*------------------------------------*/
+/*------------------------------------*\
+		$HEADER
+\*------------------------------------*/
+.header--login {
+  padding: .5em; }
+
+.header--sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 999; }
+
+.btn--sign-in {
+  margin-right: 1em;
+  padding-top: .25em;
+  color: white;
+  cursor: pointer; }
+
+.site-logo--small {
+  max-width: 30px; }
+
+/*------------------------------------*\
+		$NOTIFICATIONS
+\*------------------------------------*/
+.notifications-list {
+  padding: 1.5em 0; }
+
+.notification {
+  position: relative;
+  margin-bottom: 1.5em; }
+  .notification:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    background-color: #007e84;
+    height: 1px; }
+
+.notification__title {
+  margin-bottom: .25em; }
+
+.notification__meta {
+  font-size: 80%; }

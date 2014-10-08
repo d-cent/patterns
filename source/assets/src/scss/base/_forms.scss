@@ -172,3 +172,21 @@ textarea {
 }
 
 
+label {
+    display: block;
+}
+
+.field-container {
+    margin-bottom: 1em;
+
+    label {
+        margin-bottom: .5em;
+    }
+}
+
+input, textarea {
+    padding: .5em;
+    border-radius: 6px;
+    border: solid 1px $base-color;
+}
+
