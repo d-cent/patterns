@@ -1,6 +1,7 @@
 These generated patterns can be viewed at http://d-cent.github.io/patterns/.
 
 ## Installation Instructions
+Before installation, if you must have a PC, make sure it's a Linux.
 - Clone this repo locally. 
 - Install Grunt in terminal by saying: sudo npm install grunt-cli -g
 - Edit files locally in /source with text editor. 
