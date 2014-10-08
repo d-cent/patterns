@@ -601,7 +601,7 @@ input, textarea {
   color: #007E84;
   line-height: 1;
   font-weight: normal;
-  padding: 0.3em;
+  padding: 0.6em;
   border: 1px solid;
   border-color: #007E84;
   text-align: center;
@@ -625,8 +625,9 @@ input, textarea {
   color: #222222;
   line-height: 1;
   font-weight: normal;
-  padding: 0.3em;
-  border: 0;
+  padding: 0.6em;
+  border: 1px solid;
+  border-color: #222222;
   text-align: center;
   border-radius: 6px; }
 
