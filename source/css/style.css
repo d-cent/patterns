@@ -833,19 +833,25 @@ td {
 .btn {
   display: inline-block;
   background: #B9F6F7;
-  color: #00444A;
+  color: #007E84;
   line-height: 1;
   font-weight: normal;
   padding: 0.3em;
-  border: 0;
+  border: 1;
   text-align: center;
-  border-radius:6px ;}
+  border-radius:6px ;
+  border-color: #48BEC4;
+  border-style: solid;}
   .btn:hover{
     background: #48BEC4;
-    color: white; }
+    color: white;
+    border-color: #48BEC4;
+    border-style: solid;}
   .btn:focus {
     background: #007E84;
-    color: white; }
+    color: white;
+    border-color: #007E84;
+    border-style: solid;}
   .btn.disabled {
     background: #eeeeee;
     color: white; }
@@ -857,7 +863,7 @@ td {
   line-height: 1;
   font-weight: normal;
   padding: 0.3em;
-  border: 0;
+  border: 1;
   text-align: center;
   border-radius:6px ;}
   .btn-alt:hover{
