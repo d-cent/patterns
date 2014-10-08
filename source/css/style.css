@@ -840,7 +840,7 @@ td {
   border: 1;
   text-align: center;
   border-radius:6px ;
-  border-color: #48BEC4;
+  border-color: #007E84;
   border-style: solid;}
   .btn:hover{
     background: #48BEC4;
@@ -854,7 +854,9 @@ td {
     border-style: solid;}
   .btn.disabled {
     background: #eeeeee;
-    color: white; }
+    color: white;
+    border-color: #eeeeee;
+    border-style: solid;}
     
 .btn-alt {
   display: inline-block;
@@ -865,16 +867,24 @@ td {
   padding: 0.3em;
   border: 1;
   text-align: center;
-  border-radius:6px ;}
+  border-radius:6px ;
+  border-color: #222222;
+  border-style: solid;}
   .btn-alt:hover{
     background: #AAAAAA;
-    color: white; }
+    color: white;
+    border-color: #AAAAAA;
+    border-style: solid;}
   .btn-alt:focus {
     background: #222222;
-    color: white; }
+    color: white;
+    border-color: #222222;
+    border-style: solid;}
   .btn-alt.disabled {
     background: #eeeeee;
-    color: white; }
+    color: white;
+    border-color: #eeeeee;
+    border-style: solid;}
 
 .btn-small {
   padding: 0.5em; }
