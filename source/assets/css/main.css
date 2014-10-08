@@ -598,12 +598,12 @@ input, textarea {
 .btn {
   display: inline-block;
   background: #B9F6F7;
-  color: #00444A;
+  color: #007E84;
   line-height: 1;
   font-weight: normal;
   padding: 0.3em;
   border: 1px solid;
-  border-color: #00444A;
+  border-color: #007E84;
   text-align: center;
   border-radius: 6px; }
 
