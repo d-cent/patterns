@@ -4,24 +4,31 @@
 .btn {
 	display: inline-block;
 	background: #B9F6F7;
-	color: #00444A;
+	color: $base-color;
 	line-height: 1;
 	font-weight: bold;
 	padding: $pad;
-	border: 0;
-	text-align: center;
-	
+	border: 1;
+	border-style: solid;
+	border-color: $base-color;
+	text-align: center;}
 	&:hover {
-		background: #48BEC4;
+		background: $base-color-light;
 		color: $white;
+		border-color: $base-color-light;
+		border-style: solid;
 	}
 	&:focus {
-		background: #007E84;
+		background: $base-color;
 		color: $white;
+		border-color: $base-color;
+		border-style: solid;
 	}
 	&.disabled {
 		background: $gray-light-2;
 		color: $gray;
+		border-color: $gray-light-2;
+		border-style: solid;
 	}
 }
 

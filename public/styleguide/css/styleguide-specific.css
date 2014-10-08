@@ -60,7 +60,7 @@
     @media all and (min-width: 30em) {
       .sg-colors li {
         float: left;
-        width: 7em; } }
+        width: 5em; } }
 
 .sg-swatch {
   display: block;
