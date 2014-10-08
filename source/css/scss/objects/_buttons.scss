@@ -16,18 +16,21 @@
 		background: $base-color-light;
 		color: $white;
 		border-color: $base-color-light;
+		border-width:1px;
 		border-style: solid;
 	}
 	&:focus {
 		background: $base-color;
 		color: $white;
 		border-color: $base-color;
+		border-width:1px;
 		border-style: solid;
 	}
 	&.disabled {
 		background: $gray-light-2;
 		color: $gray;
 		border-color: $gray-light-2;
+		border-width:1px;
 		border-style: solid;
 	}
 }
