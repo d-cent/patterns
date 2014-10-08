@@ -1,62 +1,32 @@
-## About Pattern Lab
-- [Pattern Lab Website](http://patternlab.io/)
-- [About Pattern Lab](http://patternlab.io/about.html)
-- [Documentation](http://patternlab.io/docs/index.html)
-- [Demo](http://demo.patternlab.io/)
+These generated patterns can be viewed at http://d-cent.github.io/patterns/.
 
-The PHP version of Pattern Lab is, at its core, a static site generator. It combines platform-agnostic assets, like the [Mustache](http://mustache.github.io/)-based patterns and the JavaScript-based viewer, with a PHP-based "builder" that transforms and dynamically builds the Pattern Lab site. By making it a static site generator, Pattern Lab strongly separates patterns, data, and presentation from build logic. 
+## Installation Instructions
+- Clone this repo locally. 
+- Install Grunt http://gruntjs.com/
+- Edit files in /source. Chrome Inspect-funcion is preferable for planning changes. 
+- Generate with scripts in core/scripts/
 
-## Demo
-
-You can play with a demo of the front-end of Pattern Lab at [demo.patternlab.io](http://demo.patternlab.io).
-
-## Getting Started
-
-* [Requirements](http://patternlab.io/docs/requirements.html)
-* [Installing the PHP Version of Pattern Lab](http://patternlab.io/docs/installation.html)
-* [Upgrading the PHP Version of Pattern Lab](http://patternlab.io/docs/upgrading.html)
-* [Generating the Pattern Lab Website for the First Time](http://patternlab.io/docs/first-run.html)
-* [Editing the Pattern Lab Website Source Files](http://patternlab.io/docs/editing-source-files.html)
-* [Using the Command-line Options](http://patternlab.io/docs/command-line.html)
-* [Command Prompt on Windows](http://patternlab.io/docs/command-prompt-windows.html)
-
-## Working with Patterns
-
-Patterns are the core element of Pattern Lab. Understanding how they work is the key to getting the most out of the system. Patterns use [Mustache](http://mustache.github.io/) so please read [Mustache's docs](http://mustache.github.io/mustache.5.html) as well.
-
-* [How Patterns Are Organized](http://patternlab.io/docs/pattern-organization.html)
-* [Adding New Patterns](http://patternlab.io/docs/pattern-add-new.html)
-* [Reorganizing Patterns](http://patternlab.io/docs/pattern-reorganizing.html)
-* [Including One Pattern Within Another via Partials](http://patternlab.io/docs/pattern-including.html)
-* [Managing Assets for a Pattern: JavaScript, images, CSS, etc.](http://patternlab.io/docs/pattern-managing-assets.html)
-* [Modifying the Pattern Header and Footer](http://patternlab.io/docs/pattern-header-footer.html)
-* [Using Pseudo-Patterns](http://patternlab.io/docs/pattern-pseudo-patterns.html)
-* [Using Pattern Parameters](http://patternlab.io/docs/pattern-parameters.html)
-* [Using Pattern State](http://patternlab.io/docs/pattern-states.html)
-* ["Hiding" Patterns in the Navigation](http://patternlab.io/docs/pattern-hiding.html)
-* [Adding Annotations](http://patternlab.io/docs/pattern-adding-annotations.html)
-* [Viewing Patterns on a Mobile Device](http://patternlab.io/docs/pattern-mobile-view.html)
-
-## Creating & Working With Dynamic Data for a Pattern
-
-The PHP version of Pattern Lab utilizes Mustache as the template language for patterns. In addition to allowing for the [inclusion of one pattern within another](http://patternlab.io/docs/pattern-including.html) it also gives pattern developers the ability to include variables. This means that attributes like image sources can be centralized in one file for easy modification across one or more patterns. The PHP version of Pattern Lab uses a JSON file, `source/_data/data.json`, to centralize many of these attributes.
-
-* [Introduction to JSON & Mustache Variables](http://patternlab.io/docs/data-json-mustache.html)
-* [Overriding the Central `data.json` Values with Pattern-specific Values](http://patternlab.io/docs/data-pattern-specific.html)
-* [Linking to Patterns with Pattern Lab's Default `link` Variable](http://patternlab.io/docs/data-link-variable.html)
-* [Creating Lists with Pattern Lab's Default `listItems` Variable](http://patternlab.io/docs/data-listitems.html)
-
-## Using Pattern Lab's Advanced Features
-
-By default, the Pattern Lab assets can be manually generated and the Pattern Lab site manually refreshed but who wants to waste time doing that? Here are some ways that Pattern Lab can make your development workflow a little smoother:
-
-* [Watching for Changes and Auto-Regenerating Patterns](http://patternlab.io/docs/advanced-auto-regenerate.html)
-* [Auto-Reloading the Browser Window When Changes Are Made](http://patternlab.io/docs/advanced-reload-browser.html)
-* [Multi-browser & Multi-device Testing with Page Follow](http://patternlab.io/docs/advanced-page-follow.html)
-* [Keyboard Shortcuts](http://patternlab.io/docs/advanced-keyboard-shortcuts.html)
-* [Special Pattern Lab-specific Query String Variables ](http://patternlab.io/docs/pattern-linking.html)
-* [Preventing the Cleaning of public/](http://patternlab.io/docs/advanced-clean-public.html)
-* [Generating CSS](http://patternlab.io/docs/advanced-generating-css.html)
-* [Modifying the Pattern Lab Nav](http://patternlab.io/docs/advanced-pattern-lab-nav.html)
-* [Editing the config.ini Options](http://patternlab.io/docs/advanced-config-options.html)
-* [Integration with Compass](http://patternlab.io/docs/advanced-integration-with-compass.html)
+## Design Principles
+Design principles are used as basis for making design choices when developing the service.
+### API first
+We build application interfaces first, and user experience based on that. This enables multi-channel user experience and machine-to-machine use cases. In d-cent, this is especially important for decentralisation and distribution of data between nodes.
+### Mobile first
+We use responsive user interfaces, and make sure users can use devices they prefer. This is because already world population primarily accesses the digital world through their mobile devices.
+### Minimalistic technical user experience
+Only one user story for each user benefit. We want to avoid cognitive load and leave the space and user's time for user-created content.
+### Positive
+Positive service rewards the user, excites to try new things and encourages to explore more with a safe experience. User is happy to return to a service that greets and thanks the user.
+### Communal
+A service that is built to be a communal tool and means for influencing enables users to share content and communicate. Versatile interactive service creates positive experiences of influencing for users.
+### Equality and inclusiveness
+To a common service, all are equally welcome. Appropriately concise and visual service makes even harder issues understandable. Following the inclusiveness principle means recognizing and supporting the intrinsic value of all human beings by creating and sustaining conditions that foster equity, empowerment, awareness and competence at the personal, group and organizational levels.
+### Ease of use
+When the user experience is minimal and straightforward, without extra clicks, classifications or phases, solutions become clearer and more intuitive. See  https://www.gov.uk/designprinciples
+### Technical accessibility
+When solution follows a holistic approach in semantics and logic, both user navigation and future development is more efficient. See http://www.w3.org/QA/Tips/ and http://www.w3.org/TR/WCAG20/. Simply put, there should be a s much contrast in the colors as is feasible, and the fonts should be as big as they can be.
+### Helpfulness
+When user is more interested in his/her cause than in the legal or technical processes involved, they must be offered additional information, examples, help and user eloquent interaction. Exact instructions decrease uncertainty, steer the user to constructive behavioral patterns and create positive feedback.
+### Interactive
+Instructions and functionalities imply clearly and concretely, what are the benefits, consequences and ramifications of user actions. I.e. From participation it is communicated when the results will be available and that after verifying an account with stronger authentication, there will be opportunity for more robust functionalities like voting.
+### Simple
+When designing functionalities, the simplest functionality is built first, to create and validate the core benefit that the functionality or user story is to produce. Additional functionalities should only be added based on metrics or concrete findings from user experience study and observation.
