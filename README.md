@@ -7,7 +7,7 @@ We build application interfaces first, and user experience based on that. This e
 ### Mobile first
 We use responsive user interfaces, and make sure users can use devices they prefer. This is because already world population primarily accesses the digital world through their mobile devices.
 ### Minimalistic technical user experience
-Only one user story for each user benefit. We want to avoid cognitive load and leave the space for user-created content.
+Only one user story for each user benefit. We want to avoid cognitive load and leave the space and user's time for user-created content.
 ### Positive
 Positive service rewards the user, excites to try new things and encourages to explore more with a safe experience. User is happy to return to a service that greets and thanks the user.
 ### Communal
