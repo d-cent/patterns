@@ -1,5 +1,11 @@
 These generated patterns can be viewed at http://d-cent.github.io/patterns/.
 
+## Installation Instructions
+- Clone this repo locally. 
+- Install Grunt http://gruntjs.com/
+- Edit files in /source. Chrome Inspect-funcion is preferable for planning changes. 
+- Generate with scripts in core/scripts/
+
 ## Design Principles
 Design principles are used as basis for making design choices when developing the service.
 ### API first
