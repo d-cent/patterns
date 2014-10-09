@@ -9,6 +9,9 @@ These work on Linux and Mac.
  - Chrome Inspect-funcion is preferable for planning changes. You can change parameters on the fly to see what works.
  - For mac, Textwrangler has a disk browser that makes editing multiple files intuitive.
 - Generate with scripts in core/scripts/
+- Make the changes to 'master' branch. You can normally 'git push' and everyone will get your changes. 
+- When you want to publish your changes to the Github Pages (http://d-cent.github.io/patterns/), say: 
+`git push master:gh-pages` Which means push my local master to origin's gh-pages. This helps us avoid the need to merge the different branches.
 
 ## Design Principles
 Design principles are used as basis for making design choices when developing the service.
