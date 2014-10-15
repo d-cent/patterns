@@ -1,4 +1,0 @@
-These generated patterns can be viewed at http://d-cent.github.io/patterns/.
-
-To populate this directory you need to generate the PHP version of Pattern Lab, either run "php core/builder.php -g" at the command line or, if you're on a Mac, double-click
-on "core/scripts/generateSite.command".

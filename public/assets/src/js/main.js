@@ -13,18 +13,14 @@ if (feature.querySelectorAll) {
 	App.main = (function(window, document) {
 
 
-	// sticky nav
+	// login
 
-	var sticky = document.querySelector('.header-login');
-       var origOffsetY = sticky.offsetTop;
+	$('.js-open-signin').on('click', function () {
+		$('.login').slidetoggle(200);
+		alert('pöö');
+	});
 
-    function onScroll(e) {
-        window.scrollY >= origOffsetY ? sticky.classList.add('header--sticky') : sticky.classList.remove('header--sticky');
-    }
 
-    document.addEventListener('scroll', onScroll);
-
-		
 
 	}(this, this.document));
 

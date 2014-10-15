@@ -34,7 +34,7 @@
 \*------------------------------------*/
 /*------------------------------------*\
 	Pixels to ems
-	font-size: em(21px, 15px); 
+	font-size: em(21px, 15px);
 \*------------------------------------*/
 /*------------------------------------*\
 
@@ -96,6 +96,11 @@ Configurable Media Queries. Also used to generate old-ie CSS without MQs.
   margin: 0.2em 0;
   background: #aaaaaa;
   color: black; }
+
+
+ .js-show {
+     display: block!important;
+ }
 
 /**
  * Apply capital case to an element (usually a `strong`).
@@ -172,10 +177,7 @@ template {
 html {
   background: white;
   color: #222222;
-  font-family: "Muli", "Helvetica", sans-serif;
-  font-size: 100%;
-  font-weight: 400;
-  line-height: 1.5;
+
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.2);
   -webkit-text-size-adjust: 100%;
@@ -183,7 +185,11 @@ html {
 
 body {
   margin: 0;
-  background-color: white; }
+  background-color: white;
+  font-family: "Muli", "Helvetica", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
 
 /*------------------------------------*\
 		$TYPOGRAPHY
@@ -324,8 +330,8 @@ a {
   color: #007e84;
   text-decoration: none;
   outline: 0; }
-  a:visited {
-    color: #9e0084; }
+ /* a:visited {
+    color: #9e0084; }*/
   a:focus, a:hover {
     color: #48bec4; }
 
@@ -657,6 +663,26 @@ input, textarea {
   font-style: italic; }
 
 /*------------------------------------*\
+  $TABS
+\*------------------------------------*/
+
+.tabs {
+    padding: 0;
+    border-bottom: solid 2px #007e84;
+}
+
+.tab {
+    display: inline-block;
+    padding: .4em 1em;
+    color: #007e84;
+}
+
+.tab--active {
+    background-color: #007e84;
+    color: white;
+}
+
+/*------------------------------------*\
   $COLOR
 \*------------------------------------*/
 .c-base {
@@ -668,6 +694,9 @@ input, textarea {
 .c-grey {
   color: #666666; }
 
+ .c-white {
+   color: #ffffff; }
+
 .bc-base {
   background-color: #007e84; }
 
@@ -676,6 +705,12 @@ input, textarea {
 
 .bc-grey {
   background-color: #666666; }
+
+ .bc-dark {
+    background-color: #222222; }
+
+.bc-light {
+   background-color: #AAAAAA; }
 
  /*------------------------------------*\
     $OBJECTS
@@ -822,9 +857,6 @@ input, textarea {
     .nav--fit > li > a {
       display: block; }
 
- /*------------------------------------*\
-    $LAYOUT
-\*------------------------------------*/
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
@@ -835,12 +867,13 @@ input, textarea {
 
 .l-constrained {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 480px;/* temporary fix */
   width: 94%; }
 
  /*------------------------------------*\
     $MODULES
 \*------------------------------------*/
+
 /*------------------------------------*\
 		$HEADER
 \*------------------------------------*/
@@ -861,6 +894,45 @@ input, textarea {
 .site-logo--small {
   max-width: 30px; }
 
+
+/*------------------------------------*\
+        $LOGIN
+\*------------------------------------*/
+
+.login {
+    margin: 0 auto;
+    padding: 1.5em 0;
+    max-width: 280px;
+    clear: both;
+}
+
+.js .login {
+    display: none;
+}
+
+.form--login {
+
+}
+
+.form--login > .form-row {
+    margin-bottom: 1em;
+}
+
+.form--login > .form-row > input {
+    width: 100%;
+}
+
+.pw-forgot {
+    display: inline-block;
+    margin-bottom: .5em;
+    color: white;
+}
+
+.signup-intro {
+    display: block;
+    margin-bottom: .5em;
+}
+
 /*------------------------------------*\
 		$NOTIFICATIONS
 \*------------------------------------*/
@@ -870,6 +942,7 @@ input, textarea {
 .notification {
   position: relative;
   margin-bottom: 1.5em; }
+ /*
   .notification:before {
     content: '';
     position: absolute;
@@ -877,10 +950,15 @@ input, textarea {
     left: 15%;
     width: 70%;
     background-color: #007e84;
-    height: 1px; }
+    height: 1px; }*/
 
 .notification__title {
   margin-bottom: .25em; }
+
+
+.notification__lead {
+   margin-bottom: .25em;
+}
 
 .notification__meta {
   font-size: 80%; }
