@@ -1,4 +1,4 @@
-# Front-end assets
+# Frantic front-end assets
 
 ## Global installation
     sudo gem install sass
@@ -10,9 +10,14 @@ Install dependencies to local node_modules directory, as specified in package.js
 
     npm install
 
+## Adding new dependencies
+Install and save the dependency to package.json:
+    npm install <package-name> --save-dev
+
 ## Manual build
 
     grunt
+    grunt dev
 
 ## Automatic build
     grunt watch

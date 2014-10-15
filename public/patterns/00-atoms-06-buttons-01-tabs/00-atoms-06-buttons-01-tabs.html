@@ -59,16 +59,12 @@
 
 	</head>
 	<body class="body">
-<dl>
-	<dt>Definition List</dt>
-	<dd>A number of connected items or names written or printed consecutively, typically one below the other.</dd>
-    <dt>This is a term.</dt>
-    <dd>This is the definition of that term, which both live in a <code>dl</code>.</dd>
-    <dt>Here is another term.</dt>
-    <dd>And it gets a definition too, which is this line.</dd>
-    <dt>Here is term that shares a definition with the term below.</dt>
-    <dd>And it gets a definition too, which is this line.</dd>
-</dl>
+<ul class="nav nav--fit tabs text--center">
+    <li><a class="tab tab--active" href="#">Active</a></li>
+    <li><a class="tab" href="#">Passive</a></li>
+    <li><a class="tab" href="#">Passive</a></li>
+</ul>
+
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 
 	<script src='../../assets/js/main.js'></script>
@@ -77,7 +73,7 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "atoms-definition";
+		var patternPartial = "atoms-tabs";
 		var lineage        = [];
 		var lineageR       = [];
 		var patternState   = "";

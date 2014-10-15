@@ -23,11 +23,14 @@
 		    s.parentNode.insertBefore(wf, s);
 		  })(); </script>
 
-		
+
 		<!--link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" /-->
 
+		<!--link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/-->
+
+
 		<!--[if gt IE 8]><!-->
-		<link rel="stylesheet" href="../../assets/css/min/main.min.css?{{ cacheBuster }}" media="all" />
+		<link rel="stylesheet" href="../../assets/css/main.css?{{ cacheBuster }}" media="all" />
 		<!--<![endif]-->
 
 		<!--[if lte IE 8]>
@@ -38,12 +41,11 @@
 		<!-- Scripts -->
 
 		<script src="../../assets/js/vendor/modernizr.min.js"></script>
-	
+
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 		{% pattern-lab-head %}
 		<!-- End Pattern Lab -->
-	
+
 	</head>
-	<body class="{{ bodyClass }}">	
-		
+	<body class="{{ bodyClass }}">
