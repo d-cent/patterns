@@ -671,6 +671,14 @@ input, textarea {
     border-bottom: solid 1px #666666;
 }
 
+.tabs >li {
+    margin-right: .25em;
+}
+
+.tab li:last-child {
+    margin-right: 0;
+}
+
 .tab {
     display: inline-block;
     padding: .4em 1em;
@@ -681,9 +689,17 @@ input, textarea {
     color: #666666;
 }
 
-.tab--active {
+.tab:hover { 
+    color: #666666;
+}
+
+.tab--active, .tab:focus, .tab:active  {
     background-color: #48BEC4;
     border-color: #007E84;
+    color: #00444A;
+}
+
+.tab--active:hover {
     color: #00444A;
 }
 
