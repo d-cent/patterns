@@ -68,77 +68,42 @@
 
 	</head>
 	<body class="body">
-		
-		<!-- View All Patterns in a Pattern Sub-Type -->
-		<div class="sg-main" role="main">
-			
-			<!-- Patterns -->
-			<div id="sg-patterns">
-					<div id="atoms-logo" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-04-images-00-logo/00-atoms-04-images-00-logo.html" class="patternLink" data-patternpartial="atoms-logo">Logo</a></h2>
-						<div class="sg-pattern-body">
-							<a href="#"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /></a>
+<div class="row show-grid">
+  <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+<div class="row show-grid">
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+  <!-- Optional: clear the XS cols if their content doesn't match in height -->
+  <div class="clearfix visible-xs-block"></div>
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+</div>
 
-							<div class="sg-code" style="display: none">
-								<h3 class="sg-code-head">HTML</h3>
-								<pre class="sg-code-html">
-									<code>
-										&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../../images/logo.png&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;&lt;/a&gt;
-
-									</code>
-								</pre>
-							</div>
-						</div>
-					</div>
-					<div id="atoms-icons" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-04-images-01-icons/00-atoms-04-images-01-icons.html" class="patternLink" data-patternpartial="atoms-icons">Icons</a></h2>
-						<div class="sg-pattern-body">
-							<ul class="nav nav--stacked">
-
-	<li><i class="icon-share"></i> icon-share</li>
-	<li><i class="icon-wheel"></i> icon-wheel</li>
-	<li><i class="icon-minus"></i> icon-minus</li>
-	<li><i class="icon-share"></i> icon-share</li>
-	<li><i class="icon-share"></i> icon-share</li>
-	<li><i class="icon-share"></i> icon-share</li>
-	
-</ul>
-							<div class="sg-code" style="display: none">
-								<h3 class="sg-code-head">HTML</h3>
-								<pre class="sg-code-html">
-									<code>
-										&lt;ul class=&quot;nav nav--stacked&quot;&gt;
-
-	&lt;li&gt;&lt;i class=&quot;icon-share&quot;&gt;&lt;/i&gt; icon-share&lt;/li&gt;
-	&lt;li&gt;&lt;i class=&quot;icon-wheel&quot;&gt;&lt;/i&gt; icon-wheel&lt;/li&gt;
-	&lt;li&gt;&lt;i class=&quot;icon-minus&quot;&gt;&lt;/i&gt; icon-minus&lt;/li&gt;
-	&lt;li&gt;&lt;i class=&quot;icon-share&quot;&gt;&lt;/i&gt; icon-share&lt;/li&gt;
-	&lt;li&gt;&lt;i class=&quot;icon-share&quot;&gt;&lt;/i&gt; icon-share&lt;/li&gt;
-	&lt;li&gt;&lt;i class=&quot;icon-share&quot;&gt;&lt;/i&gt; icon-share&lt;/li&gt;
-	
-&lt;/ul&gt;
-									</code>
-								</pre>
-							</div>
-						</div>
-					</div>
-			</div> <!--end #sg-patterns-->
-	
-		</div><!--end .sg-main-->
-		
-		<!-- JS to hook everything together and do annotations -->
-		<script>
-			// handle injection of items from PHP
-			var patternPartial = "viewall-atoms-images";
-			var lineage = "";
-		</script>
-		
-
+<style>
+.show-grid [class^=col-] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #EEE;
+	background-color: rgba(86, 61, 124, 0.15);
+	border: 1px solid #DDD;
+	border: 1px solid rgba(86, 61, 124, 0.2);
+}
+</style>
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 
 	<script src='../../assets/js/main.js'></script>
 
 	<!--DO NOT REMOVE-->
+		
+	<script>
+		// handle injection of items from PHP
+		var patternPartial = "atoms-grid";
+		var lineage        = [];
+		var lineageR       = [];
+		var patternState   = "";
+		var cssEnabled     = false;
+	</script>
 		<script>
 		/*!
 		 * scriptLoader - v0.1

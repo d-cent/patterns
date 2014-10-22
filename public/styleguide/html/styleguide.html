@@ -272,6 +272,62 @@
 							</div>
 						</div>
 					</div>
+					<div id="atoms-grid" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-01-global-04-grid/00-atoms-01-global-04-grid.html" class="patternLink" data-patternpartial="atoms-grid">Grid</a></h2>
+						<div class="sg-pattern-body">
+							<div class="row show-grid">
+  <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+<div class="row show-grid">
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+  <!-- Optional: clear the XS cols if their content doesn't match in height -->
+  <div class="clearfix visible-xs-block"></div>
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+</div>
+
+<style>
+.show-grid [class^=col-] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #EEE;
+	background-color: rgba(86, 61, 124, 0.15);
+	border: 1px solid #DDD;
+	border: 1px solid rgba(86, 61, 124, 0.2);
+}
+</style>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;row show-grid&quot;&gt;
+  &lt;div class=&quot;col-xs-12 col-sm-6 col-md-8&quot;&gt;.col-xs-12 .col-sm-6 .col-md-8&lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row show-grid&quot;&gt;
+  &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+  &lt;!-- Optional: clear the XS cols if their content doesn't match in height --&gt;
+  &lt;div class=&quot;clearfix visible-xs-block&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.show-grid [class^=col-] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #EEE;
+	background-color: rgba(86, 61, 124, 0.15);
+	border: 1px solid #DDD;
+	border: 1px solid rgba(86, 61, 124, 0.2);
+}
+&lt;/style&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="atoms-headings" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-02-text-00-headings/00-atoms-02-text-00-headings.html" class="patternLink" data-patternpartial="atoms-headings">Headings</a></h2>
 						<div class="sg-pattern-body">
@@ -610,6 +666,38 @@ p q r s t u v w x y z { | } ~
 							</div>
 						</div>
 					</div>
+					<div id="atoms-icons" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-04-images-01-icons/00-atoms-04-images-01-icons.html" class="patternLink" data-patternpartial="atoms-icons">Icons</a></h2>
+						<div class="sg-pattern-body">
+							<ul class="nav nav--stacked">
+
+	<li><i class="icon-share"></i> icon-share</li>
+	<li><i class="icon-wheel"></i> icon-wheel</li>
+	<li><i class="icon-minus"></i> icon-minus</li>
+	<li><i class="icon-share"></i> icon-share</li>
+	<li><i class="icon-share"></i> icon-share</li>
+	<li><i class="icon-share"></i> icon-share</li>
+	
+</ul>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;ul class=&quot;nav nav--stacked&quot;&gt;
+
+	&lt;li&gt;&lt;i class=&quot;icon-share&quot;&gt;&lt;/i&gt; icon-share&lt;/li&gt;
+	&lt;li&gt;&lt;i class=&quot;icon-wheel&quot;&gt;&lt;/i&gt; icon-wheel&lt;/li&gt;
+	&lt;li&gt;&lt;i class=&quot;icon-minus&quot;&gt;&lt;/i&gt; icon-minus&lt;/li&gt;
+	&lt;li&gt;&lt;i class=&quot;icon-share&quot;&gt;&lt;/i&gt; icon-share&lt;/li&gt;
+	&lt;li&gt;&lt;i class=&quot;icon-share&quot;&gt;&lt;/i&gt; icon-share&lt;/li&gt;
+	&lt;li&gt;&lt;i class=&quot;icon-share&quot;&gt;&lt;/i&gt; icon-share&lt;/li&gt;
+	
+&lt;/ul&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="atoms-text-fields" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-05-forms-00-text-fields/00-atoms-05-forms-00-text-fields.html" class="patternLink" data-patternpartial="atoms-text-fields">Text Fields</a></h2>
 						<div class="sg-pattern-body">
@@ -889,6 +977,24 @@ p q r s t u v w x y z { | } ~
 	&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-message" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-messaging-message/01-molecules-messaging-message.html" class="patternLink" data-patternpartial="molecules-message">Message</a></h2>
+						<div class="sg-pattern-body">
+							<div class="message">
+	Emphasized message speaking to user what's going on.
+</div>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;message&quot;&gt;
+	Emphasized message speaking to user what's going on.
+&lt;/div&gt;
 									</code>
 								</pre>
 							</div>
