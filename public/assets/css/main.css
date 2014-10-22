@@ -1,8 +1,5 @@
-@charset "UTF-8";
+
 /*------------------------------------*\
-    $FRANTIC TOOLBOX
-\*------------------------------------*/
- /*------------------------------------*\
     $IMPORTS
 \*------------------------------------*/
 /*------------------------------------*\
@@ -190,6 +187,10 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
+}
+
+.page--with-sticky {
+  padding: 3em 0 0;
 }
 
 /*------------------------------------*\
@@ -593,6 +594,10 @@ input, textarea {
   border-radius: 6px;
   border: solid 1px #007e84; }
 
+.form-row {
+  margin-bottom: 1em;
+}
+
 /*------------------------------------*\
     $ALERTS
 \*------------------------------------*/
@@ -677,7 +682,7 @@ input, textarea {
 \*------------------------------------*/
 
 .tabs {
-    padding: 0 0 0 1em;
+    padding: 0 0 1px;
     border-bottom: solid 1px #666666;
 }
 
@@ -771,7 +776,7 @@ input, textarea {
 .c-grey {
   color: #666666; }
 
- .c-white {
+.c-white {
    color: #ffffff; }
 
 .bc-base {
@@ -787,7 +792,7 @@ input, textarea {
     background-color: #222222; }
 
 .bc-light {
-   background-color: #AAAAAA; }
+   background-color: #F0F0F0; }
 
  /*------------------------------------*\
     $OBJECTS
@@ -937,6 +942,11 @@ input, textarea {
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
+
+.wrap {
+  padding: 1.5em 0;
+}
+
 .sg-main {
   margin: 0 auto;
   max-width: 90em;
@@ -1622,21 +1632,39 @@ input, textarea {
 /*------------------------------------*\
 		$HEADER
 \*------------------------------------*/
+
+
+.site-logo {
+  display: block;
+  padding-top: 3em;
+}
+
+.site-logo > img {
+  max-width: 80px;
+}
+
+.site-logo__text {
+  display: block;
+  margin-top: .5em;
+}
+
 .header--login {
   padding: .5em; }
 
 .header--sticky {
   position: fixed;
   width: 100%;
-  z-index: 999; }
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
 
 .btn--sign-in {
   margin-right: 1em;
   padding-top: .25em;
-  color: white;
   cursor: pointer; }
 
-.site-logo--small {
+.site-logo--small > img {
   max-width: 30px; }
 
 
@@ -1646,7 +1674,7 @@ input, textarea {
 
 .login {
     margin: 0 auto;
-    padding: 1.5em 0;
+    padding: 1.5em 0 0;
     max-width: 280px;
     clear: both;
 }
@@ -1659,9 +1687,6 @@ input, textarea {
 
 }
 
-.form--login > .form-row {
-    margin-bottom: 1em;
-}
 
 .form--login > .form-row > input {
     width: 100%;
@@ -1670,12 +1695,12 @@ input, textarea {
 .pw-forgot {
     display: inline-block;
     margin-bottom: .5em;
-    color: white;
 }
 
 .signup-intro {
     display: block;
     margin-bottom: .5em;
+    font-size: 18px;
 }
 
 
@@ -1684,7 +1709,7 @@ input, textarea {
 \*------------------------------------*/
 
 .message {
-  padding: 1em;
+  padding: .5em;
   text-align: center;
   border: solid 3px green;
   border-radius: 9px;
@@ -1694,7 +1719,7 @@ input, textarea {
 		$NOTIFICATIONS
 \*------------------------------------*/
 .notifications-list {
-  padding: 1.5em 0; }
+   }
 
 .notification {
   position: relative;
@@ -1709,6 +1734,11 @@ input, textarea {
     background-color: #007e84;
     height: 1px; }*/
 
+.notification__body {
+  padding-bottom: 1.5em;
+  border-bottom: solid 1px #007e84;
+}
+
 .notification__title {
   margin-bottom: .25em; }
 
@@ -1719,3 +1749,44 @@ input, textarea {
 
 .notification__meta {
   font-size: 80%; }
+
+
+/*------------------------------------*\
+    $PROFILE
+\*------------------------------------*/
+
+
+.profile {
+    margin: 0 auto;
+    padding: 1.5em 1em 0;
+    max-width: 480px;
+    clear: both;
+}
+
+.profile__img {
+    margin: 0 auto 1.5em;
+    max-width: 480px;
+    text-align: center;
+}
+
+.profile__img > img {
+    display: inline-block;
+}
+
+.profile__img > figcaption {
+    margin-top: 1em;
+    font-size: 18px;
+}
+
+.profile__form {
+    margin: 0 auto 1.5em;
+    max-width: 380px;
+}
+
+.profile__form input, .profile__form textarea {
+    width: 100%;
+} 
+
+.profile__form textarea {
+    min-height: 100px;
+}

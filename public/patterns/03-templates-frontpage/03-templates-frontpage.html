@@ -68,8 +68,30 @@
 
 	</head>
 	<body class="body">
-<div class="l-constrained notifications-list">
-	
+<div class="page">
+
+	<div class="wrap--header bc-light" style="min-height: 200px;">
+		
+		<header class="text--center l-constrained clearfix" role="banner">
+
+			<a class="site-logo">
+				<img src="../../images/logo.png" class="logo" alt="Logo Alt Text" />
+				<span class="site-logo__text">decentralized tools</span>
+			</a>
+
+		</header><!-- end header -->
+
+	</div><!-- end wrap header -->
+	<div class="wrap text--center">
+		<ul class="nav tabs">
+		    <li><a class="tab tab--active" href="#">Active</a></li>
+		    <li><a class="tab" href="#">Passive</a></li>
+		    <li><a class="tab" href="#">Passive</a></li>
+		</ul>
+	</div>
+
+	<div class="l-constrained notifications-list">
+		
 	<div class="media notification">
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
@@ -180,6 +202,7 @@
 	   </div>
 	</div>
 
+	</div>
 </div>
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 
@@ -189,9 +212,9 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "organisms-notification-list";
-		var lineage        = [{"lineagePattern":"molecules-notification","lineagePath":"..\/..\/patterns\/01-molecules-notification-notification\/01-molecules-notification-notification.html"}];
-		var lineageR       = [{"lineagePattern":"templates-frontpage","lineagePath":"..\/..\/patterns\/03-templates-frontpage\/03-templates-frontpage.html"},{"lineagePattern":"templates-page","lineagePath":"..\/..\/patterns\/03-templates-page\/03-templates-page.html"}];
+		var patternPartial = "templates-frontpage";
+		var lineage        = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-global-header\/02-organisms-global-header.html"},{"lineagePattern":"organisms-notification-list","lineagePath":"..\/..\/patterns\/02-organisms-notifications-list-notification-list\/02-organisms-notifications-list-notification-list.html"}];
+		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

@@ -68,64 +68,67 @@
 
 	</head>
 	<body class="body">
+<div class="page page--with-sticky">
 
-<div class="wrap--header bc-dark">
+	<div class="wrap--header bc-light header--sticky">
 
-	<header class="header--login l-constrained clearfix" role="banner">
+		<header class="header--login l-constrained clearfix" role="banner">
 
-		<a class="site-logo site-logo--small float--right">
-			<img src="../../images/logo.png" class="logo" alt="Logo Alt Text" />
-		</a>
+			<a class="site-logo--small float--right">
+				<img src="../../images/logo.png" class="logo" alt="Logo Alt Text" />
+			</a>
 
-		<span class="float--right btn--sign-in js-open-signin">Sign in</span>
+			<span class="float--right btn--sign-in js-open-signin">Sign in</span>
 
-		<div class="login">
+			<div class="login">
 
-			<form class="form--login">
+				<form class="form--login">
 
-				<div class="form-row">
-					<input type="email" placeholder="Email" />
-				</div>
+					<div class="form-row">
+						<input type="email" placeholder="Email" />
+					</div>
 
-				<div class="form-row">
-					<a class="float--right pw-forgot" href="#">Forgot password?</a>
-					<input type="password" placeholder="Password" />
-				</div>
+					<div class="form-row">
+						<a class="float--right pw-forgot" href="#">Forgot password?</a>
+						<input type="password" placeholder="Password" />
+					</div>
 
-				<div class="form-row">
-					<input type="submit" class="btn" value="Sign in" />
-				</div>
+					<div class="form-row">
+						<input type="submit" class="btn" value="Sign in" />
+					</div>
 
-				<div class="form-row c-white text--center">
-						<span class="signup-intro">Don't have an account?</span>
-						<a class="sign-up btn" href="#">Sign Up</a>
-				</div>
+					<div class="form-row text--center">
+							<span class="signup-intro">Don't have an account?</span>
+							<a class="sign-up btn" href="#">Sign Up</a>
+					</div>
 
-			</form>
-
-
-		</div>
+				</form>
 
 
-	</header>
+			</div>
 
-</div>
 
-<ul class="nav tabs">
-    <li><a class="tab tab--active" href="#">Active</a></li>
-    <li><a class="tab" href="#">Passive</a></li>
-    <li><a class="tab" href="#">Passive</a></li>
-</ul>
+		</header>
 
-<div class="l-constrained notifications-list">
-	
+	</div>
+
+	<div class="wrap text--center">
+		<ul class="nav tabs">
+		    <li><a class="tab tab--active" href="#">Active</a></li>
+		    <li><a class="tab" href="#">Passive</a></li>
+		    <li><a class="tab" href="#">Passive</a></li>
+		</ul>
+	</div>
+
+	<div class="l-constrained notifications-list">
+		
 	<div class="media notification">
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -134,9 +137,9 @@
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -145,9 +148,9 @@
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -156,9 +159,9 @@
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -167,9 +170,9 @@
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -178,9 +181,9 @@
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -189,9 +192,9 @@
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -200,9 +203,9 @@
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -211,9 +214,9 @@
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -222,13 +225,14 @@
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
 
+	</div>
 </div>
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 

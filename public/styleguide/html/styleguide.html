@@ -1007,9 +1007,9 @@ p q r s t u v w x y z { | } ~
 	<figure class="media__img">
  		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
     </figure>
-    <div class="media__body">
+    <div class="media__body notification__body">
 		<h2 class="c-base gamma notification__title">Title</h2>
-		<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
    		<span class="notification__meta">21, 345 following</span>
    </div>
 </div>
@@ -1022,9 +1022,9 @@ p q r s t u v w x y z { | } ~
 	&lt;figure class=&quot;media__img&quot;&gt;
  		&lt;img class=&quot;img--round&quot; src=&quot;http://placeimg.com/60/60/tech&quot; alt=&quot;Square Thumbnail&quot; /&gt;
     &lt;/figure&gt;
-    &lt;div class=&quot;media__body&quot;&gt;
+    &lt;div class=&quot;media__body notification__body&quot;&gt;
 		&lt;h2 class=&quot;c-base gamma notification__title&quot;&gt;Title&lt;/h2&gt;
-		&lt;p class=&quot;notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+		&lt;p class=&quot;c-base notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
    		&lt;span class=&quot;notification__meta&quot;&gt;21, 345 following&lt;/span&gt;
    &lt;/div&gt;
 &lt;/div&gt;
@@ -1139,11 +1139,11 @@ p q r s t u v w x y z { | } ~
 					<div id="organisms-header-with-login" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-global-header-with-login/02-organisms-global-header-with-login.html" class="patternLink" data-patternpartial="organisms-header-with-login">Header With Login</a></h2>
 						<div class="sg-pattern-body">
-							<div class="wrap--header bc-dark">
+							<div class="wrap--header bc-light header--sticky">
 
 	<header class="header--login l-constrained clearfix" role="banner">
 
-		<a class="site-logo site-logo--small float--right">
+		<a class="site-logo--small float--right">
 			<img src="../../images/logo.png" class="logo" alt="Logo Alt Text" />
 		</a>
 
@@ -1166,7 +1166,7 @@ p q r s t u v w x y z { | } ~
 					<input type="submit" class="btn" value="Sign in" />
 				</div>
 
-				<div class="form-row c-white text--center">
+				<div class="form-row text--center">
 						<span class="signup-intro">Don't have an account?</span>
 						<a class="sign-up btn" href="#">Sign Up</a>
 				</div>
@@ -1185,11 +1185,11 @@ p q r s t u v w x y z { | } ~
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;wrap--header bc-dark&quot;&gt;
+										&lt;div class=&quot;wrap--header bc-light header--sticky&quot;&gt;
 
 	&lt;header class=&quot;header--login l-constrained clearfix&quot; role=&quot;banner&quot;&gt;
 
-		&lt;a class=&quot;site-logo site-logo--small float--right&quot;&gt;
+		&lt;a class=&quot;site-logo--small float--right&quot;&gt;
 			&lt;img src=&quot;../../images/logo.png&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
 		&lt;/a&gt;
 
@@ -1212,7 +1212,7 @@ p q r s t u v w x y z { | } ~
 					&lt;input type=&quot;submit&quot; class=&quot;btn&quot; value=&quot;Sign in&quot; /&gt;
 				&lt;/div&gt;
 
-				&lt;div class=&quot;form-row c-white text--center&quot;&gt;
+				&lt;div class=&quot;form-row text--center&quot;&gt;
 						&lt;span class=&quot;signup-intro&quot;&gt;Don't have an account?&lt;/span&gt;
 						&lt;a class=&quot;sign-up btn&quot; href=&quot;#&quot;&gt;Sign Up&lt;/a&gt;
 				&lt;/div&gt;
@@ -1235,12 +1235,34 @@ p q r s t u v w x y z { | } ~
 					<div id="organisms-header" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-global-header/02-organisms-global-header.html" class="patternLink" data-patternpartial="organisms-header">Header</a></h2>
 						<div class="sg-pattern-body">
-							
+							<div class="wrap--header bc-light" style="min-height: 200px;">
+	
+	<header class="text--center l-constrained clearfix" role="banner">
+
+		<a class="site-logo">
+			<img src="../../images/logo.png" class="logo" alt="Logo Alt Text" />
+			<span class="site-logo__text">decentralized tools</span>
+		</a>
+
+	</header><!-- end header -->
+
+</div><!-- end wrap header -->
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										
+										&lt;div class=&quot;wrap--header bc-light&quot; style=&quot;min-height: 200px;&quot;&gt;
+	
+	&lt;header class=&quot;text--center l-constrained clearfix&quot; role=&quot;banner&quot;&gt;
+
+		&lt;a class=&quot;site-logo&quot;&gt;
+			&lt;img src=&quot;../../images/logo.png&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
+			&lt;span class=&quot;site-logo__text&quot;&gt;decentralized tools&lt;/span&gt;
+		&lt;/a&gt;
+
+	&lt;/header&gt;&lt;!-- end header --&gt;
+
+&lt;/div&gt;&lt;!-- end wrap header --&gt;
 									</code>
 								</pre>
 							</div>
@@ -1255,9 +1277,9 @@ p q r s t u v w x y z { | } ~
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -1266,9 +1288,9 @@ p q r s t u v w x y z { | } ~
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -1277,9 +1299,9 @@ p q r s t u v w x y z { | } ~
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -1288,9 +1310,9 @@ p q r s t u v w x y z { | } ~
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -1299,9 +1321,9 @@ p q r s t u v w x y z { | } ~
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -1310,9 +1332,9 @@ p q r s t u v w x y z { | } ~
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -1321,9 +1343,9 @@ p q r s t u v w x y z { | } ~
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -1332,9 +1354,9 @@ p q r s t u v w x y z { | } ~
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -1343,9 +1365,9 @@ p q r s t u v w x y z { | } ~
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -1354,9 +1376,9 @@ p q r s t u v w x y z { | } ~
 		<figure class="media__img">
 	 		<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
 	    </figure>
-	    <div class="media__body">
+	    <div class="media__body notification__body">
 			<h2 class="c-base gamma notification__title">Title</h2>
-			<p class="notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="c-base notification__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	   		<span class="notification__meta">21, 345 following</span>
 	   </div>
 	</div>
@@ -1376,9 +1398,9 @@ p q r s t u v w x y z { | } ~
 		&lt;figure class=&quot;media__img&quot;&gt;
 	 		&lt;img class=&quot;img--round&quot; src=&quot;http://placeimg.com/60/60/tech&quot; alt=&quot;Square Thumbnail&quot; /&gt;
 	    &lt;/figure&gt;
-	    &lt;div class=&quot;media__body&quot;&gt;
+	    &lt;div class=&quot;media__body notification__body&quot;&gt;
 			&lt;h2 class=&quot;c-base gamma notification__title&quot;&gt;Title&lt;/h2&gt;
-			&lt;p class=&quot;notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+			&lt;p class=&quot;c-base notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
 	   		&lt;span class=&quot;notification__meta&quot;&gt;21, 345 following&lt;/span&gt;
 	   &lt;/div&gt;
 	&lt;/div&gt;
@@ -1387,9 +1409,9 @@ p q r s t u v w x y z { | } ~
 		&lt;figure class=&quot;media__img&quot;&gt;
 	 		&lt;img class=&quot;img--round&quot; src=&quot;http://placeimg.com/60/60/tech&quot; alt=&quot;Square Thumbnail&quot; /&gt;
 	    &lt;/figure&gt;
-	    &lt;div class=&quot;media__body&quot;&gt;
+	    &lt;div class=&quot;media__body notification__body&quot;&gt;
 			&lt;h2 class=&quot;c-base gamma notification__title&quot;&gt;Title&lt;/h2&gt;
-			&lt;p class=&quot;notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+			&lt;p class=&quot;c-base notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
 	   		&lt;span class=&quot;notification__meta&quot;&gt;21, 345 following&lt;/span&gt;
 	   &lt;/div&gt;
 	&lt;/div&gt;
@@ -1398,9 +1420,9 @@ p q r s t u v w x y z { | } ~
 		&lt;figure class=&quot;media__img&quot;&gt;
 	 		&lt;img class=&quot;img--round&quot; src=&quot;http://placeimg.com/60/60/tech&quot; alt=&quot;Square Thumbnail&quot; /&gt;
 	    &lt;/figure&gt;
-	    &lt;div class=&quot;media__body&quot;&gt;
+	    &lt;div class=&quot;media__body notification__body&quot;&gt;
 			&lt;h2 class=&quot;c-base gamma notification__title&quot;&gt;Title&lt;/h2&gt;
-			&lt;p class=&quot;notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+			&lt;p class=&quot;c-base notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
 	   		&lt;span class=&quot;notification__meta&quot;&gt;21, 345 following&lt;/span&gt;
 	   &lt;/div&gt;
 	&lt;/div&gt;
@@ -1409,9 +1431,9 @@ p q r s t u v w x y z { | } ~
 		&lt;figure class=&quot;media__img&quot;&gt;
 	 		&lt;img class=&quot;img--round&quot; src=&quot;http://placeimg.com/60/60/tech&quot; alt=&quot;Square Thumbnail&quot; /&gt;
 	    &lt;/figure&gt;
-	    &lt;div class=&quot;media__body&quot;&gt;
+	    &lt;div class=&quot;media__body notification__body&quot;&gt;
 			&lt;h2 class=&quot;c-base gamma notification__title&quot;&gt;Title&lt;/h2&gt;
-			&lt;p class=&quot;notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+			&lt;p class=&quot;c-base notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
 	   		&lt;span class=&quot;notification__meta&quot;&gt;21, 345 following&lt;/span&gt;
 	   &lt;/div&gt;
 	&lt;/div&gt;
@@ -1420,9 +1442,9 @@ p q r s t u v w x y z { | } ~
 		&lt;figure class=&quot;media__img&quot;&gt;
 	 		&lt;img class=&quot;img--round&quot; src=&quot;http://placeimg.com/60/60/tech&quot; alt=&quot;Square Thumbnail&quot; /&gt;
 	    &lt;/figure&gt;
-	    &lt;div class=&quot;media__body&quot;&gt;
+	    &lt;div class=&quot;media__body notification__body&quot;&gt;
 			&lt;h2 class=&quot;c-base gamma notification__title&quot;&gt;Title&lt;/h2&gt;
-			&lt;p class=&quot;notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+			&lt;p class=&quot;c-base notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
 	   		&lt;span class=&quot;notification__meta&quot;&gt;21, 345 following&lt;/span&gt;
 	   &lt;/div&gt;
 	&lt;/div&gt;
@@ -1431,9 +1453,9 @@ p q r s t u v w x y z { | } ~
 		&lt;figure class=&quot;media__img&quot;&gt;
 	 		&lt;img class=&quot;img--round&quot; src=&quot;http://placeimg.com/60/60/tech&quot; alt=&quot;Square Thumbnail&quot; /&gt;
 	    &lt;/figure&gt;
-	    &lt;div class=&quot;media__body&quot;&gt;
+	    &lt;div class=&quot;media__body notification__body&quot;&gt;
 			&lt;h2 class=&quot;c-base gamma notification__title&quot;&gt;Title&lt;/h2&gt;
-			&lt;p class=&quot;notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+			&lt;p class=&quot;c-base notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
 	   		&lt;span class=&quot;notification__meta&quot;&gt;21, 345 following&lt;/span&gt;
 	   &lt;/div&gt;
 	&lt;/div&gt;
@@ -1442,9 +1464,9 @@ p q r s t u v w x y z { | } ~
 		&lt;figure class=&quot;media__img&quot;&gt;
 	 		&lt;img class=&quot;img--round&quot; src=&quot;http://placeimg.com/60/60/tech&quot; alt=&quot;Square Thumbnail&quot; /&gt;
 	    &lt;/figure&gt;
-	    &lt;div class=&quot;media__body&quot;&gt;
+	    &lt;div class=&quot;media__body notification__body&quot;&gt;
 			&lt;h2 class=&quot;c-base gamma notification__title&quot;&gt;Title&lt;/h2&gt;
-			&lt;p class=&quot;notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+			&lt;p class=&quot;c-base notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
 	   		&lt;span class=&quot;notification__meta&quot;&gt;21, 345 following&lt;/span&gt;
 	   &lt;/div&gt;
 	&lt;/div&gt;
@@ -1453,9 +1475,9 @@ p q r s t u v w x y z { | } ~
 		&lt;figure class=&quot;media__img&quot;&gt;
 	 		&lt;img class=&quot;img--round&quot; src=&quot;http://placeimg.com/60/60/tech&quot; alt=&quot;Square Thumbnail&quot; /&gt;
 	    &lt;/figure&gt;
-	    &lt;div class=&quot;media__body&quot;&gt;
+	    &lt;div class=&quot;media__body notification__body&quot;&gt;
 			&lt;h2 class=&quot;c-base gamma notification__title&quot;&gt;Title&lt;/h2&gt;
-			&lt;p class=&quot;notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+			&lt;p class=&quot;c-base notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
 	   		&lt;span class=&quot;notification__meta&quot;&gt;21, 345 following&lt;/span&gt;
 	   &lt;/div&gt;
 	&lt;/div&gt;
@@ -1464,9 +1486,9 @@ p q r s t u v w x y z { | } ~
 		&lt;figure class=&quot;media__img&quot;&gt;
 	 		&lt;img class=&quot;img--round&quot; src=&quot;http://placeimg.com/60/60/tech&quot; alt=&quot;Square Thumbnail&quot; /&gt;
 	    &lt;/figure&gt;
-	    &lt;div class=&quot;media__body&quot;&gt;
+	    &lt;div class=&quot;media__body notification__body&quot;&gt;
 			&lt;h2 class=&quot;c-base gamma notification__title&quot;&gt;Title&lt;/h2&gt;
-			&lt;p class=&quot;notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+			&lt;p class=&quot;c-base notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
 	   		&lt;span class=&quot;notification__meta&quot;&gt;21, 345 following&lt;/span&gt;
 	   &lt;/div&gt;
 	&lt;/div&gt;
@@ -1475,14 +1497,130 @@ p q r s t u v w x y z { | } ~
 		&lt;figure class=&quot;media__img&quot;&gt;
 	 		&lt;img class=&quot;img--round&quot; src=&quot;http://placeimg.com/60/60/tech&quot; alt=&quot;Square Thumbnail&quot; /&gt;
 	    &lt;/figure&gt;
-	    &lt;div class=&quot;media__body&quot;&gt;
+	    &lt;div class=&quot;media__body notification__body&quot;&gt;
 			&lt;h2 class=&quot;c-base gamma notification__title&quot;&gt;Title&lt;/h2&gt;
-			&lt;p class=&quot;notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+			&lt;p class=&quot;c-base notification__lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
 	   		&lt;span class=&quot;notification__meta&quot;&gt;21, 345 following&lt;/span&gt;
 	   &lt;/div&gt;
 	&lt;/div&gt;
 
 &lt;/div&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-profile-registered" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-profile-profile-registered/02-organisms-profile-profile-registered.html" class="patternLink" data-patternpartial="organisms-profile-registered">Profile Registered</a></h2>
+						<div class="sg-pattern-body">
+							<div class="wrap bc-light">
+
+	<div class="profile">
+
+		<figure class="profile__img">
+ 			<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
+ 			<figcaption>Tero Testaaja</figcaption>
+    	</figure>
+
+    	<div class="profile__bio">
+			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    	</div>
+
+
+	</div>
+
+</div><!-- end wrap profile -->
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;wrap bc-light&quot;&gt;
+
+	&lt;div class=&quot;profile&quot;&gt;
+
+		&lt;figure class=&quot;profile__img&quot;&gt;
+ 			&lt;img class=&quot;img--round&quot; src=&quot;http://placeimg.com/60/60/tech&quot; alt=&quot;Square Thumbnail&quot; /&gt;
+ 			&lt;figcaption&gt;Tero Testaaja&lt;/figcaption&gt;
+    	&lt;/figure&gt;
+
+    	&lt;div class=&quot;profile__bio&quot;&gt;
+			&lt;p&gt;&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+    	&lt;/div&gt;
+
+
+	&lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- end wrap profile --&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-profile" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-profile-profile/02-organisms-profile-profile.html" class="patternLink" data-patternpartial="organisms-profile">Profile</a></h2>
+						<div class="sg-pattern-body">
+							<div class="wrap bc-light">
+
+	<div class="profile">
+
+		<figure class="profile__img">
+ 			<img class="img--round" src="http://placeimg.com/60/60/tech" alt="Square Thumbnail" />
+    	</figure>
+
+    	<form class="profile__form">
+
+				<div class="form-row">
+					<input type="text" placeholder="First name" />
+				</div>
+
+				<div class="form-row">
+					<input type="text" placeholder="Last name" />
+				</div>
+
+				<div class="form-row">
+					<textarea placeholder="lorem ipsum"></textarea>
+				</div>
+
+		</form>
+
+
+	</div>
+
+</div><!-- end wrap profile -->
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;wrap bc-light&quot;&gt;
+
+	&lt;div class=&quot;profile&quot;&gt;
+
+		&lt;figure class=&quot;profile__img&quot;&gt;
+ 			&lt;img class=&quot;img--round&quot; src=&quot;http://placeimg.com/60/60/tech&quot; alt=&quot;Square Thumbnail&quot; /&gt;
+    	&lt;/figure&gt;
+
+    	&lt;form class=&quot;profile__form&quot;&gt;
+
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;input type=&quot;text&quot; placeholder=&quot;First name&quot; /&gt;
+				&lt;/div&gt;
+
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;input type=&quot;text&quot; placeholder=&quot;Last name&quot; /&gt;
+				&lt;/div&gt;
+
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;textarea placeholder=&quot;lorem ipsum&quot;&gt;&lt;/textarea&gt;
+				&lt;/div&gt;
+
+		&lt;/form&gt;
+
+
+	&lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- end wrap profile --&gt;
 									</code>
 								</pre>
 							</div>
