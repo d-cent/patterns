@@ -696,6 +696,7 @@ input, textarea {
     border-top-right-radius: 5px;
     background-color: #AAAAAA;
     border: solid 1px #666666;
+    border-bottom: none;
     color: #666666;
 }
 
