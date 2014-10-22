@@ -202,7 +202,7 @@ h5,
 h6 {
   margin: 0;
   font-family: "Comfortaa", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   text-rendering: optimizeLegibility; }
 
 h1,
@@ -707,8 +707,43 @@ input, textarea {
   $TAGS
 \*------------------------------------*/
 
-.tag {
+.tags {
 
+}
+
+.tags > li {
+    margin-right: 1em;
+}
+
+.tag {
+    display: inline-block;
+    padding: .25em 1em;
+    font-size: 12px;
+    background-color: #AAAAAA;
+    border-radius: 5px;
+    color: #666666; 
+}
+
+.tag:hover {
+  color: #666666; 
+}
+
+.tag--negative {
+    background-color: #FF61E5;
+    color: #9E0084;
+}
+
+.tag--negative:hover {
+    color: #9E0084;
+}
+
+.tag--positive {
+    background-color: #48BEC4;
+    color: #00444A;
+}
+
+.tag--positive:hover {
+    color: #00444A;
 }
 
 
