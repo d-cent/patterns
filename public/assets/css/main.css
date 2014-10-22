@@ -667,20 +667,35 @@ input, textarea {
 \*------------------------------------*/
 
 .tabs {
-    padding: 0;
-    border-bottom: solid 2px #007e84;
+    padding: 0 0 0 1em;
+    border-bottom: solid 1px #666666;
 }
 
 .tab {
     display: inline-block;
     padding: .4em 1em;
-    color: #007e84;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #AAAAAA;
+    border: solid 1px #666666;
+    color: #666666;
 }
 
 .tab--active {
-    background-color: #007e84;
-    color: white;
+    background-color: #48BEC4;
+    border-color: #007E84;
+    color: #00444A;
 }
+
+/*------------------------------------*\
+  $TAGS
+\*------------------------------------*/
+
+.tag {
+
+}
+
+
 
 /*------------------------------------*\
   $COLOR
