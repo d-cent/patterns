@@ -1,12 +1,27 @@
+@font-face {
+    font-family: 'muliregularitalic';
+    src: url('fonts/muli-italic-webfont.eot');
+    src: url('fonts/muli-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/muli-italic-webfont.woff2') format('woff2'),
+         url('fonts/muli-italic-webfont.woff') format('woff'),
+         url('fonts/muli-italic-webfont.ttf') format('truetype'),
+         url('fonts/muli-italic-webfont.svg#muliregularitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 
 @font-face {
-    font-family: 'muli500b';
-    src: url('fonts/muli-medium-x-webfont.eot');
-    src: url('fonts/muli-medium-x-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/muli-medium-x-webfont.woff2') format('woff2'),
-         url('fonts/muli-medium-x-webfont.woff') format('woff'),
-         url('fonts/muli-medium-x-webfont.ttf') format('truetype'),
-         url('fonts/muli-medium-x-webfont.svg#muli500b') format('svg');
+    font-family: 'muliregular';
+    src: url('fonts/muli-regular-webfont.eot');
+    src: url('fonts/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/muli-regular-webfont.woff2') format('woff2'),
+         url('fonts/muli-regular-webfont.woff') format('woff'),
+         url('fonts/muli-regular-webfont.ttf') format('truetype'),
+         url('fonts/muli-regular-webfont.svg#muliregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -23,22 +38,6 @@
          url('fonts/muli-bold-webfont.woff') format('woff'),
          url('fonts/muli-bold-webfont.ttf') format('truetype'),
          url('fonts/muli-bold-webfont.svg#muli_boldbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'mulimedium-italic';
-    src: url('fonts/muli-medium-italic-x-webfont.eot');
-    src: url('fonts/muli-medium-italic-x-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/muli-medium-italic-x-webfont.woff2') format('woff2'),
-         url('fonts/muli-medium-italic-x-webfont.woff') format('woff'),
-         url('fonts/muli-medium-italic-x-webfont.ttf') format('truetype'),
-         url('fonts/muli-medium-italic-x-webfont.svg#mulimedium-italic') format('svg');
     font-weight: normal;
     font-style: normal;
 

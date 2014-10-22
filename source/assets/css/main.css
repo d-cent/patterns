@@ -186,8 +186,9 @@ html {
 body {
   margin: 0;
   background-color: white;
-  font-family: "Muli", "Helvetica", sans-serif;
-  font-weight: 400;
+  font-family: "muliregular", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-style: normal;
   line-height: 1.5;
 }
 
@@ -263,15 +264,20 @@ li > ul,
 li > ol {
   margin-bottom: 0; }
 
-.italic {
-  font-style: italic; }
+.italic, i, em {
+    font-family: "muliregularitalic", "Helvetica", sans-serif;
+    font-weight: normal;
+    font-style: normal; 
+}
 
 .font-headings {
   font-family: "Comfortaa", sans-serif;
-  font-weight: 400; }
+  font-weight: 700; 
+}
 
 .font-body {
-  font-family: "Muli", "Helvetica", sans-serif; }
+  font-family: "muliregular", "Helvetica", sans-serif;
+}
 
 abbr[title] {
   border-bottom: dotted 1px;
@@ -279,7 +285,11 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bold; }
+    font-family: 'muli_boldbold', "Helvetica", sans-serif;
+    font-weight: normal;
+    font-style: normal; 
+
+}
 
 dfn {
   font-style: italic; }
