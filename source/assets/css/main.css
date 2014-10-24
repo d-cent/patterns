@@ -737,7 +737,7 @@ input, textarea {
     display: inline-block;
     padding: .25em 1em;
     font-size: 12px;
-    background-color: #AAAAAA;
+    background-color: #eeeeee;
     border-radius: 5px;
     color: #666666; 
 }
@@ -747,21 +747,21 @@ input, textarea {
 }
 
 .tag--negative {
-    background-color: #FF61E5;
-    color: #9E0084;
+    background-color: #FFEAFC;
+    color: #9E2E8D;
 }
 
 .tag--negative:hover {
-    color: #9E0084;
+    color: #9E2E8D;
 }
 
 .tag--positive {
-    background-color: #48BEC4;
-    color: #00444A;
+    background-color: #D3FFFD;
+    color: #007E84;
 }
 
 .tag--positive:hover {
-    color: #00444A;
+    color: #007E84;
 }
 
 
