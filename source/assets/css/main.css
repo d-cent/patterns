@@ -701,7 +701,7 @@ input, textarea {
     padding: .4em 1em;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-color: #AAAAAA;
+    background-color: #eeeeee;
     border: solid 1px #666666;
     border-bottom: none;
     color: #666666;
@@ -712,13 +712,13 @@ input, textarea {
 }
 
 .tab--active, .tab:focus, .tab:active  {
-    background-color: #48BEC4;
-    border-color: #007E84;
-    color: #00444A;
+    background-color: #D3FFFD;
+    border-color: #00D3CA;
+    color: #007E84;
 }
 
 .tab--active:hover {
-    color: #00444A;
+    color: #007E84;
 }
 
 /*------------------------------------*\
