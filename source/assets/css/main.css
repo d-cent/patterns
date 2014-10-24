@@ -712,9 +712,9 @@ input, textarea {
 }
 
 .tab--active, .tab:focus, .tab:active  {
-    background-color: #ffffff;
+    background-color: #007E84;
     border-color: #007E84;
-    color: #007E84;
+    color: #ffffff;
 }
 
 .tab--active:hover {
