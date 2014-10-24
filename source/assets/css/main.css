@@ -702,9 +702,9 @@ input, textarea {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color: #D3FFFD;
-    border: solid 1px #00D3CA;
+    border: solid 1px #007E84;
     border-bottom: none;
-    color: #007E84;
+    color: #00444A;
 }
 
 .tab:hover { 
