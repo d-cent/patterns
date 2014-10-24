@@ -629,7 +629,7 @@ input, textarea {
   border-radius: 6px; }
 
 .btn:hover {
-  background: #48BEC4;
+  background: #007E84;
   color: white; }
 
 .btn:focus {
@@ -638,7 +638,8 @@ input, textarea {
 
 .btn.disabled {
   background: #eeeeee;
-  color: white; }
+  color: white;
+  border-color: #eeeeee;}
 
 .btn-alt {
   display: inline-block;
@@ -662,7 +663,8 @@ input, textarea {
 
 .btn-alt.disabled {
   background: #eeeeee;
-  color: white; }
+  color: white;
+  border-color: #eeeeee;}
 
 .btn-small {
   padding: 0.5em; }
