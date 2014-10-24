@@ -701,10 +701,10 @@ input, textarea {
     padding: .4em 1em;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-color: #eeeeee;
-    border: solid 1px #666666;
+    background-color: #D3FFFD;
+    border: solid 1px #00D3CA;
     border-bottom: none;
-    color: #666666;
+    color: #007E84;
 }
 
 .tab:hover { 
@@ -712,12 +712,36 @@ input, textarea {
 }
 
 .tab--active, .tab:focus, .tab:active  {
-    background-color: #D3FFFD;
-    border-color: #00D3CA;
+    background-color: #ffffff;
+    border-color: #007E84;
     color: #007E84;
 }
 
 .tab--active:hover {
+    color: #007E84;
+}
+.tab-alt {
+    display: inline-block;
+    padding: .4em 1em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #eeeeee;
+    border: solid 1px #666666;
+    border-bottom: none;
+    color: #666666;
+}
+
+.tab-alt:hover { 
+    color: #222222;
+}
+
+.tab-alt--active, .tab-alt:focus, .tab-alt:active  {
+    background-color: #222222;
+    border-color: #222222;
+    color: #ffffff;
+}
+
+.tab-alt--active:hover {
     color: #007E84;
 }
 
