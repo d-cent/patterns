@@ -78,65 +78,76 @@
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-01-global-00-colors/00-atoms-01-global-00-colors.html" class="patternLink" data-patternpartial="atoms-colors">Colors</a></h2>
 						<div class="sg-pattern-body">
 							<h3>Main Colors</h3>
-<h5>(logged in / not logged in)
+<h5>(logged in / not logged in)</h5>
 <ul class="sg-colors title-colors">
 	<li>
 		<span class="sg-swatch" style="background: #222222;"></span>
 		<span class="sg-label">#222222, $body-color, RGB 34,34,34</span>
 	</li>
+	
 	<li>
 		<span class="sg-swatch" style="background: #007E84;"></span>
 		<span class="sg-label">#007E84, $base-color, RGB 0,126,132</span>
 	</li>
 </ul>
+<p style="color: #00444A">
+	When using color combinations the main D-CENT color must always be the dominant one. Keep the ratio at 80-20 or better, 90-10. When ratio for any reason is closer to 50/50, (eg. voting pie chart) use a lighter version of one, and a darker of the other.<h1 style="color:#00444A">The Header</h1> <h3 style="color: #007E84">Is Always Darker Than The Subheader</h3>
+</p>
+<p style="color: #00444A">
+	<span style="color: #FF69E8">Magenta combinations </span>are only for special highlights, like <span style="color: #9E2E8D">visited links,</span><span> rather than for general purpose content / material. </span><a href="">Unvisited links</a> should always be in the D-CENT color: #007E84 
+</p>
+<p>
+	Instead of full black, we use a #222222 / RGB 34, 34, 34 to soften the look slightly. Otherwise, feel free to use blacks and gray-scales in any combination with the other colors. For grays, the ratio can vary from 50-50 to 80-20 (gray-color). Be wary of too much black as it can easily get too heavy. For print use straight black (0,0,0,100) and keep the ratio 50-50 or ideally 20-80 black/color. </span>
+</p>
 <br>
 <h3>Background colors</h3>
-<h5>(buttons, backgrounds)</h5>
+<h5>(disabled buttons, buttons, backgrounds)</h5>
 <ul class="sg-colors background-colors">
 	<li>
 		<span class="sg-swatch" style="background: #EEEEEE;"></span>
-		<span class="sg-label">#EEEEEE, $background-gray, RGB 238,238,238</span>
+		<span class="sg-label">#EEEEEE, $background-gray, RGB 238,238,238, disabled buttons</span>
 	</li>
 	<li>
 		<span class="sg-swatch" style="background: #FFEAFC;"></span>
-		<span class="sg-label">#FFEAFC, $comp-color-background, RGB 255,234,252</span>
+		<span class="sg-label">#FFEAFC, $comp-color-background, RGB 255,234,252, buttons and backgrounds</span>
 	</li>
 	<li>
 		<span class="sg-swatch" style="background: #D3FFFD;"></span>
-		<span class="sg-label">#D3FFFD, $base-color-background, RGB 211,255,253</span>
+		<span class="sg-label">#D3FFFD, $base-color-background, RGB 211,255,253 buttons and backgrounds</span>
 	</li>
 </ul>
 <br>
 <h3>Light colors</h3>
-<h5>(Icons, notifications, metadata)</h5>
+<h5>(Passive icons, notification and button borders, metadata, time-stamps)</h5>
 <ul class="sg-colors light-colors">
 	<li>
 		<span class="sg-swatch" style="background: #AAAAAA;"></span>
-		<span class="sg-label">#AAAAAA, $lightgrey, RGB 170,170,170</span>
+		<span class="sg-label">#AAAAAA, $lightgrey, RGB 170,170,170, Passive icons</span>
 	</li>
 	<li>
 		<span class="sg-swatch" style="background: #FF69E8;"></span>
-		<span class="sg-label">#FF69E8, $comp-color-light, RGB 255, 105, 232</span>
+		<span class="sg-label">#FF69E8, $comp-color-light, RGB 255, 105, 232, notification/button borders, metadata</span>
 	</li>
 	<li>
 		<span class="sg-swatch" style="background: #00D3CA;"></span>
-		<span class="sg-label">#00D3CA, $base-color-light, RGB 0,211,202</span>
+		<span class="sg-label">#00D3CA, $base-color-light, RGB 0,211,202 notification/button borders, metadata, time-stamps</span>
 	</li>
 </ul>
 <br>
 <h3>Subheader colors</h3>
+<h5>(Subheaders, links, visited links, icon focus)</h5>
 <ul class="sg-colors subheader-colors">
 	<li>
 		<span class="sg-swatch" style="background: #666666;"></span>
-		<span class="sg-label">#666666, $grey, RGB 102,102,102</span>
+		<span class="sg-label">#666666, $grey, RGB 102,102,102, Subheaders</span>
 	</li>
 	<li>
 		<span class="sg-swatch" style="background: #9E2E8D;"></span>
-		<span class="sg-label">#9E2E8D, $comp-color, RGB 158,46,141</span>
+		<span class="sg-label">#9E2E8D, $comp-color, RGB 158,46,141, visited links</span>
 	</li>
 	<li>
 		<span class="sg-swatch" style="background: #007E84;"></span>
-		<span class="sg-label">#007E84, $base-color, RGB 0,126,132</span>
+		<span class="sg-label">#007E84, $base-color, RGB 0,126,132, Subheaders, links, icon focus</span>
 	</li>
 </ul>
 <br>
@@ -145,15 +156,15 @@
 <ul class="sg-colors title-colors">
 	<li>
 		<span class="sg-swatch" style="background: #222222;"></span>
-		<span class="sg-label">#222222, $body-color, RGB 34,34,34</span>
+		<span class="sg-label">#222222, $body-color, RGB 34,34,34, titles, body text, icon focus</span>
 	</li>
 	<li>
 		<span class="sg-swatch" style="background: #690055;"></span>
-		<span class="sg-label">#690055, $comp-color-dark, RGB 105,0,85</span>
+		<span class="sg-label">#690055, $comp-color-dark, RGB 105,0,85, button and notification text</span>
 	</li>
 	<li>
 		<span class="sg-swatch" style="background: #00444A;"></span>
-		<span class="sg-label">#00444A, $base-color-dark, RGB 0,68,74</span>
+		<span class="sg-label">#00444A, $base-color-dark, RGB 0,68,74 titles, body text</span>
 	</li>
 </ul>
 
@@ -163,65 +174,76 @@
 								<pre class="sg-code-html">
 									<code>
 										&lt;h3&gt;Main Colors&lt;/h3&gt;
-&lt;h5&gt;(logged in / not logged in)
+&lt;h5&gt;(logged in / not logged in)&lt;/h5&gt;
 &lt;ul class=&quot;sg-colors title-colors&quot;&gt;
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #222222;&quot;&gt;&lt;/span&gt;
 		&lt;span class=&quot;sg-label&quot;&gt;#222222, $body-color, RGB 34,34,34&lt;/span&gt;
 	&lt;/li&gt;
+	
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #007E84;&quot;&gt;&lt;/span&gt;
 		&lt;span class=&quot;sg-label&quot;&gt;#007E84, $base-color, RGB 0,126,132&lt;/span&gt;
 	&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p style=&quot;color: #00444A&quot;&gt;
+	When using color combinations the main D-CENT color must always be the dominant one. Keep the ratio at 80-20 or better, 90-10. When ratio for any reason is closer to 50/50, (eg. voting pie chart) use a lighter version of one, and a darker of the other.&lt;h1 style=&quot;color:#00444A&quot;&gt;The Header&lt;/h1&gt; &lt;h3 style=&quot;color: #007E84&quot;&gt;Is Always Darker Than The Subheader&lt;/h3&gt;
+&lt;/p&gt;
+&lt;p style=&quot;color: #00444A&quot;&gt;
+	&lt;span style=&quot;color: #FF69E8&quot;&gt;Magenta combinations &lt;/span&gt;are only for special highlights, like &lt;span style=&quot;color: #9E2E8D&quot;&gt;visited links,&lt;/span&gt;&lt;span&gt; rather than for general purpose content / material. &lt;/span&gt;&lt;a href=&quot;&quot;&gt;Unvisited links&lt;/a&gt; should always be in the D-CENT color: #007E84 
+&lt;/p&gt;
+&lt;p&gt;
+	Instead of full black, we use a #222222 / RGB 34, 34, 34 to soften the look slightly. Otherwise, feel free to use blacks and gray-scales in any combination with the other colors. For grays, the ratio can vary from 50-50 to 80-20 (gray-color). Be wary of too much black as it can easily get too heavy. For print use straight black (0,0,0,100) and keep the ratio 50-50 or ideally 20-80 black/color. &lt;/span&gt;
+&lt;/p&gt;
 &lt;br&gt;
 &lt;h3&gt;Background colors&lt;/h3&gt;
-&lt;h5&gt;(buttons, backgrounds)&lt;/h5&gt;
+&lt;h5&gt;(disabled buttons, buttons, backgrounds)&lt;/h5&gt;
 &lt;ul class=&quot;sg-colors background-colors&quot;&gt;
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #EEEEEE;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#EEEEEE, $background-gray, RGB 238,238,238&lt;/span&gt;
+		&lt;span class=&quot;sg-label&quot;&gt;#EEEEEE, $background-gray, RGB 238,238,238, disabled buttons&lt;/span&gt;
 	&lt;/li&gt;
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #FFEAFC;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#FFEAFC, $comp-color-background, RGB 255,234,252&lt;/span&gt;
+		&lt;span class=&quot;sg-label&quot;&gt;#FFEAFC, $comp-color-background, RGB 255,234,252, buttons and backgrounds&lt;/span&gt;
 	&lt;/li&gt;
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #D3FFFD;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#D3FFFD, $base-color-background, RGB 211,255,253&lt;/span&gt;
+		&lt;span class=&quot;sg-label&quot;&gt;#D3FFFD, $base-color-background, RGB 211,255,253 buttons and backgrounds&lt;/span&gt;
 	&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
 &lt;h3&gt;Light colors&lt;/h3&gt;
-&lt;h5&gt;(Icons, notifications, metadata)&lt;/h5&gt;
+&lt;h5&gt;(Passive icons, notification and button borders, metadata, time-stamps)&lt;/h5&gt;
 &lt;ul class=&quot;sg-colors light-colors&quot;&gt;
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #AAAAAA;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#AAAAAA, $lightgrey, RGB 170,170,170&lt;/span&gt;
+		&lt;span class=&quot;sg-label&quot;&gt;#AAAAAA, $lightgrey, RGB 170,170,170, Passive icons&lt;/span&gt;
 	&lt;/li&gt;
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #FF69E8;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#FF69E8, $comp-color-light, RGB 255, 105, 232&lt;/span&gt;
+		&lt;span class=&quot;sg-label&quot;&gt;#FF69E8, $comp-color-light, RGB 255, 105, 232, notification/button borders, metadata&lt;/span&gt;
 	&lt;/li&gt;
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #00D3CA;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#00D3CA, $base-color-light, RGB 0,211,202&lt;/span&gt;
+		&lt;span class=&quot;sg-label&quot;&gt;#00D3CA, $base-color-light, RGB 0,211,202 notification/button borders, metadata, time-stamps&lt;/span&gt;
 	&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
 &lt;h3&gt;Subheader colors&lt;/h3&gt;
+&lt;h5&gt;(Subheaders, links, visited links, icon focus)&lt;/h5&gt;
 &lt;ul class=&quot;sg-colors subheader-colors&quot;&gt;
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #666666;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#666666, $grey, RGB 102,102,102&lt;/span&gt;
+		&lt;span class=&quot;sg-label&quot;&gt;#666666, $grey, RGB 102,102,102, Subheaders&lt;/span&gt;
 	&lt;/li&gt;
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #9E2E8D;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#9E2E8D, $comp-color, RGB 158,46,141&lt;/span&gt;
+		&lt;span class=&quot;sg-label&quot;&gt;#9E2E8D, $comp-color, RGB 158,46,141, visited links&lt;/span&gt;
 	&lt;/li&gt;
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #007E84;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#007E84, $base-color, RGB 0,126,132&lt;/span&gt;
+		&lt;span class=&quot;sg-label&quot;&gt;#007E84, $base-color, RGB 0,126,132, Subheaders, links, icon focus&lt;/span&gt;
 	&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
@@ -230,15 +252,15 @@
 &lt;ul class=&quot;sg-colors title-colors&quot;&gt;
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #222222;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#222222, $body-color, RGB 34,34,34&lt;/span&gt;
+		&lt;span class=&quot;sg-label&quot;&gt;#222222, $body-color, RGB 34,34,34, titles, body text, icon focus&lt;/span&gt;
 	&lt;/li&gt;
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #690055;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#690055, $comp-color-dark, RGB 105,0,85&lt;/span&gt;
+		&lt;span class=&quot;sg-label&quot;&gt;#690055, $comp-color-dark, RGB 105,0,85, button and notification text&lt;/span&gt;
 	&lt;/li&gt;
 	&lt;li&gt;
 		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #00444A;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#00444A, $base-color-dark, RGB 0,68,74&lt;/span&gt;
+		&lt;span class=&quot;sg-label&quot;&gt;#00444A, $base-color-dark, RGB 0,68,74 titles, body text&lt;/span&gt;
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -254,9 +276,11 @@
 							<p class="font-headings">Header font: "Comfortaa", "Helvetica", "Arial", sans-serif;</p>
 <p class="font-headings"><strong>Header font strong: "Comfortaa", "Helvetica", "Arial", sans-serif;</strong></p>
 <!--p class="font-headings"><em>Header font italic: "Comfortaa", "Helvetica", "Arial", sans-serif;</em></p-->
+<ul class="font-headings"> Link to Comfortaa font <a href="http://www.google.com/fonts#UsePlace:use/Collection:Comfortaa">here</a></ul>
 <p class="font-body">Body font: "Muli", sans-serif;</p>
 <p class="font-body"><strong>Body font bold: "Muli", sans-serif;</strong></p>
 <p class="font-body"><em>Body font italic: "Muli", sans-serif;</em></p>
+<ul class="font-body">Link to Muli font <a href="https://github.com/vernnobile/MuliFont/tree/master/version-1.0">here.</a></ul>
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
@@ -264,9 +288,11 @@
 										&lt;p class=&quot;font-headings&quot;&gt;Header font: &quot;Comfortaa&quot;, &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;&lt;/p&gt;
 &lt;p class=&quot;font-headings&quot;&gt;&lt;strong&gt;Header font strong: &quot;Comfortaa&quot;, &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;&lt;/strong&gt;&lt;/p&gt;
 &lt;!--p class=&quot;font-headings&quot;&gt;&lt;em&gt;Header font italic: &quot;Comfortaa&quot;, &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;&lt;/em&gt;&lt;/p--&gt;
+&lt;ul class=&quot;font-headings&quot;&gt; Link to Comfortaa font &lt;a href=&quot;http://www.google.com/fonts#UsePlace:use/Collection:Comfortaa&quot;&gt;here&lt;/a&gt;&lt;/ul&gt;
 &lt;p class=&quot;font-body&quot;&gt;Body font: &quot;Muli&quot;, sans-serif;&lt;/p&gt;
 &lt;p class=&quot;font-body&quot;&gt;&lt;strong&gt;Body font bold: &quot;Muli&quot;, sans-serif;&lt;/strong&gt;&lt;/p&gt;
 &lt;p class=&quot;font-body&quot;&gt;&lt;em&gt;Body font italic: &quot;Muli&quot;, sans-serif;&lt;/em&gt;&lt;/p&gt;
+&lt;ul class=&quot;font-body&quot;&gt;Link to Muli font &lt;a href=&quot;https://github.com/vernnobile/MuliFont/tree/master/version-1.0&quot;&gt;here.&lt;/a&gt;&lt;/ul&gt;
 									</code>
 								</pre>
 							</div>
