@@ -1739,6 +1739,35 @@ input, textarea {
   border-color: #690055;
 }
 
+/*------------------------------------*\
+    $HELPER TEXT
+\*------------------------------------*/
+
+.helper {
+  position: relative;
+  padding: 1.5em 1em 1em;
+}
+
+.helper__toggle {
+  position: absolute;
+  top: 0;
+  right: 1.5em;
+  cursor: pointer;
+}
+
+.helper > input {
+  width: 100%;
+}
+
+.helper__body {
+  padding: .25em 0;
+}
+
+
+
+.js .helper__body {
+  display: none;
+}
 
 /*------------------------------------*\
 		$NOTIFICATIONS
