@@ -1,49 +1,3 @@
-
-/*------------------------------------*\
-    $IMPORTS
-\*------------------------------------*/
-/*------------------------------------*\
-	$CONFIG
-\*------------------------------------*/
-/*------------------------------------*\
-	Greyscale
-\*------------------------------------*/
-/*------------------------------------*\
-	Typography
-\*------------------------------------*/
-/*------------------------------------*\
-	Colors. Use meaningful names
-\*------------------------------------*/
-/*------------------------------------*\
-	Links
-\*------------------------------------*/
-/*------------------------------------*\
-	Buttons
-\*------------------------------------*/
-/*------------------------------------*\
-	Tables
-\*------------------------------------*/
-/*------------------------------------*\
-	Enable styles
-\*------------------------------------*/
-/*------------------------------------*\
-		$MIXINS
-\*------------------------------------*/
-/*------------------------------------*\
-	Pixels to ems
-	font-size: em(21px, 15px);
-\*------------------------------------*/
-/*------------------------------------*\
-
-Configurable Media Queries. Also used to generate old-ie CSS without MQs.
-		 $value		- Breakpoint value
-		 $feature	- Media query operator
-		 $media		- Media type
-\*------------------------------------*/
-/*----------------------------------------------*\
-		RGBA fallbacks:
-		Use like this: @include tran(bg, #00ff00, .8);
-\*----------------------------------------------*/
 /*------------------------------------*\
 	$HELPER
 \*------------------------------------*/
@@ -1737,9 +1691,54 @@ input, textarea {
 .message {
   padding: .5em;
   text-align: center;
-  border: solid 3px green;
+  border: solid 3px;
   border-radius: 9px;
 }
+
+.message__body {
+  position: relative;
+  padding: 0 1em;
+}
+
+.message__close {
+  position: absolute;
+  top: -.5em;
+  right: 0;
+  cursor: pointer;
+}
+
+/* Theming of the messages */
+
+.message--main {
+  color: #007E84;
+  border-color: #007E84;
+}
+
+.message--emphasized {
+  color: #00444A;
+  border-color: #00444A;
+}
+
+.message--another {
+  color: #00D3CA;
+  border-color: #00D3CA;
+}
+
+.message--particular {
+  color: #FF69E8;
+  border-color: #FF69E8;
+}
+
+.message--serious {
+  color: #9E2E8D;
+  border-color: #9E2E8D;
+}
+
+.message--different {
+  color: #690055;
+  border-color: #690055;
+}
+
 
 /*------------------------------------*\
 		$NOTIFICATIONS
