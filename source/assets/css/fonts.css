@@ -43,6 +43,411 @@
 
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?-l5iujs');
+  src:url('fonts/icomoon.eot?#iefix-l5iujs') format('embedded-opentype'),
+    url('fonts/icomoon.woff?-l5iujs') format('woff'),
+    url('fonts/icomoon.ttf?-l5iujs') format('truetype'),
+    url('fonts/icomoon.svg?-l5iujs#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-share:before {
+  content: "\e600";
+}
+.icon-word:before {
+  content: "\e601";
+}
+.icon-excel:before {
+  content: "\e602";
+}
+.icon-powerpoint:before {
+  content: "\e603";
+}
+.icon-om-_425:before {
+  content: "\e604";
+}
+.icon-om-_426:before {
+  content: "\e605";
+}
+.icon-audio:before {
+  content: "\e606";
+}
+.icon-video:before {
+  content: "\e607";
+}
+.icon-code:before {
+  content: "\e608";
+}
+.icon-angle_down_circle:before {
+  content: "\e609";
+}
+.icon-angle_down:before {
+  content: "\e60a";
+}
+.icon-angle_left_circle:before {
+  content: "\e60b";
+}
+.icon-angle_left:before {
+  content: "\e60c";
+}
+.icon-angle_right_circle:before {
+  content: "\e60d";
+}
+.icon-angle_right:before {
+  content: "\e60e";
+}
+.icon-angle_up_circle:before {
+  content: "\e60f";
+}
+.icon-angle_up:before {
+  content: "\e610";
+}
+.icon-avatar_circle:before {
+  content: "\e611";
+}
+.icon-avatar_outline:before {
+  content: "\e612";
+}
+.icon-avatar_shield:before {
+  content: "\e613";
+}
+.icon-avatar:before {
+  content: "\e614";
+}
+.icon-bars:before {
+  content: "\e615";
+}
+.icon-box_blank:before {
+  content: "\e616";
+}
+.icon-business:before {
+  content: "\e617";
+}
+.icon-caret_down_sign:before {
+  content: "\e618";
+}
+.icon-caret_down:before {
+  content: "\e619";
+}
+.icon-caret_left_sign:before {
+  content: "\e61a";
+}
+.icon-caret_left:before {
+  content: "\e61b";
+}
+.icon-caret_right_sign:before {
+  content: "\e61c";
+}
+.icon-caret_right:before {
+  content: "\e61d";
+}
+.icon-caret_up_sign:before {
+  content: "\e61e";
+}
+.icon-caret_up:before {
+  content: "\e61f";
+}
+.icon-chat_circle:before {
+  content: "\e620";
+}
+.icon-chat:before {
+  content: "\e621";
+}
+.icon-circle_arrow_down:before {
+  content: "\e622";
+}
+.icon-circle_arrow_left:before {
+  content: "\e623";
+}
+.icon-circle_arrow_right:before {
+  content: "\e624";
+}
+.icon-circle_arrow_up:before {
+  content: "\e625";
+}
+.icon-circle_blank:before {
+  content: "\e626";
+}
+.icon-circle_search:before {
+  content: "\e627";
+}
+.icon-clock:before {
+  content: "\e628";
+}
+.icon-om-code:before {
+  content: "\e629";
+}
+.icon-copy:before {
+  content: "\e62a";
+}
+.icon-discussion_circle:before {
+  content: "\e62b";
+}
+.icon-document_circle:before {
+  content: "\e62c";
+}
+.icon-double_angle_down:before {
+  content: "\e62d";
+}
+.icon-double_angle_left:before {
+  content: "\e62e";
+}
+.icon-double_angle_right:before {
+  content: "\e62f";
+}
+.icon-double_angle_up:before {
+  content: "\e630";
+}
+.icon-edit:before {
+  content: "\e631";
+}
+.icon-enter_sign:before {
+  content: "\e632";
+}
+.icon-enter:before {
+  content: "\e633";
+}
+.icon-exclamation_circle:before {
+  content: "\e634";
+}
+.icon-facebook_sign:before {
+  content: "\e635";
+}
+.icon-facebook:before {
+  content: "\e636";
+}
+.icon-file_alt:before {
+  content: "\e637";
+}
+.icon-file_small_circle:before {
+  content: "\e638";
+}
+.icon-file_small:before {
+  content: "\e639";
+}
+.icon-file_text:before {
+  content: "\e63a";
+}
+.icon-file:before {
+  content: "\e63b";
+}
+.icon-gallup_circle:before {
+  content: "\e63c";
+}
+.icon-gallup:before {
+  content: "\e63d";
+}
+.icon-group_circle:before {
+  content: "\e63e";
+}
+.icon-group:before {
+  content: "\e63f";
+}
+.icon-household:before {
+  content: "\e640";
+}
+.icon-info_circle:before {
+  content: "\e641";
+}
+.icon-info:before {
+  content: "\e642";
+}
+.icon-institution:before {
+  content: "\e643";
+}
+.icon-iteration_circle:before {
+  content: "\e644";
+}
+.icon-petition:before {
+  content: "\e645";
+}
+.icon-keskustelu_circle:before {
+  content: "\e646";
+}
+.icon-discussion:before {
+  content: "\e647";
+}
+.icon-om-kuntalaisaloite:before {
+  content: "\e648";
+}
+.icon-poll_circle:before {
+  content: "\e649";
+}
+.icon-poll:before {
+  content: "\e64a";
+}
+.icon-om-lausuntopalvelu_circle:before {
+  content: "\e64b";
+}
+.icon-legal_circle:before {
+  content: "\e64c";
+}
+.icon-legal:before {
+  content: "\e64d";
+}
+.icon-light_bulb:before {
+  content: "\e64e";
+}
+.icon-linkedin_sign:before {
+  content: "\e64f";
+}
+.icon-linkedin:before {
+  content: "\e650";
+}
+.icon-lock:before {
+  content: "\e651";
+}
+.icon-mail_sign:before {
+  content: "\e652";
+}
+.icon-mail:before {
+  content: "\e653";
+}
+.icon-muu_verkkopalvelu_circle:before {
+  content: "\e654";
+}
+.icon-muu_verkkopalvelu:before {
+  content: "\e655";
+}
+.icon-ok_sign:before {
+  content: "\e656";
+}
+.icon-ok:before {
+  content: "\e657";
+}
+.icon-otakantaa:before {
+  content: "\e658";
+}
+.icon-paste:before {
+  content: "\e659";
+}
+.icon-pencil_circle:before {
+  content: "\e65a";
+}
+.icon-pencil:before {
+  content: "\e65b";
+}
+.icon-phone:before {
+  content: "\e65c";
+}
+.icon-plus_circle:before {
+  content: "\e65d";
+}
+.icon-plus:before {
+  content: "\e65e";
+}
+.icon-print:before {
+  content: "\e65f";
+}
+.icon-question_circle:before {
+  content: "\e660";
+}
+.icon-question_default:before {
+  content: "\e661";
+}
+.icon-question_ring:before {
+  content: "\e662";
+}
+.icon-reload_sign:before {
+  content: "\e663";
+}
+.icon-remove_sign:before {
+  content: "\e664";
+}
+.icon-ring_left:before {
+  content: "\e665";
+}
+.icon-ring_outline:before {
+  content: "\e666";
+}
+.icon-ring_right:before {
+  content: "\e667";
+}
+.icon-rss_sign:before {
+  content: "\e668";
+}
+.icon-rss:before {
+  content: "\e669";
+}
+.icon-search:before {
+  content: "\e66a";
+}
+.icon-save:before {
+  content: "\e66b";
+}
+.icon-sign_blank:before {
+  content: "\e66c";
+}
+.icon-signin:before {
+  content: "\e66d";
+}
+.icon-signout:before {
+  content: "\e66e";
+}
+.icon-small_arrow_down:before {
+  content: "\e66f";
+}
+.icon-small_arrow_left:before {
+  content: "\e670";
+}
+.icon-small_arrow_right:before {
+  content: "\e671";
+}
+.icon-small_arrow_up:before {
+  content: "\e672";
+}
+.icon-spinner:before {
+  content: "\e673";
+}
+.icon-star:before {
+  content: "\e674";
+}
+.icon-tasks:before {
+  content: "\e675";
+}
+.icon-trash:before {
+  content: "\e676";
+}
+.icon-twitter_box:before {
+  content: "\e677";
+}
+.icon-twitter:before {
+  content: "\e678";
+}
+.icon-uniF1C1:before {
+  content: "\e679";
+}
+.icon-warning_sign_outline:before {
+  content: "\e67a";
+}
+.icon-warning_sign:before {
+  content: "\e67b";
+}
+.icon-youtube_box:before {
+  content: "\e67c";
+}
+.icon-youtube:before {
+  content: "\e67d";
+}
+
+
 
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
