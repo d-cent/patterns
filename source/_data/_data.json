@@ -16,7 +16,7 @@
 			"alt": "Square Thumbnail"
 		},
 		"avatar" : {
-			"src" : "../../images/fpo_avatar.png",
+			"src": "http://placeimg.com/40/40/tech",
 			"alt" : "Person Name"
 		},
 		"rectangle": {

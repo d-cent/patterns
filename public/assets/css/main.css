@@ -1794,7 +1794,46 @@ input, textarea {
         background-image: -o-linear-gradient(top, transparent, white);
 }
 
+/*------------------------------------*\
+    $COMMENTS
+\*------------------------------------*/
 
+
+.comment {
+  margin-bottom: 1.5em;
+}
+
+.comment:last-child {
+  margin-bottom: 0;
+}
+
+.comment__img {
+  float: left;
+  margin: 0 .25em 0 0;
+}
+
+.comment__meta > a {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.comment__meta > time {
+  display: inline-block;
+  color: #007E84;
+}
+
+.comment__body {
+  margin-bottom: .5em;
+}
+
+.comment__actions {
+  color: #007E84;
+  text-align: right;
+}
+
+.comment-toggle {
+  cursor: pointer;
+}
 
 /*------------------------------------*\
 		$NOTIFICATIONS
