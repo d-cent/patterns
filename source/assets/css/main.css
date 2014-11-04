@@ -24,6 +24,8 @@
  * Color..................Color classes
  * Media..................Media class (image on the left/right of the content)
  * Nav....................Nav classes
+ * Box....................Box object (padding on top right bottom left)
+ * Block..................Block object (padding on top bottom)
  *
  * MODULES
  * Header.................The main page header.
@@ -935,12 +937,12 @@ input,textarea {
 	background-color:#222
 }
 
-.bc-light {
-	background-color:#F0F0F0
+.bc-grey--light {
+	background-color:#AAA
 }
 
-.bc-white {
-	background-color:#FFF
+.bc-grey--lightest {
+	background-color:#EEE
 }
 
 /*------------------------------------*\
@@ -1103,6 +1105,40 @@ input,textarea {
 
 .nav--fit > li > a {
 	display:block
+}
+
+
+/*------------------------------------*\
+		$BOX
+\*------------------------------------*/
+
+.box {
+	padding: 1em;
+}
+
+.box--large {
+	padding: 1.5em;
+}
+
+.box--small {
+	padding: .625em;
+}
+
+
+/*------------------------------------*\
+		$BLOCK
+\*------------------------------------*/
+
+.block {
+	padding: 1em 0;
+}
+
+.block--large {
+	padding: 1.5em 0;
+}
+
+.block--small {
+	padding: .625em 0;
 }
 
 /*------------------------------------*\

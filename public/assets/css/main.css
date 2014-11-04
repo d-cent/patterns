@@ -2,27 +2,50 @@
  * CONTENTS
  *
  * HELPERS
- * Global...............Globally-available variables and config.
+ * Global.................Globally-available helper classes.
  *
  *
- * GENERIC
- * Normalize.css........A level playing field.
- * Box-sizing...........Better default `box-sizing`.
+ * ROOT
+ * Normalize.css..........A level playing field.
+ * Box-sizing.............Better default `box-sizing`.
+ * HTML and Body..........Basic styles for html and body
  *
  * BASE
- * Headings.............H1–H6 styles.
+ * Typography.............H1–H6, ul, p and other typo styles.
+ * Links..................Basic link styles.
+ * Images.................Image and figure styles.
+ * Tables.................H1–H6 styles.
+ * Forms..................Form styles.
+ * Buttons................Button styles.
+ * Tabs...................Tab styles.
+ * Tags...................Tag styles.
  *
  * OBJECTS
- * Wrappers.............Wrapping and constraining elements.
+ * Color..................Color classes
+ * Media..................Media class (image on the left/right of the content)
+ * Nav....................Nav classes
+ * Box....................Box object (padding on top right bottom left)
+ * Block..................Block object (padding on top bottom)
  *
- * COMPONENTS
- * Page-head............The main page header.
- * Page-foot............The main page footer.
- * Buttons..............Button elements.
+ * MODULES
+ * Header.................The main page header.
+ * Login..................Login module.
+ * Messaging..............Messaging styles.
+ * Helper text............Helper text.
+ * Fader text.............Fader text.
+ * Comments...............Comments module.
+ * Discussion.............Discussion organism.
+ * Profile................Profile section.
+
+
  *
- * TRUMPS
- * Text.................Text helpers.
+ *
  */
+
+
+
+
+
 
 
 
@@ -111,9 +134,8 @@
 	width:1px!important
 }
 
-/*------------------------------------*\
-		$BASE
-\*------------------------------------*/
+
+
 /*------------------------------------*\
 		$ROOT
 \*------------------------------------*/
@@ -174,6 +196,12 @@ body {
 .page--with-sticky {
 	padding:3em 0 0
 }
+
+
+/*------------------------------------*\
+		$BASE
+\*------------------------------------*/
+
 
 /*------------------------------------*\
 		$TYPOGRAPHY
@@ -321,7 +349,7 @@ sup {
 }
 
 /*------------------------------------*\
-		Links
+		$LINKS
 \*------------------------------------*/
 a {
 	color:#007e84;
@@ -615,22 +643,6 @@ input,textarea {
 	margin-bottom:1em
 }
 
-/*------------------------------------*\
-		$ALERTS
-\*------------------------------------*/
-.alert {
-	text-align:center;
-	padding:1em;
-	margin-bottom:.5em;
-	border:1px solid gray;
-	background:#f9f9f9
-}
-
-.alert-error {
-	color:red;
-	border-color:red;
-	background:#ffbebe
-}
 
 /*------------------------------------*\
 		$BUTTONS
@@ -816,6 +828,16 @@ input,textarea {
 	color:#007E84
 }
 
+
+
+
+
+/*------------------------------------*\
+	$OBJECTS
+\*------------------------------------*/
+
+
+
 /*------------------------------------*\
 	$COLOR
 \*------------------------------------*/
@@ -915,17 +937,14 @@ input,textarea {
 	background-color:#222
 }
 
-.bc-light {
-	background-color:#F0F0F0
+.bc-grey--light {
+	background-color:#AAA
 }
 
-.bc-white {
-	background-color:#FFF
+.bc-grey--lightest {
+	background-color:#EEE
 }
 
-/*------------------------------------*\
-		$OBJECTS
-\*------------------------------------*/
 /*------------------------------------*\
 		$MEDIA
 \*------------------------------------*/
@@ -1086,6 +1105,40 @@ input,textarea {
 
 .nav--fit > li > a {
 	display:block
+}
+
+
+/*------------------------------------*\
+		$BOX
+\*------------------------------------*/
+
+.box {
+	padding: 1em;
+}
+
+.box--large {
+	padding: 1.5em;
+}
+
+.box--small {
+	padding: .625em;
+}
+
+
+/*------------------------------------*\
+		$BLOCK
+\*------------------------------------*/
+
+.block {
+	padding: 1em 0;
+}
+
+.block--large {
+	padding: 1.5em 0;
+}
+
+.block--small {
+	padding: .625em 0;
 }
 
 /*------------------------------------*\
