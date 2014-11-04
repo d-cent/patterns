@@ -186,6 +186,7 @@ html {
 
 body {
 	margin:0;
+	padding: 20px;
 	background-color:white;
 	font-family:"muliregular","Helvetica",sans-serif;
 	font-weight:400;
@@ -193,8 +194,45 @@ body {
 	line-height:1.5
 }
 
-.page--with-sticky {
-	padding:3em 0 0
+.sticky .page--with-sticky {
+	padding:3em 0 0;
+}
+
+/* borders */
+
+/* Create a series of empty pseudo-elements... */
+html:before,html:after,body:before,body:after{
+    content:"";
+    background:#EEE;
+    position:fixed;
+    display:block;
+    z-index:5;
+}
+
+/* ...and position them! */
+html:before{
+    height:10px;
+    left:0;
+    right:0;
+    top:0;
+}
+html:after{
+    width:10px;
+    top:0;
+    right:0;
+    bottom:0;
+}
+body:before{
+    height:10px;
+    right:0;
+    bottom:0;
+    left:0;
+}
+body:after{
+    width:10px;
+    top:0;
+    bottom:0;
+    left:0;
 }
 
 
@@ -2067,7 +2105,7 @@ input,textarea {
 	padding:.5em
 }
 
-.header--sticky {
+.sticky .header--sticky {
 	position:fixed;
 	width:100%;
 	top:0;
@@ -2089,17 +2127,27 @@ input,textarea {
 				$LOGIN
 \*------------------------------------*/
 .login {
-	margin:0 auto;
-	padding:1.5em 0 0;
+	margin: 1.5em auto 0;
 	max-width:280px;
-	clear:both
+	clear:both;
 }
 
 .js .login {
-	display:none
+	max-height: 0;
+	overflow: hidden;
+	-moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.js .js-login-open {
+	max-height: 999px;
 }
 
 .form--login {
+	margin: 1.5em 0;
 }
 
 .form--login > .form-row > input {

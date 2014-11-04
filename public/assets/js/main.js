@@ -1,5 +1,5 @@
-
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function() {
+  
 
 	// svg fallback
 
@@ -15,17 +15,55 @@ $(document).ready(function() {
 		}
 	}
 
-	// Sign in
 
-	$('.js-open-signin').on('click', function() {
-		$('.login').slideToggle(300);
-	});
+	// sign in: for demo purposes only
+
+	(function(){
+
+		var signToggle = document.querySelectorAll('.js-open-signin');
+
+
+		[].forEach.call(signToggle, function(el) {
+		  el.addEventListener("click", function() {
+
+		  	var loginContent = document.querySelector('.login');
+
+		    loginContent.classList.toggle('js-login-open');
+
+		  });
+		});
+			
+	})();
 
 	// helper text
 
-	$('.js-helper__toggle').on('click', function() {
-		$('.helper__body').slideToggle(300);
-	});
+	(function(){
+
+		var helperToggle = document.querySelectorAll('.js-helper__toggle');
+
+
+		[].forEach.call(helperToggle, function(el) {
+		  el.addEventListener("click", function() {
+
+		  	var loginContent = document.querySelector('.helper__body');
+
+		    loginContent.classList.toggle('js-show');
+
+		  });
+		});
+			
+	})();
+
+
+
+});
+
+
+
+
+$(document).ready(function() {
+
+
 
 
 	if ($('.fadeout').length) {
