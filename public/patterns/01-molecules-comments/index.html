@@ -74,8 +74,36 @@
 			
 			<!-- Patterns -->
 			<div id="sg-patterns">
-					<div id="molecules-comment" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-comments-comment/01-molecules-comments-comment.html" class="patternLink" data-patternpartial="molecules-comment">Comment</a></h2>
+					<div id="molecules-comment-field" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-comments-comment-field/01-molecules-comments-comment-field.html" class="patternLink" data-patternpartial="molecules-comment-field">Comment Field</a></h2>
+						<div class="sg-pattern-body">
+							<div class="comment-field">
+	<figure class="comment__img">
+		<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+		<i class="icon-avatar_circle"></i>
+	</figure><!-- end comment pic -->
+	<textarea placeholder="Comment"></textarea>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;comment-field&quot;&gt;
+	&lt;figure class=&quot;comment__img&quot;&gt;
+		&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+		&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+	&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+	&lt;textarea placeholder=&quot;Comment&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-discussion-comment" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-comments-discussion-comment/01-molecules-comments-discussion-comment.html" class="patternLink" data-patternpartial="molecules-discussion-comment">Discussion Comment</a></h2>
 						<div class="sg-pattern-body">
 							<div class="comment">
 
@@ -147,6 +175,64 @@
 	&lt;/div&gt;&lt;!-- end comment field --&gt;
 
 &lt;/div&gt;&lt;!-- end single comment --&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-single-comment" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-comments-single-comment/01-molecules-comments-single-comment.html" class="patternLink" data-patternpartial="molecules-single-comment">Single Comment</a></h2>
+						<div class="sg-pattern-body">
+							<div class="comment">
+
+	<figure class="comment__img">
+		<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+		<i class="icon-avatar_circle"></i>
+	</figure><!-- end comment pic -->
+
+	<div class="comment__meta">
+
+		<a href="#">Firstname Lastname</a>
+
+		<time>About an hour ago</time>
+
+	</div><!-- end comment meta -->
+
+	<div class="comment__body">
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+	</div><!-- end comment body -->
+
+</div><!-- end single comment -->
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;comment&quot;&gt;
+
+	&lt;figure class=&quot;comment__img&quot;&gt;
+		&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+		&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+	&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+	&lt;div class=&quot;comment__meta&quot;&gt;
+
+		&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+		&lt;time&gt;About an hour ago&lt;/time&gt;
+
+	&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+	&lt;div class=&quot;comment__body&quot;&gt;
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+	&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+&lt;/div&gt;&lt;!-- end single comment --&gt;
+
 									</code>
 								</pre>
 							</div>

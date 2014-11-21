@@ -42,7 +42,7 @@
  * Comments...............Comments module.
  * Discussion.............Discussion organism.
  * Profile................Profile section.
-
+ * Article................Basic article styles.
 
  *
  *
@@ -774,7 +774,7 @@ input,textarea {
 }
 
 .tabs >li {
-	margin-right:.25em
+	margin: 0 .25em 1px 0;
 }
 
 .tab li:last-child {
@@ -1622,6 +1622,17 @@ input,textarea {
 	cursor:pointer
 }
 
+.comment-field {
+	margin-bottom: 1.5em;
+}
+
+.comment-field > textarea {
+	display: inline-block;
+	max-width: 600px;
+	min-width: 250px;
+	width: 80%;
+}
+
 /*------------------------------------*\
 		$DISCUSSION
 \*------------------------------------*/
@@ -1669,6 +1680,7 @@ input,textarea {
 /*------------------------------------*\
 		$PROFILE
 \*------------------------------------*/
+
 .profile {
 	margin:0 auto;
 	padding:1.5em 1em 0;
@@ -1703,4 +1715,39 @@ input,textarea {
 
 .profile__form textarea {
 	min-height:100px
+}
+
+/*------------------------------------*\
+		$ARTICLE
+\*------------------------------------*/
+
+
+.article {
+
+}
+
+@media screen and (min-width: 30em) {
+	.article__img {
+		float: left;
+		margin-right: 1.5em;
+	}
+}
+
+.article__tags {
+	margin-bottom: 1em;
+}
+
+.article__tags > i {
+	margin-right: .5em;
+	vertical-align: middle;
+	font-size: 22px;
+}
+
+.article__tags > ul {
+	display: inline-block;
+}
+
+
+.article__body {
+	clear: both;
 }

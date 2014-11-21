@@ -1,0 +1,61 @@
+<article class="event" role="main">
+
+    <div class="article__head">
+
+        <h1 class="article__title c-base">Event title</h1>
+
+        <figure class="article__img">
+            <img src="{{ img.square.src }}" />
+        </figure>
+
+        <p>Soreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Dus autem vel eum iriure dolor
+            in hendrerit in vulputate velit esse molestie consequatvel - Article OG Description 297 chars.
+        </p>
+
+        <div class="article__tags">
+            <i class="fa fa-tags"></i>
+            <ul class="bare-list nav tags">
+                <li><a class="tag tag--positive" href="#">Agree</a></li>
+                <li><a class="tag tag--negative" href="#">Disagree</a></li>
+                <li><a class="tag" href="#">Lorem ipsum</a></li>
+            </ul>
+        </div><!-- end article tags -->
+
+        <div class="article__meta">
+            <i class="fa fa-clock-o"></i>
+            Tuesday 29th of March
+        </div><!-- end article meta -->
+
+    </div><!-- end article head -->
+
+    <div class="article__body">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sapien massa, suscipit vulputate erat eget, auctor imperdiet lectus. Morbi lectus arcu, semper scelerisque eros id</p>
+        <p>tempor pretium odio. Praesent a condimentum ligula. In id dui eu magna aliquet tristique. Suspendisse sed dolor vitae mauris hendrerit laoreet id a erat. Donec interdum imperdiet quam, semper
+        dapibus turpis imperdiet non. Fusce varius, arcu faucibus convallis eleifend, diam mauris luctus orci, ut posuere eros leo euismod dolor.</p>
+
+    </div><!-- end article body -->
+
+    <div class="article__discussion">
+
+        <ul class="bare-list nav tabs">
+            <li><a class="tab tab--active" href="#">Attendees</a></li>
+            <li><a class="tab" href="#">Discussion</a></li>
+        </ul>
+
+        <div class="block--large">
+
+            {{> molecules-comment-field }}
+
+            {{> molecules-single-comment }}
+
+            {{> molecules-single-comment }}
+
+            {{> molecules-single-comment }}
+
+        </div>
+
+    </div><!-- end article discussion -->
+
+</article><!-- end article -->

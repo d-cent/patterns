@@ -12,7 +12,7 @@
 			"alt": "16x9 Image"
 		},
 		"square": {
-			"src": "../../images/fpo_square.png",
+			"src": "http://placeimg.com/200/200/tech",
 			"alt": "Square Thumbnail"
 		},
 		"avatar" : {
