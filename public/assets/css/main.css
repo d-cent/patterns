@@ -957,19 +957,19 @@ input,textarea {
 
 
 .bc-comp {
-	color:#9E2E8D
+	background-color:#9E2E8D
 }
 
 .bc-comp--dark {
-	color:#690055
+	background-color:#690055
 }
 
 .bc-comp--light {
-	color:#FF69E8
+	background-color:#FF69E8
 }
 
 .bc-comp--lightest {
-	color:#FFEAFC
+	background-color:#FFEAFC
 }
 
 
@@ -1341,11 +1341,17 @@ input,textarea {
 
 
 /*------------------------------------*\
+		$NAVIGATION
+\*------------------------------------*/
+
+
+/*------------------------------------*\
 		$NAV-PRIMARY
 \*------------------------------------*/
 
 
 .nav__item {
+	position: relative;
 	margin-right: .5em;
 }
 
@@ -1380,6 +1386,17 @@ input,textarea {
 	display: none;
 }
 
+.count {
+	position: absolute;
+	top: -17px;
+	right: 0;
+	display: inline-block;
+	padding: 1px 5px;
+	border-radius: 50%;
+	font-size: 12px;
+	font-style: normal;
+}
+
 @media screen and (min-width: 48em) {
 	.nav__item > a > span {
 		display: inline-block;
@@ -1390,6 +1407,9 @@ input,textarea {
 /*------------------------------------*\
 		$NAV-SETTINGS
 \*------------------------------------*/
+
+
+
 
 /*------------------------------------*\
 		$LOGIN
