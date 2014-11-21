@@ -68,29 +68,10 @@
 
 	</head>
 	<body class="body">
-<h2 class="block">Halves</h2>
-
-<div class="grid">
-	<div class="g g--half" style="height: 100px; background: grey;"></div>
-	<div class="g g--half" style="height: 100px; background: grey;"></div>
-</div>
-
-<h2 class="block">Thirds</h2>
-
-<div class="grid">
-	<div class="g g--third" style="height: 100px; background: grey;"></div>
-	<div class="g g--third" style="height: 100px; background: grey;"></div>
-	<div class="g g--third" style="height: 100px; background: grey;"></div>
-</div>
-
-<h2 class="block">Fourths</h2>
-
-<div class="grid">
-	<div class="g g--fourth" style="height: 100px; background: grey;"></div>
-	<div class="g g--fourth" style="height: 100px; background: grey;"></div>
-	<div class="g g--fourth" style="height: 100px; background: grey;"></div>
-	<div class="g g--fourth" style="height: 100px; background: grey;"></div>
-</div>
+<ul class="bare-list nav nav-settings">
+    <li class="nav__item"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
+    <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
+</ul>
 
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 
@@ -100,9 +81,9 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "atoms-grid";
+		var patternPartial = "molecules-nav-settings";
 		var lineage        = [];
-		var lineageR       = [];
+		var lineageR       = [{"lineagePattern":"organisms-navigation","lineagePath":"..\/..\/patterns\/02-organisms-navigation-navigation\/02-organisms-navigation-navigation.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

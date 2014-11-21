@@ -343,54 +343,58 @@
 					<div id="atoms-grid" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-01-global-04-grid/00-atoms-01-global-04-grid.html" class="patternLink" data-patternpartial="atoms-grid">Grid</a></h2>
 						<div class="sg-pattern-body">
-							<div class="row show-grid">
-  <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
-  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-</div>
-<div class="row show-grid">
-  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-  <!-- Optional: clear the XS cols if their content doesn't match in height -->
-  <div class="clearfix visible-xs-block"></div>
-  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+							<h2 class="block">Halves</h2>
+
+<div class="grid">
+	<div class="g g--half" style="height: 100px; background: grey;"></div>
+	<div class="g g--half" style="height: 100px; background: grey;"></div>
 </div>
 
-<style>
-.show-grid [class^=col-] {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: #EEE;
-	background-color: rgba(86, 61, 124, 0.15);
-	border: 1px solid #DDD;
-	border: 1px solid rgba(86, 61, 124, 0.2);
-}
-</style>
+<h2 class="block">Thirds</h2>
+
+<div class="grid">
+	<div class="g g--third" style="height: 100px; background: grey;"></div>
+	<div class="g g--third" style="height: 100px; background: grey;"></div>
+	<div class="g g--third" style="height: 100px; background: grey;"></div>
+</div>
+
+<h2 class="block">Fourths</h2>
+
+<div class="grid">
+	<div class="g g--fourth" style="height: 100px; background: grey;"></div>
+	<div class="g g--fourth" style="height: 100px; background: grey;"></div>
+	<div class="g g--fourth" style="height: 100px; background: grey;"></div>
+	<div class="g g--fourth" style="height: 100px; background: grey;"></div>
+</div>
+
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;row show-grid&quot;&gt;
-  &lt;div class=&quot;col-xs-12 col-sm-6 col-md-8&quot;&gt;.col-xs-12 .col-sm-6 .col-md-8&lt;/div&gt;
-  &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row show-grid&quot;&gt;
-  &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
-  &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
-  &lt;!-- Optional: clear the XS cols if their content doesn't match in height --&gt;
-  &lt;div class=&quot;clearfix visible-xs-block&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+										&lt;h2 class=&quot;block&quot;&gt;Halves&lt;/h2&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;g g--half&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;g g--half&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;style&gt;
-.show-grid [class^=col-] {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: #EEE;
-	background-color: rgba(86, 61, 124, 0.15);
-	border: 1px solid #DDD;
-	border: 1px solid rgba(86, 61, 124, 0.2);
-}
-&lt;/style&gt;
+&lt;h2 class=&quot;block&quot;&gt;Thirds&lt;/h2&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;g g--third&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;g g--third&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;g g--third&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 class=&quot;block&quot;&gt;Fourths&lt;/h2&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;g g--fourth&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;g g--fourth&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;g g--fourth&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;g g--fourth&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
 									</code>
 								</pre>
 							</div>

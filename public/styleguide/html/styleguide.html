@@ -343,54 +343,58 @@
 					<div id="atoms-grid" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-01-global-04-grid/00-atoms-01-global-04-grid.html" class="patternLink" data-patternpartial="atoms-grid">Grid</a></h2>
 						<div class="sg-pattern-body">
-							<div class="row show-grid">
-  <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
-  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-</div>
-<div class="row show-grid">
-  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-  <!-- Optional: clear the XS cols if their content doesn't match in height -->
-  <div class="clearfix visible-xs-block"></div>
-  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+							<h2 class="block">Halves</h2>
+
+<div class="grid">
+	<div class="g g--half" style="height: 100px; background: grey;"></div>
+	<div class="g g--half" style="height: 100px; background: grey;"></div>
 </div>
 
-<style>
-.show-grid [class^=col-] {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: #EEE;
-	background-color: rgba(86, 61, 124, 0.15);
-	border: 1px solid #DDD;
-	border: 1px solid rgba(86, 61, 124, 0.2);
-}
-</style>
+<h2 class="block">Thirds</h2>
+
+<div class="grid">
+	<div class="g g--third" style="height: 100px; background: grey;"></div>
+	<div class="g g--third" style="height: 100px; background: grey;"></div>
+	<div class="g g--third" style="height: 100px; background: grey;"></div>
+</div>
+
+<h2 class="block">Fourths</h2>
+
+<div class="grid">
+	<div class="g g--fourth" style="height: 100px; background: grey;"></div>
+	<div class="g g--fourth" style="height: 100px; background: grey;"></div>
+	<div class="g g--fourth" style="height: 100px; background: grey;"></div>
+	<div class="g g--fourth" style="height: 100px; background: grey;"></div>
+</div>
+
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;row show-grid&quot;&gt;
-  &lt;div class=&quot;col-xs-12 col-sm-6 col-md-8&quot;&gt;.col-xs-12 .col-sm-6 .col-md-8&lt;/div&gt;
-  &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row show-grid&quot;&gt;
-  &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
-  &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
-  &lt;!-- Optional: clear the XS cols if their content doesn't match in height --&gt;
-  &lt;div class=&quot;clearfix visible-xs-block&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+										&lt;h2 class=&quot;block&quot;&gt;Halves&lt;/h2&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;g g--half&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;g g--half&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;style&gt;
-.show-grid [class^=col-] {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: #EEE;
-	background-color: rgba(86, 61, 124, 0.15);
-	border: 1px solid #DDD;
-	border: 1px solid rgba(86, 61, 124, 0.2);
-}
-&lt;/style&gt;
+&lt;h2 class=&quot;block&quot;&gt;Thirds&lt;/h2&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;g g--third&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;g g--third&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;g g--third&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 class=&quot;block&quot;&gt;Fourths&lt;/h2&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;g g--fourth&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;g g--fourth&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;g g--fourth&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;g g--fourth&quot; style=&quot;height: 100px; background: grey;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
 									</code>
 								</pre>
 							</div>
@@ -1658,6 +1662,58 @@ p q r s t u v w x y z { | } ~
 							</div>
 						</div>
 					</div>
+					<div id="molecules-nav-primary" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-navigations-nav-primary/01-molecules-navigations-nav-primary.html" class="patternLink" data-patternpartial="molecules-nav-primary">Nav Primary</a></h2>
+						<div class="sg-pattern-body">
+							<ul class="bare-list nav nav-primary">
+    <li class="nav__item"><a href="#"><i class="fa fa-comments"></i><span>Messages</span></a></li>
+    <li class="nav__item"><a href="#"><i class="icon icon-tasks"></i><span>Tasks</span></a></li>
+    <li class="nav__item"><a href="#"><i class="fa fa-calendar"></i><span>Events</span></a></li>
+    <li class="nav__item"><a href="#"><i class="icon icon-legal"></i><span>Votes</span></a></li>
+    <li class="nav__item"><a href="#"><i class="icon icon-pencil"></i><span>Articles</span></a></li>
+    <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
+</ul>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;ul class=&quot;bare-list nav nav-primary&quot;&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;span&gt;Messages&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-tasks&quot;&gt;&lt;/i&gt;&lt;span&gt;Tasks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-legal&quot;&gt;&lt;/i&gt;&lt;span&gt;Votes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;Articles&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-nav-settings" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-navigations-nav-settings/01-molecules-navigations-nav-settings.html" class="patternLink" data-patternpartial="molecules-nav-settings">Nav Settings</a></h2>
+						<div class="sg-pattern-body">
+							<ul class="bare-list nav nav-settings">
+    <li class="nav__item"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
+    <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
+</ul>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;ul class=&quot;bare-list nav nav-settings&quot;&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="molecules-notification" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-notification-notification/01-molecules-notification-notification.html" class="patternLink" data-patternpartial="molecules-notification">Notification</a></h2>
 						<div class="sg-pattern-body">
@@ -2383,6 +2439,53 @@ p q r s t u v w x y z { | } ~
 	&lt;/header&gt;&lt;!-- end header --&gt;
 
 &lt;/div&gt;&lt;!-- end wrap header --&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-navigation" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-navigation-navigation/02-organisms-navigation-navigation.html" class="patternLink" data-patternpartial="organisms-navigation">Navigation</a></h2>
+						<div class="sg-pattern-body">
+							<nav role="navigation">
+    <ul class="bare-list nav nav-primary">
+        <li class="nav__item"><a href="#"><i class="fa fa-comments"></i><span>Messages</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-tasks"></i><span>Tasks</span></a></li>
+        <li class="nav__item"><a href="#"><i class="fa fa-calendar"></i><span>Events</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-legal"></i><span>Votes</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-pencil"></i><span>Articles</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
+    </ul>
+    <ul class="bare-list nav nav-settings">
+        <li class="nav__item"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
+    </ul>
+</nav>
+
+							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/01-molecules-navigations-nav-primary/01-molecules-navigations-nav-primary.html"><code>molecules-nav-primary</code></a>
+											<a href="../../patterns/01-molecules-navigations-nav-settings/01-molecules-navigations-nav-settings.html"><code>molecules-nav-settings</code></a>
+									</div>
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;nav role=&quot;navigation&quot;&gt;
+    &lt;ul class=&quot;bare-list nav nav-primary&quot;&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;span&gt;Messages&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-tasks&quot;&gt;&lt;/i&gt;&lt;span&gt;Tasks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-legal&quot;&gt;&lt;/i&gt;&lt;span&gt;Votes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;Articles&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class=&quot;bare-list nav nav-settings&quot;&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
 									</code>
 								</pre>
 							</div>
