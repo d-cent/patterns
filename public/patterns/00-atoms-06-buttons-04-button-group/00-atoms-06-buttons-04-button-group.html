@@ -68,11 +68,15 @@
 
 	</head>
 	<body class="body">
-<div class="message message--particular">
-	<div class="message__body">
-		Particular message speaking to user what's going on.
-		<span class="message__close">&times;</span>
-	</div>
+<div class="btn-group">
+    <button class="btn">Button</button>
+    <button class="btn">Button</button>
+</div>
+<hr />
+<div class="btn-group">
+    <button class="btn">Button</button>
+    <button class="btn">Button</button>
+    <button class="btn">Button</button>
 </div>
 
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
@@ -83,7 +87,7 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-message-particular";
+		var patternPartial = "atoms-button-group";
 		var lineage        = [];
 		var lineageR       = [];
 		var patternState   = "";
