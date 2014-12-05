@@ -1,5 +1,19 @@
+var app = angular.module("app", ["xeditable"]);
+
+app.run(function(editableOptions) {
+  editableOptions.theme = 'default'; // bootstrap3 theme. Can be also 'bs2', 'default'
+});
+
+app.controller('Ctrl', function($scope) {
+  $scope.user = {
+    name: 'awesome user'
+  };
+});
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
-  
 
 	// svg fallback
 
@@ -22,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		var signToggle = document.querySelectorAll('.js-open-signin');
 
-
 		[].forEach.call(signToggle, function(el) {
 		  el.addEventListener("click", function() {
 
@@ -32,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		  });
 		});
-			
+
 	})();
 
 	// helper text
@@ -41,17 +54,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		var helperToggle = document.querySelectorAll('.js-helper__toggle');
 
-
 		[].forEach.call(helperToggle, function(el) {
 		  el.addEventListener("click", function() {
 
-		  	var loginContent = document.querySelector('.helper__body');
+		  	//var loginContent = document.querySelector('.helper__body');
 
-		    loginContent.classList.toggle('js-show');
+
+
+		    el.nextElementSibling.classList.toggle('js-show');
 
 		  });
 		});
-			
+
 	})();
 
 
@@ -110,6 +124,6 @@ $(document).ready(function() {
 		});
 	}
 
-		
+
 
 });

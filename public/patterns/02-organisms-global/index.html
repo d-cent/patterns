@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="pl">
+<html class="pl" ng-app="app">
 	<head>
 		<title>Pattern Lab</title>
 		<meta charset="UTF-8">
@@ -12,7 +12,7 @@
 		[c]2014 @scottjehl, Filament Group, Inc.
 		Licensed MIT
 		*/
-	
+
 		function loadCSS( href, before, media ){
 			"use strict";
 			var ss = window.document.createElement( "link" );
@@ -125,15 +125,17 @@
 
 			</form>
 
-
 		</div>
-
 
 	</header>
 
 </div>
 
 							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/02-organisms-login-login/02-organisms-login-login.html"><code>organisms-login</code></a>
+									</div>
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
@@ -171,9 +173,210 @@
 
 			&lt;/form&gt;
 
-
 		&lt;/div&gt;
 
+	&lt;/header&gt;
+
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-header-with-registration" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-global-header-with-registration/02-organisms-global-header-with-registration.html" class="patternLink" data-patternpartial="organisms-header-with-registration">Header With Registration</a></h2>
+						<div class="sg-pattern-body">
+							<div class="wrap--header bc-grey--lightest header--sticky">
+
+	<header class="header--login l-constrained clearfix" role="banner">
+
+		<a class="site-logo--small">
+			<img src="../../assets/img/D-CENT_logo.svg" class="logo" alt="Logo Alt Text" />
+		</a>
+
+		<nav role="navigation" class="block">
+    <ul class="bare-list nav nav-primary">
+        <li class="nav__item"><a href="#"><i class="fa fa-comments"></i><span>Messages <i class="count c-white bc-comp--light">3</i></span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-tasks"></i><span>Tasks</span></a></li>
+        <li class="nav__item"><a href="#"><i class="fa fa-calendar"></i><span>Events</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-legal"></i><span>Votes</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-pencil"></i><span>Articles</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
+    </ul>
+    <ul class="bare-list nav nav-settings">
+        <li class="nav__item js-open-signin"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
+    </ul>
+		</nav>
+
+		<div class="login">
+
+			<div class="registration box">
+
+				<form class="registration__form block--large">
+
+					<div class="grid">
+
+						<div class="g g--half">
+
+							<div class="form-row helper">
+								<input type="text" placeholder="First name" />
+								<span class="helper__toggle js-helper__toggle">
+									<i class="fa fa-question"></i>
+								</span>
+								<div class="helper__body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								</div>
+							</div>
+							<div class="form-row">
+								<input type="text" placeholder="Last name" />
+							</div>
+							<div class="form-row helper">
+								<input type="text" placeholder="Email" />
+								<span class="helper__toggle js-helper__toggle">
+									<i class="fa fa-question"></i>
+								</span>
+								<div class="helper__body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								</div>
+							</div>
+							<div class="form-row">
+								<input type="text" placeholder="Phone" />
+							</div>
+
+						</div>
+
+						<div class="g g--half">
+
+							<div class="form-row">
+								<input type="text" placeholder="City" />
+							</div>
+							<div class="form-row">
+								<input type="text" placeholder="Zip" />
+							</div>
+							<div class="form-row">
+								<input type="text" placeholder="Street" />
+							</div>
+							<div class="form-row">
+								<input type="text" placeholder="..etc vcard" />
+							</div>
+
+						</div>
+
+					</div><!-- end grid -->
+
+					<div class="registration__action text--right block--large">
+						<button class="btn">Save and close</button>
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+
+	</header>
+
+</div>
+
+							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/02-organisms-navigation-navigation/02-organisms-navigation-navigation.html"><code>organisms-navigation</code></a>
+											<a href="../../patterns/02-organisms-registration-registration/02-organisms-registration-registration.html"><code>organisms-registration</code></a>
+									</div>
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;wrap--header bc-grey--lightest header--sticky&quot;&gt;
+
+	&lt;header class=&quot;header--login l-constrained clearfix&quot; role=&quot;banner&quot;&gt;
+
+		&lt;a class=&quot;site-logo--small&quot;&gt;
+			&lt;img src=&quot;../../assets/img/D-CENT_logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
+		&lt;/a&gt;
+
+		&lt;nav role=&quot;navigation&quot; class=&quot;block&quot;&gt;
+    &lt;ul class=&quot;bare-list nav nav-primary&quot;&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;span&gt;Messages &lt;i class=&quot;count c-white bc-comp--light&quot;&gt;3&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-tasks&quot;&gt;&lt;/i&gt;&lt;span&gt;Tasks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-legal&quot;&gt;&lt;/i&gt;&lt;span&gt;Votes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;Articles&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class=&quot;bare-list nav nav-settings&quot;&gt;
+        &lt;li class=&quot;nav__item js-open-signin&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+		&lt;/nav&gt;
+
+		&lt;div class=&quot;login&quot;&gt;
+
+			&lt;div class=&quot;registration box&quot;&gt;
+
+				&lt;form class=&quot;registration__form block--large&quot;&gt;
+
+					&lt;div class=&quot;grid&quot;&gt;
+
+						&lt;div class=&quot;g g--half&quot;&gt;
+
+							&lt;div class=&quot;form-row helper&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;First name&quot; /&gt;
+								&lt;span class=&quot;helper__toggle js-helper__toggle&quot;&gt;
+									&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;
+								&lt;/span&gt;
+								&lt;div class=&quot;helper__body&quot;&gt;
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Last name&quot; /&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row helper&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Email&quot; /&gt;
+								&lt;span class=&quot;helper__toggle js-helper__toggle&quot;&gt;
+									&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;
+								&lt;/span&gt;
+								&lt;div class=&quot;helper__body&quot;&gt;
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Phone&quot; /&gt;
+							&lt;/div&gt;
+
+						&lt;/div&gt;
+
+						&lt;div class=&quot;g g--half&quot;&gt;
+
+							&lt;div class=&quot;form-row&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;City&quot; /&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Zip&quot; /&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Street&quot; /&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;..etc vcard&quot; /&gt;
+							&lt;/div&gt;
+
+						&lt;/div&gt;
+
+					&lt;/div&gt;&lt;!-- end grid --&gt;
+
+					&lt;div class=&quot;registration__action text--right block--large&quot;&gt;
+						&lt;button class=&quot;btn&quot;&gt;Save and close&lt;/button&gt;
+					&lt;/div&gt;
+
+				&lt;/form&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
 
 	&lt;/header&gt;
 
@@ -233,6 +436,8 @@
 		
 
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+
+	<script src='../../assets/js/vendor/angular.min.js'></script>
 
 	<script src='../../assets/js/main.js'></script>
 

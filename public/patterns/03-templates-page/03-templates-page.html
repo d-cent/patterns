@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="pl">
+<html class="pl" ng-app="app">
 	<head>
 		<title>Pattern Lab</title>
 		<meta charset="UTF-8">
@@ -12,7 +12,7 @@
 		[c]2014 @scottjehl, Filament Group, Inc.
 		Licensed MIT
 		*/
-	
+
 		function loadCSS( href, before, media ){
 			"use strict";
 			var ss = window.document.createElement( "link" );
@@ -82,31 +82,29 @@
 
 			<div class="login">
 
-				<form class="form--login">
+			<form class="form--login">
 
-					<div class="form-row">
-						<input type="email" placeholder="Email" />
-					</div>
+				<div class="form-row">
+					<input type="email" placeholder="Email" />
+				</div>
 
-					<div class="form-row">
-						<a class="float--right pw-forgot" href="#">Forgot password?</a>
-						<input type="password" placeholder="Password" />
-					</div>
+				<div class="form-row">
+					<a class="float--right pw-forgot" href="#">Forgot password?</a>
+					<input type="password" placeholder="Password" />
+				</div>
 
-					<div class="form-row">
-						<input type="submit" class="btn" value="Sign in" />
-					</div>
+				<div class="form-row">
+					<input type="submit" class="btn" value="Sign in" />
+				</div>
 
-					<div class="form-row text--center">
-							<span class="signup-intro">Don't have an account?</span>
-							<a class="sign-up btn" href="#">Sign Up</a>
-					</div>
+				<div class="form-row text--center">
+						<span class="signup-intro">Don't have an account?</span>
+						<a class="sign-up btn" href="#">Sign Up</a>
+				</div>
 
-				</form>
-
+			</form>
 
 			</div>
-
 
 		</header>
 
@@ -235,6 +233,8 @@
 	</div>
 </div>
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+
+	<script src='../../assets/js/vendor/angular.min.js'></script>
 
 	<script src='../../assets/js/main.js'></script>
 

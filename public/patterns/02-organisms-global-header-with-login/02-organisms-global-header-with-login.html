@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="pl">
+<html class="pl" ng-app="app">
 	<head>
 		<title>Pattern Lab</title>
 		<meta charset="UTF-8">
@@ -12,7 +12,7 @@
 		[c]2014 @scottjehl, Filament Group, Inc.
 		Licensed MIT
 		*/
-	
+
 		function loadCSS( href, before, media ){
 			"use strict";
 			var ss = window.document.createElement( "link" );
@@ -102,15 +102,15 @@
 
 			</form>
 
-
 		</div>
-
 
 	</header>
 
 </div>
 
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+
+	<script src='../../assets/js/vendor/angular.min.js'></script>
 
 	<script src='../../assets/js/main.js'></script>
 
@@ -119,7 +119,7 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "organisms-header-with-login";
-		var lineage        = [];
+		var lineage        = [{"lineagePattern":"organisms-login","lineagePath":"..\/..\/patterns\/02-organisms-login-login\/02-organisms-login-login.html"}];
 		var lineageR       = [{"lineagePattern":"templates-page","lineagePath":"..\/..\/patterns\/03-templates-page\/03-templates-page.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;

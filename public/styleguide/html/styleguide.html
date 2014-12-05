@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="pl">
+<html class="pl" ng-app="app">
 	<head>
 		<title>Pattern Lab</title>
 		<meta charset="UTF-8">
@@ -12,7 +12,7 @@
 		[c]2014 @scottjehl, Filament Group, Inc.
 		Licensed MIT
 		*/
-	
+
 		function loadCSS( href, before, media ){
 			"use strict";
 			var ss = window.document.createElement( "link" );
@@ -90,15 +90,6 @@
 		<span class="sg-label">#007E84, RGB 0,126,132</span>
 	</li>
 </ul>
-<p style="color: #00444A">
-	When using color combinations the main D-CENT color must always be the dominant one. Keep the ratio at 80-20 or better, 90-10. When ratio for any reason is closer to 50/50, (eg. voting pie chart) use a lighter version of one, and a darker of the other.<h1 style="color:#00444A">The Header</h1> <h3 style="color: #007E84">Is Always Darker Than The Subheader</h3>
-</p>
-<p style="color: #00444A">
-	<span style="color: #FF69E8">Magenta combinations </span>are only for special highlights, like <span style="color: #9E2E8D">visited links,</span><span> rather than for general purpose content / material. </span><a href="">Unvisited links</a> should always be in the D-CENT color: #007E84 
-</p>
-<p>
-	Instead of full black, we use a #222222 / RGB 34, 34, 34 to soften the look slightly. Otherwise, feel free to use blacks and gray-scales in any combination with the other colors. For grays, the ratio can vary from 50-50 to 80-20 (gray-color). Be wary of too much black as it can easily get too heavy. For print use straight black (0,0,0,100) and keep the ratio 50-50 or ideally 20-80 black/color. </span>
-</p>
 <br>
 <h3>Background colors</h3>
 <h5>(disabled buttons, buttons, backgrounds)</h5>
@@ -167,6 +158,15 @@
 		<span class="sg-label">#00444A, RGB 0,68,74 titles, body text</span>
 	</li>
 </ul>
+<p style="color: #00444A">
+	When using color combinations the main D-CENT color must always be the dominant one. Keep the ratio at 80-20 or better, 90-10. When ratio for any reason is closer to 50/50, (eg. voting pie chart) use a lighter version of one, and a darker of the other.<h1 style="color:#00444A">The Header</h1> <h3 style="color: #007E84">Is Always Darker Than The Subheader</h3>
+</p>
+<p style="color: #00444A">
+	<span style="color: #FF69E8">Magenta combinations </span>are only for special highlights, like <span style="color: #9E2E8D">visited links,</span><span> rather than for general purpose content / material. </span><a href="">Unvisited links</a> should always be in the D-CENT color: #007E84 
+</p>
+<p>
+	Instead of full black, we use a #222222 / RGB 34, 34, 34 to soften the look slightly. Otherwise, feel free to use blacks and gray-scales in any combination with the other colors. For grays, the ratio can vary from 50-50 to 80-20 (gray-color). Be wary of too much black as it can easily get too heavy. For print use straight black (0,0,0,100) and keep the ratio 50-50 or ideally 20-80 black/color. </span>
+</p>
 <style>
 .sg-colors li {
 	width: 8em;
@@ -190,15 +190,6 @@
 		&lt;span class=&quot;sg-label&quot;&gt;#007E84, RGB 0,126,132&lt;/span&gt;
 	&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p style=&quot;color: #00444A&quot;&gt;
-	When using color combinations the main D-CENT color must always be the dominant one. Keep the ratio at 80-20 or better, 90-10. When ratio for any reason is closer to 50/50, (eg. voting pie chart) use a lighter version of one, and a darker of the other.&lt;h1 style=&quot;color:#00444A&quot;&gt;The Header&lt;/h1&gt; &lt;h3 style=&quot;color: #007E84&quot;&gt;Is Always Darker Than The Subheader&lt;/h3&gt;
-&lt;/p&gt;
-&lt;p style=&quot;color: #00444A&quot;&gt;
-	&lt;span style=&quot;color: #FF69E8&quot;&gt;Magenta combinations &lt;/span&gt;are only for special highlights, like &lt;span style=&quot;color: #9E2E8D&quot;&gt;visited links,&lt;/span&gt;&lt;span&gt; rather than for general purpose content / material. &lt;/span&gt;&lt;a href=&quot;&quot;&gt;Unvisited links&lt;/a&gt; should always be in the D-CENT color: #007E84 
-&lt;/p&gt;
-&lt;p&gt;
-	Instead of full black, we use a #222222 / RGB 34, 34, 34 to soften the look slightly. Otherwise, feel free to use blacks and gray-scales in any combination with the other colors. For grays, the ratio can vary from 50-50 to 80-20 (gray-color). Be wary of too much black as it can easily get too heavy. For print use straight black (0,0,0,100) and keep the ratio 50-50 or ideally 20-80 black/color. &lt;/span&gt;
-&lt;/p&gt;
 &lt;br&gt;
 &lt;h3&gt;Background colors&lt;/h3&gt;
 &lt;h5&gt;(disabled buttons, buttons, backgrounds)&lt;/h5&gt;
@@ -267,6 +258,15 @@
 		&lt;span class=&quot;sg-label&quot;&gt;#00444A, RGB 0,68,74 titles, body text&lt;/span&gt;
 	&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p style=&quot;color: #00444A&quot;&gt;
+	When using color combinations the main D-CENT color must always be the dominant one. Keep the ratio at 80-20 or better, 90-10. When ratio for any reason is closer to 50/50, (eg. voting pie chart) use a lighter version of one, and a darker of the other.&lt;h1 style=&quot;color:#00444A&quot;&gt;The Header&lt;/h1&gt; &lt;h3 style=&quot;color: #007E84&quot;&gt;Is Always Darker Than The Subheader&lt;/h3&gt;
+&lt;/p&gt;
+&lt;p style=&quot;color: #00444A&quot;&gt;
+	&lt;span style=&quot;color: #FF69E8&quot;&gt;Magenta combinations &lt;/span&gt;are only for special highlights, like &lt;span style=&quot;color: #9E2E8D&quot;&gt;visited links,&lt;/span&gt;&lt;span&gt; rather than for general purpose content / material. &lt;/span&gt;&lt;a href=&quot;&quot;&gt;Unvisited links&lt;/a&gt; should always be in the D-CENT color: #007E84 
+&lt;/p&gt;
+&lt;p&gt;
+	Instead of full black, we use a #222222 / RGB 34, 34, 34 to soften the look slightly. Otherwise, feel free to use blacks and gray-scales in any combination with the other colors. For grays, the ratio can vary from 50-50 to 80-20 (gray-color). Be wary of too much black as it can easily get too heavy. For print use straight black (0,0,0,100) and keep the ratio 50-50 or ideally 20-80 black/color. &lt;/span&gt;
+&lt;/p&gt;
 &lt;style&gt;
 .sg-colors li {
 	width: 8em;
@@ -1184,6 +1184,26 @@ p q r s t u v w x y z { | } ~
 							</div>
 						</div>
 					</div>
+					<div id="atoms-inline-editing" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-05-forms-05-inline-editing/00-atoms-05-forms-05-inline-editing.html" class="patternLink" data-patternpartial="atoms-inline-editing">Inline Editing</a></h2>
+						<div class="sg-pattern-body">
+							<div ng-controller="Ctrl">
+  <a href="#" editable-text="user.name"></a>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div ng-controller=&quot;Ctrl&quot;&gt;
+  &lt;a href=&quot;#&quot; editable-text=&quot;user.name&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="atoms-buttons" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-06-buttons-00-buttons/00-atoms-06-buttons-00-buttons.html" class="patternLink" data-patternpartial="atoms-buttons">Buttons</a></h2>
 						<div class="sg-pattern-body">
@@ -1463,7 +1483,7 @@ p q r s t u v w x y z { | } ~
 		<a href="#">Firstname Lastname</a>
 
 		<time>About an hour ago</time>
-		
+
 	</div><!-- end comment meta -->
 
 	<div class="comment__body">
@@ -1474,7 +1494,8 @@ p q r s t u v w x y z { | } ~
 
 	<div class="comment__actions">
 
-		<span class="comment-toggle js-comment-toggle">Comment</span>
+		<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+		<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
 
 	</div><!-- end comment actions -->
 
@@ -1484,6 +1505,7 @@ p q r s t u v w x y z { | } ~
 	</div><!-- end comment field -->
 
 </div><!-- end single comment -->
+
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
@@ -1500,7 +1522,7 @@ p q r s t u v w x y z { | } ~
 		&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
 
 		&lt;time&gt;About an hour ago&lt;/time&gt;
-		
+
 	&lt;/div&gt;&lt;!-- end comment meta --&gt;
 
 	&lt;div class=&quot;comment__body&quot;&gt;
@@ -1511,7 +1533,8 @@ p q r s t u v w x y z { | } ~
 
 	&lt;div class=&quot;comment__actions&quot;&gt;
 
-		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;&lt;!-- end comment actions --&gt;
 
@@ -1521,6 +1544,7 @@ p q r s t u v w x y z { | } ~
 	&lt;/div&gt;&lt;!-- end comment field --&gt;
 
 &lt;/div&gt;&lt;!-- end single comment --&gt;
+
 									</code>
 								</pre>
 							</div>
@@ -1830,7 +1854,7 @@ p q r s t u v w x y z { | } ~
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-navigations-nav-settings/01-molecules-navigations-nav-settings.html" class="patternLink" data-patternpartial="molecules-nav-settings">Nav Settings</a></h2>
 						<div class="sg-pattern-body">
 							<ul class="bare-list nav nav-settings">
-    <li class="nav__item"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
+    <li class="nav__item js-open-signin"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
     <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
 </ul>
 
@@ -1839,7 +1863,7 @@ p q r s t u v w x y z { | } ~
 								<pre class="sg-code-html">
 									<code>
 										&lt;ul class=&quot;bare-list nav nav-settings&quot;&gt;
-    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav__item js-open-signin&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2084,6 +2108,574 @@ p q r s t u v w x y z { | } ~
 							</div>
 						</div>
 					</div>
+					<div id="organisms-argumenting" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-argumenting-argumenting/02-organisms-argumenting-argumenting.html" class="patternLink" data-patternpartial="organisms-argumenting">Argumenting</a></h2>
+						<div class="sg-pattern-body">
+							<div class="argumenting box bc-white">
+
+	<div class="comment">
+
+		<figure class="comment__img">
+			<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+			<i class="icon-avatar_circle"></i>
+		</figure><!-- end comment pic -->
+
+		<div class="comment__meta">
+
+			<a href="#">Firstname Lastname</a>
+
+			<time>About an hour ago</time>
+
+		</div><!-- end comment meta -->
+
+		<div class="comment__body">
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+		</div><!-- end comment body -->
+
+		<div class="comment__actions">
+
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+		</div><!-- end comment actions -->
+
+		<div class="comment__field">
+
+
+		</div><!-- end comment field -->
+
+	</div><!-- end single comment -->
+
+	<div class="grid block--large">
+
+		<div class="g g--half">
+
+			<div class="comment">
+
+				<figure class="comment__img">
+					<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+					<i class="icon-avatar_circle"></i>
+				</figure><!-- end comment pic -->
+
+				<div class="comment__meta">
+
+					<a href="#">Firstname Lastname</a>
+
+					<time>About an hour ago</time>
+
+				</div><!-- end comment meta -->
+
+				<div class="comment__body">
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				</div><!-- end comment body -->
+
+				<div class="comment__actions">
+
+					<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+					<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+				</div><!-- end comment actions -->
+
+				<div class="comment__field">
+
+
+				</div><!-- end comment field -->
+
+			</div><!-- end single comment -->
+			<div class="comment">
+
+				<figure class="comment__img">
+					<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+					<i class="icon-avatar_circle"></i>
+				</figure><!-- end comment pic -->
+
+				<div class="comment__meta">
+
+					<a href="#">Firstname Lastname</a>
+
+					<time>About an hour ago</time>
+
+				</div><!-- end comment meta -->
+
+				<div class="comment__body">
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				</div><!-- end comment body -->
+
+				<div class="comment__actions">
+
+					<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+					<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+				</div><!-- end comment actions -->
+
+				<div class="comment__field">
+
+
+				</div><!-- end comment field -->
+
+			</div><!-- end single comment -->
+			<div class="comment">
+
+				<figure class="comment__img">
+					<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+					<i class="icon-avatar_circle"></i>
+				</figure><!-- end comment pic -->
+
+				<div class="comment__meta">
+
+					<a href="#">Firstname Lastname</a>
+
+					<time>About an hour ago</time>
+
+				</div><!-- end comment meta -->
+
+				<div class="comment__body">
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				</div><!-- end comment body -->
+
+				<div class="comment__actions">
+
+					<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+					<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+				</div><!-- end comment actions -->
+
+				<div class="comment__field">
+
+
+				</div><!-- end comment field -->
+
+			</div><!-- end single comment -->
+
+		</div>
+
+		<div class="g g--half">
+
+			<div class="comment">
+
+				<figure class="comment__img">
+					<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+					<i class="icon-avatar_circle"></i>
+				</figure><!-- end comment pic -->
+
+				<div class="comment__meta">
+
+					<a href="#">Firstname Lastname</a>
+
+					<time>About an hour ago</time>
+
+				</div><!-- end comment meta -->
+
+				<div class="comment__body">
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				</div><!-- end comment body -->
+
+				<div class="comment__actions">
+
+					<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+					<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+				</div><!-- end comment actions -->
+
+				<div class="comment__field">
+
+
+				</div><!-- end comment field -->
+
+			</div><!-- end single comment -->
+			<div class="comment">
+
+				<figure class="comment__img">
+					<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+					<i class="icon-avatar_circle"></i>
+				</figure><!-- end comment pic -->
+
+				<div class="comment__meta">
+
+					<a href="#">Firstname Lastname</a>
+
+					<time>About an hour ago</time>
+
+				</div><!-- end comment meta -->
+
+				<div class="comment__body">
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				</div><!-- end comment body -->
+
+				<div class="comment__actions">
+
+					<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+					<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+				</div><!-- end comment actions -->
+
+				<div class="comment__field">
+
+
+				</div><!-- end comment field -->
+
+			</div><!-- end single comment -->
+			<div class="comment">
+
+				<figure class="comment__img">
+					<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+					<i class="icon-avatar_circle"></i>
+				</figure><!-- end comment pic -->
+
+				<div class="comment__meta">
+
+					<a href="#">Firstname Lastname</a>
+
+					<time>About an hour ago</time>
+
+				</div><!-- end comment meta -->
+
+				<div class="comment__body">
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				</div><!-- end comment body -->
+
+				<div class="comment__actions">
+
+					<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+					<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+				</div><!-- end comment actions -->
+
+				<div class="comment__field">
+
+
+				</div><!-- end comment field -->
+
+			</div><!-- end single comment -->
+
+		</div>
+
+	</div>
+
+	<div class="grid">
+
+		<div class="g g--half block--large text--right">
+         	<i class="icon-avatar_circle"></i>
+			<div class="btn-group">
+				<button class="btn">Agree</button>
+				<button class="btn">Disagree</button>
+			</div>
+
+		</div>
+
+		<div class="g g--half  block--large">
+
+			<div class="comment-field">
+				<textarea placeholder="Comment"></textarea>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;argumenting box bc-white&quot;&gt;
+
+	&lt;div class=&quot;comment&quot;&gt;
+
+		&lt;figure class=&quot;comment__img&quot;&gt;
+			&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+			&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+		&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+		&lt;div class=&quot;comment__meta&quot;&gt;
+
+			&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+			&lt;time&gt;About an hour ago&lt;/time&gt;
+
+		&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+		&lt;div class=&quot;comment__body&quot;&gt;
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+		&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+		&lt;div class=&quot;comment__actions&quot;&gt;
+
+			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+		&lt;/div&gt;&lt;!-- end comment actions --&gt;
+
+		&lt;div class=&quot;comment__field&quot;&gt;
+
+
+		&lt;/div&gt;&lt;!-- end comment field --&gt;
+
+	&lt;/div&gt;&lt;!-- end single comment --&gt;
+
+	&lt;div class=&quot;grid block--large&quot;&gt;
+
+		&lt;div class=&quot;g g--half&quot;&gt;
+
+			&lt;div class=&quot;comment&quot;&gt;
+
+				&lt;figure class=&quot;comment__img&quot;&gt;
+					&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+					&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+				&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+				&lt;div class=&quot;comment__meta&quot;&gt;
+
+					&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+					&lt;time&gt;About an hour ago&lt;/time&gt;
+
+				&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+				&lt;div class=&quot;comment__body&quot;&gt;
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+				&lt;div class=&quot;comment__actions&quot;&gt;
+
+					&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+					&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+				&lt;/div&gt;&lt;!-- end comment actions --&gt;
+
+				&lt;div class=&quot;comment__field&quot;&gt;
+
+
+				&lt;/div&gt;&lt;!-- end comment field --&gt;
+
+			&lt;/div&gt;&lt;!-- end single comment --&gt;
+			&lt;div class=&quot;comment&quot;&gt;
+
+				&lt;figure class=&quot;comment__img&quot;&gt;
+					&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+					&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+				&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+				&lt;div class=&quot;comment__meta&quot;&gt;
+
+					&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+					&lt;time&gt;About an hour ago&lt;/time&gt;
+
+				&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+				&lt;div class=&quot;comment__body&quot;&gt;
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+				&lt;div class=&quot;comment__actions&quot;&gt;
+
+					&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+					&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+				&lt;/div&gt;&lt;!-- end comment actions --&gt;
+
+				&lt;div class=&quot;comment__field&quot;&gt;
+
+
+				&lt;/div&gt;&lt;!-- end comment field --&gt;
+
+			&lt;/div&gt;&lt;!-- end single comment --&gt;
+			&lt;div class=&quot;comment&quot;&gt;
+
+				&lt;figure class=&quot;comment__img&quot;&gt;
+					&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+					&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+				&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+				&lt;div class=&quot;comment__meta&quot;&gt;
+
+					&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+					&lt;time&gt;About an hour ago&lt;/time&gt;
+
+				&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+				&lt;div class=&quot;comment__body&quot;&gt;
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+				&lt;div class=&quot;comment__actions&quot;&gt;
+
+					&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+					&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+				&lt;/div&gt;&lt;!-- end comment actions --&gt;
+
+				&lt;div class=&quot;comment__field&quot;&gt;
+
+
+				&lt;/div&gt;&lt;!-- end comment field --&gt;
+
+			&lt;/div&gt;&lt;!-- end single comment --&gt;
+
+		&lt;/div&gt;
+
+		&lt;div class=&quot;g g--half&quot;&gt;
+
+			&lt;div class=&quot;comment&quot;&gt;
+
+				&lt;figure class=&quot;comment__img&quot;&gt;
+					&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+					&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+				&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+				&lt;div class=&quot;comment__meta&quot;&gt;
+
+					&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+					&lt;time&gt;About an hour ago&lt;/time&gt;
+
+				&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+				&lt;div class=&quot;comment__body&quot;&gt;
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+				&lt;div class=&quot;comment__actions&quot;&gt;
+
+					&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+					&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+				&lt;/div&gt;&lt;!-- end comment actions --&gt;
+
+				&lt;div class=&quot;comment__field&quot;&gt;
+
+
+				&lt;/div&gt;&lt;!-- end comment field --&gt;
+
+			&lt;/div&gt;&lt;!-- end single comment --&gt;
+			&lt;div class=&quot;comment&quot;&gt;
+
+				&lt;figure class=&quot;comment__img&quot;&gt;
+					&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+					&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+				&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+				&lt;div class=&quot;comment__meta&quot;&gt;
+
+					&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+					&lt;time&gt;About an hour ago&lt;/time&gt;
+
+				&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+				&lt;div class=&quot;comment__body&quot;&gt;
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+				&lt;div class=&quot;comment__actions&quot;&gt;
+
+					&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+					&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+				&lt;/div&gt;&lt;!-- end comment actions --&gt;
+
+				&lt;div class=&quot;comment__field&quot;&gt;
+
+
+				&lt;/div&gt;&lt;!-- end comment field --&gt;
+
+			&lt;/div&gt;&lt;!-- end single comment --&gt;
+			&lt;div class=&quot;comment&quot;&gt;
+
+				&lt;figure class=&quot;comment__img&quot;&gt;
+					&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+					&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+				&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+				&lt;div class=&quot;comment__meta&quot;&gt;
+
+					&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+					&lt;time&gt;About an hour ago&lt;/time&gt;
+
+				&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+				&lt;div class=&quot;comment__body&quot;&gt;
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+				&lt;div class=&quot;comment__actions&quot;&gt;
+
+					&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+					&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+				&lt;/div&gt;&lt;!-- end comment actions --&gt;
+
+				&lt;div class=&quot;comment__field&quot;&gt;
+
+
+				&lt;/div&gt;&lt;!-- end comment field --&gt;
+
+			&lt;/div&gt;&lt;!-- end single comment --&gt;
+
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+	&lt;div class=&quot;grid&quot;&gt;
+
+		&lt;div class=&quot;g g--half block--large text--right&quot;&gt;
+         	&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;div class=&quot;btn-group&quot;&gt;
+				&lt;button class=&quot;btn&quot;&gt;Agree&lt;/button&gt;
+				&lt;button class=&quot;btn&quot;&gt;Disagree&lt;/button&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+		&lt;div class=&quot;g g--half  block--large&quot;&gt;
+
+			&lt;div class=&quot;comment-field&quot;&gt;
+				&lt;textarea placeholder=&quot;Comment&quot;&gt;&lt;/textarea&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="organisms-discussion" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-discussion-discussion/02-organisms-discussion-discussion.html" class="patternLink" data-patternpartial="organisms-discussion">Discussion</a></h2>
 						<div class="sg-pattern-body">
@@ -2101,7 +2693,7 @@ p q r s t u v w x y z { | } ~
 			<a href="#">Firstname Lastname</a>
 
 			<time>About an hour ago</time>
-			
+
 		</div><!-- end comment meta -->
 
 		<div class="comment__body">
@@ -2112,7 +2704,8 @@ p q r s t u v w x y z { | } ~
 
 		<div class="comment__actions">
 
-			<span class="comment-toggle js-comment-toggle">Comment</span>
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
 
 		</div><!-- end comment actions -->
 
@@ -2122,6 +2715,7 @@ p q r s t u v w x y z { | } ~
 		</div><!-- end comment field -->
 
 	</div><!-- end single comment -->
+
 	<div class="comment">
 
 		<figure class="comment__img">
@@ -2134,7 +2728,7 @@ p q r s t u v w x y z { | } ~
 			<a href="#">Firstname Lastname</a>
 
 			<time>About an hour ago</time>
-			
+
 		</div><!-- end comment meta -->
 
 		<div class="comment__body">
@@ -2145,7 +2739,8 @@ p q r s t u v w x y z { | } ~
 
 		<div class="comment__actions">
 
-			<span class="comment-toggle js-comment-toggle">Comment</span>
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
 
 		</div><!-- end comment actions -->
 
@@ -2155,6 +2750,7 @@ p q r s t u v w x y z { | } ~
 		</div><!-- end comment field -->
 
 	</div><!-- end single comment -->
+
 	<div class="comment">
 
 		<figure class="comment__img">
@@ -2167,7 +2763,7 @@ p q r s t u v w x y z { | } ~
 			<a href="#">Firstname Lastname</a>
 
 			<time>About an hour ago</time>
-			
+
 		</div><!-- end comment meta -->
 
 		<div class="comment__body">
@@ -2178,7 +2774,8 @@ p q r s t u v w x y z { | } ~
 
 		<div class="comment__actions">
 
-			<span class="comment-toggle js-comment-toggle">Comment</span>
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
 
 		</div><!-- end comment actions -->
 
@@ -2188,6 +2785,7 @@ p q r s t u v w x y z { | } ~
 		</div><!-- end comment field -->
 
 	</div><!-- end single comment -->
+
 	<div class="comment">
 
 		<figure class="comment__img">
@@ -2200,7 +2798,7 @@ p q r s t u v w x y z { | } ~
 			<a href="#">Firstname Lastname</a>
 
 			<time>About an hour ago</time>
-			
+
 		</div><!-- end comment meta -->
 
 		<div class="comment__body">
@@ -2211,7 +2809,8 @@ p q r s t u v w x y z { | } ~
 
 		<div class="comment__actions">
 
-			<span class="comment-toggle js-comment-toggle">Comment</span>
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
 
 		</div><!-- end comment actions -->
 
@@ -2221,6 +2820,7 @@ p q r s t u v w x y z { | } ~
 		</div><!-- end comment field -->
 
 	</div><!-- end single comment -->
+
 	<div class="comment">
 
 		<figure class="comment__img">
@@ -2233,7 +2833,7 @@ p q r s t u v w x y z { | } ~
 			<a href="#">Firstname Lastname</a>
 
 			<time>About an hour ago</time>
-			
+
 		</div><!-- end comment meta -->
 
 		<div class="comment__body">
@@ -2244,7 +2844,8 @@ p q r s t u v w x y z { | } ~
 
 		<div class="comment__actions">
 
-			<span class="comment-toggle js-comment-toggle">Comment</span>
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
 
 		</div><!-- end comment actions -->
 
@@ -2254,6 +2855,7 @@ p q r s t u v w x y z { | } ~
 		</div><!-- end comment field -->
 
 	</div><!-- end single comment -->
+
 	<div class="comment">
 
 		<figure class="comment__img">
@@ -2266,7 +2868,7 @@ p q r s t u v w x y z { | } ~
 			<a href="#">Firstname Lastname</a>
 
 			<time>About an hour ago</time>
-			
+
 		</div><!-- end comment meta -->
 
 		<div class="comment__body">
@@ -2277,7 +2879,8 @@ p q r s t u v w x y z { | } ~
 
 		<div class="comment__actions">
 
-			<span class="comment-toggle js-comment-toggle">Comment</span>
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
 
 		</div><!-- end comment actions -->
 
@@ -2287,6 +2890,7 @@ p q r s t u v w x y z { | } ~
 		</div><!-- end comment field -->
 
 	</div><!-- end single comment -->
+
 	<div class="comment-field">
 		<figure class="comment__img">
 			<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
@@ -2315,7 +2919,7 @@ p q r s t u v w x y z { | } ~
 			&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
 
 			&lt;time&gt;About an hour ago&lt;/time&gt;
-			
+
 		&lt;/div&gt;&lt;!-- end comment meta --&gt;
 
 		&lt;div class=&quot;comment__body&quot;&gt;
@@ -2326,7 +2930,8 @@ p q r s t u v w x y z { | } ~
 
 		&lt;div class=&quot;comment__actions&quot;&gt;
 
-			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment&lt;/span&gt;
+			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 		&lt;/div&gt;&lt;!-- end comment actions --&gt;
 
@@ -2336,6 +2941,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt;&lt;!-- end comment field --&gt;
 
 	&lt;/div&gt;&lt;!-- end single comment --&gt;
+
 	&lt;div class=&quot;comment&quot;&gt;
 
 		&lt;figure class=&quot;comment__img&quot;&gt;
@@ -2348,7 +2954,7 @@ p q r s t u v w x y z { | } ~
 			&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
 
 			&lt;time&gt;About an hour ago&lt;/time&gt;
-			
+
 		&lt;/div&gt;&lt;!-- end comment meta --&gt;
 
 		&lt;div class=&quot;comment__body&quot;&gt;
@@ -2359,7 +2965,8 @@ p q r s t u v w x y z { | } ~
 
 		&lt;div class=&quot;comment__actions&quot;&gt;
 
-			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment&lt;/span&gt;
+			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 		&lt;/div&gt;&lt;!-- end comment actions --&gt;
 
@@ -2369,6 +2976,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt;&lt;!-- end comment field --&gt;
 
 	&lt;/div&gt;&lt;!-- end single comment --&gt;
+
 	&lt;div class=&quot;comment&quot;&gt;
 
 		&lt;figure class=&quot;comment__img&quot;&gt;
@@ -2381,7 +2989,7 @@ p q r s t u v w x y z { | } ~
 			&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
 
 			&lt;time&gt;About an hour ago&lt;/time&gt;
-			
+
 		&lt;/div&gt;&lt;!-- end comment meta --&gt;
 
 		&lt;div class=&quot;comment__body&quot;&gt;
@@ -2392,7 +3000,8 @@ p q r s t u v w x y z { | } ~
 
 		&lt;div class=&quot;comment__actions&quot;&gt;
 
-			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment&lt;/span&gt;
+			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 		&lt;/div&gt;&lt;!-- end comment actions --&gt;
 
@@ -2402,6 +3011,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt;&lt;!-- end comment field --&gt;
 
 	&lt;/div&gt;&lt;!-- end single comment --&gt;
+
 	&lt;div class=&quot;comment&quot;&gt;
 
 		&lt;figure class=&quot;comment__img&quot;&gt;
@@ -2414,7 +3024,7 @@ p q r s t u v w x y z { | } ~
 			&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
 
 			&lt;time&gt;About an hour ago&lt;/time&gt;
-			
+
 		&lt;/div&gt;&lt;!-- end comment meta --&gt;
 
 		&lt;div class=&quot;comment__body&quot;&gt;
@@ -2425,7 +3035,8 @@ p q r s t u v w x y z { | } ~
 
 		&lt;div class=&quot;comment__actions&quot;&gt;
 
-			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment&lt;/span&gt;
+			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 		&lt;/div&gt;&lt;!-- end comment actions --&gt;
 
@@ -2435,6 +3046,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt;&lt;!-- end comment field --&gt;
 
 	&lt;/div&gt;&lt;!-- end single comment --&gt;
+
 	&lt;div class=&quot;comment&quot;&gt;
 
 		&lt;figure class=&quot;comment__img&quot;&gt;
@@ -2447,7 +3059,7 @@ p q r s t u v w x y z { | } ~
 			&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
 
 			&lt;time&gt;About an hour ago&lt;/time&gt;
-			
+
 		&lt;/div&gt;&lt;!-- end comment meta --&gt;
 
 		&lt;div class=&quot;comment__body&quot;&gt;
@@ -2458,7 +3070,8 @@ p q r s t u v w x y z { | } ~
 
 		&lt;div class=&quot;comment__actions&quot;&gt;
 
-			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment&lt;/span&gt;
+			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 		&lt;/div&gt;&lt;!-- end comment actions --&gt;
 
@@ -2468,6 +3081,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt;&lt;!-- end comment field --&gt;
 
 	&lt;/div&gt;&lt;!-- end single comment --&gt;
+
 	&lt;div class=&quot;comment&quot;&gt;
 
 		&lt;figure class=&quot;comment__img&quot;&gt;
@@ -2480,7 +3094,7 @@ p q r s t u v w x y z { | } ~
 			&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
 
 			&lt;time&gt;About an hour ago&lt;/time&gt;
-			
+
 		&lt;/div&gt;&lt;!-- end comment meta --&gt;
 
 		&lt;div class=&quot;comment__body&quot;&gt;
@@ -2491,7 +3105,8 @@ p q r s t u v w x y z { | } ~
 
 		&lt;div class=&quot;comment__actions&quot;&gt;
 
-			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment&lt;/span&gt;
+			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 		&lt;/div&gt;&lt;!-- end comment actions --&gt;
 
@@ -2501,6 +3116,7 @@ p q r s t u v w x y z { | } ~
 		&lt;/div&gt;&lt;!-- end comment field --&gt;
 
 	&lt;/div&gt;&lt;!-- end single comment --&gt;
+
 	&lt;div class=&quot;comment-field&quot;&gt;
 		&lt;figure class=&quot;comment__img&quot;&gt;
 			&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
@@ -2846,15 +3462,17 @@ p q r s t u v w x y z { | } ~
 
 			</form>
 
-
 		</div>
-
 
 	</header>
 
 </div>
 
 							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/02-organisms-login-login/02-organisms-login-login.html"><code>organisms-login</code></a>
+									</div>
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
@@ -2892,9 +3510,210 @@ p q r s t u v w x y z { | } ~
 
 			&lt;/form&gt;
 
-
 		&lt;/div&gt;
 
+	&lt;/header&gt;
+
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-header-with-registration" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-global-header-with-registration/02-organisms-global-header-with-registration.html" class="patternLink" data-patternpartial="organisms-header-with-registration">Header With Registration</a></h2>
+						<div class="sg-pattern-body">
+							<div class="wrap--header bc-grey--lightest header--sticky">
+
+	<header class="header--login l-constrained clearfix" role="banner">
+
+		<a class="site-logo--small">
+			<img src="../../assets/img/D-CENT_logo.svg" class="logo" alt="Logo Alt Text" />
+		</a>
+
+		<nav role="navigation" class="block">
+    <ul class="bare-list nav nav-primary">
+        <li class="nav__item"><a href="#"><i class="fa fa-comments"></i><span>Messages <i class="count c-white bc-comp--light">3</i></span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-tasks"></i><span>Tasks</span></a></li>
+        <li class="nav__item"><a href="#"><i class="fa fa-calendar"></i><span>Events</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-legal"></i><span>Votes</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-pencil"></i><span>Articles</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
+    </ul>
+    <ul class="bare-list nav nav-settings">
+        <li class="nav__item js-open-signin"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
+    </ul>
+		</nav>
+
+		<div class="login">
+
+			<div class="registration box">
+
+				<form class="registration__form block--large">
+
+					<div class="grid">
+
+						<div class="g g--half">
+
+							<div class="form-row helper">
+								<input type="text" placeholder="First name" />
+								<span class="helper__toggle js-helper__toggle">
+									<i class="fa fa-question"></i>
+								</span>
+								<div class="helper__body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								</div>
+							</div>
+							<div class="form-row">
+								<input type="text" placeholder="Last name" />
+							</div>
+							<div class="form-row helper">
+								<input type="text" placeholder="Email" />
+								<span class="helper__toggle js-helper__toggle">
+									<i class="fa fa-question"></i>
+								</span>
+								<div class="helper__body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								</div>
+							</div>
+							<div class="form-row">
+								<input type="text" placeholder="Phone" />
+							</div>
+
+						</div>
+
+						<div class="g g--half">
+
+							<div class="form-row">
+								<input type="text" placeholder="City" />
+							</div>
+							<div class="form-row">
+								<input type="text" placeholder="Zip" />
+							</div>
+							<div class="form-row">
+								<input type="text" placeholder="Street" />
+							</div>
+							<div class="form-row">
+								<input type="text" placeholder="..etc vcard" />
+							</div>
+
+						</div>
+
+					</div><!-- end grid -->
+
+					<div class="registration__action text--right block--large">
+						<button class="btn">Save and close</button>
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+
+	</header>
+
+</div>
+
+							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/02-organisms-navigation-navigation/02-organisms-navigation-navigation.html"><code>organisms-navigation</code></a>
+											<a href="../../patterns/02-organisms-registration-registration/02-organisms-registration-registration.html"><code>organisms-registration</code></a>
+									</div>
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;wrap--header bc-grey--lightest header--sticky&quot;&gt;
+
+	&lt;header class=&quot;header--login l-constrained clearfix&quot; role=&quot;banner&quot;&gt;
+
+		&lt;a class=&quot;site-logo--small&quot;&gt;
+			&lt;img src=&quot;../../assets/img/D-CENT_logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
+		&lt;/a&gt;
+
+		&lt;nav role=&quot;navigation&quot; class=&quot;block&quot;&gt;
+    &lt;ul class=&quot;bare-list nav nav-primary&quot;&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;span&gt;Messages &lt;i class=&quot;count c-white bc-comp--light&quot;&gt;3&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-tasks&quot;&gt;&lt;/i&gt;&lt;span&gt;Tasks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-legal&quot;&gt;&lt;/i&gt;&lt;span&gt;Votes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;Articles&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class=&quot;bare-list nav nav-settings&quot;&gt;
+        &lt;li class=&quot;nav__item js-open-signin&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+		&lt;/nav&gt;
+
+		&lt;div class=&quot;login&quot;&gt;
+
+			&lt;div class=&quot;registration box&quot;&gt;
+
+				&lt;form class=&quot;registration__form block--large&quot;&gt;
+
+					&lt;div class=&quot;grid&quot;&gt;
+
+						&lt;div class=&quot;g g--half&quot;&gt;
+
+							&lt;div class=&quot;form-row helper&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;First name&quot; /&gt;
+								&lt;span class=&quot;helper__toggle js-helper__toggle&quot;&gt;
+									&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;
+								&lt;/span&gt;
+								&lt;div class=&quot;helper__body&quot;&gt;
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Last name&quot; /&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row helper&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Email&quot; /&gt;
+								&lt;span class=&quot;helper__toggle js-helper__toggle&quot;&gt;
+									&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;
+								&lt;/span&gt;
+								&lt;div class=&quot;helper__body&quot;&gt;
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Phone&quot; /&gt;
+							&lt;/div&gt;
+
+						&lt;/div&gt;
+
+						&lt;div class=&quot;g g--half&quot;&gt;
+
+							&lt;div class=&quot;form-row&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;City&quot; /&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Zip&quot; /&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Street&quot; /&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;..etc vcard&quot; /&gt;
+							&lt;/div&gt;
+
+						&lt;/div&gt;
+
+					&lt;/div&gt;&lt;!-- end grid --&gt;
+
+					&lt;div class=&quot;registration__action text--right block--large&quot;&gt;
+						&lt;button class=&quot;btn&quot;&gt;Save and close&lt;/button&gt;
+					&lt;/div&gt;
+
+				&lt;/form&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
 
 	&lt;/header&gt;
 
@@ -2941,6 +3760,62 @@ p q r s t u v w x y z { | } ~
 							</div>
 						</div>
 					</div>
+					<div id="organisms-login" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-login-login/02-organisms-login-login.html" class="patternLink" data-patternpartial="organisms-login">Login</a></h2>
+						<div class="sg-pattern-body">
+							<form class="form--login">
+
+	<div class="form-row">
+		<input type="email" placeholder="Email" />
+	</div>
+
+	<div class="form-row">
+		<a class="float--right pw-forgot" href="#">Forgot password?</a>
+		<input type="password" placeholder="Password" />
+	</div>
+
+	<div class="form-row">
+		<input type="submit" class="btn" value="Sign in" />
+	</div>
+
+	<div class="form-row text--center">
+			<span class="signup-intro">Don't have an account?</span>
+			<a class="sign-up btn" href="#">Sign Up</a>
+	</div>
+
+</form>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;form class=&quot;form--login&quot;&gt;
+
+	&lt;div class=&quot;form-row&quot;&gt;
+		&lt;input type=&quot;email&quot; placeholder=&quot;Email&quot; /&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;form-row&quot;&gt;
+		&lt;a class=&quot;float--right pw-forgot&quot; href=&quot;#&quot;&gt;Forgot password?&lt;/a&gt;
+		&lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; /&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;form-row&quot;&gt;
+		&lt;input type=&quot;submit&quot; class=&quot;btn&quot; value=&quot;Sign in&quot; /&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;form-row text--center&quot;&gt;
+			&lt;span class=&quot;signup-intro&quot;&gt;Don't have an account?&lt;/span&gt;
+			&lt;a class=&quot;sign-up btn&quot; href=&quot;#&quot;&gt;Sign Up&lt;/a&gt;
+	&lt;/div&gt;
+
+&lt;/form&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="organisms-navigation" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-navigation-navigation/02-organisms-navigation-navigation.html" class="patternLink" data-patternpartial="organisms-navigation">Navigation</a></h2>
 						<div class="sg-pattern-body">
@@ -2954,7 +3829,7 @@ p q r s t u v w x y z { | } ~
         <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
     </ul>
     <ul class="bare-list nav nav-settings">
-        <li class="nav__item"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
+        <li class="nav__item js-open-signin"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
     </ul>
 </nav>
@@ -2978,7 +3853,7 @@ p q r s t u v w x y z { | } ~
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
     &lt;ul class=&quot;bare-list nav nav-settings&quot;&gt;
-        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item js-open-signin&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;
@@ -3346,6 +4221,322 @@ p q r s t u v w x y z { | } ~
 							</div>
 						</div>
 					</div>
+					<div id="organisms-registration" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-registration-registration/02-organisms-registration-registration.html" class="patternLink" data-patternpartial="organisms-registration">Registration</a></h2>
+						<div class="sg-pattern-body">
+							<div class="registration box">
+
+	<form class="registration__form block--large">
+
+		<div class="grid">
+
+			<div class="g g--half">
+
+				<div class="form-row helper">
+					<input type="text" placeholder="First name" />
+					<span class="helper__toggle js-helper__toggle">
+						<i class="fa fa-question"></i>
+					</span>
+					<div class="helper__body">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+					</div>
+				</div>
+				<div class="form-row">
+					<input type="text" placeholder="Last name" />
+				</div>
+				<div class="form-row helper">
+					<input type="text" placeholder="Email" />
+					<span class="helper__toggle js-helper__toggle">
+						<i class="fa fa-question"></i>
+					</span>
+					<div class="helper__body">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+					</div>
+				</div>
+				<div class="form-row">
+					<input type="text" placeholder="Phone" />
+				</div>
+
+			</div>
+
+			<div class="g g--half">
+
+				<div class="form-row">
+					<input type="text" placeholder="City" />
+				</div>
+				<div class="form-row">
+					<input type="text" placeholder="Zip" />
+				</div>
+				<div class="form-row">
+					<input type="text" placeholder="Street" />
+				</div>
+				<div class="form-row">
+					<input type="text" placeholder="..etc vcard" />
+				</div>
+
+			</div>
+
+		</div><!-- end grid -->
+
+		<div class="registration__action text--right block--large">
+			<button class="btn">Save and close</button>
+		</div>
+
+	</form>
+
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;registration box&quot;&gt;
+
+	&lt;form class=&quot;registration__form block--large&quot;&gt;
+
+		&lt;div class=&quot;grid&quot;&gt;
+
+			&lt;div class=&quot;g g--half&quot;&gt;
+
+				&lt;div class=&quot;form-row helper&quot;&gt;
+					&lt;input type=&quot;text&quot; placeholder=&quot;First name&quot; /&gt;
+					&lt;span class=&quot;helper__toggle js-helper__toggle&quot;&gt;
+						&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;
+					&lt;/span&gt;
+					&lt;div class=&quot;helper__body&quot;&gt;
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;input type=&quot;text&quot; placeholder=&quot;Last name&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;form-row helper&quot;&gt;
+					&lt;input type=&quot;text&quot; placeholder=&quot;Email&quot; /&gt;
+					&lt;span class=&quot;helper__toggle js-helper__toggle&quot;&gt;
+						&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;
+					&lt;/span&gt;
+					&lt;div class=&quot;helper__body&quot;&gt;
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;input type=&quot;text&quot; placeholder=&quot;Phone&quot; /&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+			&lt;div class=&quot;g g--half&quot;&gt;
+
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;input type=&quot;text&quot; placeholder=&quot;City&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;input type=&quot;text&quot; placeholder=&quot;Zip&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;input type=&quot;text&quot; placeholder=&quot;Street&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;input type=&quot;text&quot; placeholder=&quot;..etc vcard&quot; /&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;&lt;!-- end grid --&gt;
+
+		&lt;div class=&quot;registration__action text--right block--large&quot;&gt;
+			&lt;button class=&quot;btn&quot;&gt;Save and close&lt;/button&gt;
+		&lt;/div&gt;
+
+	&lt;/form&gt;
+
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="organisms-settings" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-settings-settings/02-organisms-settings-settings.html" class="patternLink" data-patternpartial="organisms-settings">Settings</a></h2>
+						<div class="sg-pattern-body">
+							<div class="settings box">
+
+	<form class="settings__form block--large">
+
+		<div class="grid">
+
+			<div class="g g--half">
+
+				<div class="form-row helper">
+					<input type="text" placeholder="Hashtags" />
+					<span class="helper__toggle js-helper__toggle">
+						<i class="fa fa-question"></i>
+					</span>
+					<div class="helper__body">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+					</div>
+				</div>
+				<div class="form-row grid">
+					<div class="g g--half">
+						Show my real name
+					</div>
+					<div class="g g--half">
+						<div class="btn-group">
+							<button class="btn">No</button>
+							<button class="btn">Yes</button>
+						</div>
+					</div>
+				</div>
+				<div class="form-row grid">
+					<div class="g g--half">
+						Show current geolocation
+					</div>
+					<div class="g g--half">
+						<div class="btn-group">
+							<button class="btn">No</button>
+							<button class="btn">Yes</button>
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<input type="text" placeholder="Phone" />
+				</div>
+
+			</div>
+
+			<div class="g g--half">
+
+				<div class="form-row grid">
+					<div class="g g--half">
+						Time format
+					</div>
+					<div class="g g--half">
+						<input type="text" placeholder="hh.mm.ss" />
+					</div>
+				</div>
+				<div class="form-row grid">
+					<div class="g g--half">
+						Date format
+					</div>
+					<div class="g g--half">
+						<input type="text" placeholder="dd.mm.yyyy" />
+					</div>
+				</div>
+				<div class="form-row grid">
+					<div class="g g--half">
+						Time zone
+					</div>
+					<div class="g g--half">
+						<input type="number"  />
+					</div>
+				</div>
+
+			</div>
+
+		</div><!-- end grid -->
+
+		<div class="registration__action text--right block--large">
+			<button class="btn">Save and close</button>
+		</div>
+
+	</form>
+
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;settings box&quot;&gt;
+
+	&lt;form class=&quot;settings__form block--large&quot;&gt;
+
+		&lt;div class=&quot;grid&quot;&gt;
+
+			&lt;div class=&quot;g g--half&quot;&gt;
+
+				&lt;div class=&quot;form-row helper&quot;&gt;
+					&lt;input type=&quot;text&quot; placeholder=&quot;Hashtags&quot; /&gt;
+					&lt;span class=&quot;helper__toggle js-helper__toggle&quot;&gt;
+						&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;
+					&lt;/span&gt;
+					&lt;div class=&quot;helper__body&quot;&gt;
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;form-row grid&quot;&gt;
+					&lt;div class=&quot;g g--half&quot;&gt;
+						Show my real name
+					&lt;/div&gt;
+					&lt;div class=&quot;g g--half&quot;&gt;
+						&lt;div class=&quot;btn-group&quot;&gt;
+							&lt;button class=&quot;btn&quot;&gt;No&lt;/button&gt;
+							&lt;button class=&quot;btn&quot;&gt;Yes&lt;/button&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;form-row grid&quot;&gt;
+					&lt;div class=&quot;g g--half&quot;&gt;
+						Show current geolocation
+					&lt;/div&gt;
+					&lt;div class=&quot;g g--half&quot;&gt;
+						&lt;div class=&quot;btn-group&quot;&gt;
+							&lt;button class=&quot;btn&quot;&gt;No&lt;/button&gt;
+							&lt;button class=&quot;btn&quot;&gt;Yes&lt;/button&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;input type=&quot;text&quot; placeholder=&quot;Phone&quot; /&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+			&lt;div class=&quot;g g--half&quot;&gt;
+
+				&lt;div class=&quot;form-row grid&quot;&gt;
+					&lt;div class=&quot;g g--half&quot;&gt;
+						Time format
+					&lt;/div&gt;
+					&lt;div class=&quot;g g--half&quot;&gt;
+						&lt;input type=&quot;text&quot; placeholder=&quot;hh.mm.ss&quot; /&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;form-row grid&quot;&gt;
+					&lt;div class=&quot;g g--half&quot;&gt;
+						Date format
+					&lt;/div&gt;
+					&lt;div class=&quot;g g--half&quot;&gt;
+						&lt;input type=&quot;text&quot; placeholder=&quot;dd.mm.yyyy&quot; /&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;form-row grid&quot;&gt;
+					&lt;div class=&quot;g g--half&quot;&gt;
+						Time zone
+					&lt;/div&gt;
+					&lt;div class=&quot;g g--half&quot;&gt;
+						&lt;input type=&quot;number&quot;  /&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;&lt;!-- end grid --&gt;
+
+		&lt;div class=&quot;registration__action text--right block--large&quot;&gt;
+			&lt;button class=&quot;btn&quot;&gt;Save and close&lt;/button&gt;
+		&lt;/div&gt;
+
+	&lt;/form&gt;
+
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 			</div> <!--end #sg-patterns-->
 	
 		</div><!--end .sg-main-->
@@ -3359,6 +4550,8 @@ p q r s t u v w x y z { | } ~
 		
 
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+
+	<script src='../../assets/js/vendor/angular.min.js'></script>
 
 	<script src='../../assets/js/main.js'></script>
 

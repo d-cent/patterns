@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="pl">
+<html class="pl" ng-app="app">
 	<head>
 		<title>Pattern Lab</title>
 		<meta charset="UTF-8">
@@ -12,7 +12,7 @@
 		[c]2014 @scottjehl, Filament Group, Inc.
 		Licensed MIT
 		*/
-	
+
 		function loadCSS( href, before, media ){
 			"use strict";
 			var ss = window.document.createElement( "link" );
@@ -178,6 +178,26 @@
 							</div>
 						</div>
 					</div>
+					<div id="atoms-inline-editing" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-05-forms-05-inline-editing/00-atoms-05-forms-05-inline-editing.html" class="patternLink" data-patternpartial="atoms-inline-editing">Inline Editing</a></h2>
+						<div class="sg-pattern-body">
+							<div ng-controller="Ctrl">
+  <a href="#" editable-text="user.name"></a>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div ng-controller=&quot;Ctrl&quot;&gt;
+  &lt;a href=&quot;#&quot; editable-text=&quot;user.name&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 			</div> <!--end #sg-patterns-->
 	
 		</div><!--end .sg-main-->
@@ -191,6 +211,8 @@
 		
 
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+
+	<script src='../../assets/js/vendor/angular.min.js'></script>
 
 	<script src='../../assets/js/main.js'></script>
 

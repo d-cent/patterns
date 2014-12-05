@@ -36,14 +36,15 @@
  * Header.................The main page header.
  * Nav Primary............The main anvigation for the site.
  * Login..................Login module.
+ * Registration...........Registration module.
  * Messaging..............Messaging styles.
  * Helper text............Helper text.
  * Fader text.............Fader text.
  * Comments...............Comments module.
  * Discussion.............Discussion organism.
+ * Argumenting............Argumenting organism.
  * Profile................Profile section.
  * Article................Basic article styles.
-
  *
  *
  */
@@ -71,7 +72,7 @@
 /**
  *  Clearfix
  */
-.clearfix:after,.media:after,.nav:after,.l-constrained:after {
+.clearfix:after,.media:after,.nav:after,.l-constrained:after, .grid:after {
 	content:"";
 	display:table;
 	clear:both
@@ -630,8 +631,6 @@ button,html input[type="button"],input[type="reset"],input[type="submit"] {
 	font-weight:300;
 	background-color:#007e84;
 	color:#fff;
-	font-size:1.1em;
-	letter-spacing:2px;
 	-webkit-font-smoothing:antialiased
 }
 
@@ -642,6 +641,10 @@ button[disabled],input[disabled] {
 input[type="checkbox"],input[type="radio"] {
 	box-sizing:border-box;
 	padding:0
+}
+
+input, textarea {
+	width: 100%;
 }
 
 input[type="search"] {
@@ -684,7 +687,8 @@ input,textarea {
 }
 
 .form-row {
-	margin-bottom:1em
+	margin-bottom: 1.5em;
+	clear: both;
 }
 
 
@@ -1237,7 +1241,7 @@ input,textarea {
 
 .l-constrained {
 	margin:0 auto;
-	max-width:480px;
+	max-width:1200px;
 /* temporary fix */
 	width:94%
 }
@@ -1249,7 +1253,6 @@ input,textarea {
 
  .grid {
     position: relative;
-    @extend .clearfix;
 }
 
 @media screen and (min-width: 48em){
@@ -1280,8 +1283,8 @@ input,textarea {
 
 
     .g--half {
-        width: 49%;
-        margin-right: 2%;
+        width: 48%;
+        margin-right: 4%;
     }
 
     .g--half:last-child, .g--half:nth-child(even) {
@@ -1362,7 +1365,7 @@ input,textarea {
 }
 
 .site-logo--small > img {
-	max-width:30px
+	max-height:30px
 }
 
 
@@ -1376,9 +1379,22 @@ input,textarea {
 \*------------------------------------*/
 
 
+.nav-primary {
+	float: left;
+	width: 70%;
+}
+
+
+
 .nav__item {
 	position: relative;
-	margin-right: .5em;
+	margin-right: .15em;
+}
+
+@media screen and (min-width: 48em) {
+	.nav__item {
+		margin-right: .5em;
+	}
 }
 
 .nav__item:last-child {
@@ -1401,7 +1417,7 @@ input,textarea {
 
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 60em) {
 	.nav__item > a > i {
 		margin-right: .25em;
 		vertical-align: -1px;
@@ -1423,7 +1439,7 @@ input,textarea {
 	font-style: normal;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 60em) {
 	.nav__item > a > span {
 		display: inline-block;
 	}
@@ -1434,15 +1450,27 @@ input,textarea {
 		$NAV-SETTINGS
 \*------------------------------------*/
 
+.nav-settings {
+	float: right;
+	width: 30%;
+	padding-right: .5em;
+	text-align: right;
+}
 
-
+@media screen and (min-width: 48em) {
+	.nav-settings> .nav__item > a > span {
+		display: inline-block;
+	}
+}
 
 /*------------------------------------*\
 		$LOGIN
 \*------------------------------------*/
+
+
 .login {
 	margin: 1.5em auto 0;
-	max-width:280px;
+	max-width: 600px;
 	clear:both;
 }
 
@@ -1464,7 +1492,7 @@ input,textarea {
 	margin: 1.5em 0;
 }
 
-.form--login > .form-row > input {
+.form--login > .ow > input {
 	width:100%
 }
 
@@ -1477,6 +1505,20 @@ input,textarea {
 	display:block;
 	margin-bottom:.5em;
 	font-size:18px
+}
+
+/*------------------------------------*\
+		$REGISTRATION
+\*------------------------------------*/
+
+.registration__form > .grid {
+	margin: 0 auto 1.5em;
+	width: 80%;
+	max-width: 800px;
+}
+
+.registration__action {
+	clear: both;
 }
 
 /*------------------------------------*\
@@ -1539,13 +1581,12 @@ input,textarea {
 \*------------------------------------*/
 .helper {
 	position:relative;
-	padding:1.5em 1em 1em
 }
 
 .helper__toggle {
 	position:absolute;
-	top:0;
-	right:1.5em;
+	top: -1.5em;
+	right: 0;
 	cursor:pointer
 }
 
@@ -1666,7 +1707,7 @@ input,textarea {
 	text-align:right
 }
 
-.comment-toggle {
+.comment-toggle, .like-toggle {
 	cursor:pointer
 }
 
@@ -1676,9 +1717,12 @@ input,textarea {
 
 .comment-field > textarea {
 	display: inline-block;
-	max-width: 600px;
 	min-width: 250px;
 	width: 80%;
+}
+
+.comment-field > .btn-group {
+	display: inline-block;
 }
 
 /*------------------------------------*\
@@ -1686,6 +1730,19 @@ input,textarea {
 \*------------------------------------*/
 .discussion {
 	padding:.625em
+}
+
+
+/*------------------------------------*\
+		$ARGUMENTING
+\*------------------------------------*/
+
+.argumenting .icon-avatar_circle {
+	font-size: 38px;
+}
+
+.argumenting .btn-group {
+	display: inline-block;
 }
 
 /*------------------------------------*\

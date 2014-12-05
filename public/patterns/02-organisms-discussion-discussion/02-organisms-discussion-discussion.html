@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="pl">
+<html class="pl" ng-app="app">
 	<head>
 		<title>Pattern Lab</title>
 		<meta charset="UTF-8">
@@ -12,7 +12,7 @@
 		[c]2014 @scottjehl, Filament Group, Inc.
 		Licensed MIT
 		*/
-	
+
 		function loadCSS( href, before, media ){
 			"use strict";
 			var ss = window.document.createElement( "link" );
@@ -82,7 +82,7 @@
 			<a href="#">Firstname Lastname</a>
 
 			<time>About an hour ago</time>
-			
+
 		</div><!-- end comment meta -->
 
 		<div class="comment__body">
@@ -93,7 +93,8 @@
 
 		<div class="comment__actions">
 
-			<span class="comment-toggle js-comment-toggle">Comment</span>
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
 
 		</div><!-- end comment actions -->
 
@@ -103,6 +104,7 @@
 		</div><!-- end comment field -->
 
 	</div><!-- end single comment -->
+
 	<div class="comment">
 
 		<figure class="comment__img">
@@ -115,7 +117,7 @@
 			<a href="#">Firstname Lastname</a>
 
 			<time>About an hour ago</time>
-			
+
 		</div><!-- end comment meta -->
 
 		<div class="comment__body">
@@ -126,7 +128,8 @@
 
 		<div class="comment__actions">
 
-			<span class="comment-toggle js-comment-toggle">Comment</span>
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
 
 		</div><!-- end comment actions -->
 
@@ -136,6 +139,7 @@
 		</div><!-- end comment field -->
 
 	</div><!-- end single comment -->
+
 	<div class="comment">
 
 		<figure class="comment__img">
@@ -148,7 +152,7 @@
 			<a href="#">Firstname Lastname</a>
 
 			<time>About an hour ago</time>
-			
+
 		</div><!-- end comment meta -->
 
 		<div class="comment__body">
@@ -159,7 +163,8 @@
 
 		<div class="comment__actions">
 
-			<span class="comment-toggle js-comment-toggle">Comment</span>
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
 
 		</div><!-- end comment actions -->
 
@@ -169,6 +174,7 @@
 		</div><!-- end comment field -->
 
 	</div><!-- end single comment -->
+
 	<div class="comment">
 
 		<figure class="comment__img">
@@ -181,7 +187,7 @@
 			<a href="#">Firstname Lastname</a>
 
 			<time>About an hour ago</time>
-			
+
 		</div><!-- end comment meta -->
 
 		<div class="comment__body">
@@ -192,7 +198,8 @@
 
 		<div class="comment__actions">
 
-			<span class="comment-toggle js-comment-toggle">Comment</span>
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
 
 		</div><!-- end comment actions -->
 
@@ -202,6 +209,7 @@
 		</div><!-- end comment field -->
 
 	</div><!-- end single comment -->
+
 	<div class="comment">
 
 		<figure class="comment__img">
@@ -214,7 +222,7 @@
 			<a href="#">Firstname Lastname</a>
 
 			<time>About an hour ago</time>
-			
+
 		</div><!-- end comment meta -->
 
 		<div class="comment__body">
@@ -225,7 +233,8 @@
 
 		<div class="comment__actions">
 
-			<span class="comment-toggle js-comment-toggle">Comment</span>
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
 
 		</div><!-- end comment actions -->
 
@@ -235,6 +244,7 @@
 		</div><!-- end comment field -->
 
 	</div><!-- end single comment -->
+
 	<div class="comment">
 
 		<figure class="comment__img">
@@ -247,7 +257,7 @@
 			<a href="#">Firstname Lastname</a>
 
 			<time>About an hour ago</time>
-			
+
 		</div><!-- end comment meta -->
 
 		<div class="comment__body">
@@ -258,7 +268,8 @@
 
 		<div class="comment__actions">
 
-			<span class="comment-toggle js-comment-toggle">Comment</span>
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
 
 		</div><!-- end comment actions -->
 
@@ -268,6 +279,7 @@
 		</div><!-- end comment field -->
 
 	</div><!-- end single comment -->
+
 	<div class="comment-field">
 		<figure class="comment__img">
 			<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
@@ -279,6 +291,8 @@
 </div>
 
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+
+	<script src='../../assets/js/vendor/angular.min.js'></script>
 
 	<script src='../../assets/js/main.js'></script>
 

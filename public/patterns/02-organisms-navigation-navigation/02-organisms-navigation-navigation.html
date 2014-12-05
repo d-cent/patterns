@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="pl">
+<html class="pl" ng-app="app">
 	<head>
 		<title>Pattern Lab</title>
 		<meta charset="UTF-8">
@@ -12,7 +12,7 @@
 		[c]2014 @scottjehl, Filament Group, Inc.
 		Licensed MIT
 		*/
-	
+
 		function loadCSS( href, before, media ){
 			"use strict";
 			var ss = window.document.createElement( "link" );
@@ -78,12 +78,14 @@
         <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
     </ul>
     <ul class="bare-list nav nav-settings">
-        <li class="nav__item"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
+        <li class="nav__item js-open-signin"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
     </ul>
 </nav>
 
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+
+	<script src='../../assets/js/vendor/angular.min.js'></script>
 
 	<script src='../../assets/js/main.js'></script>
 
@@ -93,7 +95,7 @@
 		// handle injection of items from PHP
 		var patternPartial = "organisms-navigation";
 		var lineage        = [{"lineagePattern":"molecules-nav-primary","lineagePath":"..\/..\/patterns\/01-molecules-navigations-nav-primary\/01-molecules-navigations-nav-primary.html"},{"lineagePattern":"molecules-nav-settings","lineagePath":"..\/..\/patterns\/01-molecules-navigations-nav-settings\/01-molecules-navigations-nav-settings.html"}];
-		var lineageR       = [];
+		var lineageR       = [{"lineagePattern":"organisms-header-with-registration","lineagePath":"..\/..\/patterns\/02-organisms-global-header-with-registration\/02-organisms-global-header-with-registration.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

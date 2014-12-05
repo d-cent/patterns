@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="pl">
+<html class="pl" ng-app="app">
 	<head>
 		<title>Pattern Lab</title>
 		<meta charset="UTF-8">
@@ -12,7 +12,7 @@
 		[c]2014 @scottjehl, Filament Group, Inc.
 		Licensed MIT
 		*/
-	
+
 		function loadCSS( href, before, media ){
 			"use strict";
 			var ss = window.document.createElement( "link" );
@@ -87,7 +87,7 @@
         <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
     </ul>
     <ul class="bare-list nav nav-settings">
-        <li class="nav__item"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
+        <li class="nav__item js-open-signin"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
     </ul>
 </nav>
@@ -111,7 +111,7 @@
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
     &lt;ul class=&quot;bare-list nav nav-settings&quot;&gt;
-        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item js-open-signin&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;
@@ -134,6 +134,8 @@
 		
 
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+
+	<script src='../../assets/js/vendor/angular.min.js'></script>
 
 	<script src='../../assets/js/main.js'></script>
 
