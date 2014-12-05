@@ -1,0 +1,131 @@
+<div class="full-article box bc-white">
+
+	<header class="sticky">
+
+		<div class="clearfix">
+
+			<figure class="comment__img">
+				<i class="icon-legal"></i>
+			</figure>
+
+			<ul class="bare-list article-actions">
+
+				<li>
+					<a href="#" class="btn-text fixed-only"><i class="icon-legal"></i> Vote <i class="icon-double_angle_down"></i></a>
+				</li>
+				<li>
+					<a href="#" class="btn-text"><i class="icon-pencil"></i> Edit<i class="count c-white bc-comp--light" title="Number of edits">3</i></a>
+				</li>
+
+			</ul>
+
+			<h2>Voted article title og:title max 95 chars</h2>
+
+			<div class="full-article__meta">
+
+				<i class="icon-avatar"></i> <a href="#">5 editors</a> <i class="icon-pencil"></i> <time>About an hour ago</time> <i class="icon-group"></i> <a href="#">Groupname</a>
+
+			</div><!-- end full-article__meta -->
+
+		</div>
+
+		<div class="excerpt">
+
+			{{ excerpt.medium }}
+			
+		</div>
+
+		<div class="article-type-specifics">
+
+			<div class="article-type-specifics__intro">Voting open for <time>3 days</time>.</div>
+
+			<ul class="bare-list article-actions vote-btns">
+				<li>
+					<a href="#" class="btn btn-vote"><i class="icon-ok"></i>Yea</a>
+					<div class="article-actions__meta">
+						<a href="#"><i class="icon-legal"></i> 3</a>
+						<a href="#"><i class="fa fa-comments"></i> 1</a>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="btn-alt btn-vote">Nay</a>
+					<div class="article-actions__meta">
+						<a href="#"><i class="icon-legal"></i> 5</a>
+						<a href="#"><i class="fa fa-comments"></i> 3</a>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="btn-alt btn-vote">Abstain</a>
+					<div class="article-actions__meta">
+						<a href="#"><i class="icon-legal"></i> 13</a>
+						<a href="#"><i class="fa fa-comments"></i> 8</a>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+
+		{{> molecules-tags }}
+
+		{{> molecules-general-actions }}
+
+	</header>
+
+	<div class="full-article__body">
+
+		{{> molecules-article-image }}
+
+		<p>
+		{{ excerpt.long }}
+		</p>
+
+		<p>
+		{{ excerpt.medium }}
+		</p>
+
+		<p>
+		{{ excerpt.long }}
+		</p>
+
+		<p>
+		{{ excerpt.medium }}
+		</p>
+
+	</div>
+
+	<div class="full-article__comments">
+
+		<header>
+
+			<h3>Discussion</h3>
+
+			{{> atoms-tabs-with-search }}
+
+		</header>
+
+		{{> molecules-comment-field }}
+
+		{{> molecules-stream-item }}
+
+		{{> molecules-stream-item }}
+
+		{{> molecules-stream-item }}
+
+		{{> molecules-stream-item }}
+
+		{{> molecules-stream-item }}
+
+		{{> molecules-stream-item }}
+
+		{{> molecules-stream-item }}
+
+		{{> molecules-stream-item }}
+
+		<div class="pagination"><a href="#" class="btn btn-text">Load more</a></div>
+
+	</div>
+
+</div>
+
+
+

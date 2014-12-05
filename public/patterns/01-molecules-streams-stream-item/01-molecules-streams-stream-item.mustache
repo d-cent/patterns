@@ -1,0 +1,247 @@
+&lt;div class=&quot;stream-item&quot;&gt;
+
+	&lt;figure class=&quot;comment__img&quot;&gt;
+		&lt;!--img class=&quot;img--round&quot; src=&quot;{{ img.avatar.src }}&quot; alt=&quot;{{ img.avatar.alt }}&quot; /--&gt;
+		&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+	&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+	&lt;div class=&quot;comment__meta&quot;&gt;
+		
+		&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;{{ action }}&lt;/span&gt;
+		&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+	&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+	{{^ no-comment }}
+
+	&lt;div class=&quot;comment__body&quot;&gt;
+
+		{{ excerpt.medium }}
+
+	&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+	{{/ no-comment }}
+
+	{{# type-article }}
+
+	&lt;div class=&quot;embedded-item&quot;&gt;
+
+		&lt;figure class=&quot;comment__img&quot;&gt;
+			&lt;!--img class=&quot;img--round&quot; src=&quot;{{ img.avatar.src }}&quot; alt=&quot;{{ img.avatar.alt }}&quot; /--&gt;
+			&lt;i class=&quot;icon-file_text&quot;&gt;&lt;/i&gt;
+		&lt;/figure&gt;&lt;!-- end embedded item pic --&gt;
+
+		&lt;div class=&quot;embedded-item__meta&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;embedded-item__title&quot;&gt;Article title og:title max 95 chars&lt;/a&gt;
+			Last edited &lt;time&gt;3 hours ago&lt;/time&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;embedded-item__body&quot;&gt;
+
+			{{&gt; molecules-article-image }}
+
+			{{ excerpt.medium }}
+
+			&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+				&lt;li&gt;
+					&lt;a href=&quot;#&quot; class=&quot;btn-text&quot;&gt;&lt;i class=&quot;icon-angle_left_circle&quot;&gt;&lt;/i&gt; View full article  &lt;i class=&quot;count c-white bc-comp--light&quot; title=&quot;Number of edits&quot;&gt;3&lt;/i&gt;&lt;/a&gt;
+				&lt;/li&gt;
+
+			&lt;/ul&gt;
+
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+	{{/ type-article }}
+
+	{{# type-event }}
+
+	&lt;div class=&quot;embedded-item&quot;&gt;
+
+		&lt;figure class=&quot;comment__img event-date&quot;&gt;
+			&lt;div class=&quot;event-date__month&quot;&gt;Dec&lt;/div&gt;
+			&lt;div class=&quot;event-date__day&quot;&gt;16&lt;/div&gt;
+		&lt;/figure&gt;&lt;!-- end embedded item pic --&gt;
+
+		&lt;div class=&quot;embedded-item__meta&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;embedded-item__title&quot;&gt;Event title og:title max 95 chars&lt;/a&gt;
+			&lt;time&gt;Dec 16, 2014&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;place&quot;&gt;Tha Place 2 Be&lt;/a&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;embedded-item__body&quot;&gt;
+
+			{{ excerpt.medium }}
+
+			&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+				&lt;li&gt;
+					&lt;a href=&quot;#&quot; class=&quot;btn-text&quot;&gt;&lt;i class=&quot;icon-angle_left_circle&quot;&gt;&lt;/i&gt; View event details&lt;/a&gt;
+				&lt;/li&gt;
+
+			&lt;/ul&gt;
+
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+	&lt;!--
+
+	&lt;div class=&quot;article-type-specifics&quot;&gt;
+
+		&lt;ul class=&quot;bare-list article-actions vote-btns&quot;&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn-alt&quot;&gt;Going&lt;/a&gt;
+				&lt;div class=&quot;article-actions__meta&quot;&gt;
+					&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-avatar&quot;&gt;&lt;/i&gt; 13&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn-alt&quot;&gt;Maybe&lt;/a&gt;
+				&lt;div class=&quot;article-actions__meta&quot;&gt;
+					&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-avatar_outline&quot;&gt;&lt;/i&gt; 13&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn-alt&quot;&gt;Not going&lt;/a&gt;
+				&lt;div class=&quot;article-actions__meta&quot;&gt;
+					&lt;a href=&quot;#&quot;&gt;&lt;s&gt;&lt;i class=&quot;icon-avatar_outline&quot;&gt;&lt;/i&gt;&lt;/s&gt; 13&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+
+	&lt;/div&gt;
+
+	--&gt;
+
+	{{/ type-event }}
+
+	{{# type-task }}
+
+	&lt;div class=&quot;embedded-item&quot;&gt;
+
+		&lt;figure class=&quot;comment__img&quot;&gt;
+			&lt;!--img class=&quot;img--round&quot; src=&quot;{{ img.avatar.src }}&quot; alt=&quot;{{ img.avatar.alt }}&quot; /--&gt;
+			&lt;i class=&quot;icon-tasks&quot;&gt;&lt;/i&gt;
+		&lt;/figure&gt;&lt;!-- end embedded item pic --&gt;
+
+		&lt;div class=&quot;embedded-item__meta&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;embedded-item__title&quot;&gt;Task title og:title max 95 chars&lt;/a&gt;
+			Due &lt;time&gt;in five days&lt;/time&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;embedded-item__body&quot;&gt;
+
+			{{ excerpt.medium }}
+
+			&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+				&lt;li&gt;
+					&lt;a href=&quot;#&quot; class=&quot;btn-text&quot;&gt;&lt;i class=&quot;icon-angle_left_circle&quot;&gt;&lt;/i&gt; View task details&lt;/a&gt;
+				&lt;/li&gt;
+
+			&lt;/ul&gt;
+
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+	&lt;!--
+
+	&lt;div class=&quot;article-type-specifics&quot;&gt;
+
+		&lt;ul class=&quot;bare-list article-actions vote-btns&quot;&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn-alt&quot;&gt;Accept&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn-alt&quot;&gt;Decline&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn-alt&quot;&gt;Delegate&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+
+	&lt;/div&gt;
+
+	--&gt;
+
+	{{/ type-task }}
+
+	{{# type-vote }}
+
+	&lt;div class=&quot;embedded-item&quot;&gt;
+
+		&lt;figure class=&quot;comment__img&quot;&gt;
+			&lt;!--img class=&quot;img--round&quot; src=&quot;{{ img.avatar.src }}&quot; alt=&quot;{{ img.avatar.alt }}&quot; /--&gt;
+			&lt;i class=&quot;icon-legal&quot;&gt;&lt;/i&gt;
+		&lt;/figure&gt;&lt;!-- end embedded item pic --&gt;
+
+		&lt;div class=&quot;embedded-item__meta&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;embedded-item__title&quot;&gt;Voted article title og:title max 95 chars&lt;/a&gt;
+			Voting open for &lt;time&gt;3 days&lt;/time&gt; &bull; You voted &lt;span class=&quot;action-taken&quot;&gt;Yea&lt;/span&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;embedded-item__body &quot;&gt;
+
+			{{ excerpt.medium }}
+
+			&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+				&lt;li&gt;
+					&lt;a href=&quot;#&quot; class=&quot;btn-text&quot;&gt;&lt;i class=&quot;icon-angle_left_circle&quot;&gt;&lt;/i&gt; View full article&lt;/a&gt;
+				&lt;/li&gt;
+				
+			&lt;/ul&gt;
+
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+	&lt;!--
+
+	&lt;div class=&quot;article-type-specifics&quot;&gt;
+
+		&lt;ul class=&quot;bare-list article-actions vote-btns&quot;&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn btn-vote&quot;&gt;&lt;i class=&quot;icon-ok&quot;&gt;&lt;/i&gt;Yea&lt;/a&gt;
+				&lt;div class=&quot;article-actions__meta&quot;&gt;
+					&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-legal&quot;&gt;&lt;/i&gt; 3&lt;/a&gt;
+					&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 1&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn-alt btn-vote&quot;&gt;Nay&lt;/a&gt;
+				&lt;div class=&quot;article-actions__meta&quot;&gt;
+					&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-legal&quot;&gt;&lt;/i&gt; 5&lt;/a&gt;
+					&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 3&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href=&quot;#&quot; class=&quot;btn-alt btn-vote&quot;&gt;Abstain&lt;/a&gt;
+				&lt;div class=&quot;article-actions__meta&quot;&gt;
+					&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-legal&quot;&gt;&lt;/i&gt; 13&lt;/a&gt;
+					&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 8&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+
+	&lt;/div&gt;
+
+	--&gt;
+
+	{{/ type-vote }}
+
+	&lt;div class=&quot;tags&quot;&gt;
+
+		&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+	&lt;/div&gt;
+
+	{{&gt; molecules-general-actions }}
+
+
+&lt;/div&gt;&lt;!-- end single comment --&gt;

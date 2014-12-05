@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html class="pl" ng-app="app">
+	<head>
+		<title>Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+
+		 <script>
+		/*!
+		loadCSS: load a CSS file asynchronously.
+		[c]2014 @scottjehl, Filament Group, Inc.
+		Licensed MIT
+		*/
+
+		function loadCSS( href, before, media ){
+			"use strict";
+			var ss = window.document.createElement( "link" );
+			var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+			ss.rel = "stylesheet";
+			ss.href = href;
+			ss.media = "only x";
+			ref.parentNode.insertBefore( ss, ref );
+			setTimeout( function(){
+				ss.media = media || "all";
+			} );
+			return ss;
+		 }
+
+		 loadCSS( "http://fonts.googleapis.com/css?family=Comfortaa:400,700" );
+		 loadCSS( "../../assets/css/fonts.css" );
+
+		 </script>
+
+
+		<!--link rel="stylesheet" href="../../css/style.css?0" media="all" /-->
+
+		<!--link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/-->
+
+
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="../../assets/css/main.css?0" media="all" />
+		<!--<![endif]-->
+
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="../../assets/css/min/ie.min.css">
+		<![endif]-->
+
+
+		<!-- Scripts -->
+
+		<script src="../../assets/js/vendor/modernizr.min.js"></script>
+
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+				<!-- never cache patterns -->
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?0" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?0" media="all" />
+		
+
+		<!-- End Pattern Lab -->
+
+	</head>
+	<body class="body">
+		
+		<!-- View All Patterns in a Pattern Sub-Type -->
+		<div class="sg-main" role="main">
+			
+			<!-- Patterns -->
+			<div id="sg-patterns">
+					<div id="molecules-article-image" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-streams-article-image/01-molecules-streams-article-image.html" class="patternLink" data-patternpartial="molecules-article-image">Article Image</a></h2>
+						<div class="sg-pattern-body">
+							<figure class="article__img">
+    <img src="http://placeimg.com/200/200/tech" />
+</figure>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;figure class=&quot;article__img&quot;&gt;
+    &lt;img src=&quot;http://placeimg.com/200/200/tech&quot; /&gt;
+&lt;/figure&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-full-article" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-streams-full-article/01-molecules-streams-full-article.html" class="patternLink" data-patternpartial="molecules-full-article">Full Article</a></h2>
+						<div class="sg-pattern-body">
+							<div class="full-article box bc-white">
+
+	<header class="sticky">
+
+		<div class="clearfix">
+
+			<figure class="comment__img">
+				<i class="icon-legal"></i>
+			</figure>
+
+			<ul class="bare-list article-actions">
+
+				<li>
+					<a href="#" class="btn-text fixed-only"><i class="icon-legal"></i> Vote <i class="icon-double_angle_down"></i></a>
+				</li>
+				<li>
+					<a href="#" class="btn-text"><i class="icon-pencil"></i> Edit<i class="count c-white bc-comp--light" title="Number of edits">3</i></a>
+				</li>
+
+			</ul>
+
+			<h2>Voted article title og:title max 95 chars</h2>
+
+			<div class="full-article__meta">
+
+				<i class="icon-avatar"></i> <a href="#">5 editors</a> <i class="icon-pencil"></i> <time>About an hour ago</time> <i class="icon-group"></i> <a href="#">Groupname</a>
+
+			</div><!-- end full-article__meta -->
+
+		</div>
+
+		<div class="excerpt">
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			
+		</div>
+
+		<div class="article-type-specifics">
+
+			<div class="article-type-specifics__intro">Voting open for <time>3 days</time>.</div>
+
+			<ul class="bare-list article-actions vote-btns">
+				<li>
+					<a href="#" class="btn btn-vote"><i class="icon-ok"></i>Yea</a>
+					<div class="article-actions__meta">
+						<a href="#"><i class="icon-legal"></i> 3</a>
+						<a href="#"><i class="fa fa-comments"></i> 1</a>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="btn-alt btn-vote">Nay</a>
+					<div class="article-actions__meta">
+						<a href="#"><i class="icon-legal"></i> 5</a>
+						<a href="#"><i class="fa fa-comments"></i> 3</a>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="btn-alt btn-vote">Abstain</a>
+					<div class="article-actions__meta">
+						<a href="#"><i class="icon-legal"></i> 13</a>
+						<a href="#"><i class="fa fa-comments"></i> 8</a>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="tags">
+
+			<a href="#" class="tag">Lorem ipsum</a>
+			<a href="#" class="tag">Punavuori</a>
+			<a href="#" class="tag">Mea transmittee sursum</a>
+
+		</div>
+		<div class="actions-general">
+
+			<a href="#" title="More actions: share, flag as inappropriate">...</a>
+			<a href="#"><i class="fa fa-comments"></i> 23</a>
+			<a href="#"><i class="icon-plus"></i> 35</a>
+
+		</div>
+	</header>
+
+	<div class="full-article__body">
+
+		<figure class="article__img">
+		    <img src="http://placeimg.com/200/200/tech" />
+		</figure>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</p>
+
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</p>
+
+	</div>
+
+	<div class="full-article__comments">
+
+		<header>
+
+			<h3>Discussion</h3>
+
+			<ul class="bare-list nav tabs">
+			    <li><a class="tab tab--active" href="#">Active</a></li>
+			    <li><a class="tab" href="#">Passive</a></li>
+			    <li><a class="tab" href="#">Passive</a></li>
+			    <li class="tabs__search"><a href="#"><i class="icon-search"></i></a></li>
+			</ul>
+
+		</header>
+
+		<div class="comment-field">
+			<figure class="comment__img">
+				<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+				<i class="icon-avatar_circle"></i>
+			</figure><!-- end comment pic -->
+			<textarea placeholder="Comment"></textarea>
+		</div>
+
+		<div class="stream-item">
+
+			<figure class="comment__img">
+				<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+				<i class="icon-avatar_circle"></i>
+			</figure><!-- end comment pic -->
+
+			<div class="comment__meta">
+				
+				<a href="#" class="name">Firstname Lastname</a> <span class="action">created a new discussion</span>
+				<time>About an hour ago</time> in <a href="#" class="group-name">Groupname</a>
+
+			</div><!-- end comment meta -->
+
+
+			<div class="comment__body">
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			</div><!-- end comment body -->
+
+
+
+
+
+
+			<div class="tags">
+
+				<a href="#" class="tag">Lorem ipsum</a>
+				<a href="#" class="tag">Punavuori</a>
+				<a href="#" class="tag">Mea transmittee sursum</a>
+
+			</div>
+
+	<div class="actions-general">
+
+		<a href="#" title="More actions: share, flag as inappropriate">...</a>
+		<a href="#"><i class="fa fa-comments"></i> 23</a>
+		<a href="#"><i class="icon-plus"></i> 35</a>
+
+	</div>
+
+		</div><!-- end single comment -->
+		<div class="stream-item">
+
+			<figure class="comment__img">
+				<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+				<i class="icon-avatar_circle"></i>
+			</figure><!-- end comment pic -->
+
+			<div class="comment__meta">
+				
+				<a href="#" class="name">Firstname Lastname</a> <span class="action">created a new discussion</span>
+				<time>About an hour ago</time> in <a href="#" class="group-name">Groupname</a>
+
+			</div><!-- end comment meta -->
+
+
+			<div class="comment__body">
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			</div><!-- end comment body -->
+
+
+
+
+
+
+			<div class="tags">
+
+				<a href="#" class="tag">Lorem ipsum</a>
+				<a href="#" class="tag">Punavuori</a>
+				<a href="#" class="tag">Mea transmittee sursum</a>
+
+			</div>
+
+	<div class="actions-general">
+
+		<a href="#" title="More actions: share, flag as inappropriate">...</a>
+		<a href="#"><i class="fa fa-comments"></i> 23</a>
+		<a href="#"><i class="icon-plus"></i> 35</a>
+
+	</div>
+
+		</div><!-- end single comment -->
+		<div class="stream-item">
+
+			<figure class="comment__img">
+				<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+				<i class="icon-avatar_circle"></i>
+			</figure><!-- end comment pic -->
+
+			<div class="comment__meta">
+				
+				<a href="#" class="name">Firstname Lastname</a> <span class="action">created a new discussion</span>
+				<time>About an hour ago</time> in <a href="#" class="group-name">Groupname</a>
+
+			</div><!-- end comment meta -->
+
+
+			<div class="comment__body">
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			</div><!-- end comment body -->
+
+
+
+
+
+
+			<div class="tags">
+
+				<a href="#" class="tag">Lorem ipsum</a>
+				<a href="#" class="tag">Punavuori</a>
+				<a href="#" class="tag">Mea transmittee sursum</a>
+
+			</div>
+
+	<div class="actions-general">
+
+		<a href="#" title="More actions: share, flag as inappropriate">...</a>
+		<a href="#"><i class="fa fa-comments"></i> 23</a>
+		<a href="#"><i class="icon-plus"></i> 35</a>
+
+	</div>
+
+		</div><!-- end single comment -->
+		<div class="stream-item">
+
+			<figure class="comment__img">
+				<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+				<i class="icon-avatar_circle"></i>
+			</figure><!-- end comment pic -->
+
+			<div class="comment__meta">
+				
+				<a href="#" class="name">Firstname Lastname</a> <span class="action">created a new discussion</span>
+				<time>About an hour ago</time> in <a href="#" class="group-name">Groupname</a>
+
+			</div><!-- end comment meta -->
+
+
+			<div class="comment__body">
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			</div><!-- end comment body -->
+
+
+
+
+
+
+			<div class="tags">
+
+				<a href="#" class="tag">Lorem ipsum</a>
+				<a href="#" class="tag">Punavuori</a>
+				<a href="#" class="tag">Mea transmittee sursum</a>
+
+			</div>
+
+	<div class="actions-general">
+
+		<a href="#" title="More actions: share, flag as inappropriate">...</a>
+		<a href="#"><i class="fa fa-comments"></i> 23</a>
+		<a href="#"><i class="icon-plus"></i> 35</a>
+
+	</div>
+
+		</div><!-- end single comment -->
+		<div class="stream-item">
+
+			<figure class="comment__img">
+				<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+				<i class="icon-avatar_circle"></i>
+			</figure><!-- end comment pic -->
+
+			<div class="comment__meta">
+				
+				<a href="#" class="name">Firstname Lastname</a> <span class="action">created a new discussion</span>
+				<time>About an hour ago</time> in <a href="#" class="group-name">Groupname</a>
+
+			</div><!-- end comment meta -->
+
+
+			<div class="comment__body">
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			</div><!-- end comment body -->
+
+
+
+
+
+
+			<div class="tags">
+
+				<a href="#" class="tag">Lorem ipsum</a>
+				<a href="#" class="tag">Punavuori</a>
+				<a href="#" class="tag">Mea transmittee sursum</a>
+
+			</div>
+
+	<div class="actions-general">
+
+		<a href="#" title="More actions: share, flag as inappropriate">...</a>
+		<a href="#"><i class="fa fa-comments"></i> 23</a>
+		<a href="#"><i class="icon-plus"></i> 35</a>
+
+	</div>
+
+		</div><!-- end single comment -->
+		<div class="stream-item">
+
+			<figure class="comment__img">
+				<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+				<i class="icon-avatar_circle"></i>
+			</figure><!-- end comment pic -->
+
+			<div class="comment__meta">
+				
+				<a href="#" class="name">Firstname Lastname</a> <span class="action">created a new discussion</span>
+				<time>About an hour ago</time> in <a href="#" class="group-name">Groupname</a>
+
+			</div><!-- end comment meta -->
+
+
+			<div class="comment__body">
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			</div><!-- end comment body -->
+
+
+
+
+
+
+			<div class="tags">
+
+				<a href="#" class="tag">Lorem ipsum</a>
+				<a href="#" class="tag">Punavuori</a>
+				<a href="#" class="tag">Mea transmittee sursum</a>
+
+			</div>
+
+	<div class="actions-general">
+
+		<a href="#" title="More actions: share, flag as inappropriate">...</a>
+		<a href="#"><i class="fa fa-comments"></i> 23</a>
+		<a href="#"><i class="icon-plus"></i> 35</a>
+
+	</div>
+
+		</div><!-- end single comment -->
+		<div class="stream-item">
+
+			<figure class="comment__img">
+				<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+				<i class="icon-avatar_circle"></i>
+			</figure><!-- end comment pic -->
+
+			<div class="comment__meta">
+				
+				<a href="#" class="name">Firstname Lastname</a> <span class="action">created a new discussion</span>
+				<time>About an hour ago</time> in <a href="#" class="group-name">Groupname</a>
+
+			</div><!-- end comment meta -->
+
+
+			<div class="comment__body">
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			</div><!-- end comment body -->
+
+
+
+
+
+
+			<div class="tags">
+
+				<a href="#" class="tag">Lorem ipsum</a>
+				<a href="#" class="tag">Punavuori</a>
+				<a href="#" class="tag">Mea transmittee sursum</a>
+
+			</div>
+
+	<div class="actions-general">
+
+		<a href="#" title="More actions: share, flag as inappropriate">...</a>
+		<a href="#"><i class="fa fa-comments"></i> 23</a>
+		<a href="#"><i class="icon-plus"></i> 35</a>
+
+	</div>
+
+		</div><!-- end single comment -->
+		<div class="stream-item">
+
+			<figure class="comment__img">
+				<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+				<i class="icon-avatar_circle"></i>
+			</figure><!-- end comment pic -->
+
+			<div class="comment__meta">
+				
+				<a href="#" class="name">Firstname Lastname</a> <span class="action">created a new discussion</span>
+				<time>About an hour ago</time> in <a href="#" class="group-name">Groupname</a>
+
+			</div><!-- end comment meta -->
+
+
+			<div class="comment__body">
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			</div><!-- end comment body -->
+
+
+
+
+
+
+			<div class="tags">
+
+				<a href="#" class="tag">Lorem ipsum</a>
+				<a href="#" class="tag">Punavuori</a>
+				<a href="#" class="tag">Mea transmittee sursum</a>
+
+			</div>
+
+	<div class="actions-general">
+
+		<a href="#" title="More actions: share, flag as inappropriate">...</a>
+		<a href="#"><i class="fa fa-comments"></i> 23</a>
+		<a href="#"><i class="icon-plus"></i> 35</a>
+
+	</div>
+
+		</div><!-- end single comment -->
+		<div class="pagination"><a href="#" class="btn btn-text">Load more</a></div>
+
+	</div>
+
+</div>
+
+
+
+
+							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/01-molecules-streams-tags/01-molecules-streams-tags.html"><code>molecules-tags</code></a>
+											<a href="../../patterns/01-molecules-streams-general-actions/01-molecules-streams-general-actions.html"><code>molecules-general-actions</code></a>
+											<a href="../../patterns/01-molecules-streams-article-image/01-molecules-streams-article-image.html"><code>molecules-article-image</code></a>
+											<a href="../../patterns/00-atoms-06-buttons-01-tabs-with-search/00-atoms-06-buttons-01-tabs-with-search.html"><code>atoms-tabs-with-search</code></a>
+											<a href="../../patterns/01-molecules-comments-comment-field/01-molecules-comments-comment-field.html"><code>molecules-comment-field</code></a>
+											<a href="../../patterns/01-molecules-streams-stream-item/01-molecules-streams-stream-item.html"><code>molecules-stream-item</code></a>
+									</div>
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;full-article box bc-white&quot;&gt;
+
+	&lt;header class=&quot;sticky&quot;&gt;
+
+		&lt;div class=&quot;clearfix&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;i class=&quot;icon-legal&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;
+
+			&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+				&lt;li&gt;
+					&lt;a href=&quot;#&quot; class=&quot;btn-text fixed-only&quot;&gt;&lt;i class=&quot;icon-legal&quot;&gt;&lt;/i&gt; Vote &lt;i class=&quot;icon-double_angle_down&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href=&quot;#&quot; class=&quot;btn-text&quot;&gt;&lt;i class=&quot;icon-pencil&quot;&gt;&lt;/i&gt; Edit&lt;i class=&quot;count c-white bc-comp--light&quot; title=&quot;Number of edits&quot;&gt;3&lt;/i&gt;&lt;/a&gt;
+				&lt;/li&gt;
+
+			&lt;/ul&gt;
+
+			&lt;h2&gt;Voted article title og:title max 95 chars&lt;/h2&gt;
+
+			&lt;div class=&quot;full-article__meta&quot;&gt;
+
+				&lt;i class=&quot;icon-avatar&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;5 editors&lt;/a&gt; &lt;i class=&quot;icon-pencil&quot;&gt;&lt;/i&gt; &lt;time&gt;About an hour ago&lt;/time&gt; &lt;i class=&quot;icon-group&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Groupname&lt;/a&gt;
+
+			&lt;/div&gt;&lt;!-- end full-article__meta --&gt;
+
+		&lt;/div&gt;
+
+		&lt;div class=&quot;excerpt&quot;&gt;
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			
+		&lt;/div&gt;
+
+		&lt;div class=&quot;article-type-specifics&quot;&gt;
+
+			&lt;div class=&quot;article-type-specifics__intro&quot;&gt;Voting open for &lt;time&gt;3 days&lt;/time&gt;.&lt;/div&gt;
+
+			&lt;ul class=&quot;bare-list article-actions vote-btns&quot;&gt;
+				&lt;li&gt;
+					&lt;a href=&quot;#&quot; class=&quot;btn btn-vote&quot;&gt;&lt;i class=&quot;icon-ok&quot;&gt;&lt;/i&gt;Yea&lt;/a&gt;
+					&lt;div class=&quot;article-actions__meta&quot;&gt;
+						&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-legal&quot;&gt;&lt;/i&gt; 3&lt;/a&gt;
+						&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 1&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href=&quot;#&quot; class=&quot;btn-alt btn-vote&quot;&gt;Nay&lt;/a&gt;
+					&lt;div class=&quot;article-actions__meta&quot;&gt;
+						&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-legal&quot;&gt;&lt;/i&gt; 5&lt;/a&gt;
+						&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 3&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href=&quot;#&quot; class=&quot;btn-alt btn-vote&quot;&gt;Abstain&lt;/a&gt;
+					&lt;div class=&quot;article-actions__meta&quot;&gt;
+						&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-legal&quot;&gt;&lt;/i&gt; 13&lt;/a&gt;
+						&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 8&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+
+		&lt;/div&gt;
+
+		&lt;div class=&quot;tags&quot;&gt;
+
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+		&lt;/div&gt;
+		&lt;div class=&quot;actions-general&quot;&gt;
+
+			&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+
+		&lt;/div&gt;
+	&lt;/header&gt;
+
+	&lt;div class=&quot;full-article__body&quot;&gt;
+
+		&lt;figure class=&quot;article__img&quot;&gt;
+		    &lt;img src=&quot;http://placeimg.com/200/200/tech&quot; /&gt;
+		&lt;/figure&gt;
+		&lt;p&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		&lt;/p&gt;
+
+		&lt;p&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		&lt;/p&gt;
+
+		&lt;p&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		&lt;/p&gt;
+
+		&lt;p&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		&lt;/p&gt;
+
+	&lt;/div&gt;
+
+	&lt;div class=&quot;full-article__comments&quot;&gt;
+
+		&lt;header&gt;
+
+			&lt;h3&gt;Discussion&lt;/h3&gt;
+
+			&lt;ul class=&quot;bare-list nav tabs&quot;&gt;
+			    &lt;li&gt;&lt;a class=&quot;tab tab--active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;&lt;/li&gt;
+			    &lt;li&gt;&lt;a class=&quot;tab&quot; href=&quot;#&quot;&gt;Passive&lt;/a&gt;&lt;/li&gt;
+			    &lt;li&gt;&lt;a class=&quot;tab&quot; href=&quot;#&quot;&gt;Passive&lt;/a&gt;&lt;/li&gt;
+			    &lt;li class=&quot;tabs__search&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+
+		&lt;/header&gt;
+
+		&lt;div class=&quot;comment-field&quot;&gt;
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+			&lt;textarea placeholder=&quot;Comment&quot;&gt;&lt;/textarea&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;stream-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+				
+				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+			&lt;div class=&quot;tags&quot;&gt;
+
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+			&lt;/div&gt;
+
+	&lt;div class=&quot;actions-general&quot;&gt;
+
+		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+		&lt;div class=&quot;stream-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+				
+				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+			&lt;div class=&quot;tags&quot;&gt;
+
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+			&lt;/div&gt;
+
+	&lt;div class=&quot;actions-general&quot;&gt;
+
+		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+		&lt;div class=&quot;stream-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+				
+				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+			&lt;div class=&quot;tags&quot;&gt;
+
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+			&lt;/div&gt;
+
+	&lt;div class=&quot;actions-general&quot;&gt;
+
+		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+		&lt;div class=&quot;stream-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+				
+				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+			&lt;div class=&quot;tags&quot;&gt;
+
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+			&lt;/div&gt;
+
+	&lt;div class=&quot;actions-general&quot;&gt;
+
+		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+		&lt;div class=&quot;stream-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+				
+				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+			&lt;div class=&quot;tags&quot;&gt;
+
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+			&lt;/div&gt;
+
+	&lt;div class=&quot;actions-general&quot;&gt;
+
+		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+		&lt;div class=&quot;stream-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+				
+				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+			&lt;div class=&quot;tags&quot;&gt;
+
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+			&lt;/div&gt;
+
+	&lt;div class=&quot;actions-general&quot;&gt;
+
+		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+		&lt;div class=&quot;stream-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+				
+				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+			&lt;div class=&quot;tags&quot;&gt;
+
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+			&lt;/div&gt;
+
+	&lt;div class=&quot;actions-general&quot;&gt;
+
+		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+		&lt;div class=&quot;stream-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+				
+				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+			&lt;div class=&quot;tags&quot;&gt;
+
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+			&lt;/div&gt;
+
+	&lt;div class=&quot;actions-general&quot;&gt;
+
+		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+		&lt;div class=&quot;pagination&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-text&quot;&gt;Load more&lt;/a&gt;&lt;/div&gt;
+
+	&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-general-actions" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-streams-general-actions/01-molecules-streams-general-actions.html" class="patternLink" data-patternpartial="molecules-general-actions">General Actions</a></h2>
+						<div class="sg-pattern-body">
+							<div class="actions-general">
+
+	<a href="#" title="More actions: share, flag as inappropriate">...</a>
+	<a href="#"><i class="fa fa-comments"></i> 23</a>
+	<a href="#"><i class="icon-plus"></i> 35</a>
+
+</div>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;actions-general&quot;&gt;
+
+	&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+
+&lt;/div&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-stream-item" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-streams-stream-item/01-molecules-streams-stream-item.html" class="patternLink" data-patternpartial="molecules-stream-item">Stream Item</a></h2>
+						<div class="sg-pattern-body">
+							<div class="stream-item">
+
+	<figure class="comment__img">
+		<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+		<i class="icon-avatar_circle"></i>
+	</figure><!-- end comment pic -->
+
+	<div class="comment__meta">
+		
+		<a href="#" class="name">Firstname Lastname</a> <span class="action">created a new discussion</span>
+		<time>About an hour ago</time> in <a href="#" class="group-name">Groupname</a>
+
+	</div><!-- end comment meta -->
+
+
+	<div class="comment__body">
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+	</div><!-- end comment body -->
+
+
+
+
+
+
+	<div class="tags">
+
+		<a href="#" class="tag">Lorem ipsum</a>
+		<a href="#" class="tag">Punavuori</a>
+		<a href="#" class="tag">Mea transmittee sursum</a>
+
+	</div>
+
+	<div class="actions-general">
+
+		<a href="#" title="More actions: share, flag as inappropriate">...</a>
+		<a href="#"><i class="fa fa-comments"></i> 23</a>
+		<a href="#"><i class="icon-plus"></i> 35</a>
+
+	</div>
+
+</div><!-- end single comment -->
+							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/01-molecules-streams-article-image/01-molecules-streams-article-image.html"><code>molecules-article-image</code></a>
+											<a href="../../patterns/01-molecules-streams-general-actions/01-molecules-streams-general-actions.html"><code>molecules-general-actions</code></a>
+									</div>
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;stream-item&quot;&gt;
+
+	&lt;figure class=&quot;comment__img&quot;&gt;
+		&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+		&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+	&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+	&lt;div class=&quot;comment__meta&quot;&gt;
+		
+		&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+		&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+	&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+	&lt;div class=&quot;comment__body&quot;&gt;
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+	&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+	&lt;div class=&quot;tags&quot;&gt;
+
+		&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+	&lt;/div&gt;
+
+	&lt;div class=&quot;actions-general&quot;&gt;
+
+		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+
+	&lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- end single comment --&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-tags" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-streams-tags/01-molecules-streams-tags.html" class="patternLink" data-patternpartial="molecules-tags">Tags</a></h2>
+						<div class="sg-pattern-body">
+							<div class="tags">
+
+	<a href="#" class="tag">Lorem ipsum</a>
+	<a href="#" class="tag">Punavuori</a>
+	<a href="#" class="tag">Mea transmittee sursum</a>
+
+</div>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;tags&quot;&gt;
+
+	&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+&lt;/div&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+			</div> <!--end #sg-patterns-->
+	
+		</div><!--end .sg-main-->
+		
+		<!-- JS to hook everything together and do annotations -->
+		<script>
+			// handle injection of items from PHP
+			var patternPartial = "viewall-molecules-streams";
+			var lineage = "";
+		</script>
+		
+
+	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+
+	<script src='../../assets/js/vendor/angular.min.js'></script>
+
+	<script src='../../assets/js/main.js'></script>
+
+	<!--DO NOT REMOVE-->
+		<script>
+		/*!
+		 * scriptLoader - v0.1
+		 *
+		 * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+		 * Licensed under the MIT license
+		 *
+		 */
+		
+		var scriptLoader = {
+			
+			run: function(js,cb,target) {
+				var s  = document.getElementById(target+'-'+cb); 
+				for (var i = 0; i < js.length; i++) {
+					var src = (typeof js[i] != "string") ? js[i].src : js[i];
+					var c   = document.createElement('script');
+					c.src   = '../../'+src+'?'+cb;
+					if (typeof js[i] != "string") {
+						if (js[i].dep !== undefined) {
+							c.onload = function(dep,cb,target) {
+								return function() {
+									scriptLoader.run(dep,cb,target);
+								}
+							}(js[i].dep,cb,target);
+						}
+					}
+					s.parentNode.insertBefore(c,s);
+				}
+			}
+			
+		}
+	</script>
+	<script id="pl-js-polyfill-insert-0">
+		(function() {
+			if (self != top) {
+				var cb = '0';
+				var js = [];
+				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
+					js.push("styleguide/js/vendor/classlist-polyfill.js");
+				}
+				scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+			}
+		})();
+	</script>
+	<script id="pl-js-insert-0">
+		(function() {
+			if (self != top) {
+				var cb = '0';
+				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
+				scriptLoader.run(js,cb,'pl-js-insert');
+			}
+		})();
+	</script>
+	
+
+
+	</body>
+</html>

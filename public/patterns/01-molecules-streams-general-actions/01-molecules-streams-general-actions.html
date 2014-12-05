@@ -68,46 +68,13 @@
 
 	</head>
 	<body class="body">
-<div class="wrap--header bc-grey--lightest header--sticky">
+<div class="actions-general">
 
-	<header class="header--login l-constrained clearfix" role="banner">
-
-		<a class="site-logo--small float--right">
-			<img src="../../assets/img/logo.svg" class="logo" alt="Logo Alt Text" />
-		</a>
-
-		<span class="float--right btn--sign-in js-open-signin">Sign in</span>
-
-		<div class="login">
-
-			<form class="form--login">
-
-				<div class="form-row">
-					<input type="email" placeholder="Email" />
-				</div>
-
-				<div class="form-row">
-					<a class="float--right pw-forgot" href="#">Forgot password?</a>
-					<input type="password" placeholder="Password" />
-				</div>
-
-				<div class="form-row">
-					<input type="submit" class="btn" value="Sign in" />
-				</div>
-
-				<div class="form-row text--center">
-						<span class="signup-intro">Don't have an account?</span>
-						<a class="sign-up btn" href="#">Sign Up</a>
-				</div>
-
-			</form>
-
-		</div>
-
-	</header>
+	<a href="#" title="More actions: share, flag as inappropriate">...</a>
+	<a href="#"><i class="fa fa-comments"></i> 23</a>
+	<a href="#"><i class="icon-plus"></i> 35</a>
 
 </div>
-
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 
 	<script src='../../assets/js/vendor/angular.min.js'></script>
@@ -118,9 +85,9 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "organisms-header-with-login";
-		var lineage        = [{"lineagePattern":"organisms-login","lineagePath":"..\/..\/patterns\/02-organisms-login-login\/02-organisms-login-login.html"}];
-		var lineageR       = [{"lineagePattern":"templates-page-stream-and-content","lineagePath":"..\/..\/patterns\/03-templates-page-stream-and-content\/03-templates-page-stream-and-content.html"},{"lineagePattern":"templates-page-stream","lineagePath":"..\/..\/patterns\/03-templates-page-stream\/03-templates-page-stream.html"},{"lineagePattern":"templates-page","lineagePath":"..\/..\/patterns\/03-templates-page\/03-templates-page.html"}];
+		var patternPartial = "molecules-general-actions";
+		var lineage        = [];
+		var lineageR       = [{"lineagePattern":"molecules-full-article","lineagePath":"..\/..\/patterns\/01-molecules-streams-full-article\/01-molecules-streams-full-article.html"},{"lineagePattern":"molecules-stream-item","lineagePath":"..\/..\/patterns\/01-molecules-streams-stream-item\/01-molecules-streams-stream-item.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>
