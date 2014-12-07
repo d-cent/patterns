@@ -1,0 +1,1793 @@
+&lt;style&gt;
+
+
+/*
+ * General modifications to styles defined elsewhere
+ */
+
+p {
+	margin-bottom: 1em;
+}
+.article__img {
+	margin: 0.5em 0.5em 0.25em 0;
+}
+.comment__img .fa {
+	font-size: 28px;
+}
+.comment__actions &gt; span {
+	margin-left: 0.5em;
+}
+.comment__actions &gt; span:first-child {
+	margin-left: 0;
+}
+.nav-primary {
+	width: auto;
+}
+
+/*
+ * Menu bar and fixed titlebar
+ */
+.page--with-sticky {
+	padding-top: 44px;
+}
+.header--sticky {
+	position: fixed;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 20;
+}
+.nav-primary {
+	display: inline-block;
+}
+.login {
+	display: none;
+}
+.count {
+	position: static;
+}
+header.titlebar-fixed {
+	background-color: white;
+	border-bottom: solid 1px #666;
+	height: 44px !important;
+	min-height: 44px !important;
+	overflow: hidden !important;
+	padding-top: 10px !important;
+    position: fixed !important;
+    top: 44px !important; /* This is the height + offset of the main menu bar */
+    z-index: 10;
+}
+.fixed-only {
+	display: none !important;
+}
+.titlebar-fixed .fixed-only {
+	display: block !important;
+}
+
+/*
+ * Grid
+ */
+
+.g:last-child {
+	margin-right: 0;
+}
+.inactive {
+	opacity: 0.25;
+	transition: all 0.5s ease-out;
+}
+:hover.inactive {
+	opacity: 1;
+}
+
+/*
+ * Stream
+ * Many of the same styles are also used for the full article view
+ */
+
+.stream {
+	margin: 1em auto;
+	max-width: 30em;
+}
+.stream h2 {
+	font-size: x-large;
+}
+.stream header .comment__img {
+	line-height: 1;
+}
+.stream .tabs {
+	text-align: left;
+	width: 100%;
+}
+.tabs__search {
+	float: right;
+	font-size: large;
+}
+
+
+/* Header when fixed */
+header.titlebar-fixed .comment__img {
+	font-size: 120%;
+}
+header.titlebar-fixed h2 {
+	float: left;
+	font-size: 120%;
+}
+header.titlebar-fixed .tabs {
+	display: none;
+}
+header.titlebar-fixed .tabs-as-pulldown {
+	float: right;
+	text-align: right;
+}
+
+/* Stream items */
+.stream-item {
+	padding-bottom: 1.5em;
+	border-bottom: 1px dotted #007E84;
+	margin: 1em 0 1.5em 0;
+	max-width: 30em;
+}
+.stream-item:last-child {
+	border-bottom-width: 0px;
+}
+.comment__meta {
+	font-size: smaller;
+	margin-bottom: 0.5em;
+}
+.comment__meta .name {
+	/* font-size: medium; */
+}
+.comment__meta a.group-name {
+	font-weight: 400;
+}
+.embedded-item {
+	border: solid 1px #007E84;
+	border-radius: 6px;
+	cursor: pointer;
+	padding: 0.5em;
+}
+div:hover.embedded-item {
+	background-color: #eee;
+}
+.embedded-item__meta {
+	font-size: smaller;
+}
+.embedded-item__meta .embedded-item__title {
+	display: block;
+	font-size: medium;
+}
+.embedded-item__meta .action-taken {
+	color: #007E84;
+}
+.embedded-item .article__img {
+	clear: left;
+	width: 80px;
+}
+.article-actions {
+	text-align: center;
+}
+.article-actions &gt; li {
+	display: inline-block;
+}
+.article-actions &gt; li &gt; a.btn,
+.article-actions &gt; li &gt; a.btn-alt {
+	display: block;
+	min-width: 7em;
+}
+div:hover.embedded-item .article-actions &gt; li &gt; a {
+	color: #00D3CA;
+}
+.article-actions i.count {
+	position: relative;
+	top: -7px;	
+}
+.event-date {
+	border: 1px solid #222;
+	padding-bottom: 0.25em;
+	text-align: center;
+	width: 38px;
+}
+.event-date__month {
+	font-size: x-small;
+	text-transform: uppercase;
+	background-color: #222;
+	color: white;
+}
+.event-date__day {
+	font-size: large;
+	color: #222;
+}
+.tags {
+	margin: 0.25em 0;
+}
+.actions-general {
+	text-align: right;
+}
+.actions-general &gt; a {
+	margin: 0 0.5em;
+}
+
+.pagination {
+	margin-top: 1em;
+	text-align: center;
+}
+
+/*
+ * Full article
+ */
+
+.full-article {
+	margin: 1em 1em 1em 0;
+}
+
+
+/* Header */
+.full-article &gt; header {
+    overflow: hidden;
+	padding: 0 0 0.5em 0;
+	top: 0;
+}
+.full-article &gt; header,
+.full-article &gt; header * {
+	transition: all 0.5s ease-out 0s;
+}
+.full-article &gt; header h2 {
+	float: left;
+	margin-bottom: 0;
+}
+.full-article .article-actions {
+	float: right;
+	margin-top: 0.5em;
+}
+.full-article__meta {
+	float: left;
+	font-size: smaller;
+	padding-top: 0.25em;
+}
+.full-article .excerpt {
+	clear: both;
+	font-size: large;
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+.article-type-specifics {
+	border: 1px solid #007E84;
+	border-radius: 6px;
+	clear: both;
+	margin-bottom: 0.5em;
+	overflow: auto;
+	padding: 0.5em;
+	text-align: center;
+}
+.article-type-specifics__intro {
+	font-weight: bold;
+}
+.article-type-specifics .article-actions {
+	float: none;
+	margin-top: 0.5em;
+}
+.article-actions__meta {
+	font-size: smaller;
+	margin-top: 0.25em;
+	text-align: center;
+}
+.article-actions__meta &gt; a{
+	margin: 0 0.25em;
+}
+.full-article header .tags {
+	float: left;
+}
+.full-article header .actions-general {
+	float: right;
+}
+
+/* Header when fixed */
+header.titlebar-fixed .article-actions {
+	margin-top: 0;
+}
+header.titlebar-fixed .excerpt,
+header.titlebar-fixed .full-article__meta, 
+header.titlebar-fixed .article-type-specifics,
+header.titlebar-fixed .tags,
+header.titlebar-fixed .actions-general {
+	display: none;
+}
+
+/* Full article body */
+.full-article__body {
+	clear: both;
+	margin: 1em 0;
+}
+
+/* Comments */
+
+.create-new {
+	margin: 1em 0;
+	text-align: center;
+}
+.full-article .comment-field {
+	margin: 0 0 0.5em 0;
+	max-width: 30em;
+	text-align: left;
+}
+.full-article .comment-field &gt; textarea {
+	width: 85%;
+}
+.full-article .comment-field-argumentation {
+	max-width: none;
+}
+	.full-article .comment-field-argumentation &gt; .btn-group {
+		float: left;
+		margin-right: 1em;
+	}
+	.full-article .comment-field-argumentation &gt; textarea {
+		max-width: 25em;
+	}
+
+
+/*
+ * Group page
+ */
+
+.group-info header {
+	display: table;
+	margin: -20px -20px 0.5em -20px;
+ 	min-height: 300px;
+ 	width: calc(100% + 40px);
+ }
+.group-info__container {
+	display: table-cell;
+	padding: 20px 20px 10px 20px;
+	vertical-align: bottom;
+}
+.group-info h1 {
+	color: #eee;
+	float: left;
+	margin: 0;
+}
+.group-info .article-actions {
+	float: right;
+}
+.group-info .full-article__meta {
+	clear: left;
+	color: #eee;
+}
+.group-info .tags {
+	float: left;
+}
+.group-info .comment-actions {
+	float: right;
+}
+.group-navigation {
+	/* border-bottom: 1px solid #666; */
+	background-color: #eee;
+	clear: both;
+	border-radius: 6px;
+	font-size: larger;
+	margin: 1em 0;
+ 	padding: 0.25em 0.5em;
+}
+.group-navigation__label {
+	float: left;
+	font-family: &quot;Comfortaa&quot;,sans-serif;
+	font-weight: bold;
+	margin-right: 1.5em;
+}
+.nav__item-open * {
+	color: #007E84;
+}
+
+
+
+
+&lt;/style&gt;
+
+&lt;!-- Repeat this for stuff to work on file: --&gt;
+&lt;script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'&gt;&lt;/script&gt;
+&lt;script&gt;
+/* This crap handles fixing the stream and full article headers on top when
+   scrolling past them. A class 'fixed' is then added to them. */
+$(document).ready(function() {
+	var stickies = [],
+	    fixedClass = &quot;titlebar-fixed&quot;,
+	    stickySelector = &quot;.sticky&quot;;
+	$(stickySelector).each(function(){
+		var sticky = $(this);
+		sticky.data(&quot;originalOffset&quot;, sticky.offset().top + sticky.outerHeight() );
+		// var menuOffset = $(&quot;.header--sticky&quot;).offset().top + $(&quot;.header--sticky&quot;).outerHeight();
+		// Force to stay the same width even when position is changed to fixed
+		sticky.width(sticky.width());
+		stickies.push(sticky);
+	});
+	if (stickies.length) {
+		$(window).scroll(function(){
+		    for(var i=0; i&lt;stickies.length; i++) {
+				if ($(window).scrollTop() &gt;= stickies[i].data(&quot;originalOffset&quot;)) stickies[i].addClass(fixedClass);
+				else stickies[i].removeClass(fixedClass);
+			}
+		});
+	}
+});
+&lt;/script&gt;
+&lt;div class=&quot;page page--with-sticky&quot;&gt;
+
+	&lt;div class=&quot;wrap--header bc-grey--lightest header--sticky&quot;&gt;
+
+		&lt;header class=&quot;header--login l-constrained clearfix&quot; role=&quot;banner&quot;&gt;
+
+			&lt;a class=&quot;site-logo--small float--right&quot;&gt;
+				&lt;img src=&quot;../../assets/img/logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
+			&lt;/a&gt;
+
+		&lt;ul class=&quot;bare-list nav nav-primary&quot;&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;span&gt;Messages &lt;i class=&quot;count c-white bc-comp--light&quot;&gt;3&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-tasks&quot;&gt;&lt;/i&gt;&lt;span&gt;Tasks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-legal&quot;&gt;&lt;/i&gt;&lt;span&gt;Votes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;Articles&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+
+			&lt;span class=&quot;float--right btn--sign-in js-open-signin&quot;&gt;Sign in&lt;/span&gt;
+
+			&lt;div class=&quot;login&quot;&gt;
+
+			&lt;form class=&quot;form--login&quot;&gt;
+
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;input type=&quot;email&quot; placeholder=&quot;Email&quot; /&gt;
+				&lt;/div&gt;
+
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;a class=&quot;float--right pw-forgot&quot; href=&quot;#&quot;&gt;Forgot password?&lt;/a&gt;
+					&lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; /&gt;
+				&lt;/div&gt;
+
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;input type=&quot;submit&quot; class=&quot;btn&quot; value=&quot;Sign in&quot; /&gt;
+				&lt;/div&gt;
+
+				&lt;div class=&quot;form-row text--center&quot;&gt;
+						&lt;span class=&quot;signup-intro&quot;&gt;Don't have an account?&lt;/span&gt;
+						&lt;a class=&quot;sign-up btn&quot; href=&quot;#&quot;&gt;Sign Up&lt;/a&gt;
+				&lt;/div&gt;
+
+			&lt;/form&gt;
+
+			&lt;/div&gt;
+
+		&lt;/header&gt;
+
+	&lt;/div&gt;
+
+	&lt;div class=&quot;group-info clearfix&quot;&gt;
+
+		&lt;header style=&quot;background-image: url('../../assets/img/group-bg-image-3-to-1.png');&quot;&gt;
+
+			&lt;div class=&quot;group-info__container&quot;&gt;
+
+				&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+					&lt;li&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-group&quot;&gt;&lt;/i&gt; Join group&lt;/a&gt;
+					&lt;/li&gt;
+
+				&lt;/ul&gt;
+
+				&lt;h1&gt;Groupname og:title maximum of 95 chars&lt;/h1&gt;
+
+				&lt;div class=&quot;full-article__meta&quot;&gt;
+
+					&lt;i class=&quot;icon-avatar&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;35 members&lt;/a&gt; &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; &lt;time&gt;About an hour ago&lt;/time&gt;
+
+				&lt;/div&gt;&lt;!-- end full-article__meta --&gt;
+
+			&lt;/div&gt;
+
+		&lt;/header&gt;
+
+		&lt;div class=&quot;excerpt&quot;&gt;
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			&lt;a href=&quot;../../patterns/03-templates-group-page-with-content-open/03-templates-group-page-with-content-open.html&quot;&gt;See this page with content open&lt;/a&gt;.
+			
+		&lt;/div&gt;
+
+		&lt;div class=&quot;tags&quot;&gt;
+
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+		&lt;/div&gt;
+		&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+			&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;group-navigation clearfix&quot;&gt;
+
+		&lt;span class=&quot;group-navigation__label&quot;&gt;View this group&rsquo;s:&lt;/span&gt;
+
+		&lt;ul class=&quot;bare-list nav&quot;&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;span&gt;Messages&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-tasks&quot;&gt;&lt;/i&gt;&lt;span&gt;Tasks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-legal&quot;&gt;&lt;/i&gt;&lt;span&gt;Votes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item nav__item-open&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;Articles&lt;/span&gt; &lt;i class=&quot;count c-white bc-comp--light&quot;&gt;3&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+
+	&lt;/div&gt;
+
+
+
+
+
+	&lt;div class=&quot;grid&quot;&gt;
+
+		&lt;div class=&quot;g g--third inactive&quot;&gt;
+
+			&lt;div class=&quot;stream box bc-white&quot;&gt;
+
+				&lt;header class=&quot;sticky&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;i class=&quot;icon-pen&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;
+
+					&lt;h2&gt;Group articles&lt;/h2&gt;
+
+		&lt;ul class=&quot;bare-list nav tabs&quot;&gt;
+		    &lt;li&gt;&lt;a class=&quot;tab tab--active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;&lt;/li&gt;
+		    &lt;li&gt;&lt;a class=&quot;tab&quot; href=&quot;#&quot;&gt;Passive&lt;/a&gt;&lt;/li&gt;
+		    &lt;li&gt;&lt;a class=&quot;tab&quot; href=&quot;#&quot;&gt;Passive&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;tabs__search&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+
+					&lt;a href=&quot;#&quot; class=&quot;btn-text fixed-only tabs-as-pulldown&quot;&gt;Active &lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+				&lt;/header&gt;
+
+				&lt;div class=&quot;create-new&quot;&gt;
+					&lt;button class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-pen&quot;&gt;&lt;/i&gt; Create new a article&lt;/button&gt;
+				&lt;/div&gt;
+
+	&lt;div class=&quot;stream-item&quot;&gt;
+
+		&lt;figure class=&quot;comment__img&quot;&gt;
+			&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+			&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+		&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+		&lt;div class=&quot;comment__meta&quot;&gt;
+			
+			&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;invited you to edit an article&lt;/span&gt;
+			&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+		&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+		&lt;div class=&quot;comment__body&quot;&gt;
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+		&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+		
+
+		&lt;div class=&quot;embedded-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-file_text&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end embedded item pic --&gt;
+
+			&lt;div class=&quot;embedded-item__meta&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;embedded-item__title&quot;&gt;Article title og:title max 95 chars&lt;/a&gt;
+				Last edited &lt;time&gt;3 hours ago&lt;/time&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;embedded-item__body&quot;&gt;
+
+			&lt;figure class=&quot;article__img&quot;&gt;
+			    &lt;img src=&quot;http://placeimg.com/200/200/tech&quot; /&gt;
+			&lt;/figure&gt;
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+					&lt;li&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn-text&quot;&gt;&lt;i class=&quot;icon-angle_left_circle&quot;&gt;&lt;/i&gt; View full article  &lt;i class=&quot;count c-white bc-comp--light&quot; title=&quot;Number of edits&quot;&gt;3&lt;/i&gt;&lt;/a&gt;
+					&lt;/li&gt;
+
+				&lt;/ul&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+		
+
+
+
+
+		&lt;div class=&quot;tags&quot;&gt;
+
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+		&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+	&lt;/div&gt;&lt;!-- end single comment --&gt;
+	&lt;div class=&quot;stream-item&quot;&gt;
+
+		&lt;figure class=&quot;comment__img&quot;&gt;
+			&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+			&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+		&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+		&lt;div class=&quot;comment__meta&quot;&gt;
+			
+			&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new article&lt;/span&gt;
+			&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+		&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+		&lt;div class=&quot;comment__body&quot;&gt;
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+		&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+		
+
+		&lt;div class=&quot;embedded-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-file_text&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end embedded item pic --&gt;
+
+			&lt;div class=&quot;embedded-item__meta&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;embedded-item__title&quot;&gt;Article title og:title max 95 chars&lt;/a&gt;
+				Last edited &lt;time&gt;3 hours ago&lt;/time&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;embedded-item__body&quot;&gt;
+
+			&lt;figure class=&quot;article__img&quot;&gt;
+			    &lt;img src=&quot;http://placeimg.com/200/200/tech&quot; /&gt;
+			&lt;/figure&gt;
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+					&lt;li&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn-text&quot;&gt;&lt;i class=&quot;icon-angle_left_circle&quot;&gt;&lt;/i&gt; View full article  &lt;i class=&quot;count c-white bc-comp--light&quot; title=&quot;Number of edits&quot;&gt;3&lt;/i&gt;&lt;/a&gt;
+					&lt;/li&gt;
+
+				&lt;/ul&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+		
+
+
+
+
+		&lt;div class=&quot;tags&quot;&gt;
+
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+		&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+	&lt;/div&gt;&lt;!-- end single comment --&gt;
+	&lt;div class=&quot;stream-item&quot;&gt;
+
+		&lt;figure class=&quot;comment__img&quot;&gt;
+			&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+			&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+		&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+		&lt;div class=&quot;comment__meta&quot;&gt;
+			
+			&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;invited you to edit an article&lt;/span&gt;
+			&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+		&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+		&lt;div class=&quot;comment__body&quot;&gt;
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+		&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+		
+
+		&lt;div class=&quot;embedded-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-file_text&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end embedded item pic --&gt;
+
+			&lt;div class=&quot;embedded-item__meta&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;embedded-item__title&quot;&gt;Article title og:title max 95 chars&lt;/a&gt;
+				Last edited &lt;time&gt;3 hours ago&lt;/time&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;embedded-item__body&quot;&gt;
+
+			&lt;figure class=&quot;article__img&quot;&gt;
+			    &lt;img src=&quot;http://placeimg.com/200/200/tech&quot; /&gt;
+			&lt;/figure&gt;
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+					&lt;li&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn-text&quot;&gt;&lt;i class=&quot;icon-angle_left_circle&quot;&gt;&lt;/i&gt; View full article  &lt;i class=&quot;count c-white bc-comp--light&quot; title=&quot;Number of edits&quot;&gt;3&lt;/i&gt;&lt;/a&gt;
+					&lt;/li&gt;
+
+				&lt;/ul&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+		
+
+
+
+
+		&lt;div class=&quot;tags&quot;&gt;
+
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+		&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+	&lt;/div&gt;&lt;!-- end single comment --&gt;
+	&lt;div class=&quot;stream-item&quot;&gt;
+
+		&lt;figure class=&quot;comment__img&quot;&gt;
+			&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+			&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+		&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+		&lt;div class=&quot;comment__meta&quot;&gt;
+			
+			&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;invited you to edit an article&lt;/span&gt;
+			&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+		&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+		&lt;div class=&quot;comment__body&quot;&gt;
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+		&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+		
+
+		&lt;div class=&quot;embedded-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-file_text&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end embedded item pic --&gt;
+
+			&lt;div class=&quot;embedded-item__meta&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;embedded-item__title&quot;&gt;Article title og:title max 95 chars&lt;/a&gt;
+				Last edited &lt;time&gt;3 hours ago&lt;/time&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;embedded-item__body&quot;&gt;
+
+			&lt;figure class=&quot;article__img&quot;&gt;
+			    &lt;img src=&quot;http://placeimg.com/200/200/tech&quot; /&gt;
+			&lt;/figure&gt;
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+					&lt;li&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn-text&quot;&gt;&lt;i class=&quot;icon-angle_left_circle&quot;&gt;&lt;/i&gt; View full article  &lt;i class=&quot;count c-white bc-comp--light&quot; title=&quot;Number of edits&quot;&gt;3&lt;/i&gt;&lt;/a&gt;
+					&lt;/li&gt;
+
+				&lt;/ul&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+		
+
+
+
+
+		&lt;div class=&quot;tags&quot;&gt;
+
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+		&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+	&lt;/div&gt;&lt;!-- end single comment --&gt;
+	&lt;div class=&quot;stream-item&quot;&gt;
+
+		&lt;figure class=&quot;comment__img&quot;&gt;
+			&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+			&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+		&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+		&lt;div class=&quot;comment__meta&quot;&gt;
+			
+			&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;invited you to edit an article&lt;/span&gt;
+			&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+		&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+		&lt;div class=&quot;comment__body&quot;&gt;
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+		&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+		
+
+		&lt;div class=&quot;embedded-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-file_text&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end embedded item pic --&gt;
+
+			&lt;div class=&quot;embedded-item__meta&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;embedded-item__title&quot;&gt;Article title og:title max 95 chars&lt;/a&gt;
+				Last edited &lt;time&gt;3 hours ago&lt;/time&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;embedded-item__body&quot;&gt;
+
+			&lt;figure class=&quot;article__img&quot;&gt;
+			    &lt;img src=&quot;http://placeimg.com/200/200/tech&quot; /&gt;
+			&lt;/figure&gt;
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+					&lt;li&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn-text&quot;&gt;&lt;i class=&quot;icon-angle_left_circle&quot;&gt;&lt;/i&gt; View full article  &lt;i class=&quot;count c-white bc-comp--light&quot; title=&quot;Number of edits&quot;&gt;3&lt;/i&gt;&lt;/a&gt;
+					&lt;/li&gt;
+
+				&lt;/ul&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+		
+
+
+
+
+		&lt;div class=&quot;tags&quot;&gt;
+
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+		&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+	&lt;/div&gt;&lt;!-- end single comment --&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+		&lt;div class=&quot;g g--two--thirds&quot;&gt;
+
+			&lt;div class=&quot;full-article box bc-white&quot;&gt;
+
+				&lt;header class=&quot;sticky&quot;&gt;
+
+					&lt;div class=&quot;clearfix&quot;&gt;
+
+						&lt;figure class=&quot;comment__img&quot;&gt;
+							&lt;i class=&quot;icon-legal&quot;&gt;&lt;/i&gt;
+						&lt;/figure&gt;
+
+						&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+							&lt;li&gt;
+								&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-pencil&quot;&gt;&lt;/i&gt; Edit&lt;i class=&quot;count c-white bc-comp--light&quot; title=&quot;Number of edits&quot;&gt;3&lt;/i&gt;&lt;/a&gt;
+							&lt;/li&gt;
+
+						&lt;/ul&gt;
+
+						&lt;h2&gt;Argumented article title og:title max 95 chars&lt;/h2&gt;
+
+						&lt;div class=&quot;full-article__meta&quot;&gt;
+
+							&lt;i class=&quot;icon-avatar&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;5 editors&lt;/a&gt; &lt;i class=&quot;icon-pencil&quot;&gt;&lt;/i&gt; &lt;time&gt;About an hour ago&lt;/time&gt; &lt;i class=&quot;icon-group&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Groupname&lt;/a&gt;
+
+						&lt;/div&gt;&lt;!-- end full-article__meta --&gt;
+
+					&lt;/div&gt;
+
+					&lt;div class=&quot;excerpt&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						
+					&lt;/div&gt;
+
+		&lt;div class=&quot;tags&quot;&gt;
+
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+		&lt;/div&gt;
+		&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+			&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+		&lt;/div&gt;
+				&lt;/header&gt;
+
+				&lt;div class=&quot;full-article__body&quot;&gt;
+
+		&lt;figure class=&quot;article__img&quot;&gt;
+		    &lt;img src=&quot;http://placeimg.com/200/200/tech&quot; /&gt;
+		&lt;/figure&gt;
+					&lt;p&gt;
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					&lt;/p&gt;
+
+					&lt;p&gt;
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					&lt;/p&gt;
+
+					&lt;p&gt;
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					&lt;/p&gt;
+
+					&lt;p&gt;
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					&lt;/p&gt;
+
+					&lt;p&gt;
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					&lt;/p&gt;
+
+					&lt;p&gt;
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					&lt;/p&gt;
+
+					&lt;p&gt;
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					&lt;/p&gt;
+
+					&lt;p&gt;
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					&lt;/p&gt;
+
+				&lt;/div&gt;
+
+				&lt;div class=&quot;full-article__comments&quot;&gt;
+
+					&lt;header&gt;
+
+						&lt;h3&gt;Discussion&lt;/h3&gt;
+
+			&lt;ul class=&quot;bare-list nav tabs&quot;&gt;
+			    &lt;li&gt;&lt;a class=&quot;tab tab--active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;&lt;/li&gt;
+			    &lt;li&gt;&lt;a class=&quot;tab&quot; href=&quot;#&quot;&gt;Passive&lt;/a&gt;&lt;/li&gt;
+			    &lt;li&gt;&lt;a class=&quot;tab&quot; href=&quot;#&quot;&gt;Passive&lt;/a&gt;&lt;/li&gt;
+			    &lt;li class=&quot;tabs__search&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+
+					&lt;/header&gt;
+
+					&lt;div class=&quot;create-new&quot;&gt;
+
+			&lt;div class=&quot;comment-field comment-field-argumentation&quot;&gt;
+				&lt;figure class=&quot;comment__img&quot;&gt;
+					&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+					&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+				&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+				&lt;div class=&quot;btn-group&quot;&gt;
+					&lt;button class=&quot;btn&quot;&gt;Agree&lt;/button&gt;
+					&lt;button class=&quot;btn&quot;&gt;Disagree&lt;/button&gt;
+				&lt;/div&gt;
+
+				&lt;textarea placeholder=&quot;Comment&quot;&gt;&lt;/textarea&gt;
+			&lt;/div&gt;
+
+					&lt;/div&gt;
+
+					&lt;div class=&quot;grid&quot;&gt;
+
+						&lt;div class=&quot;g g--half&quot;&gt;
+
+							&lt;h3&gt;Agree&lt;/h3&gt;
+
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+						&lt;/div&gt;
+
+						&lt;div class=&quot;g g--half&quot;&gt;
+
+							&lt;h3&gt;Disagree&lt;/h3&gt;
+
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+				&lt;div class=&quot;stream-item&quot;&gt;
+
+					&lt;figure class=&quot;comment__img&quot;&gt;
+						&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+						&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+					&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+					&lt;div class=&quot;comment__meta&quot;&gt;
+						
+						&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+						&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+					&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+					&lt;div class=&quot;comment__body&quot;&gt;
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+					&lt;div class=&quot;tags&quot;&gt;
+
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+						&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+					&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+				&lt;/div&gt;&lt;!-- end single comment --&gt;
+						&lt;/div&gt;
+
+
+					&lt;/div&gt;
+
+					&lt;div class=&quot;pagination&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-text&quot;&gt;Load more&lt;/a&gt;&lt;/div&gt;
+
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+
+
+
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+
+
+&lt;/div&gt;

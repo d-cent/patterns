@@ -1,0 +1,87 @@
+{{&gt; atoms-kalles-styles }}
+
+&lt;div class=&quot;page page--with-sticky&quot;&gt;
+
+	{{&gt; organisms-header-with-login }}
+
+	&lt;div class=&quot;group-info clearfix&quot;&gt;
+
+		&lt;header style=&quot;background-image: url('{{ img.landscape-3x1-darkened.src }}');&quot;&gt;
+
+			&lt;div class=&quot;group-info__container&quot;&gt;
+
+				&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+					&lt;li&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-group&quot;&gt;&lt;/i&gt; Join group&lt;/a&gt;
+					&lt;/li&gt;
+
+				&lt;/ul&gt;
+
+				&lt;h1&gt;Groupname og:title maximum of 95 chars&lt;/h1&gt;
+
+				&lt;div class=&quot;full-article__meta&quot;&gt;
+
+					&lt;i class=&quot;icon-avatar&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;35 members&lt;/a&gt; &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; &lt;time&gt;About an hour ago&lt;/time&gt;
+
+				&lt;/div&gt;&lt;!-- end full-article__meta --&gt;
+
+			&lt;/div&gt;
+
+		&lt;/header&gt;
+
+		&lt;div class=&quot;excerpt&quot;&gt;
+
+			{{ excerpt.medium }}
+			&lt;a href=&quot;{{ link.templates-group-page-with-content-open }}&quot;&gt;See this page with content open&lt;/a&gt;.
+			
+		&lt;/div&gt;
+
+		{{&gt; molecules-tags }}
+
+		{{&gt; molecules-general-actions }}
+
+	&lt;/div&gt;
+
+	&lt;div class=&quot;group-navigation clearfix&quot;&gt;
+
+		&lt;span class=&quot;group-navigation__label&quot;&gt;View this group&rsquo;s:&lt;/span&gt;
+
+		&lt;ul class=&quot;bare-list nav&quot;&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;span&gt;Messages&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-tasks&quot;&gt;&lt;/i&gt;&lt;span&gt;Tasks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-legal&quot;&gt;&lt;/i&gt;&lt;span&gt;Votes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item nav__item-open&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;Articles&lt;/span&gt; &lt;i class=&quot;count c-white bc-comp--light&quot;&gt;3&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+
+	&lt;/div&gt;
+
+{{^ article-open }}
+
+	{{&gt; organisms-stream-articles }}
+
+{{/ article-open }}
+
+{{# article-open }}
+
+	&lt;div class=&quot;grid&quot;&gt;
+
+		&lt;div class=&quot;g g--third inactive&quot;&gt;
+
+			{{&gt; organisms-stream-articles }}
+
+		&lt;/div&gt;
+
+		&lt;div class=&quot;g g--two--thirds&quot;&gt;
+
+			{{&gt; molecules-full-article-with-argumentation }}
+
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+{{/ article-open }}
+
+&lt;/div&gt;

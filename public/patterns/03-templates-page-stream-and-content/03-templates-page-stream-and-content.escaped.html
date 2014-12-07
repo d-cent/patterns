@@ -14,12 +14,21 @@ p {
 .comment__img .fa {
 	font-size: 28px;
 }
+.comment__actions &gt; span {
+	margin-left: 0.5em;
+}
+.comment__actions &gt; span:first-child {
+	margin-left: 0;
+}
+.nav-primary {
+	width: auto;
+}
+
 /*
  * Menu bar and fixed titlebar
  */
-
-.header--login {
-	text-align: center;
+.page--with-sticky {
+	padding-top: 44px;
 }
 .header--sticky {
 	position: fixed;
@@ -63,21 +72,12 @@ header.titlebar-fixed {
 	margin-right: 0;
 }
 .inactive {
-	background-color: #DDD;
-	opacity: 0.5;
+	opacity: 0.25;
 	transition: all 0.5s ease-out;
 }
-.inactive header.titlebar-fixed {
-	background-color: #DDD;
-}
 :hover.inactive {
-	background-color: white;
 	opacity: 1;
 }
-:hover.inactive header.titlebar-fixed {
-	background-color: white;
-}
-
 
 /*
  * Stream
@@ -85,11 +85,11 @@ header.titlebar-fixed {
  */
 
 .stream {
-	margin: 3em auto 1em auto;
+	margin: 1em auto;
 	max-width: 30em;
 }
-.stream &gt; h2 {
-	margin: 0;
+.stream h2 {
+	font-size: x-large;
 }
 .stream header .comment__img {
 	line-height: 1;
@@ -123,12 +123,16 @@ header.titlebar-fixed .tabs-as-pulldown {
 /* Stream items */
 .stream-item {
 	padding-bottom: 1.5em;
-	border-bottom: 2px solid #007E84;
-	margin: 1em 0 0.5em 0;
+	border-bottom: 1px dotted #007E84;
+	margin: 1em 0 1.5em 0;
 	max-width: 30em;
+}
+.stream-item:last-child {
+	border-bottom-width: 0px;
 }
 .comment__meta {
 	font-size: smaller;
+	margin-bottom: 0.5em;
 }
 .comment__meta .name {
 	/* font-size: medium; */
@@ -143,7 +147,7 @@ header.titlebar-fixed .tabs-as-pulldown {
 	padding: 0.5em;
 }
 div:hover.embedded-item {
-	background-color: #D3FFFD;
+	background-color: #eee;
 }
 .embedded-item__meta {
 	font-size: smaller;
@@ -213,7 +217,7 @@ div:hover.embedded-item .article-actions &gt; li &gt; a {
  */
 
 .full-article {
-	margin: 3em 1em 1em 0;
+	margin: 1em 1em 1em 0;
 }
 
 
@@ -296,13 +300,85 @@ header.titlebar-fixed .actions-general {
 }
 
 /* Comments */
+
+.create-new {
+	margin: 1em 0;
+	text-align: center;
+}
 .full-article .comment-field {
-	margin: 1em 0 0.5em 0;
+	margin: 0 0 0.5em 0;
 	max-width: 30em;
+	text-align: left;
 }
 .full-article .comment-field &gt; textarea {
 	width: 85%;
 }
+.full-article .comment-field-argumentation {
+	max-width: none;
+}
+	.full-article .comment-field-argumentation &gt; .btn-group {
+		float: left;
+		margin-right: 1em;
+	}
+	.full-article .comment-field-argumentation &gt; textarea {
+		max-width: 25em;
+	}
+
+
+/*
+ * Group page
+ */
+
+.group-info header {
+	display: table;
+	margin: -20px -20px 0.5em -20px;
+ 	min-height: 300px;
+ 	width: calc(100% + 40px);
+ }
+.group-info__container {
+	display: table-cell;
+	padding: 20px 20px 10px 20px;
+	vertical-align: bottom;
+}
+.group-info h1 {
+	color: #eee;
+	float: left;
+	margin: 0;
+}
+.group-info .article-actions {
+	float: right;
+}
+.group-info .full-article__meta {
+	clear: left;
+	color: #eee;
+}
+.group-info .tags {
+	float: left;
+}
+.group-info .comment-actions {
+	float: right;
+}
+.group-navigation {
+	/* border-bottom: 1px solid #666; */
+	background-color: #eee;
+	clear: both;
+	border-radius: 6px;
+	font-size: larger;
+	margin: 1em 0;
+ 	padding: 0.25em 0.5em;
+}
+.group-navigation__label {
+	float: left;
+	font-family: &quot;Comfortaa&quot;,sans-serif;
+	font-weight: bold;
+	margin-right: 1.5em;
+}
+.nav__item-open * {
+	color: #007E84;
+}
+
+
+
 
 &lt;/style&gt;
 
@@ -342,6 +418,15 @@ $(document).ready(function() {
 			&lt;a class=&quot;site-logo--small float--right&quot;&gt;
 				&lt;img src=&quot;../../assets/img/logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
 			&lt;/a&gt;
+
+		&lt;ul class=&quot;bare-list nav nav-primary&quot;&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;span&gt;Messages &lt;i class=&quot;count c-white bc-comp--light&quot;&gt;3&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-tasks&quot;&gt;&lt;/i&gt;&lt;span&gt;Tasks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-legal&quot;&gt;&lt;/i&gt;&lt;span&gt;Votes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;Articles&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
 
 			&lt;span class=&quot;float--right btn--sign-in js-open-signin&quot;&gt;Sign in&lt;/span&gt;
 
@@ -387,7 +472,7 @@ $(document).ready(function() {
 						&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;
 					&lt;/figure&gt;
 
-					&lt;h2&gt;Messages&lt;/h2&gt;
+					&lt;h2&gt;Activity&lt;/h2&gt;
 
 		&lt;ul class=&quot;bare-list nav tabs&quot;&gt;
 		    &lt;li&gt;&lt;a class=&quot;tab tab--active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;&lt;/li&gt;
@@ -434,11 +519,11 @@ $(document).ready(function() {
 
 		&lt;/div&gt;
 
-	&lt;div class=&quot;actions-general&quot;&gt;
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;
 
@@ -511,11 +596,11 @@ $(document).ready(function() {
 
 		&lt;/div&gt;
 
-	&lt;div class=&quot;actions-general&quot;&gt;
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;
 
@@ -554,11 +639,11 @@ $(document).ready(function() {
 
 		&lt;/div&gt;
 
-	&lt;div class=&quot;actions-general&quot;&gt;
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;
 
@@ -654,11 +739,11 @@ $(document).ready(function() {
 
 		&lt;/div&gt;
 
-	&lt;div class=&quot;actions-general&quot;&gt;
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;
 
@@ -697,11 +782,11 @@ $(document).ready(function() {
 
 		&lt;/div&gt;
 
-	&lt;div class=&quot;actions-general&quot;&gt;
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;
 
@@ -794,11 +879,11 @@ $(document).ready(function() {
 
 		&lt;/div&gt;
 
-	&lt;div class=&quot;actions-general&quot;&gt;
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;
 
@@ -837,11 +922,11 @@ $(document).ready(function() {
 
 		&lt;/div&gt;
 
-	&lt;div class=&quot;actions-general&quot;&gt;
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;
 
@@ -931,11 +1016,11 @@ $(document).ready(function() {
 
 		&lt;/div&gt;
 
-	&lt;div class=&quot;actions-general&quot;&gt;
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;
 
@@ -1022,11 +1107,11 @@ $(document).ready(function() {
 			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
 
 		&lt;/div&gt;
-		&lt;div class=&quot;actions-general&quot;&gt;
+		&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-			&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-			&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-			&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+			&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 		&lt;/div&gt;
 				&lt;/header&gt;
@@ -1069,13 +1154,17 @@ $(document).ready(function() {
 
 					&lt;/header&gt;
 
-		&lt;div class=&quot;comment-field&quot;&gt;
-			&lt;figure class=&quot;comment__img&quot;&gt;
-				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
-				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
-			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
-			&lt;textarea placeholder=&quot;Comment&quot;&gt;&lt;/textarea&gt;
-		&lt;/div&gt;
+					&lt;div class=&quot;create-new&quot;&gt;
+
+			&lt;div class=&quot;comment-field&quot;&gt;
+				&lt;figure class=&quot;comment__img&quot;&gt;
+					&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+					&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+				&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+				&lt;textarea placeholder=&quot;Comment&quot;&gt;&lt;/textarea&gt;
+			&lt;/div&gt;
+
+					&lt;/div&gt;
 
 		&lt;div class=&quot;stream-item&quot;&gt;
 
@@ -1111,11 +1200,11 @@ $(document).ready(function() {
 
 			&lt;/div&gt;
 
-	&lt;div class=&quot;actions-general&quot;&gt;
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;
 
@@ -1154,54 +1243,11 @@ $(document).ready(function() {
 
 			&lt;/div&gt;
 
-	&lt;div class=&quot;actions-general&quot;&gt;
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
-
-	&lt;/div&gt;
-
-		&lt;/div&gt;&lt;!-- end single comment --&gt;
-		&lt;div class=&quot;stream-item&quot;&gt;
-
-			&lt;figure class=&quot;comment__img&quot;&gt;
-				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
-				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
-			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
-
-			&lt;div class=&quot;comment__meta&quot;&gt;
-				
-				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
-				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
-
-			&lt;/div&gt;&lt;!-- end comment meta --&gt;
-
-
-			&lt;div class=&quot;comment__body&quot;&gt;
-
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-			&lt;/div&gt;&lt;!-- end comment body --&gt;
-
-
-
-
-
-
-			&lt;div class=&quot;tags&quot;&gt;
-
-				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
-				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
-				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
-
-			&lt;/div&gt;
-
-	&lt;div class=&quot;actions-general&quot;&gt;
-
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;
 
@@ -1240,54 +1286,11 @@ $(document).ready(function() {
 
 			&lt;/div&gt;
 
-	&lt;div class=&quot;actions-general&quot;&gt;
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
-
-	&lt;/div&gt;
-
-		&lt;/div&gt;&lt;!-- end single comment --&gt;
-		&lt;div class=&quot;stream-item&quot;&gt;
-
-			&lt;figure class=&quot;comment__img&quot;&gt;
-				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
-				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
-			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
-
-			&lt;div class=&quot;comment__meta&quot;&gt;
-				
-				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
-				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
-
-			&lt;/div&gt;&lt;!-- end comment meta --&gt;
-
-
-			&lt;div class=&quot;comment__body&quot;&gt;
-
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-			&lt;/div&gt;&lt;!-- end comment body --&gt;
-
-
-
-
-
-
-			&lt;div class=&quot;tags&quot;&gt;
-
-				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
-				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
-				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
-
-			&lt;/div&gt;
-
-	&lt;div class=&quot;actions-general&quot;&gt;
-
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;
 
@@ -1326,54 +1329,11 @@ $(document).ready(function() {
 
 			&lt;/div&gt;
 
-	&lt;div class=&quot;actions-general&quot;&gt;
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
-
-	&lt;/div&gt;
-
-		&lt;/div&gt;&lt;!-- end single comment --&gt;
-		&lt;div class=&quot;stream-item&quot;&gt;
-
-			&lt;figure class=&quot;comment__img&quot;&gt;
-				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
-				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
-			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
-
-			&lt;div class=&quot;comment__meta&quot;&gt;
-				
-				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
-				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
-
-			&lt;/div&gt;&lt;!-- end comment meta --&gt;
-
-
-			&lt;div class=&quot;comment__body&quot;&gt;
-
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-			&lt;/div&gt;&lt;!-- end comment body --&gt;
-
-
-
-
-
-
-			&lt;div class=&quot;tags&quot;&gt;
-
-				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
-				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
-				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
-
-			&lt;/div&gt;
-
-	&lt;div class=&quot;actions-general&quot;&gt;
-
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;
 
@@ -1412,11 +1372,140 @@ $(document).ready(function() {
 
 			&lt;/div&gt;
 
-	&lt;div class=&quot;actions-general&quot;&gt;
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
 
-		&lt;a href=&quot;#&quot; title=&quot;More actions: share, flag as inappropriate&quot;&gt;...&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; 23&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt; 35&lt;/a&gt;
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+		&lt;div class=&quot;stream-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+				
+				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+			&lt;div class=&quot;tags&quot;&gt;
+
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+			&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+		&lt;div class=&quot;stream-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+				
+				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+			&lt;div class=&quot;tags&quot;&gt;
+
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+			&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+		&lt;div class=&quot;stream-item&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+				
+				&lt;a href=&quot;#&quot; class=&quot;name&quot;&gt;Firstname Lastname&lt;/a&gt; &lt;span class=&quot;action&quot;&gt;created a new discussion&lt;/span&gt;
+				&lt;time&gt;About an hour ago&lt;/time&gt; in &lt;a href=&quot;#&quot; class=&quot;group-name&quot;&gt;Groupname&lt;/a&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+
+
+
+
+
+			&lt;div class=&quot;tags&quot;&gt;
+
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Lorem ipsum&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Punavuori&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mea transmittee sursum&lt;/a&gt;
+
+			&lt;/div&gt;
+
+	&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+		&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+		&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+		&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 
 	&lt;/div&gt;
 
