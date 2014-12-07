@@ -1,16 +1,23 @@
 &lt;div class=&quot;wrap--header bc-grey--lightest header--sticky&quot;&gt;
 
-	&lt;header class=&quot;header--login l-constrained clearfix&quot; role=&quot;banner&quot;&gt;
+	&lt;header class=&quot;header--login l-constrained block&quot; role=&quot;banner&quot;&gt;
 
-		&lt;a class=&quot;site-logo--small float--right&quot;&gt;
-			&lt;img src=&quot;../../assets/img/logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
+		&lt;a class=&quot;site-logo&quot;&gt;
+			&lt;img class=&quot;logo-mobile&quot; src=&quot;../../assets/img/logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
+			&lt;img class=&quot;logo-desktop&quot; src=&quot;../../assets/img/D-CENT_logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
 		&lt;/a&gt;
 
-		&lt;span class=&quot;float--right btn--sign-in js-open-signin&quot;&gt;Sign in&lt;/span&gt;
+		{{&gt; organisms-navigation }}
 
 		&lt;div class=&quot;login&quot;&gt;
 
 			{{&gt; organisms-login }}
+
+		&lt;/div&gt;
+
+		&lt;div class=&quot;settings-container&quot;&gt;
+
+			{{&gt; organisms-settings }}
 
 		&lt;/div&gt;
 

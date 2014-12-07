@@ -143,6 +143,14 @@
 
 
 
+
+@media screen and (max-width: 768px){
+	.hide-mobile {
+		display: none!important;
+	}
+}
+
+
 /*------------------------------------*\
 		$ROOT
 \*------------------------------------*/
@@ -1332,12 +1340,12 @@ input,textarea {
 /*------------------------------------*\
 		$HEADER
 \*------------------------------------*/
-.site-logo {
+.site-logo--front {
 	display:block;
 	padding-top:3em
 }
 
-.site-logo > img {
+.site-logo--front > img {
 	max-width:80px
 }
 
@@ -1346,9 +1354,6 @@ input,textarea {
 	margin-top:.5em
 }
 
-.header--login {
-	padding:.5em
-}
 
 .sticky .header--sticky {
 	position:fixed;
@@ -1364,8 +1369,33 @@ input,textarea {
 	cursor:pointer
 }
 
-.site-logo--small > img {
-	max-height:30px
+.site-logo {
+	display: block;
+	float: left;
+	width: 60px;
+}
+
+.site-logo > img {
+	max-height:30px;
+}
+
+
+.logo-mobile {
+	display: block;
+}
+.logo-desktop {
+	display: none;
+}
+
+@media screen and (min-width: 48em) {
+
+	.logo-mobile {
+		display: none;
+	}
+	.logo-desktop {
+		display: block;
+	}
+
 }
 
 
@@ -1373,18 +1403,66 @@ input,textarea {
 		$NAVIGATION
 \*------------------------------------*/
 
+nav[role="navigation"] {
+	float: right;
+}
+
+
+
+.flexbox nav[role="navigation"] {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: flex-end;
+     -ms-flex-pack: end;
+         justify-content: flex-end;
+}
+
+@media screen and (min-width: 420px) {
+	.flexbox nav[role="navigation"] {
+		width: 80%;
+	}
+}
+
+
+@media screen and (min-width: 60em) {
+	.flexbox nav[role="navigation"] {
+		  width: 90%;
+		  -webkit-justify-content: flex-end;
+      	  -ms-flex-pack: end;
+          justify-content: flex-end;
+	}
+}
 
 /*------------------------------------*\
 		$NAV-PRIMARY
 \*------------------------------------*/
 
 
-.nav-primary {
+.no-flexbox .nav-primary {
 	float: left;
 	width: 70%;
 }
 
 
+.flexbox .nav-primary {
+	-webkit-flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	padding-right: .5em;
+}
+
+@media screen and (min-width: 420px) {
+	.flexbox .nav-primary {
+		padding-right: 18%;
+	}
+}
+
+@media screen and (min-width: 60em) {
+	.flexbox .nav-primary {
+		padding-right: .5em;
+	}
+}
 
 .nav__item {
 	position: relative;
@@ -1450,11 +1528,17 @@ input,textarea {
 		$NAV-SETTINGS
 \*------------------------------------*/
 
-.nav-settings {
+.no-flexbox .nav-settings {
 	float: right;
 	width: 30%;
 	padding-right: .5em;
 	text-align: right;
+}
+
+.flexbox .nav-settings {
+	  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
 }
 
 @media screen and (min-width: 48em) {
@@ -1468,13 +1552,13 @@ input,textarea {
 \*------------------------------------*/
 
 
-.login {
+.login, .settings-container {
 	margin: 1.5em auto 0;
 	max-width: 600px;
 	clear:both;
 }
 
-.js .login {
+.js .login, .js .settings-container {
 	max-height: 0;
 	overflow: hidden;
 	-moz-transition: .4s;
@@ -1484,7 +1568,7 @@ input,textarea {
   transition: .4s;
 }
 
-.js .js-login-open {
+.js .js-login-open, .js .js-settings-open {
 	max-height: 999px;
 }
 

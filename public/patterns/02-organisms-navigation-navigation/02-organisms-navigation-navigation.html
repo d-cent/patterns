@@ -68,18 +68,18 @@
 
 	</head>
 	<body class="body">
-<nav role="navigation" class="block">
+<nav role="navigation">
     <ul class="bare-list nav nav-primary">
         <li class="nav__item"><a href="#"><i class="fa fa-comments"></i><span>Messages <i class="count c-white bc-comp--light">3</i></span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-tasks"></i><span>Tasks</span></a></li>
         <li class="nav__item"><a href="#"><i class="fa fa-calendar"></i><span>Events</span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-legal"></i><span>Votes</span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-pencil"></i><span>Articles</span></a></li>
-        <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
+        <li class="nav__item hide-mobile"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
     </ul>
     <ul class="bare-list nav nav-settings">
         <li class="nav__item js-open-signin"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
-        <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
+        <li class="nav__item js-open-settings"><a href="#"><i class="icon icon-word"></i></a></li>
     </ul>
 </nav>
 
@@ -95,7 +95,7 @@
 		// handle injection of items from PHP
 		var patternPartial = "organisms-navigation";
 		var lineage        = [{"lineagePattern":"molecules-nav-primary","lineagePath":"..\/..\/patterns\/01-molecules-navigations-nav-primary\/01-molecules-navigations-nav-primary.html"},{"lineagePattern":"molecules-nav-settings","lineagePath":"..\/..\/patterns\/01-molecules-navigations-nav-settings\/01-molecules-navigations-nav-settings.html"}];
-		var lineageR       = [{"lineagePattern":"organisms-header-with-registration","lineagePath":"..\/..\/patterns\/02-organisms-global-header-with-registration\/02-organisms-global-header-with-registration.html"}];
+		var lineageR       = [{"lineagePattern":"organisms-header-with-login","lineagePath":"..\/..\/patterns\/02-organisms-global-header-with-login\/02-organisms-global-header-with-login.html"},{"lineagePattern":"organisms-header-with-registration","lineagePath":"..\/..\/patterns\/02-organisms-global-header-with-registration\/02-organisms-global-header-with-registration.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

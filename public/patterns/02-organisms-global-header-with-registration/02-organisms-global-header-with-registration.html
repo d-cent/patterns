@@ -70,24 +70,25 @@
 	<body class="body">
 <div class="wrap--header bc-grey--lightest header--sticky">
 
-	<header class="header--login l-constrained clearfix" role="banner">
+	<header class="header--login l-constrained block" role="banner">
 
-		<a class="site-logo--small">
-			<img src="../../assets/img/D-CENT_logo.svg" class="logo" alt="Logo Alt Text" />
+		<a class="site-logo">
+			<img class="logo-mobile" src="../../assets/img/logo.svg" class="logo" alt="Logo Alt Text" />
+			<img class="logo-desktop" src="../../assets/img/D-CENT_logo.svg" class="logo" alt="Logo Alt Text" />
 		</a>
 
-		<nav role="navigation" class="block">
+		<nav role="navigation">
     <ul class="bare-list nav nav-primary">
         <li class="nav__item"><a href="#"><i class="fa fa-comments"></i><span>Messages <i class="count c-white bc-comp--light">3</i></span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-tasks"></i><span>Tasks</span></a></li>
         <li class="nav__item"><a href="#"><i class="fa fa-calendar"></i><span>Events</span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-legal"></i><span>Votes</span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-pencil"></i><span>Articles</span></a></li>
-        <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
+        <li class="nav__item hide-mobile"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
     </ul>
     <ul class="bare-list nav nav-settings">
         <li class="nav__item js-open-signin"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
-        <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
+        <li class="nav__item js-open-settings"><a href="#"><i class="icon icon-word"></i></a></li>
     </ul>
 		</nav>
 
@@ -157,6 +158,90 @@
 
 		</div>
 
+		<div class="settings-container">
+
+			<div class="settings box">
+
+				<form class="settings__form block--large">
+
+					<div class="grid">
+
+						<div class="g g--half">
+
+							<div class="form-row helper">
+								<input type="text" placeholder="Hashtags" />
+								<span class="helper__toggle js-helper__toggle">
+									<i class="fa fa-question"></i>
+								</span>
+								<div class="helper__body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								</div>
+							</div>
+							<div class="form-row grid">
+								<div class="g g--half">
+									Show my real name
+								</div>
+								<div class="g g--half">
+									<div class="btn-group">
+										<button class="btn">No</button>
+										<button class="btn">Yes</button>
+									</div>
+								</div>
+							</div>
+							<div class="form-row grid">
+								<div class="g g--half">
+									Show current geolocation
+								</div>
+								<div class="g g--half">
+									<div class="btn-group">
+										<button class="btn">No</button>
+										<button class="btn">Yes</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="g g--half">
+
+							<div class="form-row grid">
+								<div class="g g--half">
+									Time format
+								</div>
+								<div class="g g--half">
+									<input type="text" placeholder="hh.mm.ss" />
+								</div>
+							</div>
+							<div class="form-row grid">
+								<div class="g g--half">
+									Date format
+								</div>
+								<div class="g g--half">
+									<input type="text" placeholder="dd.mm.yyyy" />
+								</div>
+							</div>
+							<div class="form-row grid">
+								<div class="g g--half">
+									Time zone
+								</div>
+								<div class="g g--half">
+									<input type="number"  />
+								</div>
+							</div>
+
+						</div>
+
+					</div><!-- end grid -->
+
+					<div class="registration__action text--right block--large">
+						<button class="btn">Save and close</button>
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+
 	</header>
 
 </div>
@@ -172,7 +257,7 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "organisms-header-with-registration";
-		var lineage        = [{"lineagePattern":"organisms-navigation","lineagePath":"..\/..\/patterns\/02-organisms-navigation-navigation\/02-organisms-navigation-navigation.html"},{"lineagePattern":"organisms-registration","lineagePath":"..\/..\/patterns\/02-organisms-registration-registration\/02-organisms-registration-registration.html"}];
+		var lineage        = [{"lineagePattern":"organisms-navigation","lineagePath":"..\/..\/patterns\/02-organisms-navigation-navigation\/02-organisms-navigation-navigation.html"},{"lineagePattern":"organisms-registration","lineagePath":"..\/..\/patterns\/02-organisms-registration-registration\/02-organisms-registration-registration.html"},{"lineagePattern":"organisms-settings","lineagePath":"..\/..\/patterns\/02-organisms-settings-settings\/02-organisms-settings-settings.html"}];
 		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;

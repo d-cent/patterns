@@ -48,6 +48,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	})();
 
+    (function(){
+
+        var signToggle = document.querySelectorAll('.js-open-settings');
+
+        [].forEach.call(signToggle, function(el) {
+          el.addEventListener("click", function() {
+
+              var loginContent = document.querySelector('.settings-container');
+
+            loginContent.classList.toggle('js-settings-open');
+
+          });
+        });
+
+    })();
+
 	// helper text
 
 	(function(){

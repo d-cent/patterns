@@ -1204,6 +1204,20 @@ p q r s t u v w x y z { | } ~
 							</div>
 						</div>
 					</div>
+					<div id="atoms-datepicker" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-05-forms-06-datepicker/00-atoms-05-forms-06-datepicker.html" class="patternLink" data-patternpartial="atoms-datepicker">Datepicker</a></h2>
+						<div class="sg-pattern-body">
+							
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="atoms-buttons" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-06-buttons-00-buttons/00-atoms-06-buttons-00-buttons.html" class="patternLink" data-patternpartial="atoms-buttons">Buttons</a></h2>
 						<div class="sg-pattern-body">
@@ -1829,7 +1843,7 @@ p q r s t u v w x y z { | } ~
     <li class="nav__item"><a href="#"><i class="fa fa-calendar"></i><span>Events</span></a></li>
     <li class="nav__item"><a href="#"><i class="icon icon-legal"></i><span>Votes</span></a></li>
     <li class="nav__item"><a href="#"><i class="icon icon-pencil"></i><span>Articles</span></a></li>
-    <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
+    <li class="nav__item hide-mobile"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
 </ul>
 
 							<div class="sg-code" style="display: none">
@@ -1842,7 +1856,7 @@ p q r s t u v w x y z { | } ~
     &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-legal&quot;&gt;&lt;/i&gt;&lt;span&gt;Votes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;Articles&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav__item hide-mobile&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 									</code>
@@ -1855,7 +1869,7 @@ p q r s t u v w x y z { | } ~
 						<div class="sg-pattern-body">
 							<ul class="bare-list nav nav-settings">
     <li class="nav__item js-open-signin"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
-    <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
+    <li class="nav__item js-open-settings"><a href="#"><i class="icon icon-word"></i></a></li>
 </ul>
 
 							<div class="sg-code" style="display: none">
@@ -1864,7 +1878,7 @@ p q r s t u v w x y z { | } ~
 									<code>
 										&lt;ul class=&quot;bare-list nav nav-settings&quot;&gt;
     &lt;li class=&quot;nav__item js-open-signin&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav__item js-open-settings&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 									</code>
@@ -3430,13 +3444,27 @@ p q r s t u v w x y z { | } ~
 						<div class="sg-pattern-body">
 							<div class="wrap--header bc-grey--lightest header--sticky">
 
-	<header class="header--login l-constrained clearfix" role="banner">
+	<header class="header--login l-constrained block" role="banner">
 
-		<a class="site-logo--small float--right">
-			<img src="../../assets/img/logo.svg" class="logo" alt="Logo Alt Text" />
+		<a class="site-logo">
+			<img class="logo-mobile" src="../../assets/img/logo.svg" class="logo" alt="Logo Alt Text" />
+			<img class="logo-desktop" src="../../assets/img/D-CENT_logo.svg" class="logo" alt="Logo Alt Text" />
 		</a>
 
-		<span class="float--right btn--sign-in js-open-signin">Sign in</span>
+		<nav role="navigation">
+    <ul class="bare-list nav nav-primary">
+        <li class="nav__item"><a href="#"><i class="fa fa-comments"></i><span>Messages <i class="count c-white bc-comp--light">3</i></span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-tasks"></i><span>Tasks</span></a></li>
+        <li class="nav__item"><a href="#"><i class="fa fa-calendar"></i><span>Events</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-legal"></i><span>Votes</span></a></li>
+        <li class="nav__item"><a href="#"><i class="icon icon-pencil"></i><span>Articles</span></a></li>
+        <li class="nav__item hide-mobile"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
+    </ul>
+    <ul class="bare-list nav nav-settings">
+        <li class="nav__item js-open-signin"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
+        <li class="nav__item js-open-settings"><a href="#"><i class="icon icon-word"></i></a></li>
+    </ul>
+		</nav>
 
 		<div class="login">
 
@@ -3464,6 +3492,90 @@ p q r s t u v w x y z { | } ~
 
 		</div>
 
+		<div class="settings-container">
+
+			<div class="settings box">
+
+				<form class="settings__form block--large">
+
+					<div class="grid">
+
+						<div class="g g--half">
+
+							<div class="form-row helper">
+								<input type="text" placeholder="Hashtags" />
+								<span class="helper__toggle js-helper__toggle">
+									<i class="fa fa-question"></i>
+								</span>
+								<div class="helper__body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								</div>
+							</div>
+							<div class="form-row grid">
+								<div class="g g--half">
+									Show my real name
+								</div>
+								<div class="g g--half">
+									<div class="btn-group">
+										<button class="btn">No</button>
+										<button class="btn">Yes</button>
+									</div>
+								</div>
+							</div>
+							<div class="form-row grid">
+								<div class="g g--half">
+									Show current geolocation
+								</div>
+								<div class="g g--half">
+									<div class="btn-group">
+										<button class="btn">No</button>
+										<button class="btn">Yes</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="g g--half">
+
+							<div class="form-row grid">
+								<div class="g g--half">
+									Time format
+								</div>
+								<div class="g g--half">
+									<input type="text" placeholder="hh.mm.ss" />
+								</div>
+							</div>
+							<div class="form-row grid">
+								<div class="g g--half">
+									Date format
+								</div>
+								<div class="g g--half">
+									<input type="text" placeholder="dd.mm.yyyy" />
+								</div>
+							</div>
+							<div class="form-row grid">
+								<div class="g g--half">
+									Time zone
+								</div>
+								<div class="g g--half">
+									<input type="number"  />
+								</div>
+							</div>
+
+						</div>
+
+					</div><!-- end grid -->
+
+					<div class="registration__action text--right block--large">
+						<button class="btn">Save and close</button>
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+
 	</header>
 
 </div>
@@ -3471,20 +3583,36 @@ p q r s t u v w x y z { | } ~
 							<div class="sg-code" style="display: none">
 									<div class="sg-code-contains">
 										This pattern contains: 
+											<a href="../../patterns/02-organisms-navigation-navigation/02-organisms-navigation-navigation.html"><code>organisms-navigation</code></a>
 											<a href="../../patterns/02-organisms-login-login/02-organisms-login-login.html"><code>organisms-login</code></a>
+											<a href="../../patterns/02-organisms-settings-settings/02-organisms-settings-settings.html"><code>organisms-settings</code></a>
 									</div>
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
 										&lt;div class=&quot;wrap--header bc-grey--lightest header--sticky&quot;&gt;
 
-	&lt;header class=&quot;header--login l-constrained clearfix&quot; role=&quot;banner&quot;&gt;
+	&lt;header class=&quot;header--login l-constrained block&quot; role=&quot;banner&quot;&gt;
 
-		&lt;a class=&quot;site-logo--small float--right&quot;&gt;
-			&lt;img src=&quot;../../assets/img/logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
+		&lt;a class=&quot;site-logo&quot;&gt;
+			&lt;img class=&quot;logo-mobile&quot; src=&quot;../../assets/img/logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
+			&lt;img class=&quot;logo-desktop&quot; src=&quot;../../assets/img/D-CENT_logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
 		&lt;/a&gt;
 
-		&lt;span class=&quot;float--right btn--sign-in js-open-signin&quot;&gt;Sign in&lt;/span&gt;
+		&lt;nav role=&quot;navigation&quot;&gt;
+    &lt;ul class=&quot;bare-list nav nav-primary&quot;&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;span&gt;Messages &lt;i class=&quot;count c-white bc-comp--light&quot;&gt;3&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-tasks&quot;&gt;&lt;/i&gt;&lt;span&gt;Tasks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-legal&quot;&gt;&lt;/i&gt;&lt;span&gt;Votes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;Articles&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item hide-mobile&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class=&quot;bare-list nav nav-settings&quot;&gt;
+        &lt;li class=&quot;nav__item js-open-signin&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item js-open-settings&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+		&lt;/nav&gt;
 
 		&lt;div class=&quot;login&quot;&gt;
 
@@ -3512,6 +3640,90 @@ p q r s t u v w x y z { | } ~
 
 		&lt;/div&gt;
 
+		&lt;div class=&quot;settings-container&quot;&gt;
+
+			&lt;div class=&quot;settings box&quot;&gt;
+
+				&lt;form class=&quot;settings__form block--large&quot;&gt;
+
+					&lt;div class=&quot;grid&quot;&gt;
+
+						&lt;div class=&quot;g g--half&quot;&gt;
+
+							&lt;div class=&quot;form-row helper&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Hashtags&quot; /&gt;
+								&lt;span class=&quot;helper__toggle js-helper__toggle&quot;&gt;
+									&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;
+								&lt;/span&gt;
+								&lt;div class=&quot;helper__body&quot;&gt;
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Show my real name
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;div class=&quot;btn-group&quot;&gt;
+										&lt;button class=&quot;btn&quot;&gt;No&lt;/button&gt;
+										&lt;button class=&quot;btn&quot;&gt;Yes&lt;/button&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Show current geolocation
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;div class=&quot;btn-group&quot;&gt;
+										&lt;button class=&quot;btn&quot;&gt;No&lt;/button&gt;
+										&lt;button class=&quot;btn&quot;&gt;Yes&lt;/button&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+
+						&lt;div class=&quot;g g--half&quot;&gt;
+
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Time format
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;input type=&quot;text&quot; placeholder=&quot;hh.mm.ss&quot; /&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Date format
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;input type=&quot;text&quot; placeholder=&quot;dd.mm.yyyy&quot; /&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Time zone
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;input type=&quot;number&quot;  /&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+
+						&lt;/div&gt;
+
+					&lt;/div&gt;&lt;!-- end grid --&gt;
+
+					&lt;div class=&quot;registration__action text--right block--large&quot;&gt;
+						&lt;button class=&quot;btn&quot;&gt;Save and close&lt;/button&gt;
+					&lt;/div&gt;
+
+				&lt;/form&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
 	&lt;/header&gt;
 
 &lt;/div&gt;
@@ -3526,24 +3738,25 @@ p q r s t u v w x y z { | } ~
 						<div class="sg-pattern-body">
 							<div class="wrap--header bc-grey--lightest header--sticky">
 
-	<header class="header--login l-constrained clearfix" role="banner">
+	<header class="header--login l-constrained block" role="banner">
 
-		<a class="site-logo--small">
-			<img src="../../assets/img/D-CENT_logo.svg" class="logo" alt="Logo Alt Text" />
+		<a class="site-logo">
+			<img class="logo-mobile" src="../../assets/img/logo.svg" class="logo" alt="Logo Alt Text" />
+			<img class="logo-desktop" src="../../assets/img/D-CENT_logo.svg" class="logo" alt="Logo Alt Text" />
 		</a>
 
-		<nav role="navigation" class="block">
+		<nav role="navigation">
     <ul class="bare-list nav nav-primary">
         <li class="nav__item"><a href="#"><i class="fa fa-comments"></i><span>Messages <i class="count c-white bc-comp--light">3</i></span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-tasks"></i><span>Tasks</span></a></li>
         <li class="nav__item"><a href="#"><i class="fa fa-calendar"></i><span>Events</span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-legal"></i><span>Votes</span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-pencil"></i><span>Articles</span></a></li>
-        <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
+        <li class="nav__item hide-mobile"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
     </ul>
     <ul class="bare-list nav nav-settings">
         <li class="nav__item js-open-signin"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
-        <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
+        <li class="nav__item js-open-settings"><a href="#"><i class="icon icon-word"></i></a></li>
     </ul>
 		</nav>
 
@@ -3613,6 +3826,90 @@ p q r s t u v w x y z { | } ~
 
 		</div>
 
+		<div class="settings-container">
+
+			<div class="settings box">
+
+				<form class="settings__form block--large">
+
+					<div class="grid">
+
+						<div class="g g--half">
+
+							<div class="form-row helper">
+								<input type="text" placeholder="Hashtags" />
+								<span class="helper__toggle js-helper__toggle">
+									<i class="fa fa-question"></i>
+								</span>
+								<div class="helper__body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								</div>
+							</div>
+							<div class="form-row grid">
+								<div class="g g--half">
+									Show my real name
+								</div>
+								<div class="g g--half">
+									<div class="btn-group">
+										<button class="btn">No</button>
+										<button class="btn">Yes</button>
+									</div>
+								</div>
+							</div>
+							<div class="form-row grid">
+								<div class="g g--half">
+									Show current geolocation
+								</div>
+								<div class="g g--half">
+									<div class="btn-group">
+										<button class="btn">No</button>
+										<button class="btn">Yes</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="g g--half">
+
+							<div class="form-row grid">
+								<div class="g g--half">
+									Time format
+								</div>
+								<div class="g g--half">
+									<input type="text" placeholder="hh.mm.ss" />
+								</div>
+							</div>
+							<div class="form-row grid">
+								<div class="g g--half">
+									Date format
+								</div>
+								<div class="g g--half">
+									<input type="text" placeholder="dd.mm.yyyy" />
+								</div>
+							</div>
+							<div class="form-row grid">
+								<div class="g g--half">
+									Time zone
+								</div>
+								<div class="g g--half">
+									<input type="number"  />
+								</div>
+							</div>
+
+						</div>
+
+					</div><!-- end grid -->
+
+					<div class="registration__action text--right block--large">
+						<button class="btn">Save and close</button>
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+
 	</header>
 
 </div>
@@ -3622,30 +3919,32 @@ p q r s t u v w x y z { | } ~
 										This pattern contains: 
 											<a href="../../patterns/02-organisms-navigation-navigation/02-organisms-navigation-navigation.html"><code>organisms-navigation</code></a>
 											<a href="../../patterns/02-organisms-registration-registration/02-organisms-registration-registration.html"><code>organisms-registration</code></a>
+											<a href="../../patterns/02-organisms-settings-settings/02-organisms-settings-settings.html"><code>organisms-settings</code></a>
 									</div>
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
 										&lt;div class=&quot;wrap--header bc-grey--lightest header--sticky&quot;&gt;
 
-	&lt;header class=&quot;header--login l-constrained clearfix&quot; role=&quot;banner&quot;&gt;
+	&lt;header class=&quot;header--login l-constrained block&quot; role=&quot;banner&quot;&gt;
 
-		&lt;a class=&quot;site-logo--small&quot;&gt;
-			&lt;img src=&quot;../../assets/img/D-CENT_logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
+		&lt;a class=&quot;site-logo&quot;&gt;
+			&lt;img class=&quot;logo-mobile&quot; src=&quot;../../assets/img/logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
+			&lt;img class=&quot;logo-desktop&quot; src=&quot;../../assets/img/D-CENT_logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
 		&lt;/a&gt;
 
-		&lt;nav role=&quot;navigation&quot; class=&quot;block&quot;&gt;
+		&lt;nav role=&quot;navigation&quot;&gt;
     &lt;ul class=&quot;bare-list nav nav-primary&quot;&gt;
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;span&gt;Messages &lt;i class=&quot;count c-white bc-comp--light&quot;&gt;3&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-tasks&quot;&gt;&lt;/i&gt;&lt;span&gt;Tasks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-legal&quot;&gt;&lt;/i&gt;&lt;span&gt;Votes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;Articles&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item hide-mobile&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
     &lt;ul class=&quot;bare-list nav nav-settings&quot;&gt;
         &lt;li class=&quot;nav__item js-open-signin&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item js-open-settings&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 		&lt;/nav&gt;
 
@@ -3715,6 +4014,90 @@ p q r s t u v w x y z { | } ~
 
 		&lt;/div&gt;
 
+		&lt;div class=&quot;settings-container&quot;&gt;
+
+			&lt;div class=&quot;settings box&quot;&gt;
+
+				&lt;form class=&quot;settings__form block--large&quot;&gt;
+
+					&lt;div class=&quot;grid&quot;&gt;
+
+						&lt;div class=&quot;g g--half&quot;&gt;
+
+							&lt;div class=&quot;form-row helper&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Hashtags&quot; /&gt;
+								&lt;span class=&quot;helper__toggle js-helper__toggle&quot;&gt;
+									&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;
+								&lt;/span&gt;
+								&lt;div class=&quot;helper__body&quot;&gt;
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Show my real name
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;div class=&quot;btn-group&quot;&gt;
+										&lt;button class=&quot;btn&quot;&gt;No&lt;/button&gt;
+										&lt;button class=&quot;btn&quot;&gt;Yes&lt;/button&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Show current geolocation
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;div class=&quot;btn-group&quot;&gt;
+										&lt;button class=&quot;btn&quot;&gt;No&lt;/button&gt;
+										&lt;button class=&quot;btn&quot;&gt;Yes&lt;/button&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+
+						&lt;div class=&quot;g g--half&quot;&gt;
+
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Time format
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;input type=&quot;text&quot; placeholder=&quot;hh.mm.ss&quot; /&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Date format
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;input type=&quot;text&quot; placeholder=&quot;dd.mm.yyyy&quot; /&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Time zone
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;input type=&quot;number&quot;  /&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+
+						&lt;/div&gt;
+
+					&lt;/div&gt;&lt;!-- end grid --&gt;
+
+					&lt;div class=&quot;registration__action text--right block--large&quot;&gt;
+						&lt;button class=&quot;btn&quot;&gt;Save and close&lt;/button&gt;
+					&lt;/div&gt;
+
+				&lt;/form&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
 	&lt;/header&gt;
 
 &lt;/div&gt;
@@ -3728,10 +4111,10 @@ p q r s t u v w x y z { | } ~
 						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-global-header/02-organisms-global-header.html" class="patternLink" data-patternpartial="organisms-header">Header</a></h2>
 						<div class="sg-pattern-body">
 							<div class="wrap--header bc-light" style="min-height: 200px;">
-	
+
 	<header class="text--center l-constrained clearfix" role="banner">
 
-		<a class="site-logo">
+		<a class="site-logo--front">
 			<img src="../../assets/img//logo.svg" class="logo" alt="Logo Alt Text" />
 			<span class="site-logo__text">decentralized tools</span>
 		</a>
@@ -3739,15 +4122,16 @@ p q r s t u v w x y z { | } ~
 	</header><!-- end header -->
 
 </div><!-- end wrap header -->
+
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
 										&lt;div class=&quot;wrap--header bc-light&quot; style=&quot;min-height: 200px;&quot;&gt;
-	
+
 	&lt;header class=&quot;text--center l-constrained clearfix&quot; role=&quot;banner&quot;&gt;
 
-		&lt;a class=&quot;site-logo&quot;&gt;
+		&lt;a class=&quot;site-logo--front&quot;&gt;
 			&lt;img src=&quot;../../assets/img//logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
 			&lt;span class=&quot;site-logo__text&quot;&gt;decentralized tools&lt;/span&gt;
 		&lt;/a&gt;
@@ -3755,6 +4139,7 @@ p q r s t u v w x y z { | } ~
 	&lt;/header&gt;&lt;!-- end header --&gt;
 
 &lt;/div&gt;&lt;!-- end wrap header --&gt;
+
 									</code>
 								</pre>
 							</div>
@@ -3819,18 +4204,18 @@ p q r s t u v w x y z { | } ~
 					<div id="organisms-navigation" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-navigation-navigation/02-organisms-navigation-navigation.html" class="patternLink" data-patternpartial="organisms-navigation">Navigation</a></h2>
 						<div class="sg-pattern-body">
-							<nav role="navigation" class="block">
+							<nav role="navigation">
     <ul class="bare-list nav nav-primary">
         <li class="nav__item"><a href="#"><i class="fa fa-comments"></i><span>Messages <i class="count c-white bc-comp--light">3</i></span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-tasks"></i><span>Tasks</span></a></li>
         <li class="nav__item"><a href="#"><i class="fa fa-calendar"></i><span>Events</span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-legal"></i><span>Votes</span></a></li>
         <li class="nav__item"><a href="#"><i class="icon icon-pencil"></i><span>Articles</span></a></li>
-        <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
+        <li class="nav__item hide-mobile"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
     </ul>
     <ul class="bare-list nav nav-settings">
         <li class="nav__item js-open-signin"><a href="#"><i class="icon icon-avatar"></i><span>Firstname Lastname</span></a></li>
-        <li class="nav__item"><a href="#"><i class="icon icon-word"></i></a></li>
+        <li class="nav__item js-open-settings"><a href="#"><i class="icon icon-word"></i></a></li>
     </ul>
 </nav>
 
@@ -3843,18 +4228,18 @@ p q r s t u v w x y z { | } ~
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;nav role=&quot;navigation&quot; class=&quot;block&quot;&gt;
+										&lt;nav role=&quot;navigation&quot;&gt;
     &lt;ul class=&quot;bare-list nav nav-primary&quot;&gt;
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;span&gt;Messages &lt;i class=&quot;count c-white bc-comp--light&quot;&gt;3&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-tasks&quot;&gt;&lt;/i&gt;&lt;span&gt;Tasks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-legal&quot;&gt;&lt;/i&gt;&lt;span&gt;Votes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;Articles&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item hide-mobile&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
     &lt;ul class=&quot;bare-list nav nav-settings&quot;&gt;
         &lt;li class=&quot;nav__item js-open-signin&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item js-open-settings&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;
 
@@ -4399,10 +4784,6 @@ p q r s t u v w x y z { | } ~
 						</div>
 					</div>
 				</div>
-				<div class="form-row">
-					<input type="text" placeholder="Phone" />
-				</div>
-
 			</div>
 
 			<div class="g g--half">
@@ -4487,10 +4868,6 @@ p q r s t u v w x y z { | } ~
 						&lt;/div&gt;
 					&lt;/div&gt;
 				&lt;/div&gt;
-				&lt;div class=&quot;form-row&quot;&gt;
-					&lt;input type=&quot;text&quot; placeholder=&quot;Phone&quot; /&gt;
-				&lt;/div&gt;
-
 			&lt;/div&gt;
 
 			&lt;div class=&quot;g g--half&quot;&gt;

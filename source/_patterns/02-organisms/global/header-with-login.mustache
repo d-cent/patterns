@@ -1,16 +1,23 @@
 <div class="wrap--header bc-grey--lightest header--sticky">
 
-	<header class="header--login l-constrained clearfix" role="banner">
+	<header class="header--login l-constrained block" role="banner">
 
-		<a class="site-logo--small float--right">
-			<img src="../../assets/img/logo.svg" class="logo" alt="Logo Alt Text" />
+		<a class="site-logo">
+			<img class="logo-mobile" src="../../assets/img/logo.svg" class="logo" alt="Logo Alt Text" />
+			<img class="logo-desktop" src="../../assets/img/D-CENT_logo.svg" class="logo" alt="Logo Alt Text" />
 		</a>
 
-		<span class="float--right btn--sign-in js-open-signin">Sign in</span>
+		{{> organisms-navigation }}
 
 		<div class="login">
 
 			{{> organisms-login }}
+
+		</div>
+
+		<div class="settings-container">
+
+			{{> organisms-settings }}
 
 		</div>
 

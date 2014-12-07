@@ -1,9 +1,10 @@
 <div class="wrap--header bc-grey--lightest header--sticky">
 
-	<header class="header--login l-constrained clearfix" role="banner">
+	<header class="header--login l-constrained block" role="banner">
 
-		<a class="site-logo--small">
-			<img src="../../assets/img/D-CENT_logo.svg" class="logo" alt="Logo Alt Text" />
+		<a class="site-logo">
+			<img class="logo-mobile" src="../../assets/img/logo.svg" class="logo" alt="Logo Alt Text" />
+			<img class="logo-desktop" src="../../assets/img/D-CENT_logo.svg" class="logo" alt="Logo Alt Text" />
 		</a>
 
 		{{> organisms-navigation }}
@@ -11,6 +12,12 @@
 		<div class="login">
 
 			{{> organisms-registration }}
+
+		</div>
+
+		<div class="settings-container">
+
+			{{> organisms-settings }}
 
 		</div>
 
