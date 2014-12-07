@@ -1,0 +1,87 @@
+{{> atoms-kalles-styles }}
+
+<div class="page page--with-sticky">
+
+	{{> organisms-header-with-login }}
+
+	<div class="group-info clearfix">
+
+		<header style="background-image: url('{{ img.landscape-3x1-darkened.src }}');">
+
+			<div class="group-info__container">
+
+				<ul class="bare-list article-actions">
+
+					<li>
+						<a href="#" class="btn"><i class="icon-group"></i> Join group</a>
+					</li>
+
+				</ul>
+
+				<h1>Groupname og:title maximum of 95 chars</h1>
+
+				<div class="full-article__meta">
+
+					<i class="icon-avatar"></i> <a href="#">35 members</a> <i class="fa fa-comments"></i> <time>About an hour ago</time>
+
+				</div><!-- end full-article__meta -->
+
+			</div>
+
+		</header>
+
+		<div class="excerpt">
+
+			{{ excerpt.medium }}
+			<a href="{{ link.templates-group-page-with-content-open }}">See this page with content open</a>.
+			
+		</div>
+
+		{{> molecules-tags }}
+
+		{{> molecules-general-actions }}
+
+	</div>
+
+	<div class="group-navigation clearfix">
+
+		<span class="group-navigation__label">View this group’s:</span>
+
+		<ul class="bare-list nav">
+		    <li class="nav__item"><a href="#"><i class="fa fa-comments"></i><span>Messages</span></a></li>
+		    <li class="nav__item"><a href="#"><i class="icon icon-tasks"></i><span>Tasks</span></a></li>
+		    <li class="nav__item"><a href="#"><i class="fa fa-calendar"></i><span>Events</span></a></li>
+		    <li class="nav__item"><a href="#"><i class="icon icon-legal"></i><span>Votes</span></a></li>
+		    <li class="nav__item nav__item-open"><a href="#"><i class="icon icon-pencil"></i><span>Articles</span> <i class="count c-white bc-comp--light">3</i></a></li>
+		    <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
+		</ul>
+
+	</div>
+
+{{^ article-open }}
+
+	{{> organisms-stream-articles }}
+
+{{/ article-open }}
+
+{{# article-open }}
+
+	<div class="grid">
+
+		<div class="g g--third inactive">
+
+			{{> organisms-stream-articles }}
+
+		</div>
+
+		<div class="g g--two--thirds">
+
+			{{> molecules-full-article-with-argumentation }}
+
+		</div>
+
+	</div>
+
+{{/ article-open }}
+
+</div>

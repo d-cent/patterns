@@ -76,6 +76,15 @@
 			<img src="../../assets/img/logo.svg" class="logo" alt="Logo Alt Text" />
 		</a>
 
+		<ul class="bare-list nav nav-primary">
+		    <li class="nav__item"><a href="#"><i class="fa fa-comments"></i><span>Messages <i class="count c-white bc-comp--light">3</i></span></a></li>
+		    <li class="nav__item"><a href="#"><i class="icon icon-tasks"></i><span>Tasks</span></a></li>
+		    <li class="nav__item"><a href="#"><i class="fa fa-calendar"></i><span>Events</span></a></li>
+		    <li class="nav__item"><a href="#"><i class="icon icon-legal"></i><span>Votes</span></a></li>
+		    <li class="nav__item"><a href="#"><i class="icon icon-pencil"></i><span>Articles</span></a></li>
+		    <li class="nav__item"><a href="#"><i class="icon icon-chat"></i><span>Groups</span></a></li>
+		</ul>
+
 		<span class="float--right btn--sign-in js-open-signin">Sign in</span>
 
 		<div class="login">
@@ -119,8 +128,8 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "organisms-header-with-login";
-		var lineage        = [{"lineagePattern":"organisms-login","lineagePath":"..\/..\/patterns\/02-organisms-login-login\/02-organisms-login-login.html"}];
-		var lineageR       = [{"lineagePattern":"templates-page","lineagePath":"..\/..\/patterns\/03-templates-page\/03-templates-page.html"}];
+		var lineage        = [{"lineagePattern":"molecules-nav-primary","lineagePath":"..\/..\/patterns\/01-molecules-navigations-nav-primary\/01-molecules-navigations-nav-primary.html"},{"lineagePattern":"organisms-login","lineagePath":"..\/..\/patterns\/02-organisms-login-login\/02-organisms-login-login.html"}];
+		var lineageR       = [{"lineagePattern":"templates-group-page","lineagePath":"..\/..\/patterns\/03-templates-group-page\/03-templates-group-page.html"},{"lineagePattern":"templates-page-stream-and-content","lineagePath":"..\/..\/patterns\/03-templates-page-stream-and-content\/03-templates-page-stream-and-content.html"},{"lineagePattern":"templates-page-stream","lineagePath":"..\/..\/patterns\/03-templates-page-stream\/03-templates-page-stream.html"},{"lineagePattern":"templates-page","lineagePath":"..\/..\/patterns\/03-templates-page\/03-templates-page.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

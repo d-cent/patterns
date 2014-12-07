@@ -1,0 +1,31 @@
+<div class="stream box bc-white">
+
+	<header class="sticky">
+
+		<figure class="comment__img">
+			<i class="icon-pen"></i>
+		</figure>
+
+		<h2>Group articles</h2>
+
+		{{> atoms-tabs-with-search }}
+
+		<a href="#" class="btn-text fixed-only tabs-as-pulldown">Active <i class="icon-search"></i></a>
+
+	</header>
+
+	<div class="create-new">
+		<button class="btn"><i class="icon-pen"></i> Create new a article</button>
+	</div>
+
+	{{> molecules-stream-item(type-article: true, action: "invited you to edit an article") }}
+
+	{{> molecules-stream-item(type-article: true, action: "created a new article") }}
+
+	{{> molecules-stream-item(type-article: true, action: "invited you to edit an article") }}
+
+	{{> molecules-stream-item(type-article: true, action: "invited you to edit an article") }}
+
+	{{> molecules-stream-item(type-article: true, action: "invited you to edit an article") }}
+
+</div>

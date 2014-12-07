@@ -1,0 +1,27 @@
+<div class="stream box bc-white">
+
+	<header class="sticky">
+
+		<figure class="comment__img">
+			<i class="icon-legal"></i>
+		</figure>
+
+		<h2>Group votes</h2>
+
+		{{> atoms-tabs-with-search }}
+
+		<a href="#" class="btn-text fixed-only tabs-as-pulldown">Active <i class="icon-search"></i></a>
+
+	</header>
+
+	<div class="create-new">
+		<button class="btn"><i class="icon-legal"></i> Create new a vote</button>
+	</div>
+
+	{{> molecules-stream-item(type-vote: true, no-comment: true, action: "called a vote") }}
+
+	{{> molecules-stream-item(type-vote: true, no-comment: true, action: "called a vote") }}
+
+	{{> molecules-stream-item(type-vote: true, no-comment: true, action: "called a vote") }}
+
+</div>

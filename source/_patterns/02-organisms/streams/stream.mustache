@@ -1,0 +1,35 @@
+<div class="stream box bc-white">
+
+	<header class="sticky">
+
+		<figure class="comment__img">
+			<i class="fa fa-comments"></i>
+		</figure>
+
+		<h2>Activity</h2>
+
+		{{> atoms-tabs-with-search }}
+
+		<a href="#" class="btn-text fixed-only tabs-as-pulldown">Active <i class="icon-search"></i></a>
+
+	</header>
+
+	{{> molecules-stream-item }}
+
+	{{> molecules-stream-item(type-article: true, action: "invited you to edit an article") }}
+
+	{{> molecules-stream-item }}
+
+	{{> molecules-stream-item(type-vote: true, no-comment: true, action: "called a vote") }}
+
+	{{> molecules-stream-item }}
+
+	{{> molecules-stream-item(type-event: true, no-comment: true, action: "invited you to an event") }}
+
+	{{> molecules-stream-item }}
+
+	{{> molecules-stream-item(type-task: true, action: "assigned you a task") }}
+
+	<div class="pagination"><a href="#" class="btn btn-text">Load more</a></div>
+
+</div>
