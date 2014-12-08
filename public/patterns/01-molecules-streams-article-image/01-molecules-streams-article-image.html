@@ -68,14 +68,9 @@
 
 	</head>
 	<body class="body">
-<div class="comment-field">
-	<figure class="comment__img">
-		<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
-		<i class="icon-avatar_circle"></i>
-	</figure><!-- end comment pic -->
-	<textarea placeholder="Comment"></textarea>
-</div>
-
+<figure class="article__img">
+    <img src="http://placeimg.com/200/200/tech" />
+</figure>
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 
 	<script src='../../assets/js/vendor/angular.min.js'></script>
@@ -86,9 +81,9 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-comment-field";
+		var patternPartial = "molecules-article-image";
 		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"molecules-full-article","lineagePath":"..\/..\/patterns\/01-molecules-streams-full-article\/01-molecules-streams-full-article.html"},{"lineagePattern":"organisms-event","lineagePath":"..\/..\/patterns\/02-organisms-event-event\/02-organisms-event-event.html"}];
+		var lineageR       = [{"lineagePattern":"molecules-full-article-with-argumentation","lineagePath":"..\/..\/patterns\/01-molecules-streams-full-article-with-argumentation\/01-molecules-streams-full-article-with-argumentation.html"},{"lineagePattern":"molecules-full-article","lineagePath":"..\/..\/patterns\/01-molecules-streams-full-article\/01-molecules-streams-full-article.html"},{"lineagePattern":"molecules-stream-item","lineagePath":"..\/..\/patterns\/01-molecules-streams-stream-item\/01-molecules-streams-stream-item.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

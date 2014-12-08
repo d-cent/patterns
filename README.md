@@ -37,3 +37,41 @@ When user is more interested in his/her cause than in the legal or technical pro
 Instructions and functionalities imply clearly and concretely, what are the benefits, consequences and ramifications of user actions. I.e. From participation it is communicated when the results will be available and that after verifying an account with stronger authentication, there will be opportunity for more robust functionalities like voting.
 ### Simple
 When designing functionalities, the simplest functionality is built first, to create and validate the core benefit that the functionality or user story is to produce. Additional functionalities should only be added based on metrics or concrete findings from user experience study and observation.
+
+## Patterns needed to complete DemocracyOS milestones
+
+See https://github.com/d-cent/democracyos/milestones
+
+###Guanyem/Ganemos commissions citizen feedback
+
+* Group page
+* Create new article => Create any item
+* Comments that agree or disagree
+  * Down votes?
+* Enable voting
+
+###Decisions API user story
+
+* Profile page
+  * Subscribe to keywords
+* Create group
+  * Define activity filter
+  * Invite members
+* Answer questions on a form
+
+###Public hearing in Helsinki city user story
+
+* Create group
+  * Fill project URL
+
+###Bartering coop map use case
+
+* Create article with bartering-specific metadata
+* View AS on a map
+  * Distance filter
+  * Keyword/category filter
+
+###Better Reykjavik town hall feedback user story
+
+* Show voting results when votes are numeric 1–5 values
+

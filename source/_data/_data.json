@@ -26,6 +26,10 @@
 		"thumb": {
 			"src": "http://placeimg.com/60/60/tech",
 			"alt": "Rectangle"
+		},
+		"landscape-3x1-darkened": {
+			"src": "../../assets/img/group-bg-image-3-to-1.png",
+			"alt": "3x1 image, darkened"
 		}
 	},
 	"headline" : {
@@ -93,5 +97,6 @@
 		{ },
 		{ },
 		{ }
-	]
+	],
+	"action": "created a new discussion"
 }

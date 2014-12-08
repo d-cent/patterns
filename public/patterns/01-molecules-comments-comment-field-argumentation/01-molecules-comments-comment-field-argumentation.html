@@ -68,11 +68,17 @@
 
 	</head>
 	<body class="body">
-<div class="comment-field">
+<div class="comment-field comment-field-argumentation">
 	<figure class="comment__img">
 		<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
 		<i class="icon-avatar_circle"></i>
 	</figure><!-- end comment pic -->
+
+	<div class="btn-group">
+		<button class="btn">Agree</button>
+		<button class="btn">Disagree</button>
+	</div>
+
 	<textarea placeholder="Comment"></textarea>
 </div>
 
@@ -86,9 +92,9 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-comment-field";
+		var patternPartial = "molecules-comment-field-argumentation";
 		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"molecules-full-article","lineagePath":"..\/..\/patterns\/01-molecules-streams-full-article\/01-molecules-streams-full-article.html"},{"lineagePattern":"organisms-event","lineagePath":"..\/..\/patterns\/02-organisms-event-event\/02-organisms-event-event.html"}];
+		var lineageR       = [{"lineagePattern":"molecules-full-article-with-argumentation","lineagePath":"..\/..\/patterns\/01-molecules-streams-full-article-with-argumentation\/01-molecules-streams-full-article-with-argumentation.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

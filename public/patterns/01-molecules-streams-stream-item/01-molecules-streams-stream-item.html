@@ -68,14 +68,49 @@
 
 	</head>
 	<body class="body">
-<div class="comment-field">
+<div class="stream-item">
+
 	<figure class="comment__img">
 		<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
 		<i class="icon-avatar_circle"></i>
 	</figure><!-- end comment pic -->
-	<textarea placeholder="Comment"></textarea>
-</div>
 
+	<div class="comment__meta">
+		
+		<a href="#" class="name">Firstname Lastname</a> <span class="action">created a new discussion</span>
+		<time>About an hour ago</time> in <a href="#" class="group-name">Groupname</a>
+
+	</div><!-- end comment meta -->
+
+
+	<div class="comment__body">
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+	</div><!-- end comment body -->
+
+
+
+
+
+
+	<div class="tags">
+
+		<a href="#" class="tag">Lorem ipsum</a>
+		<a href="#" class="tag">Punavuori</a>
+		<a href="#" class="tag">Mea transmittee sursum</a>
+
+	</div>
+
+	<div class="comment__actions actions-general">
+
+		<span><a href="#" title="More actions, such as share and flag as inappropriate">+</a></span>
+		<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+		<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+	</div>
+
+</div><!-- end single comment -->
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 
 	<script src='../../assets/js/vendor/angular.min.js'></script>
@@ -86,9 +121,9 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-comment-field";
-		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"molecules-full-article","lineagePath":"..\/..\/patterns\/01-molecules-streams-full-article\/01-molecules-streams-full-article.html"},{"lineagePattern":"organisms-event","lineagePath":"..\/..\/patterns\/02-organisms-event-event\/02-organisms-event-event.html"}];
+		var patternPartial = "molecules-stream-item";
+		var lineage        = [{"lineagePattern":"molecules-article-image","lineagePath":"..\/..\/patterns\/01-molecules-streams-article-image\/01-molecules-streams-article-image.html"},{"lineagePattern":"molecules-general-actions","lineagePath":"..\/..\/patterns\/01-molecules-streams-general-actions\/01-molecules-streams-general-actions.html"}];
+		var lineageR       = [{"lineagePattern":"molecules-full-article-with-argumentation","lineagePath":"..\/..\/patterns\/01-molecules-streams-full-article-with-argumentation\/01-molecules-streams-full-article-with-argumentation.html"},{"lineagePattern":"molecules-full-article","lineagePath":"..\/..\/patterns\/01-molecules-streams-full-article\/01-molecules-streams-full-article.html"},{"lineagePattern":"organisms-stream-articles","lineagePath":"..\/..\/patterns\/02-organisms-streams-stream-articles\/02-organisms-streams-stream-articles.html"},{"lineagePattern":"organisms-stream-comments","lineagePath":"..\/..\/patterns\/02-organisms-streams-stream-comments\/02-organisms-streams-stream-comments.html"},{"lineagePattern":"organisms-stream-votes","lineagePath":"..\/..\/patterns\/02-organisms-streams-stream-votes\/02-organisms-streams-stream-votes.html"},{"lineagePattern":"organisms-stream","lineagePath":"..\/..\/patterns\/02-organisms-streams-stream\/02-organisms-streams-stream.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

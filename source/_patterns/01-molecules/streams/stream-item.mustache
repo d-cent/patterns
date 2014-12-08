@@ -1,0 +1,247 @@
+<div class="stream-item">
+
+	<figure class="comment__img">
+		<!--img class="img--round" src="{{ img.avatar.src }}" alt="{{ img.avatar.alt }}" /-->
+		<i class="icon-avatar_circle"></i>
+	</figure><!-- end comment pic -->
+
+	<div class="comment__meta">
+		
+		<a href="#" class="name">Firstname Lastname</a> <span class="action">{{ action }}</span>
+		<time>About an hour ago</time> in <a href="#" class="group-name">Groupname</a>
+
+	</div><!-- end comment meta -->
+
+	{{^ no-comment }}
+
+	<div class="comment__body">
+
+		{{ excerpt.medium }}
+
+	</div><!-- end comment body -->
+
+	{{/ no-comment }}
+
+	{{# type-article }}
+
+	<div class="embedded-item">
+
+		<figure class="comment__img">
+			<!--img class="img--round" src="{{ img.avatar.src }}" alt="{{ img.avatar.alt }}" /-->
+			<i class="icon-file_text"></i>
+		</figure><!-- end embedded item pic -->
+
+		<div class="embedded-item__meta">
+			<a href="#" class="embedded-item__title">Article title og:title max 95 chars</a>
+			Last edited <time>3 hours ago</time>
+		</div>
+
+		<div class="embedded-item__body">
+
+			{{> molecules-article-image }}
+
+			{{ excerpt.medium }}
+
+			<ul class="bare-list article-actions">
+
+				<li>
+					<a href="#" class="btn-text"><i class="icon-angle_left_circle"></i> View full article  <i class="count c-white bc-comp--light" title="Number of edits">3</i></a>
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+	{{/ type-article }}
+
+	{{# type-event }}
+
+	<div class="embedded-item">
+
+		<figure class="comment__img event-date">
+			<div class="event-date__month">Dec</div>
+			<div class="event-date__day">16</div>
+		</figure><!-- end embedded item pic -->
+
+		<div class="embedded-item__meta">
+			<a href="#" class="embedded-item__title">Event title og:title max 95 chars</a>
+			<time>Dec 16, 2014</time> in <a href="#" class="place">Tha Place 2 Be</a>
+		</div>
+
+		<div class="embedded-item__body">
+
+			{{ excerpt.medium }}
+
+			<ul class="bare-list article-actions">
+
+				<li>
+					<a href="#" class="btn-text"><i class="icon-angle_left_circle"></i> View event details</a>
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+	<!--
+
+	<div class="article-type-specifics">
+
+		<ul class="bare-list article-actions vote-btns">
+			<li>
+				<a href="#" class="btn-alt">Going</a>
+				<div class="article-actions__meta">
+					<a href="#"><i class="icon-avatar"></i> 13</a>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="btn-alt">Maybe</a>
+				<div class="article-actions__meta">
+					<a href="#"><i class="icon-avatar_outline"></i> 13</a>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="btn-alt">Not going</a>
+				<div class="article-actions__meta">
+					<a href="#"><s><i class="icon-avatar_outline"></i></s> 13</a>
+				</div>
+			</li>
+		</ul>
+
+	</div>
+
+	-->
+
+	{{/ type-event }}
+
+	{{# type-task }}
+
+	<div class="embedded-item">
+
+		<figure class="comment__img">
+			<!--img class="img--round" src="{{ img.avatar.src }}" alt="{{ img.avatar.alt }}" /-->
+			<i class="icon-tasks"></i>
+		</figure><!-- end embedded item pic -->
+
+		<div class="embedded-item__meta">
+			<a href="#" class="embedded-item__title">Task title og:title max 95 chars</a>
+			Due <time>in five days</time>
+		</div>
+
+		<div class="embedded-item__body">
+
+			{{ excerpt.medium }}
+
+			<ul class="bare-list article-actions">
+
+				<li>
+					<a href="#" class="btn-text"><i class="icon-angle_left_circle"></i> View task details</a>
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+	<!--
+
+	<div class="article-type-specifics">
+
+		<ul class="bare-list article-actions vote-btns">
+			<li>
+				<a href="#" class="btn-alt">Accept</a>
+			</li>
+			<li>
+				<a href="#" class="btn-alt">Decline</a>
+			</li>
+			<li>
+				<a href="#" class="btn-alt">Delegate</a>
+			</li>
+		</ul>
+
+	</div>
+
+	-->
+
+	{{/ type-task }}
+
+	{{# type-vote }}
+
+	<div class="embedded-item">
+
+		<figure class="comment__img">
+			<!--img class="img--round" src="{{ img.avatar.src }}" alt="{{ img.avatar.alt }}" /-->
+			<i class="icon-legal"></i>
+		</figure><!-- end embedded item pic -->
+
+		<div class="embedded-item__meta">
+			<a href="#" class="embedded-item__title">Voted article title og:title max 95 chars</a>
+			Voting open for <time>3 days</time> • You voted <span class="action-taken">Yea</span>
+		</div>
+
+		<div class="embedded-item__body ">
+
+			{{ excerpt.medium }}
+
+			<ul class="bare-list article-actions">
+
+				<li>
+					<a href="#" class="btn-text"><i class="icon-angle_left_circle"></i> View full article</a>
+				</li>
+				
+			</ul>
+
+		</div>
+
+	</div>
+
+	<!--
+
+	<div class="article-type-specifics">
+
+		<ul class="bare-list article-actions vote-btns">
+			<li>
+				<a href="#" class="btn btn-vote"><i class="icon-ok"></i>Yea</a>
+				<div class="article-actions__meta">
+					<a href="#"><i class="icon-legal"></i> 3</a>
+					<a href="#"><i class="fa fa-comments"></i> 1</a>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="btn-alt btn-vote">Nay</a>
+				<div class="article-actions__meta">
+					<a href="#"><i class="icon-legal"></i> 5</a>
+					<a href="#"><i class="fa fa-comments"></i> 3</a>
+				</div>
+			</li>
+			<li>
+				<a href="#" class="btn-alt btn-vote">Abstain</a>
+				<div class="article-actions__meta">
+					<a href="#"><i class="icon-legal"></i> 13</a>
+					<a href="#"><i class="fa fa-comments"></i> 8</a>
+				</div>
+			</li>
+		</ul>
+
+	</div>
+
+	-->
+
+	{{/ type-vote }}
+
+	<div class="tags">
+
+		<a href="#" class="tag">Lorem ipsum</a>
+		<a href="#" class="tag">Punavuori</a>
+		<a href="#" class="tag">Mea transmittee sursum</a>
+
+	</div>
+
+	{{> molecules-general-actions }}
+
+
+</div><!-- end single comment -->
