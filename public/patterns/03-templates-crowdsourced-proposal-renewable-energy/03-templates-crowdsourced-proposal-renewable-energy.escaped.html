@@ -1,0 +1,953 @@
+&lt;style&gt;
+
+
+/*
+ * General modifications to styles defined elsewhere
+ */
+
+p {
+	margin-bottom: 1em;
+}
+.article__img {
+	margin: 0.5em 0.5em 0.25em 0;
+}
+.comment__img .fa {
+	font-size: 28px;
+}
+.comment__actions &gt; span {
+	margin-left: 0.5em;
+}
+.comment__actions &gt; span:first-child {
+	margin-left: 0;
+}
+.nav-primary {
+	width: auto;
+}
+
+/*
+ * Menu bar and fixed titlebar
+ */
+.page--with-sticky {
+	padding-top: 44px;
+}
+.header--sticky {
+	position: fixed;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 20;
+}
+.nav-primary {
+	display: inline-block;
+}
+.login {
+	display: none;
+}
+.count {
+	position: static;
+}
+header.titlebar-fixed {
+	background-color: white;
+	border-bottom: solid 1px #666;
+	height: 44px !important;
+	min-height: 44px !important;
+	overflow: hidden !important;
+	padding-top: 10px !important;
+    position: fixed !important;
+    top: 44px !important; /* This is the height + offset of the main menu bar */
+    z-index: 10;
+}
+.fixed-only {
+	display: none !important;
+}
+.titlebar-fixed .fixed-only {
+	display: block !important;
+}
+
+/*
+ * Grid
+ */
+
+.g:last-child {
+	margin-right: 0;
+}
+.inactive {
+	opacity: 0.25;
+	transition: all 0.5s ease-out;
+}
+:hover.inactive {
+	opacity: 1;
+}
+
+/*
+ * Stream
+ * Many of the same styles are also used for the full article view
+ */
+
+.stream {
+	margin: 1em auto;
+	max-width: 30em;
+}
+.stream h2 {
+	font-size: x-large;
+}
+.stream header .comment__img {
+	line-height: 1;
+}
+.stream .tabs {
+	text-align: left;
+	width: 100%;
+}
+.tabs__search {
+	float: right;
+	font-size: large;
+}
+
+
+/* Header when fixed */
+header.titlebar-fixed .comment__img {
+	font-size: 120%;
+}
+header.titlebar-fixed h2 {
+	float: left;
+	font-size: 120%;
+}
+header.titlebar-fixed .tabs {
+	display: none;
+}
+header.titlebar-fixed .tabs-as-pulldown {
+	float: right;
+	text-align: right;
+}
+
+/* Stream items */
+.stream-item {
+	padding-bottom: 1.5em;
+	border-bottom: 1px dotted #007E84;
+	margin: 1em 0 1.5em 0;
+	max-width: 30em;
+}
+.stream-item:last-child {
+	border-bottom-width: 0px;
+}
+.comment__meta {
+	font-size: smaller;
+	margin-bottom: 0.5em;
+}
+.comment__meta .name {
+	/* font-size: medium; */
+}
+.comment__meta a.group-name {
+	font-weight: 400;
+}
+.embedded-item {
+	border: solid 1px #007E84;
+	border-radius: 6px;
+	cursor: pointer;
+	padding: 0.5em;
+}
+div:hover.embedded-item {
+	background-color: #eee;
+}
+.embedded-item__meta {
+	font-size: smaller;
+}
+.embedded-item__meta .embedded-item__title {
+	display: block;
+	font-size: medium;
+}
+.embedded-item__meta .action-taken {
+	color: #007E84;
+}
+.embedded-item .article__img {
+	clear: left;
+	width: 80px;
+}
+.article-actions {
+	text-align: center;
+}
+.article-actions &gt; li {
+	display: inline-block;
+}
+.article-actions &gt; li &gt; a.btn,
+.article-actions &gt; li &gt; a.btn-alt {
+	display: block;
+	min-width: 7em;
+}
+div:hover.embedded-item .article-actions &gt; li &gt; a {
+	color: #00D3CA;
+}
+.article-actions i.count {
+	position: relative;
+	top: -7px;	
+}
+.event-date {
+	border: 1px solid #222;
+	padding-bottom: 0.25em;
+	text-align: center;
+	width: 38px;
+}
+.event-date__month {
+	font-size: x-small;
+	text-transform: uppercase;
+	background-color: #222;
+	color: white;
+}
+.event-date__day {
+	font-size: large;
+	color: #222;
+}
+.tags {
+	margin: 0.25em 0;
+}
+.actions-general {
+	text-align: right;
+}
+.actions-general &gt; a {
+	margin: 0 0.5em;
+}
+
+.pagination {
+	margin-top: 1em;
+	text-align: center;
+}
+
+/*
+ * Full article
+ */
+
+.full-article {
+	margin: 1em 1em 1em 0;
+}
+
+
+/* Header */
+.full-article &gt; header {
+    overflow: hidden;
+	padding: 0 0 0.5em 0;
+	top: 0;
+}
+.full-article &gt; header,
+.full-article &gt; header * {
+	transition: all 0.5s ease-out 0s;
+}
+.full-article &gt; header h2 {
+	float: left;
+	margin-bottom: 0;
+}
+.full-article .article-actions {
+	float: right;
+	margin-top: 0.5em;
+}
+.full-article__meta {
+	float: left;
+	font-size: smaller;
+	padding-top: 0.25em;
+}
+.full-article .excerpt {
+	clear: both;
+	font-size: large;
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+.article-type-specifics {
+	border: 1px solid #007E84;
+	border-radius: 6px;
+	clear: both;
+	margin-bottom: 0.5em;
+	overflow: auto;
+	padding: 0.5em;
+	text-align: center;
+}
+.article-type-specifics__intro {
+	font-weight: bold;
+}
+.article-type-specifics .article-actions {
+	float: none;
+	margin-top: 0.5em;
+}
+.article-actions__meta {
+	font-size: smaller;
+	margin-top: 0.25em;
+	text-align: center;
+}
+.article-actions__meta &gt; a{
+	margin: 0 0.25em;
+}
+.full-article header .tags {
+	float: left;
+}
+.full-article header .actions-general {
+	float: right;
+}
+
+/* Header when fixed */
+header.titlebar-fixed .article-actions {
+	margin-top: 0;
+}
+header.titlebar-fixed .excerpt,
+header.titlebar-fixed .full-article__meta, 
+header.titlebar-fixed .article-type-specifics,
+header.titlebar-fixed .tags,
+header.titlebar-fixed .actions-general {
+	display: none;
+}
+
+/* Full article body */
+.full-article__body {
+	clear: both;
+	margin: 1em 0;
+}
+
+/* Comments */
+
+.create-new {
+	margin: 1em 0;
+	text-align: center;
+}
+.full-article .comment-field {
+	margin: 0 0 0.5em 0;
+	max-width: 30em;
+	text-align: left;
+}
+.full-article .comment-field &gt; textarea {
+	width: 85%;
+}
+.full-article .comment-field-argumentation {
+	max-width: none;
+}
+	.full-article .comment-field-argumentation &gt; .btn-group {
+		float: left;
+		margin-right: 1em;
+	}
+	.full-article .comment-field-argumentation &gt; textarea {
+		max-width: 25em;
+	}
+
+
+/*
+ * Group page
+ */
+
+.group-info header {
+	display: table;
+	margin: -20px -20px 0.5em -20px;
+ 	min-height: 300px;
+ 	width: calc(100% + 40px);
+ }
+.group-info__container {
+	display: table-cell;
+	padding: 20px 20px 10px 20px;
+	vertical-align: bottom;
+}
+.group-info h1 {
+	color: #eee;
+	float: left;
+	margin: 0;
+}
+.group-info .article-actions {
+	float: right;
+}
+.group-info .full-article__meta {
+	clear: left;
+	color: #eee;
+}
+.group-info .tags {
+	float: left;
+}
+.group-info .comment-actions {
+	float: right;
+}
+.group-navigation {
+	/* border-bottom: 1px solid #666; */
+	background-color: #eee;
+	clear: both;
+	border-radius: 6px;
+	font-size: larger;
+	margin: 1em 0;
+ 	padding: 0.25em 0.5em;
+}
+.group-navigation__label {
+	float: left;
+	font-family: &quot;Comfortaa&quot;,sans-serif;
+	font-weight: bold;
+	margin-right: 1.5em;
+}
+.nav__item-open * {
+	color: #007E84;
+}
+
+
+/*
+ * Renewable energy hack
+ */
+
+.block {
+	padding: 0.5em 0;
+}
+.newtag {
+	width: 10em !important;
+	height: 1.5em !important;
+	padding: 0.25em !important;
+}
+
+
+
+
+&lt;/style&gt;
+
+&lt;!-- Repeat this for stuff to work on file: --&gt;
+&lt;script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'&gt;&lt;/script&gt;
+&lt;script&gt;
+/* This crap handles fixing the stream and full article headers on top when
+   scrolling past them. A class 'fixed' is then added to them. */
+$(document).ready(function() {
+	var stickies = [],
+	    fixedClass = &quot;titlebar-fixed&quot;,
+	    stickySelector = &quot;.sticky&quot;;
+	$(stickySelector).each(function(){
+		var sticky = $(this);
+		sticky.data(&quot;originalOffset&quot;, sticky.offset().top + sticky.outerHeight() );
+		// var menuOffset = $(&quot;.header--sticky&quot;).offset().top + $(&quot;.header--sticky&quot;).outerHeight();
+		// Force to stay the same width even when position is changed to fixed
+		sticky.width(sticky.width());
+		stickies.push(sticky);
+	});
+	if (stickies.length) {
+		$(window).scroll(function(){
+		    for(var i=0; i&lt;stickies.length; i++) {
+				if ($(window).scrollTop() &gt;= stickies[i].data(&quot;originalOffset&quot;)) stickies[i].addClass(fixedClass);
+				else stickies[i].removeClass(fixedClass);
+			}
+		});
+	}
+});
+&lt;/script&gt;
+
+&lt;div class=&quot;page page--with-sticky&quot;&gt;
+
+	&lt;div class=&quot;wrap--header bc-grey--lightest header--sticky&quot;&gt;
+
+		&lt;header class=&quot;header--login l-constrained block&quot; role=&quot;banner&quot;&gt;
+
+			&lt;a class=&quot;site-logo&quot;&gt;
+				&lt;img class=&quot;logo-mobile&quot; src=&quot;../../assets/img/logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
+				&lt;img class=&quot;logo-desktop&quot; src=&quot;../../assets/img/D-CENT_logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;
+			&lt;/a&gt;
+
+		&lt;nav role=&quot;navigation&quot;&gt;
+    &lt;ul class=&quot;bare-list nav nav-primary&quot;&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;span&gt;Messages &lt;i class=&quot;count c-white bc-comp--light&quot;&gt;3&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-tasks&quot;&gt;&lt;/i&gt;&lt;span&gt;Tasks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-legal&quot;&gt;&lt;/i&gt;&lt;span&gt;Votes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;Articles&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item hide-mobile&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-chat&quot;&gt;&lt;/i&gt;&lt;span&gt;Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class=&quot;bare-list nav nav-settings&quot;&gt;
+        &lt;li class=&quot;nav__item js-open-signin&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-avatar&quot;&gt;&lt;/i&gt;&lt;span&gt;Firstname Lastname&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item js-open-settings&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon icon-word&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+		&lt;/nav&gt;
+
+			&lt;div class=&quot;login&quot;&gt;
+
+			&lt;form class=&quot;form--login&quot;&gt;
+
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;input type=&quot;email&quot; placeholder=&quot;Email&quot; /&gt;
+				&lt;/div&gt;
+
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;a class=&quot;float--right pw-forgot&quot; href=&quot;#&quot;&gt;Forgot password?&lt;/a&gt;
+					&lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; /&gt;
+				&lt;/div&gt;
+
+				&lt;div class=&quot;form-row&quot;&gt;
+					&lt;input type=&quot;submit&quot; class=&quot;btn&quot; value=&quot;Sign in&quot; /&gt;
+				&lt;/div&gt;
+
+				&lt;div class=&quot;form-row text--center&quot;&gt;
+						&lt;span class=&quot;signup-intro&quot;&gt;Don't have an account?&lt;/span&gt;
+						&lt;a class=&quot;sign-up btn&quot; href=&quot;#&quot;&gt;Sign Up&lt;/a&gt;
+				&lt;/div&gt;
+
+			&lt;/form&gt;
+
+			&lt;/div&gt;
+
+			&lt;div class=&quot;settings-container&quot;&gt;
+
+			&lt;div class=&quot;settings box&quot;&gt;
+
+				&lt;form class=&quot;settings__form block--large&quot;&gt;
+
+					&lt;div class=&quot;grid&quot;&gt;
+
+						&lt;div class=&quot;g g--half&quot;&gt;
+
+							&lt;div class=&quot;form-row helper&quot;&gt;
+								&lt;input type=&quot;text&quot; placeholder=&quot;Hashtags&quot; /&gt;
+								&lt;span class=&quot;helper__toggle js-helper__toggle&quot;&gt;
+									&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;
+								&lt;/span&gt;
+								&lt;div class=&quot;helper__body&quot;&gt;
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Show my real name
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;div class=&quot;btn-group&quot;&gt;
+										&lt;button class=&quot;btn&quot;&gt;No&lt;/button&gt;
+										&lt;button class=&quot;btn&quot;&gt;Yes&lt;/button&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Show current geolocation
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;div class=&quot;btn-group&quot;&gt;
+										&lt;button class=&quot;btn&quot;&gt;No&lt;/button&gt;
+										&lt;button class=&quot;btn&quot;&gt;Yes&lt;/button&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+
+						&lt;div class=&quot;g g--half&quot;&gt;
+
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Time format
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;input type=&quot;text&quot; placeholder=&quot;hh.mm.ss&quot; /&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Date format
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;input type=&quot;text&quot; placeholder=&quot;dd.mm.yyyy&quot; /&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class=&quot;form-row grid&quot;&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									Time zone
+								&lt;/div&gt;
+								&lt;div class=&quot;g g--half&quot;&gt;
+									&lt;input type=&quot;number&quot;  /&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+
+						&lt;/div&gt;
+
+					&lt;/div&gt;&lt;!-- end grid --&gt;
+
+					&lt;div class=&quot;registration__action text--right block--large&quot;&gt;
+						&lt;button class=&quot;btn&quot;&gt;Save and close&lt;/button&gt;
+					&lt;/div&gt;
+
+				&lt;/form&gt;
+
+			&lt;/div&gt;
+
+			&lt;/div&gt;
+
+		&lt;/header&gt;
+
+	&lt;/div&gt;
+
+	&lt;div class=&quot;group-info clearfix&quot;&gt;
+
+		&lt;header style=&quot;background-image: url('../../assets/img/group-bg-image-3-to-1.png');&quot;&gt;
+
+			&lt;div class=&quot;group-info__container&quot;&gt;
+
+				&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+					&lt;li&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;&lt;i class=&quot;icon-group&quot;&gt;&lt;/i&gt; Join group&lt;/a&gt;
+					&lt;/li&gt;
+
+				&lt;/ul&gt;
+
+				&lt;h1&gt;Suomen uusenergiset&lt;/h1&gt;
+
+				&lt;div class=&quot;full-article__meta&quot;&gt;
+
+					&lt;i class=&quot;icon-avatar&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;35 members&lt;/a&gt; &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt; &lt;time&gt;About an hour ago&lt;/time&gt;
+
+				&lt;/div&gt;&lt;!-- end full-article__meta --&gt;
+
+			&lt;/div&gt;
+
+		&lt;/header&gt;
+
+	&lt;/div&gt;
+
+
+	&lt;div class=&quot;full-article box bc-white&quot;&gt;
+
+		&lt;header class=&quot;sticky&quot;&gt;
+
+			&lt;div class=&quot;clearfix&quot;&gt;
+
+				&lt;figure class=&quot;comment__img&quot;&gt;
+					&lt;i class=&quot;icon-legal&quot;&gt;&lt;/i&gt;
+				&lt;/figure&gt;
+
+				&lt;ul class=&quot;bare-list article-actions&quot;&gt;
+
+					&lt;li&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn-text fixed-only&quot;&gt;&lt;i class=&quot;icon-legal&quot;&gt;&lt;/i&gt; Vote &lt;i class=&quot;icon-double_angle_down&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+					&lt;/li&gt;
+
+				&lt;/ul&gt;
+
+				&lt;h2&gt;Energiaremontti 2050&lt;/h2&gt;
+
+				&lt;div class=&quot;full-article__meta&quot;&gt;
+
+					&lt;i class=&quot;icon-avatar&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;5 editors&lt;/a&gt; &lt;i class=&quot;icon-pencil&quot;&gt;&lt;/i&gt; &lt;time&gt;About an hour ago&lt;/time&gt; &lt;i class=&quot;icon-group&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Suomen uusenergiset&lt;/a&gt;
+
+				&lt;/div&gt;&lt;!-- end full-article__meta --&gt;
+
+			&lt;/div&gt;
+
+			&lt;div class=&quot;excerpt&quot;&gt;
+				K&auml;ynnistet&auml;&auml;n energiaremontti, joka t&auml;ht&auml;&auml; siihen, ett&auml; Suomi siirtyy k&auml;ytt&auml;m&auml;&auml;n ainoastaan uusiutuvaa energiaa vuoteen 2050 menness&auml;.
+			&lt;/div&gt;
+
+		&lt;div class=&quot;tags&quot; stle=&quot;border: 2px;&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Elina Esimerkki&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Syksy Tyrskynen&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Mikko Mallikas&lt;/a&gt;
+			&lt;textarea href=&quot;#&quot; class=&quot;newtag&quot; placeholder=&quot;new person&quot;&gt;&lt;/textarea&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;tags&quot;&gt;
+
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Uusiutuva energia&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Ilmastonmuutos&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;tag&quot;&gt;Uusi talous&lt;/a&gt;
+			&lt;textarea href=&quot;#&quot; class=&quot;newtag&quot; placeholder=&quot;next tag&quot;&gt;&lt;/textarea&gt;
+
+		&lt;/div&gt;
+
+		&lt;div class=&quot;comment__actions actions-general&quot;&gt;
+
+			&lt;span&gt;&lt;a href=&quot;#&quot; title=&quot;More actions, such as share and flag as inappropriate&quot;&gt;+&lt;/a&gt;&lt;/span&gt;
+			&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+		&lt;/div&gt;
+		&lt;/header&gt;
+
+		&lt;div class=&quot;full-article__body&quot;&gt;
+
+		&lt;figure class=&quot;article__img&quot;&gt;
+		    &lt;img width=400px src=&quot;../../assets/img/renewable-energy-2050.jpg&quot;/&gt;
+		&lt;/figure&gt;
+
+			&lt;p&gt;
+			S&auml;hk&ouml;n- ja l&auml;mm&ouml;ntuotannossa t&auml;ysin uusiutuvalla energialla toimivaan j&auml;rjestelm&auml;&auml;n siirryt&auml;&auml;n vuoteen 2035 menness&auml;. P&auml;&auml;t&ouml;s ei koske ydinvoimaloita, joista periaatep&auml;&auml;t&ouml;s on jo tehty. Laaditaan energiastrategia, jossa muutokseen tarvittava polku linjataan. K&auml;ynnistet&auml;&auml;n toimenpideohjelma, jolla kivihiilest&auml; s&auml;hk&ouml;n- ja l&auml;mm&ouml;ntuotannossa luovutaan 2025 menness&auml;. Energiaremontissa korostuvat energiatehokkuuden parantaminen, uusiutuvan energian tuotanto, kest&auml;vyys sek&auml; &auml;lykk&auml;iden j&auml;rjestelmien k&auml;ytt&ouml;&ouml;notto sek&auml; cleantech-viennin kasvu.
+			&lt;/p&gt;
+
+			&lt;h3&gt;
+			Perusteet:
+			&lt;/h3&gt;
+
+			&lt;p&gt;
+			Energiamarkkinat Euroopassa ja maailmalla ovat rajujen muutosten edess&auml;. T&auml;m&auml; haastaa vanhat toimijat, kuten Suomessakin on viime vuosina n&auml;hty ja toisaalta avaa suuria mahdollisuuksia uusien ratkaisujen tuottajille.
+			&lt;/p&gt;
+
+			&lt;p&gt;
+			IEA ennakoi energiamurroksen luovan maailmanlaajuisesti 35 000 miljardin euron kumulatiivisen markkinan seuraavan 20 vuoden aikana. T&auml;m&auml; tarkoittaa valtavaa kysynt&auml;&auml; erityisesti uusiutuvan energiantuotannon, energiatehokkuuden ja &auml;lykk&auml;iden j&auml;rjestelmien ratkaisuille. Komissio on arvoinut, ett&auml; vihre&auml;&auml;n talouteen voitaisiin luoda Euroopassa jopa 20 miljoonaa ty&ouml;paikkaa vuoteen 2020 menness&auml;. 
+			&lt;/p&gt;
+
+			&lt;p&gt;
+			Menesty&auml;kseen yritykset tarvitsevat toimivat kotimarkkinat. Uudet ty&ouml;paikat syntyv&auml;tkin sinne, miss&auml; uuden energian ratkaisuja hy&ouml;dynnet&auml;&auml;n. Suomen nykyinen energiapolitiikka on johtanut siihen, ett&auml; kansainv&auml;lisess&auml; uusiutuvan energian investointiymp&auml;rist&ouml;jen vertailussa sijoitumme heikosti, mist&auml; johtuen investoinnit ja ty&ouml;paikat Suomeen j&auml;&auml;v&auml;t syntym&auml;tt&auml;.
+			&lt;/p&gt;
+
+			&lt;p&gt;
+			Toimintaymp&auml;rist&ouml;n muutokseen voidaan vastata kirkastamalla energiapolitiikan tavoite ja k&auml;ynnist&auml;m&auml;ll&auml; energiaremontti. Toteutuessaan energiaremontti parantaisi vaihtotasetta miljardeilla sek&auml; lis&auml;isi nopeasti taloudellista toimeliaisuutta ja ty&ouml;paikkoja. Toteutuessaan energiaremontti parantaisi my&ouml;s merkitt&auml;v&auml;sti suomalaisten energiateknologiayritysten kilpailukyky&auml; nopeasti kasvavilla globaaleilla markkinoilla. My&ouml;nteisten talousvaikutusten lis&auml;ksi energiaremontti nostaisi Suomen k&auml;rkijoukkoihin ilmastonmuutoksen vastaisessa taistelussa, minimoisi uusiutumattoman energian ymp&auml;rist&ouml;haitat ja riskit sek&auml; rakentaisi vahvaa Suomi-br&auml;ndi&auml;.
+			&lt;/p&gt;
+
+			&lt;p&gt;
+			Energia- ja teknologiamarkkinoilla toimiville yrityksille politiikan pitk&auml;j&auml;nteisyys on t&auml;rke&auml;&auml;. Pitk&auml;j&auml;nteisyys syntyy ainoastaan katsomalla tulevaisuuteen. Ainoa kansainv&auml;lisesti uskottava pitk&auml;n aikav&auml;lin tavoitetila modernille energiaj&auml;rjestelm&auml;lle on suuntautuminen t&auml;ysin uusiutuvaan energiaan. Asettamalla selv&auml;t m&auml;&auml;r&auml;ajat j&auml;rjestelm&auml;n eri osien irrottamiseksi uusiutumattomasta energiasta, Suomi voi antaa markkinoille riitt&auml;v&auml;n vahvan signaalin investointien houkuttelmiseksi ja innovaatioiden ruokkimiseksi.
+			&lt;/p&gt;
+
+			&lt;h3&gt;
+			Energiaremontti k&auml;ynnistyy v&auml;litt&ouml;m&auml;sti seuraavilla askeleilla:
+			&lt;/h3&gt;
+			&lt;ol&gt;
+				&lt;li&gt;
+				Merkitt&auml;vi&auml; investointeja uusiutumattomaan energiantuotantoon ei en&auml;&auml; tehd&auml;. Kaikkien energiainvestointien on t&auml;hd&auml;tt&auml;v&auml; t&auml;ysin uusiutuvilla toimivaan j&auml;rjestelm&auml;&auml;n.
+				&lt;/li&gt;
+				&lt;li&gt;
+				Vuoden 2020 ja 2030 tavoitteita p&auml;ivitet&auml;&auml;n reippaasti yl&ouml;sp&auml;in
+				&lt;ul&gt;
+					&lt;li&gt;
+					Energiatehokkuus: olemassa olevat kiinteist&ouml;t, teollisuus ja liikenne
+
+					&lt;/li&gt;
+					&lt;li&gt;
+					Tuotanto: tuuli, aurinko, bio ja l&auml;mp&ouml;pumput
+
+					&lt;/li&gt;
+					&lt;li&gt;
+					&Auml;lykk&auml;&auml;t j&auml;rjestelm&auml;t: &auml;lyk&auml;s s&auml;hk&ouml;verkko, energian varastointi ja &auml;lyk&auml;s liikenne
+					&lt;/li&gt;
+
+				&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+				Fossiilisen energian tuotannon ja kulutuksen tukeminen lopetetaan.
+				&lt;/li&gt;
+				&lt;li&gt;
+				L&auml;hienergian esteet poistetaan.
+				&lt;/li&gt;
+			&lt;/ol&gt;
+
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+
+	&lt;div class=&quot;btn-group article-actions&quot;&gt;
+		&lt;button class=&quot;btn btn-text&quot;&gt;Start editing&lt;/button&gt;
+		&lt;button class=&quot;btn btn-text&quot;&gt;Put to vote&lt;/button&gt;
+	&lt;/div&gt;
+
+
+	&lt;div class=&quot;discussion box bc-white&quot;&gt;
+
+		&lt;div class=&quot;comment-field&quot;&gt;
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+			&lt;textarea placeholder=&quot;Comment&quot;&gt;&lt;/textarea&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;comment&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+
+				&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+				&lt;time&gt;About an hour ago&lt;/time&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+			&lt;div class=&quot;comment__actions&quot;&gt;
+
+				&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+				&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+			&lt;/div&gt;&lt;!-- end comment actions --&gt;
+
+			&lt;div class=&quot;comment__field&quot;&gt;
+
+
+			&lt;/div&gt;&lt;!-- end comment field --&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+
+		&lt;div class=&quot;comment&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+
+				&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+				&lt;time&gt;About an hour ago&lt;/time&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+			&lt;div class=&quot;comment__actions&quot;&gt;
+
+				&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+				&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+			&lt;/div&gt;&lt;!-- end comment actions --&gt;
+
+			&lt;div class=&quot;comment__field&quot;&gt;
+
+
+			&lt;/div&gt;&lt;!-- end comment field --&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+
+		&lt;div class=&quot;comment&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+
+				&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+				&lt;time&gt;About an hour ago&lt;/time&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+			&lt;div class=&quot;comment__actions&quot;&gt;
+
+				&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+				&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+			&lt;/div&gt;&lt;!-- end comment actions --&gt;
+
+			&lt;div class=&quot;comment__field&quot;&gt;
+
+
+			&lt;/div&gt;&lt;!-- end comment field --&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+
+		&lt;div class=&quot;comment&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+
+				&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+				&lt;time&gt;About an hour ago&lt;/time&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+			&lt;div class=&quot;comment__actions&quot;&gt;
+
+				&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+				&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+			&lt;/div&gt;&lt;!-- end comment actions --&gt;
+
+			&lt;div class=&quot;comment__field&quot;&gt;
+
+
+			&lt;/div&gt;&lt;!-- end comment field --&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+
+		&lt;div class=&quot;comment&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+
+				&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+				&lt;time&gt;About an hour ago&lt;/time&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+			&lt;div class=&quot;comment__actions&quot;&gt;
+
+				&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+				&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+			&lt;/div&gt;&lt;!-- end comment actions --&gt;
+
+			&lt;div class=&quot;comment__field&quot;&gt;
+
+
+			&lt;/div&gt;&lt;!-- end comment field --&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+
+		&lt;div class=&quot;comment&quot;&gt;
+
+			&lt;figure class=&quot;comment__img&quot;&gt;
+				&lt;!--img class=&quot;img--round&quot; src=&quot;http://placeimg.com/40/40/tech&quot; alt=&quot;Person Name&quot; /--&gt;
+				&lt;i class=&quot;icon-avatar_circle&quot;&gt;&lt;/i&gt;
+			&lt;/figure&gt;&lt;!-- end comment pic --&gt;
+
+			&lt;div class=&quot;comment__meta&quot;&gt;
+
+				&lt;a href=&quot;#&quot;&gt;Firstname Lastname&lt;/a&gt;
+
+				&lt;time&gt;About an hour ago&lt;/time&gt;
+
+			&lt;/div&gt;&lt;!-- end comment meta --&gt;
+
+			&lt;div class=&quot;comment__body&quot;&gt;
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			&lt;/div&gt;&lt;!-- end comment body --&gt;
+
+			&lt;div class=&quot;comment__actions&quot;&gt;
+
+				&lt;span class=&quot;comment-toggle js-comment-toggle&quot;&gt;Comment &lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+				&lt;span class=&quot;like-toggle js-like-toggle&quot;&gt;Like &lt;i class=&quot;fa fa-thumbs-o-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+
+			&lt;/div&gt;&lt;!-- end comment actions --&gt;
+
+			&lt;div class=&quot;comment__field&quot;&gt;
+
+
+			&lt;/div&gt;&lt;!-- end comment field --&gt;
+
+		&lt;/div&gt;&lt;!-- end single comment --&gt;
+
+
+	&lt;/div&gt;
+
+&lt;/div&gt;

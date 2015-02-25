@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="pl" ng-app="app">
+	<head>
+		<title>Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+
+		 <script>
+		/*!
+		loadCSS: load a CSS file asynchronously.
+		[c]2014 @scottjehl, Filament Group, Inc.
+		Licensed MIT
+		*/
+
+		function loadCSS( href, before, media ){
+			"use strict";
+			var ss = window.document.createElement( "link" );
+			var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+			ss.rel = "stylesheet";
+			ss.href = href;
+			ss.media = "only x";
+			ref.parentNode.insertBefore( ss, ref );
+			setTimeout( function(){
+				ss.media = media || "all";
+			} );
+			return ss;
+		 }
+
+		 loadCSS( "http://fonts.googleapis.com/css?family=Comfortaa:400,700" );
+		 loadCSS( "../../assets/css/fonts.css" );
+
+		 </script>
+
+
+		<!--link rel="stylesheet" href="../../css/style.css?0" media="all" /-->
+
+		<!--link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/-->
+
+
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="../../assets/css/main.css?0" media="all" />
+		<!--<![endif]-->
+
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="../../assets/css/min/ie.min.css">
+		<![endif]-->
+
+
+		<!-- Scripts -->
+
+		<script src="../../assets/js/vendor/modernizr.min.js"></script>
+
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+				<!-- never cache patterns -->
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?0" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?0" media="all" />
+		
+
+		<!-- End Pattern Lab -->
+
+	</head>
+	<body class="body">
+<div class="full-article box bc-white">
+
+	<header class="sticky">
+
+		<div class="clearfix">
+
+			<figure class="comment__img">
+				<i class="icon-legal"></i>
+			</figure>
+
+			<ul class="bare-list article-actions">
+
+				<li>
+					<a href="#" class="btn-text fixed-only"><i class="icon-legal"></i> Vote <i class="icon-double_angle_down"></i></a>
+				</li>
+
+			</ul>
+
+			<h2>Energiaremontti 2050</h2>
+
+			<div class="full-article__meta">
+
+				<i class="icon-avatar"></i> <a href="#">5 editors</a> <i class="icon-pencil"></i> <time>About an hour ago</time> <i class="icon-group"></i> <a href="#">Suomen uusenergiset</a>
+
+			</div><!-- end full-article__meta -->
+
+		</div>
+
+		<div class="excerpt">
+			Käynnistetään energiaremontti, joka tähtää siihen, että Suomi siirtyy käyttämään ainoastaan uusiutuvaa energiaa vuoteen 2050 mennessä.
+		</div>
+
+		<div class="tags" stle="border: 2px;">
+			<a href="#" class="tag">Elina Esimerkki</a>
+			<a href="#" class="tag">Syksy Tyrskynen</a>
+			<a href="#" class="tag">Mikko Mallikas</a>
+			<textarea href="#" class="newtag" placeholder="new person"></textarea>
+		</div>
+
+		<div class="tags">
+
+			<a href="#" class="tag">Uusiutuva energia</a>
+			<a href="#" class="tag">Ilmastonmuutos</a>
+			<a href="#" class="tag">Uusi talous</a>
+			<textarea href="#" class="newtag" placeholder="next tag"></textarea>
+
+		</div>
+
+		<div class="comment__actions actions-general">
+
+			<span><a href="#" title="More actions, such as share and flag as inappropriate">+</a></span>
+			<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+			<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+		</div>
+	</header>
+
+	<div class="full-article__body">
+
+		<figure class="article__img">
+		    <img width=400px src="../../assets/img/renewable-energy-2050.jpg"/>
+		</figure>
+
+		<p>
+		Sähkön- ja lämmöntuotannossa täysin uusiutuvalla energialla toimivaan järjestelmään siirrytään vuoteen 2035 mennessä. Päätös ei koske ydinvoimaloita, joista periaatepäätös on jo tehty. Laaditaan energiastrategia, jossa muutokseen tarvittava polku linjataan. Käynnistetään toimenpideohjelma, jolla kivihiilestä sähkön- ja lämmöntuotannossa luovutaan 2025 mennessä. Energiaremontissa korostuvat energiatehokkuuden parantaminen, uusiutuvan energian tuotanto, kestävyys sekä älykkäiden järjestelmien käyttöönotto sekä cleantech-viennin kasvu.
+		</p>
+
+		<h3>
+		Perusteet:
+		</h3>
+
+		<p>
+		Energiamarkkinat Euroopassa ja maailmalla ovat rajujen muutosten edessä. Tämä haastaa vanhat toimijat, kuten Suomessakin on viime vuosina nähty ja toisaalta avaa suuria mahdollisuuksia uusien ratkaisujen tuottajille.
+		</p>
+
+		<p>
+		IEA ennakoi energiamurroksen luovan maailmanlaajuisesti 35 000 miljardin euron kumulatiivisen markkinan seuraavan 20 vuoden aikana. Tämä tarkoittaa valtavaa kysyntää erityisesti uusiutuvan energiantuotannon, energiatehokkuuden ja älykkäiden järjestelmien ratkaisuille. Komissio on arvoinut, että vihreään talouteen voitaisiin luoda Euroopassa jopa 20 miljoonaa työpaikkaa vuoteen 2020 mennessä. 
+		</p>
+
+		<p>
+		Menestyäkseen yritykset tarvitsevat toimivat kotimarkkinat. Uudet työpaikat syntyvätkin sinne, missä uuden energian ratkaisuja hyödynnetään. Suomen nykyinen energiapolitiikka on johtanut siihen, että kansainvälisessä uusiutuvan energian investointiympäristöjen vertailussa sijoitumme heikosti, mistä johtuen investoinnit ja työpaikat Suomeen jäävät syntymättä.
+		</p>
+
+		<p>
+		Toimintaympäristön muutokseen voidaan vastata kirkastamalla energiapolitiikan tavoite ja käynnistämällä energiaremontti. Toteutuessaan energiaremontti parantaisi vaihtotasetta miljardeilla sekä lisäisi nopeasti taloudellista toimeliaisuutta ja työpaikkoja. Toteutuessaan energiaremontti parantaisi myös merkittävästi suomalaisten energiateknologiayritysten kilpailukykyä nopeasti kasvavilla globaaleilla markkinoilla. Myönteisten talousvaikutusten lisäksi energiaremontti nostaisi Suomen kärkijoukkoihin ilmastonmuutoksen vastaisessa taistelussa, minimoisi uusiutumattoman energian ympäristöhaitat ja riskit sekä rakentaisi vahvaa Suomi-brändiä.
+		</p>
+
+		<p>
+		Energia- ja teknologiamarkkinoilla toimiville yrityksille politiikan pitkäjänteisyys on tärkeää. Pitkäjänteisyys syntyy ainoastaan katsomalla tulevaisuuteen. Ainoa kansainvälisesti uskottava pitkän aikavälin tavoitetila modernille energiajärjestelmälle on suuntautuminen täysin uusiutuvaan energiaan. Asettamalla selvät määräajat järjestelmän eri osien irrottamiseksi uusiutumattomasta energiasta, Suomi voi antaa markkinoille riittävän vahvan signaalin investointien houkuttelmiseksi ja innovaatioiden ruokkimiseksi.
+		</p>
+
+		<h3>
+		Energiaremontti käynnistyy välittömästi seuraavilla askeleilla:
+		</h3>
+		<ol>
+			<li>
+			Merkittäviä investointeja uusiutumattomaan energiantuotantoon ei enää tehdä. Kaikkien energiainvestointien on tähdättävä täysin uusiutuvilla toimivaan järjestelmään.
+			</li>
+			<li>
+			Vuoden 2020 ja 2030 tavoitteita päivitetään reippaasti ylöspäin
+			<ul>
+				<li>
+				Energiatehokkuus: olemassa olevat kiinteistöt, teollisuus ja liikenne
+
+				</li>
+				<li>
+				Tuotanto: tuuli, aurinko, bio ja lämpöpumput
+
+				</li>
+				<li>
+				Älykkäät järjestelmät: älykäs sähköverkko, energian varastointi ja älykäs liikenne
+				</li>
+
+			</ul>
+			</li>
+			<li>
+			Fossiilisen energian tuotannon ja kulutuksen tukeminen lopetetaan.
+			</li>
+			<li>
+			Lähienergian esteet poistetaan.
+			</li>
+		</ol>
+
+	</div>
+
+</div>
+
+	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+
+	<script src='../../assets/js/vendor/angular.min.js'></script>
+
+	<script src='../../assets/js/main.js'></script>
+
+	<!--DO NOT REMOVE-->
+		
+	<script>
+		// handle injection of items from PHP
+		var patternPartial = "molecules-article-renewable-snapshot";
+		var lineage        = [{"lineagePattern":"molecules-renewable-energy-invites","lineagePath":"..\/..\/patterns\/01-molecules-streams-renewable-energy-invites\/01-molecules-streams-renewable-energy-invites.html"},{"lineagePattern":"molecules-renewable-energy-tags","lineagePath":"..\/..\/patterns\/01-molecules-streams-renewable-energy-tags\/01-molecules-streams-renewable-energy-tags.html"},{"lineagePattern":"molecules-general-actions","lineagePath":"..\/..\/patterns\/01-molecules-streams-general-actions\/01-molecules-streams-general-actions.html"},{"lineagePattern":"molecules-article-image-renewable-energy","lineagePath":"..\/..\/patterns\/01-molecules-streams-article-image-renewable-energy\/01-molecules-streams-article-image-renewable-energy.html"}];
+		var lineageR       = [{"lineagePattern":"templates-crowdsourced-proposal-renewable-energy","lineagePath":"..\/..\/patterns\/03-templates-crowdsourced-proposal-renewable-energy\/03-templates-crowdsourced-proposal-renewable-energy.html"}];
+		var patternState   = "";
+		var cssEnabled     = false;
+	</script>
+		<script>
+		/*!
+		 * scriptLoader - v0.1
+		 *
+		 * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+		 * Licensed under the MIT license
+		 *
+		 */
+		
+		var scriptLoader = {
+			
+			run: function(js,cb,target) {
+				var s  = document.getElementById(target+'-'+cb); 
+				for (var i = 0; i < js.length; i++) {
+					var src = (typeof js[i] != "string") ? js[i].src : js[i];
+					var c   = document.createElement('script');
+					c.src   = '../../'+src+'?'+cb;
+					if (typeof js[i] != "string") {
+						if (js[i].dep !== undefined) {
+							c.onload = function(dep,cb,target) {
+								return function() {
+									scriptLoader.run(dep,cb,target);
+								}
+							}(js[i].dep,cb,target);
+						}
+					}
+					s.parentNode.insertBefore(c,s);
+				}
+			}
+			
+		}
+	</script>
+	<script id="pl-js-polyfill-insert-0">
+		(function() {
+			if (self != top) {
+				var cb = '0';
+				var js = [];
+				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
+					js.push("styleguide/js/vendor/classlist-polyfill.js");
+				}
+				scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+			}
+		})();
+	</script>
+	<script id="pl-js-insert-0">
+		(function() {
+			if (self != top) {
+				var cb = '0';
+				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
+				scriptLoader.run(js,cb,'pl-js-insert');
+			}
+		})();
+	</script>
+	
+
+
+	</body>
+</html>

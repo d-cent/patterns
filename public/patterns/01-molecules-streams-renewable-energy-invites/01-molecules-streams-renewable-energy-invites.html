@@ -68,13 +68,13 @@
 
 	</head>
 	<body class="body">
-<div class="comment__actions actions-general">
-
-	<span><a href="#" title="More actions, such as share and flag as inappropriate">+</a></span>
-	<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
-	<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
-
+<div class="tags" stle="border: 2px;">
+	<a href="#" class="tag">Elina Esimerkki</a>
+	<a href="#" class="tag">Syksy Tyrskynen</a>
+	<a href="#" class="tag">Mikko Mallikas</a>
+	<textarea href="#" class="newtag" placeholder="new person"></textarea>
 </div>
+
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 
 	<script src='../../assets/js/vendor/angular.min.js'></script>
@@ -85,9 +85,9 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-general-actions";
+		var patternPartial = "molecules-renewable-energy-invites";
 		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"molecules-article-renewable-snapshot","lineagePath":"..\/..\/patterns\/01-molecules-streams-article-renewable-snapshot\/01-molecules-streams-article-renewable-snapshot.html"},{"lineagePattern":"molecules-full-article-with-argumentation","lineagePath":"..\/..\/patterns\/01-molecules-streams-full-article-with-argumentation\/01-molecules-streams-full-article-with-argumentation.html"},{"lineagePattern":"molecules-full-article","lineagePath":"..\/..\/patterns\/01-molecules-streams-full-article\/01-molecules-streams-full-article.html"},{"lineagePattern":"molecules-stream-item","lineagePath":"..\/..\/patterns\/01-molecules-streams-stream-item\/01-molecules-streams-stream-item.html"},{"lineagePattern":"templates-group-page","lineagePath":"..\/..\/patterns\/03-templates-group-page\/03-templates-group-page.html"}];
+		var lineageR       = [{"lineagePattern":"molecules-article-renewable-snapshot","lineagePath":"..\/..\/patterns\/01-molecules-streams-article-renewable-snapshot\/01-molecules-streams-article-renewable-snapshot.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>
