@@ -1,0 +1,66 @@
+{{> atoms-kalles-styles }}
+
+<div class="page page--with-sticky">
+
+	{{> organisms-header-with-login }}
+
+	<div class="group-info clearfix">
+
+		<header style="background-image: url('{{ img.landscape-3x1-darkened.src }}');">
+
+			<div class="group-info__container">
+
+				<ul class="bare-list article-actions">
+
+					<li>
+						<a href="#" class="btn"><i class="icon-group"></i> Join group</a>
+					</li>
+
+				</ul>
+
+				<h1>Suomen uusenergiset</h1>
+
+				<div class="full-article__meta">
+
+					<i class="icon-avatar"></i> <a href="#">35 members</a> <i class="fa fa-comments"></i> <time>About an hour ago</time>
+
+				</div><!-- end full-article__meta -->
+
+			</div>
+
+		</header>
+
+	</div>
+
+	{{^ article-open }}
+
+	{{> molecules-article-renewable-snapshot }}
+
+	{{/ article-open }}
+
+	<div class="btn-group article-actions">
+		<button class="btn btn-text">Start editing</button>
+		<button class="btn btn-text">Put to vote</button>
+	</div>
+
+
+	<div class="discussion box bc-white">
+
+		{{> molecules-comment-field}}
+
+		{{> molecules-discussion-comment}}
+
+		{{> molecules-discussion-comment}}
+
+		{{> molecules-discussion-comment}}
+
+		{{> molecules-discussion-comment}}
+
+		{{> molecules-discussion-comment}}
+
+		{{> molecules-discussion-comment}}
+
+
+	</div>
+
+</div>
