@@ -500,24 +500,26 @@ $(document).ready(function() {
  */
 <script>
 $(document).ready(function() {
-	$('.commentable:not(.being-commented)').on('click', function(event) {
-		var target = $(event.target);
-		if (!target.hasClass('being-commented')) {
-			console.log('target ', target);
-			target.toggleClass('being-commented');
-			var uniqueId = ('' + Math.random()).substr(2);
-			var commentId = 'commentId' + uniqueId;
-			var buttonId = 'buttonId' + uniqueId;
-			var elem = '<div id="' + commentId + '">' +
-			             '<textarea placeholder="Your comment here…"></textarea>' +
-			             '<button class="btn btn-text article-actions" id="' + buttonId + '">Save comment</button>' +
-			           '</div>';
-			target.after(elem);
-			$('#' + buttonId).on('click', function(saveEvent) {
-				$(saveEvent.target).off('click');
+	$('.commentable').on('click', function(event) {
+		if (event.target === this) {
+			var target = $(event.target);
+			if (!target.hasClass('being-commented')) {
 				target.toggleClass('being-commented');
-				$('#' + commentId).remove();
-			});
+				var uniqueId = ('' + Math.random()).substr(2);
+				var commentId = 'commentId' + uniqueId;
+				var commentTextId = 'commentTextId' + uniqueId;
+				var buttonId = 'buttonId' + uniqueId;
+				var elem = '<div id="' + commentId + '">' +
+				             '<textarea id="' + commentTextId + '" placeholder="Write a comment…"></textarea>' +
+				             '<button class="btn btn-text article-actions" id="' + buttonId + '">Save comment</button>' +
+				           '</div>';
+				target.after(elem);
+				$('#' + buttonId).on('click', function(saveEvent) {
+					$(saveEvent.target).off('click');
+					target.toggleClass('being-commented');
+					$('#' + commentId).remove();
+				});
+			}
 		}
 		event.stopPropagation();
 	});
@@ -796,16 +798,15 @@ $(document).ready(function() {
 				<ul>
 					<li class="commentable">
 					Energiatehokkuus: olemassa olevat kiinteistöt, teollisuus ja liikenne
-
-					</li class="commentable">
-					<li>
-					Tuotanto: tuuli, aurinko, bio ja lämpöpumput
-
-					</li class="commentable">
-					<li>
-					Älykkäät järjestelmät: älykäs sähköverkko, energian varastointi ja älykäs liikenne
 					</li>
 
+					<li class="commentable">
+					Tuotanto: tuuli, aurinko, bio ja lämpöpumput
+					</li>
+
+					<li class="commentable">
+					Älykkäät järjestelmät: älykäs sähköverkko, energian varastointi ja älykäs liikenne
+					</li>
 				</ul>
 				</li>
 				<li class="commentable">
