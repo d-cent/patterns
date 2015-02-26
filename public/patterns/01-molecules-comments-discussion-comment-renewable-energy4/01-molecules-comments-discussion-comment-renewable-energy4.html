@@ -68,29 +68,41 @@
 
 	</head>
 	<body class="body">
-<!--
-<div class="tags">
-	<table class="invited">
-	<thead>
-	<tr>
-	<th>Invited</th>
-	</tr>
-	</thead>
-	<td><a href="#" class="tag">Elina Esimerkki</a></td>
-	<td><a href="#" class="tag">Syksy Tyrskynen</a></td>
-	<td><a href="#" class="tag">Mikko Mallikas</a></td>
-	<td><textarea class="newtag" placeholder="new person"></textarea></td>
-	</tr>
-	</table>
-</div>
--->
-<div class="tags">
-	Invited:
-	<a href="#" class="tag">Elina Esimerkki</a>
-	<a href="#" class="tag">Syksy Tyrskynen</a>
-	<a href="#" class="tag">Mikko Mallikas</a>
-	<textarea class="newtag" placeholder="Person"></textarea>
-</div>
+<div class="comment">
+
+	<figure class="comment__img">
+		<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+		<i class="icon-avatar_circle"></i>
+	</figure><!-- end comment pic -->
+
+	<div class="comment__meta">
+
+		<a href="#">Syksy Tyrskynen</a>
+
+		<time>About an hour ago</time>
+
+	</div><!-- end comment meta -->
+
+	<div class="comment__body">
+
+		Saako tähän vielä fuusioenergian mukaan? Ennustan, että jo ensi vuonna sillä ruokitaan maailman köyhät.
+
+	</div><!-- end comment body -->
+	<a href="#renewable-part11" class="tag">Tuotanto: tuuli…</a>
+
+	<div class="comment__actions">
+
+		<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+		<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+	</div><!-- end comment actions -->
+
+	<div class="comment__field">
+
+
+	</div><!-- end comment field -->
+
+</div><!-- end single comment -->
 
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 
@@ -102,9 +114,9 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-renewable-energy-invites";
+		var patternPartial = "molecules-discussion-comment-renewable-energy4";
 		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"molecules-article-renewable-snapshot","lineagePath":"..\/..\/patterns\/01-molecules-streams-article-renewable-snapshot\/01-molecules-streams-article-renewable-snapshot.html"}];
+		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

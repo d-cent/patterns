@@ -460,7 +460,10 @@ header.titlebar-fixed .actions-general {
 	height: 1.5em !important;
 	padding: 0.25em !important;
 }
-
+table.invited * :not(textarea) {
+	border-collapse: collapse;
+	border-style: hidden;
+}
 
 
 
@@ -713,7 +716,7 @@ $(document).ready(function() {
 
 				</ul>
 
-				<h2>Energiaremontti 2050</h2>
+				<h2 id="renewable-title">Energiaremontti 2050</h2>
 
 				<div class="full-article__meta">
 
@@ -723,24 +726,40 @@ $(document).ready(function() {
 
 			</div>
 
-			<div class="excerpt">
+			<div id="renewable-part0" class="excerpt">
 				Käynnistetään energiaremontti, joka tähtää siihen, että Suomi siirtyy käyttämään ainoastaan uusiutuvaa energiaa vuoteen 2050 mennessä.
 			</div>
 
-		<div class="tags" stle="border: 2px;">
+		<!--
+		<div class="tags">
+			<table class="invited">
+			<thead>
+			<tr>
+			<th>Invited</th>
+			</tr>
+			</thead>
+			<td><a href="#" class="tag">Elina Esimerkki</a></td>
+			<td><a href="#" class="tag">Syksy Tyrskynen</a></td>
+			<td><a href="#" class="tag">Mikko Mallikas</a></td>
+			<td><textarea class="newtag" placeholder="new person"></textarea></td>
+			</tr>
+			</table>
+		</div>
+		-->
+		<div class="tags">
+			Invited:
 			<a href="#" class="tag">Elina Esimerkki</a>
 			<a href="#" class="tag">Syksy Tyrskynen</a>
 			<a href="#" class="tag">Mikko Mallikas</a>
-			<textarea href="#" class="newtag" placeholder="new person"></textarea>
+			<textarea class="newtag" placeholder="Person"></textarea>
 		</div>
 
 		<div class="tags">
-
+		    Tags:
 			<a href="#" class="tag">Uusiutuva energia</a>
 			<a href="#" class="tag">Ilmastonmuutos</a>
 			<a href="#" class="tag">Uusi talous</a>
-			<textarea href="#" class="newtag" placeholder="next tag"></textarea>
-
+			<textarea class="newtag" placeholder="Tag"></textarea>
 		</div>
 
 		<div class="comment__actions actions-general">
@@ -758,7 +777,7 @@ $(document).ready(function() {
 		    <img width=400px src="../../assets/img/renewable-energy-2050.jpg"/>
 		</figure>
 
-			<p class="commentable">
+			<p id="renewable-part1" class="commentable">
 			Sähkön- ja lämmöntuotannossa täysin uusiutuvalla energialla toimivaan järjestelmään siirrytään vuoteen 2035 mennessä. Päätös ei koske ydinvoimaloita, joista periaatepäätös on jo tehty. Laaditaan energiastrategia, jossa muutokseen tarvittava polku linjataan. Käynnistetään toimenpideohjelma, jolla kivihiilestä sähkön- ja lämmöntuotannossa luovutaan 2025 mennessä. Energiaremontissa korostuvat energiatehokkuuden parantaminen, uusiutuvan energian tuotanto, kestävyys sekä älykkäiden järjestelmien käyttöönotto sekä cleantech-viennin kasvu.
 			</p>
 
@@ -766,53 +785,53 @@ $(document).ready(function() {
 			Perusteet:
 			</h3>
 
-			<p class="commentable">
+			<p id="renewable-part2" class="commentable">
 			Energiamarkkinat Euroopassa ja maailmalla ovat rajujen muutosten edessä. Tämä haastaa vanhat toimijat, kuten Suomessakin on viime vuosina nähty ja toisaalta avaa suuria mahdollisuuksia uusien ratkaisujen tuottajille.
 			</p>
 
-			<p class="commentable">
+			<p id="renewable-part3" class="commentable">
 			IEA ennakoi energiamurroksen luovan maailmanlaajuisesti 35 000 miljardin euron kumulatiivisen markkinan seuraavan 20 vuoden aikana. Tämä tarkoittaa valtavaa kysyntää erityisesti uusiutuvan energiantuotannon, energiatehokkuuden ja älykkäiden järjestelmien ratkaisuille. Komissio on arvoinut, että vihreään talouteen voitaisiin luoda Euroopassa jopa 20 miljoonaa työpaikkaa vuoteen 2020 mennessä. 
 			</p>
 
-			<p class="commentable">
+			<p id="renewable-part4" class="commentable">
 			Menestyäkseen yritykset tarvitsevat toimivat kotimarkkinat. Uudet työpaikat syntyvätkin sinne, missä uuden energian ratkaisuja hyödynnetään. Suomen nykyinen energiapolitiikka on johtanut siihen, että kansainvälisessä uusiutuvan energian investointiympäristöjen vertailussa sijoitumme heikosti, mistä johtuen investoinnit ja työpaikat Suomeen jäävät syntymättä.
 			</p>
 
-			<p class="commentable">
+			<p id="renewable-part5" class="commentable">
 			Toimintaympäristön muutokseen voidaan vastata kirkastamalla energiapolitiikan tavoite ja käynnistämällä energiaremontti. Toteutuessaan energiaremontti parantaisi vaihtotasetta miljardeilla sekä lisäisi nopeasti taloudellista toimeliaisuutta ja työpaikkoja. Toteutuessaan energiaremontti parantaisi myös merkittävästi suomalaisten energiateknologiayritysten kilpailukykyä nopeasti kasvavilla globaaleilla markkinoilla. Myönteisten talousvaikutusten lisäksi energiaremontti nostaisi Suomen kärkijoukkoihin ilmastonmuutoksen vastaisessa taistelussa, minimoisi uusiutumattoman energian ympäristöhaitat ja riskit sekä rakentaisi vahvaa Suomi-brändiä.
 			</p>
 
-			<p class="commentable">
+			<p id="renewable-part6" class="commentable">
 			Energia- ja teknologiamarkkinoilla toimiville yrityksille politiikan pitkäjänteisyys on tärkeää. Pitkäjänteisyys syntyy ainoastaan katsomalla tulevaisuuteen. Ainoa kansainvälisesti uskottava pitkän aikavälin tavoitetila modernille energiajärjestelmälle on suuntautuminen täysin uusiutuvaan energiaan. Asettamalla selvät määräajat järjestelmän eri osien irrottamiseksi uusiutumattomasta energiasta, Suomi voi antaa markkinoille riittävän vahvan signaalin investointien houkuttelmiseksi ja innovaatioiden ruokkimiseksi.
 			</p>
 
-			<h3 class="commentable">
+			<h3 id="renewable-part7" class="commentable">
 			Energiaremontti käynnistyy välittömästi seuraavilla askeleilla:
 			</h3>
 			<ol>
-				<li class="commentable">
+				<li id="renewable-part8" class="commentable">
 				Merkittäviä investointeja uusiutumattomaan energiantuotantoon ei enää tehdä. Kaikkien energiainvestointien on tähdättävä täysin uusiutuvilla toimivaan järjestelmään.
 				</li>
-				<li class="commentable">
+				<li id="renewable-part9" class="commentable">
 				Vuoden 2020 ja 2030 tavoitteita päivitetään reippaasti ylöspäin
 				<ul>
-					<li class="commentable">
+					<li id="renewable-part10" class="commentable">
 					Energiatehokkuus: olemassa olevat kiinteistöt, teollisuus ja liikenne
 					</li>
 
-					<li class="commentable">
+					<li id="renewable-part11" class="commentable">
 					Tuotanto: tuuli, aurinko, bio ja lämpöpumput
 					</li>
 
-					<li class="commentable">
+					<li id="renewable-part12" class="commentable">
 					Älykkäät järjestelmät: älykäs sähköverkko, energian varastointi ja älykäs liikenne
 					</li>
 				</ul>
 				</li>
-				<li class="commentable">
+				<li id="renewable-part13" class="commentable">
 				Fossiilisen energian tuotannon ja kulutuksen tukeminen lopetetaan.
 				</li>
-				<li class="commentable">
+				<li id="renewable-part14" class="commentable">
 				Lähienergian esteet poistetaan.
 				</li>
 			</ol>
@@ -847,7 +866,7 @@ $(document).ready(function() {
 
 			<div class="comment__meta">
 
-				<a href="#">Firstname Lastname</a>
+				<a href="#">Mikko Mallikas</a>
 
 				<time>About an hour ago</time>
 
@@ -855,9 +874,10 @@ $(document).ready(function() {
 
 			<div class="comment__body">
 
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Luvut ovat niin nannaa, että tuossa kannattaisi suoraan linkata alkuperäiseen lähteeseen epäilijöiden vakuuttamiseksi.
 
 			</div><!-- end comment body -->
+			<a href="#renewable-part3" class="tag">IEA ennakoi…</a>
 
 			<div class="comment__actions">
 
@@ -882,7 +902,7 @@ $(document).ready(function() {
 
 			<div class="comment__meta">
 
-				<a href="#">Firstname Lastname</a>
+				<a href="#">Mikko Mallikas</a>
 
 				<time>About an hour ago</time>
 
@@ -890,9 +910,10 @@ $(document).ready(function() {
 
 			<div class="comment__body">
 
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Ai niin, viitatkaa myös YK:n raporttiin XYZ.
 
 			</div><!-- end comment body -->
+			<a href="#renewable-part3" class="tag">IEA ennakoi…</a>
 
 			<div class="comment__actions">
 
@@ -917,7 +938,7 @@ $(document).ready(function() {
 
 			<div class="comment__meta">
 
-				<a href="#">Firstname Lastname</a>
+				<a href="#">Elina Esimerkki</a>
 
 				<time>About an hour ago</time>
 
@@ -925,9 +946,10 @@ $(document).ready(function() {
 
 			<div class="comment__body">
 
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Sana "parantaisi" toistuu. Joku muu saa miettiä korvaavan ilmaisun, kun täältä loppui kahvi.
 
 			</div><!-- end comment body -->
+			<a href="#renewable-part5" class="tag">Toimintaympäristön muutokseen…</a>
 
 			<div class="comment__actions">
 
@@ -952,7 +974,7 @@ $(document).ready(function() {
 
 			<div class="comment__meta">
 
-				<a href="#">Firstname Lastname</a>
+				<a href="#">Syksy Tyrskynen</a>
 
 				<time>About an hour ago</time>
 
@@ -960,9 +982,10 @@ $(document).ready(function() {
 
 			<div class="comment__body">
 
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Saako tähän vielä fuusioenergian mukaan? Ennustan, että jo ensi vuonna sillä ruokitaan maailman köyhät.
 
 			</div><!-- end comment body -->
+			<a href="#renewable-part11" class="tag">Tuotanto: tuuli…</a>
 
 			<div class="comment__actions">
 
@@ -977,77 +1000,6 @@ $(document).ready(function() {
 			</div><!-- end comment field -->
 
 		</div><!-- end single comment -->
-
-		<div class="comment">
-
-			<figure class="comment__img">
-				<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
-				<i class="icon-avatar_circle"></i>
-			</figure><!-- end comment pic -->
-
-			<div class="comment__meta">
-
-				<a href="#">Firstname Lastname</a>
-
-				<time>About an hour ago</time>
-
-			</div><!-- end comment meta -->
-
-			<div class="comment__body">
-
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-			</div><!-- end comment body -->
-
-			<div class="comment__actions">
-
-				<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
-				<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
-
-			</div><!-- end comment actions -->
-
-			<div class="comment__field">
-
-
-			</div><!-- end comment field -->
-
-		</div><!-- end single comment -->
-
-		<div class="comment">
-
-			<figure class="comment__img">
-				<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
-				<i class="icon-avatar_circle"></i>
-			</figure><!-- end comment pic -->
-
-			<div class="comment__meta">
-
-				<a href="#">Firstname Lastname</a>
-
-				<time>About an hour ago</time>
-
-			</div><!-- end comment meta -->
-
-			<div class="comment__body">
-
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-			</div><!-- end comment body -->
-
-			<div class="comment__actions">
-
-				<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
-				<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
-
-			</div><!-- end comment actions -->
-
-			<div class="comment__field">
-
-
-			</div><!-- end comment field -->
-
-		</div><!-- end single comment -->
-
 
 	</div>
 
