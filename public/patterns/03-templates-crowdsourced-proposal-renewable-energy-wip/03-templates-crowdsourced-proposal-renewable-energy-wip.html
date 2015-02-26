@@ -494,6 +494,36 @@ $(document).ready(function() {
 });
 </script>
 
+
+/*
+ * Make paragraph mockups clickable and commentable.
+ */
+<script>
+$(document).ready(function() {
+	$('.commentable:not(.being-commented)').on('click', function(event) {
+		var target = $(event.target);
+		if (!target.hasClass('being-commented')) {
+			console.log('target ', target);
+			target.toggleClass('being-commented');
+			var uniqueId = ('' + Math.random()).substr(2);
+			var commentId = 'commentId' + uniqueId;
+			var buttonId = 'buttonId' + uniqueId;
+			var elem = '<div id="' + commentId + '">' +
+			             '<textarea placeholder="Your comment here…"></textarea>' +
+			             '<button class="btn btn-text article-actions" id="' + buttonId + '">Save comment</button>' +
+			           '</div>';
+			target.after(elem);
+			$('#' + buttonId).on('click', function(saveEvent) {
+				$(saveEvent.target).off('click');
+				target.toggleClass('being-commented');
+				$('#' + commentId).remove();
+			});
+		}
+		event.stopPropagation();
+	});
+});
+</script>
+
 <div class="page page--with-sticky">
 
 	<div class="wrap--header bc-grey--lightest header--sticky">

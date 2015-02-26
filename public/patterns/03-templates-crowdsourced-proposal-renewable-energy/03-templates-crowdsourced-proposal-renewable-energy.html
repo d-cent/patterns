@@ -494,6 +494,36 @@ $(document).ready(function() {
 });
 </script>
 
+
+/*
+ * Make paragraph mockups clickable and commentable.
+ */
+<script>
+$(document).ready(function() {
+	$('.commentable:not(.being-commented)').on('click', function(event) {
+		var target = $(event.target);
+		if (!target.hasClass('being-commented')) {
+			console.log('target ', target);
+			target.toggleClass('being-commented');
+			var uniqueId = ('' + Math.random()).substr(2);
+			var commentId = 'commentId' + uniqueId;
+			var buttonId = 'buttonId' + uniqueId;
+			var elem = '<div id="' + commentId + '">' +
+			             '<textarea placeholder="Your comment here…"></textarea>' +
+			             '<button class="btn btn-text article-actions" id="' + buttonId + '">Save comment</button>' +
+			           '</div>';
+			target.after(elem);
+			$('#' + buttonId).on('click', function(saveEvent) {
+				$(saveEvent.target).off('click');
+				target.toggleClass('being-commented');
+				$('#' + commentId).remove();
+			});
+		}
+		event.stopPropagation();
+	});
+});
+</script>
+
 <div class="page page--with-sticky">
 
 	<div class="wrap--header bc-grey--lightest header--sticky">
@@ -726,62 +756,62 @@ $(document).ready(function() {
 		    <img width=400px src="../../assets/img/renewable-energy-2050.jpg"/>
 		</figure>
 
-			<p>
+			<p class="commentable">
 			Sähkön- ja lämmöntuotannossa täysin uusiutuvalla energialla toimivaan järjestelmään siirrytään vuoteen 2035 mennessä. Päätös ei koske ydinvoimaloita, joista periaatepäätös on jo tehty. Laaditaan energiastrategia, jossa muutokseen tarvittava polku linjataan. Käynnistetään toimenpideohjelma, jolla kivihiilestä sähkön- ja lämmöntuotannossa luovutaan 2025 mennessä. Energiaremontissa korostuvat energiatehokkuuden parantaminen, uusiutuvan energian tuotanto, kestävyys sekä älykkäiden järjestelmien käyttöönotto sekä cleantech-viennin kasvu.
 			</p>
 
-			<h3>
+			<h3 class="commentable">
 			Perusteet:
 			</h3>
 
-			<p>
+			<p class="commentable">
 			Energiamarkkinat Euroopassa ja maailmalla ovat rajujen muutosten edessä. Tämä haastaa vanhat toimijat, kuten Suomessakin on viime vuosina nähty ja toisaalta avaa suuria mahdollisuuksia uusien ratkaisujen tuottajille.
 			</p>
 
-			<p>
+			<p class="commentable">
 			IEA ennakoi energiamurroksen luovan maailmanlaajuisesti 35 000 miljardin euron kumulatiivisen markkinan seuraavan 20 vuoden aikana. Tämä tarkoittaa valtavaa kysyntää erityisesti uusiutuvan energiantuotannon, energiatehokkuuden ja älykkäiden järjestelmien ratkaisuille. Komissio on arvoinut, että vihreään talouteen voitaisiin luoda Euroopassa jopa 20 miljoonaa työpaikkaa vuoteen 2020 mennessä. 
 			</p>
 
-			<p>
+			<p class="commentable">
 			Menestyäkseen yritykset tarvitsevat toimivat kotimarkkinat. Uudet työpaikat syntyvätkin sinne, missä uuden energian ratkaisuja hyödynnetään. Suomen nykyinen energiapolitiikka on johtanut siihen, että kansainvälisessä uusiutuvan energian investointiympäristöjen vertailussa sijoitumme heikosti, mistä johtuen investoinnit ja työpaikat Suomeen jäävät syntymättä.
 			</p>
 
-			<p>
+			<p class="commentable">
 			Toimintaympäristön muutokseen voidaan vastata kirkastamalla energiapolitiikan tavoite ja käynnistämällä energiaremontti. Toteutuessaan energiaremontti parantaisi vaihtotasetta miljardeilla sekä lisäisi nopeasti taloudellista toimeliaisuutta ja työpaikkoja. Toteutuessaan energiaremontti parantaisi myös merkittävästi suomalaisten energiateknologiayritysten kilpailukykyä nopeasti kasvavilla globaaleilla markkinoilla. Myönteisten talousvaikutusten lisäksi energiaremontti nostaisi Suomen kärkijoukkoihin ilmastonmuutoksen vastaisessa taistelussa, minimoisi uusiutumattoman energian ympäristöhaitat ja riskit sekä rakentaisi vahvaa Suomi-brändiä.
 			</p>
 
-			<p>
+			<p class="commentable">
 			Energia- ja teknologiamarkkinoilla toimiville yrityksille politiikan pitkäjänteisyys on tärkeää. Pitkäjänteisyys syntyy ainoastaan katsomalla tulevaisuuteen. Ainoa kansainvälisesti uskottava pitkän aikavälin tavoitetila modernille energiajärjestelmälle on suuntautuminen täysin uusiutuvaan energiaan. Asettamalla selvät määräajat järjestelmän eri osien irrottamiseksi uusiutumattomasta energiasta, Suomi voi antaa markkinoille riittävän vahvan signaalin investointien houkuttelmiseksi ja innovaatioiden ruokkimiseksi.
 			</p>
 
-			<h3>
+			<h3 class="commentable">
 			Energiaremontti käynnistyy välittömästi seuraavilla askeleilla:
 			</h3>
 			<ol>
-				<li>
+				<li class="commentable">
 				Merkittäviä investointeja uusiutumattomaan energiantuotantoon ei enää tehdä. Kaikkien energiainvestointien on tähdättävä täysin uusiutuvilla toimivaan järjestelmään.
 				</li>
-				<li>
+				<li class="commentable">
 				Vuoden 2020 ja 2030 tavoitteita päivitetään reippaasti ylöspäin
 				<ul>
-					<li>
+					<li class="commentable">
 					Energiatehokkuus: olemassa olevat kiinteistöt, teollisuus ja liikenne
 
-					</li>
+					</li class="commentable">
 					<li>
 					Tuotanto: tuuli, aurinko, bio ja lämpöpumput
 
-					</li>
+					</li class="commentable">
 					<li>
 					Älykkäät järjestelmät: älykäs sähköverkko, energian varastointi ja älykäs liikenne
 					</li>
 
 				</ul>
 				</li>
-				<li>
+				<li class="commentable">
 				Fossiilisen energian tuotannon ja kulutuksen tukeminen lopetetaan.
 				</li>
-				<li>
+				<li class="commentable">
 				Lähienergian esteet poistetaan.
 				</li>
 			</ol>

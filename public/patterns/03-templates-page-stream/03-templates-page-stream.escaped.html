@@ -424,6 +424,36 @@ $(document).ready(function() {
 });
 &lt;/script&gt;
 
+
+/*
+ * Make paragraph mockups clickable and commentable.
+ */
+&lt;script&gt;
+$(document).ready(function() {
+	$('.commentable:not(.being-commented)').on('click', function(event) {
+		var target = $(event.target);
+		if (!target.hasClass('being-commented')) {
+			console.log('target ', target);
+			target.toggleClass('being-commented');
+			var uniqueId = ('' + Math.random()).substr(2);
+			var commentId = 'commentId' + uniqueId;
+			var buttonId = 'buttonId' + uniqueId;
+			var elem = '&lt;div id=&quot;' + commentId + '&quot;&gt;' +
+			             '&lt;textarea placeholder=&quot;Your comment here&hellip;&quot;&gt;&lt;/textarea&gt;' +
+			             '&lt;button class=&quot;btn btn-text article-actions&quot; id=&quot;' + buttonId + '&quot;&gt;Save comment&lt;/button&gt;' +
+			           '&lt;/div&gt;';
+			target.after(elem);
+			$('#' + buttonId).on('click', function(saveEvent) {
+				$(saveEvent.target).off('click');
+				target.toggleClass('being-commented');
+				$('#' + commentId).remove();
+			});
+		}
+		event.stopPropagation();
+	});
+});
+&lt;/script&gt;
+
 &lt;div class=&quot;page page--with-sticky&quot;&gt;
 
 	&lt;div class=&quot;wrap--header bc-grey--lightest header--sticky&quot;&gt;
