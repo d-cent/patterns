@@ -394,6 +394,9 @@ table.invited * :not(textarea) {
 	border-collapse: collapse;
 	border-style: hidden;
 }
+.hidden {
+	display: none;
+}
 
 
 
@@ -433,36 +436,45 @@ $(document).ready(function() {
  */
 <script>
 $(document).ready(function() {
+	var createCommentBox = function() {
+		var uniqueId = ('' + Math.random()).substr(2);
+		var commentId = 'commentId' + uniqueId;
+		var commentTextId = 'commentTextId' + uniqueId;
+		var buttonId = 'buttonId' + uniqueId;
+		var rawElem = '<div class="comment-started" id="' + commentId + '">' +
+		                '<textarea id="' + commentTextId + '" placeholder="Write a comment…"></textarea>' +
+		                '<button class="btn btn-text article-actions" id="' + buttonId + '">Save comment</button>' +
+		              '</div>';
+		var elem = $(rawElem);
+		var saveComment = function(saveEvent) {
+			$(saveEvent.target).off('click');
+			$('#' + commentId).remove();
+		};
+		elem.children('#' + buttonId).on('click', saveComment);
+		return(elem);
+	};
+
 	$('.commentable').on('click', function(event) {
 		if (event.target === this) {
 			var target = $(event.target);
-			var commentBox = target.next(".comment-started");
+			var commentArea = target.next(".comments-in-context");
+			if (!commentArea.length) {
+				target.after('<div class="comments-in-context hidden discussion box bc-white"></div>');
+				commentArea = target.next(".comments-in-context");
+			}
 			if (target.hasClass('being-commented')) {
-				if (commentBox.length > 0) {
-					commentBox.hide();
-				} else {
-					throw new Error('Comment box should exist but was not found.');
-				}
+				commentArea.toggleClass('hidden');
 			} else {
-				if (commentBox.length > 0) {
-					commentBox.show();
-				} else {
-					var uniqueId = ('' + Math.random()).substr(2);
-					var commentId = 'commentId' + uniqueId;
-					var commentTextId = 'commentTextId' + uniqueId;
-					var buttonId = 'buttonId' + uniqueId;
-					var elem = '<div class="comment-started" id="' + commentId + '">' +
-					             '<textarea id="' + commentTextId + '" placeholder="Write a comment…"></textarea>' +
-					             '<button class="btn btn-text article-actions" id="' + buttonId + '">Save comment</button>' +
-					           '</div>';
-					target.after(elem);
-					var saveComment = function(saveEvent) {
-						$(saveEvent.target).off('click');
-						target.toggleClass('being-commented');
-						$('#' + commentId).remove();
-					};
-					$('#' + buttonId).on('click', saveComment);
+				if (!(commentArea.children('.comment-started').length)) {
+					var commentBox = createCommentBox();
+					var oldComments = commentArea.children();
+					if (oldComments.length) {
+						oldComments.first().before(commentBox);
+					} else {
+						commentArea.html(commentBox);
+					}
 				}
+				commentArea.toggleClass('hidden');
 			}
 			target.toggleClass('being-commented');
 		}
