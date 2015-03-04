@@ -464,6 +464,9 @@ table.invited * :not(textarea) {
 	border-collapse: collapse;
 	border-style: hidden;
 }
+.hidden {
+	display: none;
+}
 
 
 
@@ -503,36 +506,45 @@ $(document).ready(function() {
  */
 <script>
 $(document).ready(function() {
+	var createCommentBox = function() {
+		var uniqueId = ('' + Math.random()).substr(2);
+		var commentId = 'commentId' + uniqueId;
+		var commentTextId = 'commentTextId' + uniqueId;
+		var buttonId = 'buttonId' + uniqueId;
+		var rawElem = '<div class="comment-started" id="' + commentId + '">' +
+		                '<textarea id="' + commentTextId + '" placeholder="Write a comment…"></textarea>' +
+		                '<button class="btn btn-text article-actions" id="' + buttonId + '">Save comment</button>' +
+		              '</div>';
+		var elem = $(rawElem);
+		var saveComment = function(saveEvent) {
+			$(saveEvent.target).off('click');
+			$('#' + commentId).remove();
+		};
+		elem.children('#' + buttonId).on('click', saveComment);
+		return(elem);
+	};
+
 	$('.commentable').on('click', function(event) {
 		if (event.target === this) {
 			var target = $(event.target);
-			var commentBox = target.next(".comment-started");
+			var commentArea = target.next(".comments-in-context");
+			if (!commentArea.length) {
+				target.after('<div class="comments-in-context hidden discussion box bc-white"></div>');
+				commentArea = target.next(".comments-in-context");
+			}
 			if (target.hasClass('being-commented')) {
-				if (commentBox.length > 0) {
-					commentBox.hide();
-				} else {
-					throw new Error('Comment box should exist but was not found.');
-				}
+				commentArea.toggleClass('hidden');
 			} else {
-				if (commentBox.length > 0) {
-					commentBox.show();
-				} else {
-					var uniqueId = ('' + Math.random()).substr(2);
-					var commentId = 'commentId' + uniqueId;
-					var commentTextId = 'commentTextId' + uniqueId;
-					var buttonId = 'buttonId' + uniqueId;
-					var elem = '<div class="comment-started" id="' + commentId + '">' +
-					             '<textarea id="' + commentTextId + '" placeholder="Write a comment…"></textarea>' +
-					             '<button class="btn btn-text article-actions" id="' + buttonId + '">Save comment</button>' +
-					           '</div>';
-					target.after(elem);
-					var saveComment = function(saveEvent) {
-						$(saveEvent.target).off('click');
-						target.toggleClass('being-commented');
-						$('#' + commentId).remove();
-					};
-					$('#' + buttonId).on('click', saveComment);
+				if (!(commentArea.children('.comment-started').length)) {
+					var commentBox = createCommentBox();
+					var oldComments = commentArea.children();
+					if (oldComments.length) {
+						oldComments.first().before(commentBox);
+					} else {
+						commentArea.html(commentBox);
+					}
 				}
+				commentArea.toggleClass('hidden');
 			}
 			target.toggleClass('being-commented');
 		}
@@ -804,6 +816,78 @@ $(document).ready(function() {
 			<p id="renewable-part3" class="commentable">
 			IEA ennakoi energiamurroksen luovan maailmanlaajuisesti 35 000 miljardin euron kumulatiivisen markkinan seuraavan 20 vuoden aikana. Tämä tarkoittaa valtavaa kysyntää erityisesti uusiutuvan energiantuotannon, energiatehokkuuden ja älykkäiden järjestelmien ratkaisuille. Komissio on arvoinut, että vihreään talouteen voitaisiin luoda Euroopassa jopa 20 miljoonaa työpaikkaa vuoteen 2020 mennessä. 
 			</p>
+			<div class="comments-in-context hidden discussion box bc-white">
+			<div class="comment">
+
+				<figure class="comment__img">
+					<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+					<i class="icon-avatar_circle"></i>
+				</figure><!-- end comment pic -->
+
+				<div class="comment__meta">
+
+					<a href="#">Mikko Mallikas</a>
+
+					<time>About an hour ago</time>
+
+				</div><!-- end comment meta -->
+
+				<div class="comment__body">
+
+					Luvut ovat niin nannaa, että tuossa kannattaisi suoraan linkata alkuperäiseen lähteeseen epäilijöiden vakuuttamiseksi.
+
+				</div><!-- end comment body -->
+				<a href="#renewable-part3" class="tag">IEA ennakoi…</a>
+
+				<div class="comment__actions">
+
+					<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+					<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+				</div><!-- end comment actions -->
+
+				<div class="comment__field">
+
+
+				</div><!-- end comment field -->
+
+			</div><!-- end single comment -->
+			<div class="comment">
+
+				<figure class="comment__img">
+					<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+					<i class="icon-avatar_circle"></i>
+				</figure><!-- end comment pic -->
+
+				<div class="comment__meta">
+
+					<a href="#">Mikko Mallikas</a>
+
+					<time>About an hour ago</time>
+
+				</div><!-- end comment meta -->
+
+				<div class="comment__body">
+
+					Ai niin, viitatkaa myös YK:n raporttiin XYZ.
+
+				</div><!-- end comment body -->
+				<a href="#renewable-part3" class="tag">IEA ennakoi…</a>
+
+				<div class="comment__actions">
+
+					<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+					<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+				</div><!-- end comment actions -->
+
+				<div class="comment__field">
+
+
+				</div><!-- end comment field -->
+
+			</div><!-- end single comment -->
+			</div>
 
 			<p id="renewable-part4" class="commentable">
 			Menestyäkseen yritykset tarvitsevat toimivat kotimarkkinat. Uudet työpaikat syntyvätkin sinne, missä uuden energian ratkaisuja hyödynnetään. Suomen nykyinen energiapolitiikka on johtanut siihen, että kansainvälisessä uusiutuvan energian investointiympäristöjen vertailussa sijoitumme heikosti, mistä johtuen investoinnit ja työpaikat Suomeen jäävät syntymättä.
@@ -812,6 +896,43 @@ $(document).ready(function() {
 			<p id="renewable-part5" class="commentable">
 			Toimintaympäristön muutokseen voidaan vastata kirkastamalla energiapolitiikan tavoite ja käynnistämällä energiaremontti. Toteutuessaan energiaremontti parantaisi vaihtotasetta miljardeilla sekä lisäisi nopeasti taloudellista toimeliaisuutta ja työpaikkoja. Toteutuessaan energiaremontti parantaisi myös merkittävästi suomalaisten energiateknologiayritysten kilpailukykyä nopeasti kasvavilla globaaleilla markkinoilla. Myönteisten talousvaikutusten lisäksi energiaremontti nostaisi Suomen kärkijoukkoihin ilmastonmuutoksen vastaisessa taistelussa, minimoisi uusiutumattoman energian ympäristöhaitat ja riskit sekä rakentaisi vahvaa Suomi-brändiä.
 			</p>
+			<div class="comments-in-context hidden discussion box bc-white">
+			<div class="comment">
+
+				<figure class="comment__img">
+					<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+					<i class="icon-avatar_circle"></i>
+				</figure><!-- end comment pic -->
+
+				<div class="comment__meta">
+
+					<a href="#">Elina Esimerkki</a>
+
+					<time>About an hour ago</time>
+
+				</div><!-- end comment meta -->
+
+				<div class="comment__body">
+
+					Sana "parantaisi" toistuu. Joku muu saa miettiä korvaavan ilmaisun, kun täältä loppui kahvi.
+
+				</div><!-- end comment body -->
+				<a href="#renewable-part5" class="tag">Toimintaympäristön muutokseen…</a>
+
+				<div class="comment__actions">
+
+					<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+					<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+				</div><!-- end comment actions -->
+
+				<div class="comment__field">
+
+
+				</div><!-- end comment field -->
+
+			</div><!-- end single comment -->
+			</div>
 
 			<p id="renewable-part6" class="commentable">
 			Energia- ja teknologiamarkkinoilla toimiville yrityksille politiikan pitkäjänteisyys on tärkeää. Pitkäjänteisyys syntyy ainoastaan katsomalla tulevaisuuteen. Ainoa kansainvälisesti uskottava pitkän aikavälin tavoitetila modernille energiajärjestelmälle on suuntautuminen täysin uusiutuvaan energiaan. Asettamalla selvät määräajat järjestelmän eri osien irrottamiseksi uusiutumattomasta energiasta, Suomi voi antaa markkinoille riittävän vahvan signaalin investointien houkuttelmiseksi ja innovaatioiden ruokkimiseksi.
@@ -834,6 +955,43 @@ $(document).ready(function() {
 					<li id="renewable-part11" class="commentable">
 					Tuotanto: tuuli, aurinko, bio ja lämpöpumput
 					</li>
+					<div class="comments-in-context hidden discussion box bc-white">
+					<div class="comment">
+
+						<figure class="comment__img">
+							<!--img class="img--round" src="http://placeimg.com/40/40/tech" alt="Person Name" /-->
+							<i class="icon-avatar_circle"></i>
+						</figure><!-- end comment pic -->
+
+						<div class="comment__meta">
+
+							<a href="#">Syksy Tyrskynen</a>
+
+							<time>About an hour ago</time>
+
+						</div><!-- end comment meta -->
+
+						<div class="comment__body">
+
+							Saako tähän vielä fuusioenergian mukaan? Ennustan, että jo ensi vuonna sillä ruokitaan maailman köyhät.
+
+						</div><!-- end comment body -->
+						<a href="#renewable-part11" class="tag">Tuotanto: tuuli…</a>
+
+						<div class="comment__actions">
+
+							<span class="comment-toggle js-comment-toggle">Comment <i class="fa fa-comments"></i></span>
+							<span class="like-toggle js-like-toggle">Like <i class="fa fa-thumbs-o-up"></i></span>
+
+						</div><!-- end comment actions -->
+
+						<div class="comment__field">
+
+
+						</div><!-- end comment field -->
+
+					</div><!-- end single comment -->
+					</div>
 
 					<li id="renewable-part12" class="commentable">
 					Älykkäät järjestelmät: älykäs sähköverkko, energian varastointi ja älykäs liikenne

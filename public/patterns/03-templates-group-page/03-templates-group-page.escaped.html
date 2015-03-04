@@ -394,6 +394,9 @@ table.invited * :not(textarea) {
 	border-collapse: collapse;
 	border-style: hidden;
 }
+.hidden {
+	display: none;
+}
 
 
 
@@ -433,36 +436,45 @@ $(document).ready(function() {
  */
 &lt;script&gt;
 $(document).ready(function() {
+	var createCommentBox = function() {
+		var uniqueId = ('' + Math.random()).substr(2);
+		var commentId = 'commentId' + uniqueId;
+		var commentTextId = 'commentTextId' + uniqueId;
+		var buttonId = 'buttonId' + uniqueId;
+		var rawElem = '&lt;div class=&quot;comment-started&quot; id=&quot;' + commentId + '&quot;&gt;' +
+		                '&lt;textarea id=&quot;' + commentTextId + '&quot; placeholder=&quot;Write a comment&hellip;&quot;&gt;&lt;/textarea&gt;' +
+		                '&lt;button class=&quot;btn btn-text article-actions&quot; id=&quot;' + buttonId + '&quot;&gt;Save comment&lt;/button&gt;' +
+		              '&lt;/div&gt;';
+		var elem = $(rawElem);
+		var saveComment = function(saveEvent) {
+			$(saveEvent.target).off('click');
+			$('#' + commentId).remove();
+		};
+		elem.children('#' + buttonId).on('click', saveComment);
+		return(elem);
+	};
+
 	$('.commentable').on('click', function(event) {
 		if (event.target === this) {
 			var target = $(event.target);
-			var commentBox = target.next(&quot;.comment-started&quot;);
+			var commentArea = target.next(&quot;.comments-in-context&quot;);
+			if (!commentArea.length) {
+				target.after('&lt;div class=&quot;comments-in-context hidden discussion box bc-white&quot;&gt;&lt;/div&gt;');
+				commentArea = target.next(&quot;.comments-in-context&quot;);
+			}
 			if (target.hasClass('being-commented')) {
-				if (commentBox.length &gt; 0) {
-					commentBox.hide();
-				} else {
-					throw new Error('Comment box should exist but was not found.');
-				}
+				commentArea.toggleClass('hidden');
 			} else {
-				if (commentBox.length &gt; 0) {
-					commentBox.show();
-				} else {
-					var uniqueId = ('' + Math.random()).substr(2);
-					var commentId = 'commentId' + uniqueId;
-					var commentTextId = 'commentTextId' + uniqueId;
-					var buttonId = 'buttonId' + uniqueId;
-					var elem = '&lt;div class=&quot;comment-started&quot; id=&quot;' + commentId + '&quot;&gt;' +
-					             '&lt;textarea id=&quot;' + commentTextId + '&quot; placeholder=&quot;Write a comment&hellip;&quot;&gt;&lt;/textarea&gt;' +
-					             '&lt;button class=&quot;btn btn-text article-actions&quot; id=&quot;' + buttonId + '&quot;&gt;Save comment&lt;/button&gt;' +
-					           '&lt;/div&gt;';
-					target.after(elem);
-					var saveComment = function(saveEvent) {
-						$(saveEvent.target).off('click');
-						target.toggleClass('being-commented');
-						$('#' + commentId).remove();
-					};
-					$('#' + buttonId).on('click', saveComment);
+				if (!(commentArea.children('.comment-started').length)) {
+					var commentBox = createCommentBox();
+					var oldComments = commentArea.children();
+					if (oldComments.length) {
+						oldComments.first().before(commentBox);
+					} else {
+						commentArea.html(commentBox);
+					}
 				}
+				commentArea.toggleClass('hidden');
 			}
 			target.toggleClass('being-commented');
 		}
